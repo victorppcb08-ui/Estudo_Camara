@@ -1,0 +1,586 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="pt-BR"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>SINAPI — Estudo Estratégico para a Prova (Cebraspe · Câmara)</title>
+<style>
+  :root{
+    --bg:#EDF1EE; --surface:#FFFFFF; --surface-2:#F4F7F5;
+    --ink:#182018; --ink-2:#4B584E; --line:#D6DED8;
+    --primary:#1F6B4A;
+    --primary-soft:#E4F0EA; --primary-line:#BFDAC9;
+    --certo:#1F7A4D; --certo-soft:#E5F2EA;
+    --errado:#BC3B3B; --errado-soft:#F7E7E7;
+    --alerta:#9A6410; --alerta-soft:#FBF0DA; --alerta-line:#E7CE97;
+    --shadow:0 1px 2px rgba(20,30,25,.06),0 8px 24px rgba(20,30,25,.05);
+    --font-display:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    --font-body:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --font-mono:ui-monospace,"SF Mono","Cascadia Code","JetBrains Mono",Menlo,Consolas,monospace;
+    --maxw:1180px;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#101512; --surface:#18201B; --surface-2:#202a23;
+    --ink:#E7ECE8; --ink-2:#A2AEA6; --line:#2B352E;
+    --primary:#5FB98A; --primary-soft:#16261D; --primary-line:#2F4A39;
+    --certo:#57B78A; --certo-soft:#16271F;
+    --errado:#E37A7A; --errado-soft:#2A1B1B;
+    --alerta:#DCAA4E; --alerta-soft:#2A2414; --alerta-line:#4A3E1F;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }}
+  :root[data-theme="dark"]{
+    --bg:#101512; --surface:#18201B; --surface-2:#202a23;
+    --ink:#E7ECE8; --ink-2:#A2AEA6; --line:#2B352E;
+    --primary:#5FB98A; --primary-soft:#16261D; --primary-line:#2F4A39;
+    --certo:#57B78A; --certo-soft:#16271F;
+    --errado:#E37A7A; --errado-soft:#2A1B1B;
+    --alerta:#DCAA4E; --alerta-soft:#2A2414; --alerta-line:#4A3E1F;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{margin:0;background:var(--bg)}
+  .page{background:var(--bg); color:var(--ink); font-family:var(--font-body); font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4,.eyebrow,.chip,th,.q-btn,.toc,.badge,.numtable,.meta,.kbd{font-family:var(--font-display)}
+  code,.mono,.art{font-family:var(--font-mono)}
+  a{color:var(--primary);text-underline-offset:3px}
+  .topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .topbar-in{max-width:var(--maxw);margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:14px}
+  .brand{font-family:var(--font-display);font-weight:700;font-size:15px;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+  .brand .mark{min-width:30px;height:26px;padding:0 6px;border-radius:6px;background:var(--primary);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:800;flex:none}
+  .brand small{color:var(--ink-2);font-weight:500}
+  .topbar .spacer{flex:1}
+  .theme-btn{font-family:var(--font-display);font-size:12.5px;font-weight:600;color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+  .theme-btn:hover{color:var(--ink)}
+  .score-pill{font-family:var(--font-mono);font-size:12.5px;font-weight:600;color:var(--primary);background:var(--primary-soft);border:1px solid var(--primary-line);border-radius:999px;padding:6px 12px;white-space:nowrap}
+  .hero{max-width:var(--maxw);margin:0 auto;padding:46px 22px 26px}
+  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--primary)}
+  h1{font-size:clamp(29px,5vw,44px);line-height:1.06;letter-spacing:-.022em;margin:.35em 0 .3em;text-wrap:balance;font-weight:800}
+  .lede{font-size:19px;color:var(--ink-2);max-width:66ch;margin:.2em 0 0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .chip{font-size:12.5px;font-weight:600;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 11px;display:inline-flex;gap:7px;align-items:center}
+  .chip b{color:var(--ink);font-weight:700}
+  .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--primary)}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
+  .stat .n{font-family:var(--font-display);font-size:29px;font-weight:800;letter-spacing:-.02em;color:var(--primary);font-variant-numeric:tabular-nums;line-height:1}
+  .stat .l{font-family:var(--font-display);font-size:12.5px;color:var(--ink-2);margin-top:7px;font-weight:600}
+  @media (max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .shell{max-width:var(--maxw);margin:0 auto;padding:14px 22px 90px;display:grid;grid-template-columns:236px 1fr;gap:40px;align-items:start}
+  @media (max-width:940px){.shell{grid-template-columns:1fr;gap:0}}
+  .toc{position:sticky;top:64px;align-self:start;font-family:var(--font-display);font-size:13.5px;max-height:calc(100vh - 80px);overflow:auto;padding-right:6px}
+  @media (max-width:940px){.toc{position:static;max-height:none;margin:8px 0 20px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--surface)}}
+  .toc .tt{text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--ink-2);font-weight:700;margin:16px 0 8px}
+  .toc a{display:block;color:var(--ink-2);text-decoration:none;padding:5px 10px;border-radius:7px;border-left:2px solid transparent;line-height:1.3}
+  .toc a:hover{color:var(--ink);background:var(--surface-2)}
+  .toc a.active{color:var(--primary);border-left-color:var(--primary);background:var(--primary-soft);font-weight:600}
+  .toc a small{display:block;color:var(--ink-2);font-weight:400;font-size:11px}
+  main{min-width:0}
+  section{scroll-margin-top:72px;margin-bottom:12px}
+  section.block{background:transparent;padding-top:26px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--line);padding-bottom:12px;margin:34px 0 20px}
+  .sec-num{font-family:var(--font-mono);font-size:14px;font-weight:700;color:var(--primary);background:var(--primary-soft);border:1px solid var(--primary-line);border-radius:7px;padding:3px 9px;flex:none}
+  h2{font-size:clamp(22px,3.4vw,28px);letter-spacing:-.02em;margin:0;font-weight:800;text-wrap:balance}
+  h3{font-size:19px;letter-spacing:-.01em;margin:30px 0 6px;font-weight:700}
+  h4{font-size:15px;margin:20px 0 4px;font-weight:700;color:var(--ink)}
+  p{margin:.55em 0}
+  main ul{margin:.5em 0;padding-left:1.25em} main li{margin:.3em 0}
+  strong{font-weight:700}
+  .art{font-size:.86em;color:var(--primary);font-weight:600;white-space:nowrap}
+  .call{border-radius:12px;padding:15px 17px;margin:18px 0;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+  .call .h{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+  .call .h .tag{width:20px;height:20px;border-radius:5px;display:grid;place-items:center;font-size:12px;flex:none;color:#fff;font-family:var(--font-display);font-weight:800}
+  .call p{margin:.35em 0}
+  .call.norma{background:var(--primary-soft);border-color:var(--primary-line)} .call.norma .h{color:var(--primary)} .call.norma .tag{background:var(--primary)}
+  .call.trap{background:var(--alerta-soft);border-color:var(--alerta-line)} .call.trap .h{color:var(--alerta)} .call.trap .tag{background:var(--alerta)}
+  .call.brain{background:var(--surface-2);border-color:var(--line)} .call.brain .h{color:var(--ink)} .call.brain .tag{background:var(--ink-2)}
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0;box-shadow:var(--shadow);background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+  .numtable td:not(:first-child),.numtable th:not(:first-child){font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+  th{font-family:var(--font-display);text-align:left;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);font-weight:700;padding:11px 14px;background:var(--surface-2);border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top;font-family:var(--font-body)}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--surface-2)}
+  td:first-child{font-weight:600;font-family:var(--font-display);font-size:13.5px}
+  .cap{font-family:var(--font-display);font-size:12px;color:var(--ink-2);margin:-8px 0 18px;padding-left:2px}
+  .q{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;margin:14px 0;box-shadow:var(--shadow)}
+  .q-top{display:flex;gap:12px;align-items:flex-start}
+  .q-id{font-family:var(--font-mono);font-size:12.5px;font-weight:700;color:#fff;background:var(--ink-2);border-radius:7px;padding:3px 8px;flex:none;margin-top:2px}
+  .q-theme{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--primary);margin-bottom:2px}
+  .q-text{font-size:16.5px;line-height:1.55}
+  .q-actions{display:flex;gap:9px;margin-top:14px;flex-wrap:wrap;align-items:center}
+  .q-btn{font-family:var(--font-display);font-weight:700;font-size:14px;border-radius:9px;padding:8px 20px;cursor:pointer;border:1.5px solid var(--line);background:var(--surface-2);color:var(--ink);min-width:56px;transition:transform .05s ease}
+  .q-btn:hover{border-color:var(--ink-2)} .q-btn:active{transform:translateY(1px)}
+  .q-btn:focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+  .q-btn[data-v="C"]:hover{border-color:var(--certo);color:var(--certo)}
+  .q-btn[data-v="E"]:hover{border-color:var(--errado);color:var(--errado)}
+  .q.done .q-btn{cursor:default;opacity:.55}
+  .q.done .q-btn.correct{opacity:1;background:var(--certo-soft);border-color:var(--certo);color:var(--certo)}
+  .q.done .q-btn.wrongpick{opacity:1;background:var(--errado-soft);border-color:var(--errado);color:var(--errado)}
+  .verdict{font-family:var(--font-display);font-size:13px;font-weight:700;margin-left:4px}
+  .gab{display:none;margin-top:14px;padding:14px 15px;border-radius:11px;border:1px solid var(--line);background:var(--surface-2);font-size:15px;line-height:1.55}
+  .q.done .gab{display:block}
+  .gab .lab{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;display:inline-block;padding:2px 8px;border-radius:6px;margin-bottom:7px}
+  .gab .lab.c{background:var(--certo-soft);color:var(--certo);border:1px solid var(--certo)}
+  .gab .lab.e{background:var(--errado-soft);color:var(--errado);border:1px solid var(--errado)}
+  .qbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:6px 0 8px;box-shadow:var(--shadow)}
+  .qbar .lft{font-family:var(--font-display);font-size:14px;font-weight:600;color:var(--ink-2)} .qbar .lft b{color:var(--primary);font-family:var(--font-mono)}
+  .qbar button{font-family:var(--font-display);font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);border-radius:8px;padding:7px 13px;cursor:pointer}
+  .qbar button:hover{color:var(--ink);border-color:var(--ink-2)}
+  .badge{display:inline-block;font-family:var(--font-display);font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:.03em}
+  .b-ce{background:var(--certo-soft);color:var(--certo);border:1px solid var(--certo)}
+  .b-er{background:var(--errado-soft);color:var(--errado);border:1px solid var(--errado)}
+  .kbd{font-family:var(--font-mono);font-size:.8em;background:var(--surface-2);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 6px;color:var(--ink-2)}
+  .foot{max-width:var(--maxw);margin:0 auto;padding:30px 22px 60px;color:var(--ink-2);font-family:var(--font-display);font-size:13px;border-top:1px solid var(--line)}
+  .lead-in{font-size:18px;color:var(--ink-2);border-left:3px solid var(--primary);padding-left:16px;margin:8px 0 20px}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:720px){.twocol{grid-template-columns:1fr}}
+  .mini{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)} .mini h4{margin-top:2px}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;font-family:var(--font-display);font-size:13px}
+  .flow .node{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:8px 12px;font-weight:600;box-shadow:var(--shadow)}
+  .flow .op{color:var(--primary);font-weight:800;font-family:var(--font-mono)}
+  .flow .node.hl{background:var(--primary-soft);border-color:var(--primary-line);color:var(--primary)}
+</style>
+<div class="page">
+<div class="topbar"><div class="topbar-in">
+  <div class="brand"><span class="mark">SINAPI</span><span>Estudo Estratégico <small>· Orçamentação · Câmara dos Deputados</small></span></div>
+  <div class="spacer"></div>
+  <span class="score-pill" id="scorePill" hidden>Acertos 0/0</span>
+  <button class="theme-btn" id="themeBtn" aria-label="Alternar tema">◐ Tema</button>
+</div></div>
+
+<header class="hero">
+  <div class="eyebrow">Manual de Metodologias e Conceitos (11ª ed., 2026) · leitura da banca Cebraspe</div>
+  <h1>SINAPI para a prova de Analista — Engenharia Civil</h1>
+  <p class="lede">Estudo estratégico do sistema de custos da CAIXA, pensado <b>como o elaborador da prova</b>: a metodologia dos insumos (mão de obra, equipamento), os <b>encargos sociais e complementares</b> e a orçamentação — tudo mapeado para o que a Cebraspe transforma em item Certo/Errado. Com esquemas visuais e banco de questões.</p>
+  <div class="chips">
+    <span class="chip"><span class="dot"></span><b>Base legal</b> Decreto 7.983/2013</span>
+    <span class="chip"><span class="dot"></span><b>Manual</b> SINAPI Metodologias e Conceitos</span>
+    <span class="chip"><span class="dot"></span><b>Banca</b> Cebraspe · 1 erro anula 1 acerto</span>
+    <span class="chip"><span class="dot"></span><b>Foco</b> MO · Equipamento · Encargos</span>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="n">4</div><div class="l">competências do analista mapeadas</div></div>
+    <div class="stat"><div class="n">8</div><div class="l">blocos de metodologia</div></div>
+    <div class="stat"><div class="n">31</div><div class="l">questões C/E com gabarito</div></div>
+    <div class="stat"><div class="n">A–D</div><div class="l">grupos de encargos sociais</div></div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="toc" aria-label="Índice">
+    <div class="tt">Estratégia</div>
+    <a href="#banca">A mente da banca</a>
+    <a href="#competencias">Competências do analista × SINAPI</a>
+    <div class="tt">Metodologia</div>
+    <a href="#orcamento">1 · Orçamento &amp; Decreto 7.983</a>
+    <a href="#insumos">2 · Insumos e composições</a>
+    <a href="#preco">3 · Preço: coleta do IBGE</a>
+    <a href="#equip">4 · Custo horário de equipamentos ⭐</a>
+    <a href="#social">5 · Encargos sociais ⭐⭐</a>
+    <a href="#compl">6 · Encargos complementares ⭐</a>
+    <a href="#afericao">7 · Aferição e produtividade</a>
+    <div class="tt">Consulta &amp; treino</div>
+    <a href="#numeros">Números e siglas que caem</a>
+    <a href="#questoes">Banco de questões C/E</a>
+    <a href="#vespera">Checklist da véspera</a>
+  </nav>
+  <main>
+
+  <!-- ===== BANCA ===== -->
+  <section id="banca" class="block">
+    <div class="sec-head"><span class="sec-num">01</span><h2>A mente da banca — como a Cebraspe cobra o SINAPI</h2></div>
+    <p class="lead-in">O manual é <b>metodológico</b>: define conceitos, classifica insumos e detalha o cálculo de encargos e de custo horário. A banca raramente pede conta longa — ela <b>troca uma palavra, um grupo ou um item</b> e transforma uma frase verdadeira em item ERRADO. Quem domina os pares de conceito ganha a questão sem calculadora.</p>
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>Regra do jogo — Certo/Errado com desconto</div>
+      <p>Cada item vale por si e <b>um erro anula um acerto</b>. Consequência: em dúvida técnica real, o branco costuma valer mais que o chute. E quase todo item “quase certo” foi tornado errado por <em>uma</em> troca — de conceito, de grupo, de número ou de responsável.</p>
+    </div>
+    <h3>Os 6 moldes de pegadinha no SINAPI</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>#</th><th>Molde</th><th>Exemplo típico (o certo entre parênteses)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Inversão de grupo / conceito</td><td>“Grupo C recebe incidência do Grupo A” (quem recebe é o <b>B</b>; o C <b>não</b> recebe) · armadura ativa↔passiva</td></tr>
+        <tr><td>2</td><td>O que entra × não entra</td><td>“CHI inclui manutenção” (CHI = <b>D+J+CMOB</b>, sem manutenção nem materiais)</td></tr>
+        <tr><td>3</td><td>Troca de valor/estatística</td><td>“custo global ≤ <b>média</b>” (é a <b>mediana</b>) · HDA = HTA×1,25</td></tr>
+        <tr><td>4</td><td>Troca de responsável/fonte</td><td>“a CAIXA coleta os preços” (quem coleta é o <b>IBGE</b>) · transportes → <b>SICRO</b>, não SINAPI</td></tr>
+        <tr><td>5</td><td>Falso absoluto / inclusão indevida</td><td>“o SINAPI já inclui o BDI” (<b>não</b> inclui) · “preço inclui frete” (não, salvo ficha)</td></tr>
+        <tr><td>6</td><td>Proporcionalidade trocada</td><td>“encargos <b>complementares</b> variam proporcionalmente ao salário” (não variam; os <b>sociais</b> é que são % do salário)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Onde a Cebraspe mais bate (você pediu, o manual confirma)</div>
+      <p><b>Metodologia dos insumos</b> — mão de obra, equipamento — e <b>encargos sociais</b>. Priorize, nesta ordem: (1) os <b>4 grupos de encargos sociais</b> e quem recebe incidência de quem; (2) <b>CHP × CHI</b> (o que compõe cada um); (3) <b>encargos sociais × complementares</b> (variam × não variam com o salário); (4) <b>quem faz o quê</b> (CAIXA × IBGE) e a regra da <b>mediana</b> do Decreto 7.983/2013.</p>
+    </div>
+  </section>
+
+  <!-- ===== COMPETÊNCIAS ===== -->
+  <section id="competencias" class="block">
+    <div class="sec-head"><span class="sec-num">02</span><h2>As 4 competências do analista × o SINAPI</h2></div>
+    <p>O cargo atua em <b>orçamentação, fiscalização, gestão e fiscalização de contratos</b>. O manual conversa diretamente com cada uma — a banca gosta de cobrar essa ponte.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Competência</th><th>O que o SINAPI oferece</th><th>Gancho da banca</th></tr></thead>
+      <tbody>
+        <tr><td>Orçamentista</td><td>Custos unitários de referência (composições e insumos) para montar o <b>custo global de referência</b>; ajustes por relatório técnico.</td><td>Mediana (art. 3º); SINAPI não tem BDI; Curva ABC; ajustes do orçamentista.</td></tr>
+        <tr><td>Fiscalização de obra</td><td>Composições analíticas, coeficientes e Cadernos Técnicos como parâmetro de medição e de conformidade.</td><td>Caderno Técnico <b>não</b> substitui Caderno de Encargos; medição por composição.</td></tr>
+        <tr><td>Gestor de contrato</td><td>Base para reequilíbrio, aditivos e conferência de preços (mediana, origem do preço, %AS).</td><td>Preço à vista/sem frete; um preço por UF; pendências _PS/_PE/_PSE.</td></tr>
+        <tr><td>Fiscal de contrato</td><td>Referência para atestar consumo de insumos, encargos e medições da mão de obra.</td><td>Encargos complementares (transporte, EPI, alimentação) e sua forma de apropriação.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ===== 1 ORÇAMENTO ===== -->
+  <section id="orcamento" class="block">
+    <div class="sec-head"><span class="sec-num">1</span><h2>Orçamento e o Decreto nº 7.983/2013</h2></div>
+    <p>A atuação da CAIXA no SINAPI decorre do <b>Decreto nº 7.983/2013</b>, que fixa regras e critérios do <b>orçamento de referência</b> de obras e serviços com recursos da União.</p>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Definições do art. 2º (decore a cadeia)</div>
+      <div class="flow">
+        <span class="node">Custo unitário de referência</span><span class="op">→</span>
+        <span class="node">Composição de custo unitário<br>(materiais · MO · equip.)</span><span class="op">→</span>
+        <span class="node">Custo total = quant. × custo unit.</span><span class="op">→</span>
+        <span class="node hl">Custo global = Σ custos totais</span><span class="op">+ BDI →</span>
+        <span class="node">Preço global de referência</span>
+      </div>
+      <p><b>Art. 3º:</b> o custo global de referência é obtido a partir das composições do projeto do edital, <b>menores ou iguais à MEDIANA</b> dos seus correspondentes no SINAPI (exceto transporte → SICRO, e itens de montagem industrial). <b>Art. 4º:</b> infraestrutura de <b>transportes → SICRO/DNIT</b>. <b>Art. 8º, §único:</b> ajustes por <b>relatório técnico</b> de profissional habilitado quando o sistema não representa bem o que se orça.</p>
+    </div>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Três pegadinhas de ouro</div>
+      <p>(1) É <b>mediana</b>, não média. (2) O SINAPI <b>não</b> calcula nem inclui <b>BDI</b> — restringe-se ao <b>custo global de referência</b>. (3) Obras de <b>transporte</b> usam <b>SICRO</b> (DNIT), não SINAPI.</p>
+    </div>
+    <h3>Custo × Despesa × Preço</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Termo</th><th>Definição</th></tr></thead>
+      <tbody>
+        <tr><td>Custo</td><td>Tudo que onera o construtor na produção da obra (insumos + infraestrutura de produção).</td></tr>
+        <tr><td>Despesa</td><td>Gasto da atividade empresarial (fixa: sede; variável: tributo sobre faturamento).</td></tr>
+        <tr><td>Preço</td><td>Valor pago pelo contratante = <b>custo + despesas indiretas + lucro</b>.</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Estrutura do orçamento &amp; formação do preço</h3>
+    <div class="flow">
+      <span class="node hl">PREÇO</span><span class="op">=</span>
+      <span class="node">Custo Direto<br>(material, MO+encargos, equip., EC)</span><span class="op">+</span>
+      <span class="node">Custo Indireto<br>(adm. local, canteiro, mob/desmob)</span><span class="op">+</span>
+      <span class="node">BDI = Despesas Indiretas + Lucro</span>
+    </div>
+    <p><b>Custo direto:</b> materiais, equipamentos e mão de obra (com <b>Encargos Sociais</b>) mais os <b>Encargos Complementares</b> (EPI, transporte, alimentação, ferramentas, exames, seguro de vida). <b>Custo indireto:</b> administração local, canteiro, mobilização/desmobilização. <b>BDI/LDI:</b> despesas indiretas (tributos, risco, administração central, despesas financeiras) + lucro/bonificação.</p>
+    <h3>As três classificações de orçamento (a banca adora listar)</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Critério</th><th>Tipos</th></tr></thead>
+      <tbody>
+        <tr><td>Grau de detalhamento / precisão</td><td><b>Estimativa</b> de custo (índices como o <b>CUB</b> – NBR 12.721) → <b>Preliminar</b> → <b>Discriminado/Detalhado</b> (composições + pesquisa de preços).</td></tr>
+        <tr><td>Finalidade</td><td><b>Gerenciais</b> · <b>Contratuais</b> (de Referência × Executivos) · <b>Periciais/Auditoria</b>.</td></tr>
+        <tr><td>Apresentação da informação</td><td><b>Sintético</b> (agrupa por macroitens/etapas) × <b>Analítico</b> (quantitativos e custos unitários por serviço).</td></tr>
+      </tbody>
+    </table></div>
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>Atributos do orçamento (Mattos)</div>
+      <p><b>Aproximação</b> (é sempre aproximado, mas deve ser <b>preciso</b> — não exato), <b>Especificidade</b> (depende de porte/local) e <b>Temporalidade</b> (vale para um dado momento). Cebraspe gosta de opor “aproximado” e “preciso”: os dois convivem.</p>
+    </div>
+  </section>
+
+  <!-- ===== 2 INSUMOS ===== -->
+  <section id="insumos" class="block">
+    <div class="sec-head"><span class="sec-num">2</span><h2>Insumos e composições de serviço</h2></div>
+    <p>Insumos são os <b>elementos básicos</b> da construção. Metodologicamente, dividem-se em três: <b>material</b> (cimento, aço, blocos), <b>mão de obra</b> (pedreiro, pintor, engenheiro) e <b>equipamento</b> (betoneira, caminhão, terraplenagem).</p>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Classificação dos insumos no sistema (7 categorias)</div>
+      <p>No cadastro do SINAPI, o insumo é classificado em: <b>Material</b>, <b>Mão de Obra</b>, <b>Equipamento (Aquisição)</b>, <b>Equipamento (Locação)</b>, <b>Encargos Complementares</b>, <b>Especiais</b> e <b>Serviços</b>. (Atenção: “Encargos Complementares” virou classe própria — ver §6.)</p>
+    </div>
+    <h3>Composição de serviço = insumos + coeficientes</h3>
+    <p>A <b>composição de serviço</b> reúne os insumos (e composições auxiliares) com seus <b>coeficientes de consumo, produtividade e eficiência</b> necessários para <b>uma unidade</b> do serviço. O custo é a <b>soma</b>, item a item, de <b>coeficiente × preço unitário</b> (ou custo da composição auxiliar).</p>
+    <div class="twocol">
+      <div class="mini"><h4>Composição principal</h4><p>A que o orçamentista adota diretamente; representa o serviço de fácil observação e quantificação (materiais + MO + equipamentos diretos). Agrupadas na <b>Árvore de Composições</b>.</p></div>
+      <div class="mini"><h4>Composição auxiliar</h4><p>Etapa do serviço que também aparece em outros (ex.: produção de argamassa, custo horário de betoneira, transporte interno). Combina-se com a principal.</p></div>
+    </div>
+    <h3>Família Homogênea de Insumos (metodologia do IBGE)</h3>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Representativo × Representado</div>
+      <p>Agrupamento de insumos por <b>similaridade</b> (matéria-prima, processo de fabricação, evolução temporal de preços, locais de comercialização). Cada família tem <b>1 insumo representativo</b> (maior comercialização, presença nacional, maior recorrência) — <b>é o único com preço coletado mensalmente</b> pelo IBGE — e os <b>representados</b>, cujos preços saem de um <b>coeficiente de representatividade</b> (representado/representativo). Os coeficientes são <b>nacionais</b>, <b>exceto os de mão de obra</b>, calculados por UF.</p>
+    </div>
+    <div class="twocol">
+      <div class="mini"><h4>Ficha de Especificação Técnica</h4><p>Descrição, unidade, normas, imagem e informações gerais. <b>Asteriscos</b> na descrição = variação de dimensões admitida na pesquisa. Não deve ser usada como caderno de especificação em licitação.</p></div>
+      <div class="mini"><h4>Unidade de cálculo × comercialização</h4><p><b>De cálculo</b>: usada nas composições. <b>De comercialização</b>: a da embalagem pesquisada pelo IBGE. Se diferirem, há conversão.</p></div>
+    </div>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Caderno Técnico ≠ Caderno de Encargos</div>
+      <p>O <b>Caderno Técnico</b> descreve a técnica construtiva observada e embasa a composição — mas <b>não substitui</b> o <b>Caderno de Encargos</b>, que é de responsabilidade da <b>contratante</b>.</p>
+    </div>
+  </section>
+
+  <!-- ===== 3 PREÇO ===== -->
+  <section id="preco" class="block">
+    <div class="sec-head"><span class="sec-num">3</span><h2>Preço: a coleta feita pelo IBGE</h2></div>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Quem faz o quê (Acordo de Cooperação CAIXA–IBGE)</div>
+      <div class="twocol">
+        <div class="mini"><h4>CAIXA (engenharia)</h4><p>Define <b>especificações técnicas</b> dos insumos, monta as <b>famílias homogêneas</b> e <b>divulga</b> mensalmente os relatórios de insumos e composições.</p></div>
+        <div class="mini"><h4>IBGE (pesquisa)</h4><p><b>Coleta os preços e salários</b> (materiais, MO, equipamentos, serviços) e faz a <b>coleta extensiva</b> que gera os coeficientes de representatividade.</p></div>
+      </div>
+      <p>Pegadinha nº 1 do capítulo: <b>quem coleta preço é o IBGE</b>; a CAIXA especifica e divulga.</p>
+    </div>
+    <h3>Como o preço é obtido</h3>
+    <ul>
+      <li>Preço do <b>representativo</b>: coletado <b>mensalmente</b> nas <b>27 localidades</b> (26 capitais + DF).</li>
+      <li>Aquisição <b>à vista</b>, em estabelecimentos formais cadastrados, <b>sem incluir frete</b> (salvo se a ficha indicar) e <b>sem</b> efeitos de negociação, escala ou desconto.</li>
+      <li><b>Um único preço por insumo por UF</b> (não distingue capital × interior).</li>
+      <li><b>Mão de obra</b>: salários pesquisados junto a <b>construtoras (equipe própria)</b> — <b>não</b> se pesquisa empreitada nem terceirização.</li>
+    </ul>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Origem do preço no relatório</div>
+      <p><b>C</b> = preço <b>coletado</b> pelo IBGE no mês. <b>CR</b> = preço obtido por <b>coeficiente de representatividade</b>. <b>%AS</b> = parcela do custo formada por preço de <b>São Paulo</b> (quando o insumo não tem coleta na localidade, mas tem em SP).</p>
+    </div>
+    <p>Publicação da composição: <b>COM CUSTO</b> (todos os itens têm preço), <b>COM CUSTO E PENDÊNCIA</b> (itens substituídos/excluídos, mas custo calculado) ou <b>SEM CUSTO</b> (falta preço e não há substituto). Pendências: <b>_PS</b> (substituição), <b>_PE</b> (exclusão), <b>_PSE</b> (substituição e exclusão). Sobre os salários incidem os <b>Encargos Sociais</b>, com cálculo próprio por estado (Livro de Cálculos e Parâmetros).</p>
+  </section>
+
+  <!-- ===== 4 EQUIPAMENTOS ===== -->
+  <section id="equip" class="block">
+    <div class="sec-head"><span class="sec-num">4</span><h2>Custo horário de equipamentos ⭐</h2></div>
+    <p class="lead-in">Assunto favorito da banca em “metodologia dos insumos”. A chave é decorar <b>o que compõe o CHP e o CHI</b> e as três premissas: <b>aquisição</b> (não locação), <b>condição média</b> e <b>fator 1,25 (HDA)</b>.</p>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Premissas metodológicas</div>
+      <ul>
+        <li><b>Preço de AQUISIÇÃO</b> (mediano do insumo), <b>não</b> de locação. A metodologia não trata de locação.</li>
+        <li><b>Vida útil</b> = conceito <b>econômico</b>: até o momento em que o custo de reparo supera o valor residual.</li>
+        <li>Adota-se a <b>condição média</b> de operação como padrão (Tabela 5 – leves/médias/pesadas); ajustes competem ao orçamentista.</li>
+        <li><b>HDA = HTA × 1,25</b>: das horas disponíveis, <b>80% produtivas</b> e <b>20% improdutivas</b> → tempo disponível ampliado em 25%. Aplica-se a depreciação, juros e impostos/seguros.</li>
+      </ul>
+    </div>
+    <h3>As parcelas de custo</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Parcela</th><th>Como o SINAPI trata</th></tr></thead>
+      <tbody>
+        <tr><td>Depreciação (D)</td><td>Método <b>linear (linha reta)</b>: D = (Va − R)/(n × HTA × 1,25). Perda de valor por exaustão/obsolescência.</td></tr>
+        <tr><td>Juros (J)</td><td>Remuneração do capital imobilizado. Taxa <b>6,17% a.a.</b> (mesma do SICRO), sobre o <b>valor médio</b> Vm = (n+1)·Va/(2n). No SINAPI, entra como parcela do <b>custo horário</b> (poderia ir no BDI).</td></tr>
+        <tr><td>Manutenção (M)</td><td>Materiais + MO para manter o equipamento em uso: M = Va·K/(HTA·n).</td></tr>
+        <tr><td>Materiais na operação (CMAT)</td><td>Combustíveis, filtros, óleos e graxas (consumo específico do DNIT).</td></tr>
+        <tr><td>MO na operação (CMOB)</td><td>Motoristas e operadores. <b>Diurna</b>: preço direto. <b>Noturna</b>: hora de <b>52min30s</b>, +20% de remuneração → coeficiente majorado em <b>37,15%</b>.</td></tr>
+        <tr><td>Impostos e Seguros (IS)</td><td><b>Só para veículos</b> (IPVA + Seguro Obrigatório). Caminhão fora de estrada e terraplenagem <b>não</b> entram.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>CHP × CHI — a distinção que decide a questão</div>
+      <div class="twocol">
+        <div class="mini"><h4>CHP — Custo Horário Produtivo</h4><p>Equipamento em <b>operação efetiva</b>:<br><b>CHP = D + J + M + CMAT + CMOB</b><br>(veículos: + IS).</p></div>
+        <div class="mini"><h4>CHI — Custo Horário Improdutivo</h4><p>À disposição, <b>motor geralmente desligado</b>:<br><b>CHI = D + J + CMOB</b><br>Só propriedade (D, J) + operador. <b>Sem manutenção e sem materiais.</b> (veículos: + IS).</p></div>
+      </div>
+      <p>Se o item disser que o CHI inclui manutenção ou combustível → <span class="badge b-er">Errado</span>. E, em equipamento de pequeno porte (betoneira) ou sem operador exclusivo, a parcela <b>CMOB não entra</b> — o operador vira item direto da composição.</p>
+    </div>
+  </section>
+
+  <!-- ===== 5 ENCARGOS SOCIAIS ===== -->
+  <section id="social" class="block">
+    <div class="sec-head"><span class="sec-num">5</span><h2>Encargos sociais ⭐⭐</h2></div>
+    <p class="lead-in">O tópico mais cobrado. O custo da mão de obra tem <b>três parcelas</b>: <b>remuneração</b> (salário), <b>encargos sociais</b> e <b>encargos complementares</b>. Os sociais <b>incidem em percentual sobre o salário</b> (origem na CLT, na CF/1988, em leis e nas convenções coletivas).</p>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Os 4 grupos (memorize quem recebe incidência de quem)</div>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Grupo</th><th>O que é</th><th>Exemplos</th></tr></thead>
+        <tbody>
+          <tr><td><b>A — Básicos</b></td><td>Obrigações de legislação/convenção sobre a folha.</td><td>Previdência Social, Seguro contra Acidente de Trabalho (SAT), Salário-Educação, FGTS; INCRA, SESI, SENAI, SEBRAE.</td></tr>
+          <tr><td><b>B — Recebem A</b></td><td>Remuneração devida <b>sem</b> prestação de serviço correspondente. <b>Recebem incidência do Grupo A.</b></td><td>Repouso semanal remunerado, feriados, 13º salário.</td></tr>
+          <tr><td><b>C — Não recebem A</b></td><td>Predominantemente <b>indenizatórios</b>, devidos na <b>demissão</b>. <b>NÃO recebem incidência do Grupo A.</b></td><td>Aviso prévio, férias (quando vencidas), outras indenizações.</td></tr>
+          <tr><td><b>D — Reincidências</b></td><td>Incidência de <b>um grupo sobre outro</b> (ex.: A sobre B).</td><td>Reincidências entre grupos.</td></tr>
+        </tbody>
+      </table></div>
+      <p>O ponto que a banca inverte: <b>B recebe</b> a incidência de A; <b>C não recebe</b>. Trocar isso é o erro clássico.</p>
+    </div>
+    <h3>Horista × Mensalista</h3>
+    <ul>
+      <li>A unidade do insumo define o encargo: unidade <b>“hora”</b> → encargos de <b>horista</b>; unidade <b>“mês”</b> → <b>mensalista</b>.</li>
+      <li>Os percentuais variam por <b>regime</b> e por <b>localidade</b> (rotatividade, dias de chuva, feriados, acordos locais).</li>
+      <li>A CF estabelece jornada de <b>220 horas mensais</b>. Conversão horário → mensal:<br><code>Custo Mensal = [Custo Horário ÷ (1 + %ES horista)] × 220 × (1 + %ES mensalista)</code></li>
+    </ul>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>O que os encargos sociais do SINAPI NÃO incluem</div>
+      <p>Não consideram <b>trabalho noturno</b>, <b>periculosidade</b> nem <b>insalubridade</b> — cabe ao orçamentista ajustar. A <b>desoneração da folha</b> (Leis 13.670/2018, 12.844/2013, 13.161/2015 e a transição da Lei 14.973/2024), essa sim, é considerada nos percentuais. As planilhas seguem padronização definida em estudo técnico com o <b>TCU</b>, atualizadas anualmente.</p>
+    </div>
+  </section>
+
+  <!-- ===== 6 ENCARGOS COMPLEMENTARES ===== -->
+  <section id="compl" class="block">
+    <div class="sec-head"><span class="sec-num">6</span><h2>Encargos complementares ⭐</h2></div>
+    <p>Custos <b>associados à mão de obra</b> que decorrem de convenções coletivas e de normas — e que, ao contrário dos sociais, <b>NÃO variam proporcionalmente ao salário</b>.</p>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>O que são</div>
+      <p>Alimentação, transporte, <b>EPI</b>, <b>ferramentas manuais</b>, exames médicos obrigatórios, seguro de vida em grupo e cursos de capacitação.</p>
+    </div>
+    <h3>As três formas de estimar (e a que a CAIXA adota)</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Método</th><th>Característica</th></tr></thead>
+      <tbody>
+        <tr><td>Percentual sobre a MO</td><td>Fácil de apropriar e medir, porém <b>menos preciso</b> (usa salário médio; distorce se a média salarial da obra difere).</td></tr>
+        <tr><td>Itens na planilha de custos diretos</td><td>Preciso e transparente, mas <b>trabalhoso</b> (exige extrair a demanda de MO e atestar consumo real).</td></tr>
+        <tr><td><b>Custo horário direto à MO ✔</b></td><td><b>Adotado pela CAIXA</b>: calcula o custo horário proporcional de cada item; soma-se à remuneração+encargos; <b>não varia com o salário</b>. Une clareza + facilidade de gestão.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>Como cada item é calculado</div>
+      <ul>
+        <li><b>Transporte / alimentação</b>: custo diário × dias de presença ÷ horas efetivas do mês.</li>
+        <li><b>EPI / ferramentas</b>: consideram o <b>tempo de recompra (durabilidade)</b> e a <b>taxa de compartilhamento</b> do item.</li>
+        <li><b>Exames médicos</b>: consideram a <b>rotatividade (turnover)</b> — dividem-se pelo período de rotatividade.</li>
+        <li>Base de horas: até <b>dez/2025</b> usava-se <b>188,57 h/mês</b> fixas (44 h × 30/7); a partir de <b>jan/2026</b> passou a considerar as <b>horas efetivamente trabalhadas</b> (desconta domingos, feriados, licenças).</li>
+      </ul>
+    </div>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Mudança de set/2025 — cálculo do % de mão de obra</div>
+      <p>Os itens de encargos complementares (<b>Ferramentas, Alimentação, Transporte, Exame, Seguro de Vida</b>), antes classificados como <b>“Materiais”</b>, passaram a ser classificados como <b>“Encargos Complementares”</b>. E o <b>percentual de mão de obra</b> das composições passou a considerar <b>MO + Encargos Complementares</b> (antes, só MO).</p>
+    </div>
+  </section>
+
+  <!-- ===== 7 AFERIÇÃO ===== -->
+  <section id="afericao" class="block">
+    <div class="sec-head"><span class="sec-num">7</span><h2>Aferição e produtividade dos insumos</h2></div>
+    <p>As composições trazem <b>indicadores físicos</b> — expressões da <b>eficiência</b>: o “esforço” (horas de MO, quantidade de material, horas de equipamento) para produzir <b>uma unidade</b> do serviço. Mantê-los atualizados é a <b>aferição</b>.</p>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Modelo dos Fatores</div>
+      <p>Método baseado em <b>medições em campo</b> (obras públicas e privadas, portes variados), adotado no SINAPI desde <b>2012</b> com Instituição Aferidora (FDTE). A eficiência é avaliada junto com os <b>fatores</b> que a fazem variar, agrupados em três classes:</p>
+      <ul>
+        <li><b>Produto</b> — tipo de resultado, especificações, detalhes de projeto (ex.: placa cerâmica grande em ambiente pequeno → mais perdas).</li>
+        <li><b>Processo</b> — método de execução (ex.: concreto bombeado × lançado com jerica).</li>
+        <li><b>Organização do trabalho</b> — composição da equipe/patrulha e restrições do canteiro.</li>
+      </ul>
+      <p>Os dados passam por <b>saneamento</b> (limpeza) e <b>processamento</b> estatístico antes de virarem coeficiente.</p>
+    </div>
+  </section>
+
+  <!-- ===== NÚMEROS ===== -->
+  <section id="numeros" class="block">
+    <div class="sec-head"><span class="sec-num">08</span><h2>Números e siglas que caem — consulta rápida</h2></div>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>Item</th><th>Valor / regra</th></tr></thead>
+      <tbody>
+        <tr><td>Custo global de referência</td><td>≤ <b>mediana</b> dos custos unitários do SINAPI (Decreto 7.983, art. 3º)</td></tr>
+        <tr><td>Transporte / infraestrutura viária</td><td>Sistema <b>SICRO</b> (DNIT), não SINAPI (art. 4º)</td></tr>
+        <tr><td>BDI no SINAPI</td><td><b>Não</b> incluído — só custo global de referência</td></tr>
+        <tr><td>Quem coleta preço / quem divulga</td><td>Coleta: <b>IBGE</b> · Especifica e divulga: <b>CAIXA</b></td></tr>
+        <tr><td>Localidades de coleta</td><td><b>27</b> (26 capitais + DF); preço à vista, sem frete</td></tr>
+        <tr><td>Origem do preço</td><td><b>C</b> = coletado · <b>CR</b> = coef. representatividade · <b>%AS</b> = preço de SP</td></tr>
+        <tr><td>Insumos (metodologia)</td><td><b>Material · Mão de obra · Equipamento</b></td></tr>
+        <tr><td>HDA</td><td>HTA × <b>1,25</b> (80% produtivo / 20% improdutivo)</td></tr>
+        <tr><td>Depreciação</td><td>Método <b>linear</b>; D = (Va−R)/(n·HTA·1,25)</td></tr>
+        <tr><td>Juros do equipamento</td><td><b>6,17% a.a.</b> (= SICRO), sobre valor médio Vm=(n+1)Va/2n</td></tr>
+        <tr><td>Impostos e seguros (IS)</td><td>Só <b>veículos</b> (IPVA + seguro obrigatório)</td></tr>
+        <tr><td>CHP</td><td>D + J + M + CMAT + CMOB (+ IS p/ veículos)</td></tr>
+        <tr><td>CHI</td><td>D + J + CMOB (+ IS p/ veículos) — <b>sem M e sem CMAT</b></td></tr>
+        <tr><td>Hora noturna</td><td><b>52min30s</b>; +20%; coeficiente +<b>37,15%</b></td></tr>
+        <tr><td>Encargos sociais — grupos</td><td>A básicos · B recebe A · C não recebe A · D reincidências</td></tr>
+        <tr><td>Jornada mensal (CF)</td><td><b>220 h</b></td></tr>
+        <tr><td>Não incluído nos ES</td><td>Noturno, periculosidade, insalubridade</td></tr>
+        <tr><td>Encargos complementares</td><td>Alimentação, transporte, EPI, ferramentas, exames, seguro de vida, curso — <b>não</b> variam com salário</td></tr>
+        <tr><td>Método de EC adotado</td><td><b>Custo horário direto</b> à mão de obra</td></tr>
+        <tr><td>Aferição</td><td><b>Modelo dos Fatores</b> (desde 2012) — fatores: produto, processo, organização</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ===== QUESTÕES ===== -->
+  <section id="questoes" class="block">
+    <div class="sec-head"><span class="sec-num">09</span><h2>Banco de questões C/E — estilo Cebraspe</h2></div>
+    <p class="lead-in">31 itens na voz da banca, com peso em <b>mão de obra, equipamento e encargos sociais</b>. Julgue mentalmente, clique <span class="kbd">Certo</span> ou <span class="kbd">Errado</span> e confira o gabarito comentado. O placar fica no topo.</p>
+    <div class="qbar">
+      <div class="lft">Placar: <b id="scoreText">0 / 0</b> · aproveitamento <b id="scorePct">—</b></div>
+      <div style="display:flex;gap:8px"><button id="revealAll">Revelar todos</button><button id="resetAll">Reiniciar</button></div>
+    </div>
+    <div id="qbank"></div>
+  </section>
+
+  <!-- ===== VÉSPERA ===== -->
+  <section id="vespera" class="block">
+    <div class="sec-head"><span class="sec-num">10</span><h2>Checklist da véspera</h2></div>
+    <div class="twocol">
+      <div class="mini"><h4>Grave sem pensar</h4><ul>
+        <li>Custo global ≤ <b>mediana</b>; SINAPI <b>não</b> tem BDI; transporte → SICRO.</li>
+        <li>Coleta = <b>IBGE</b>; especifica/divulga = <b>CAIXA</b>; 27 localidades; à vista, sem frete.</li>
+        <li>Equip.: <b>aquisição</b>, condição média, <b>HDA=HTA×1,25</b>, deprec. linear, juros 6,17%.</li>
+        <li><b>CHP = D+J+M+CMAT+CMOB</b> · <b>CHI = D+J+CMOB</b> (veículo: +IS).</li>
+        <li>ES: <b>A</b> básicos · <b>B recebe A</b> · <b>C não recebe A</b> · <b>D</b> reincidências.</li>
+        <li>EC (transporte, EPI, alimentação…) <b>não</b> variam com salário; CAIXA usa <b>custo horário</b>.</li>
+      </ul></div>
+      <div class="mini"><h4>Reflexos contra pegadinha</h4><ul>
+        <li>Viu “<b>média</b>”? Confira: quase sempre é <b>mediana</b>.</li>
+        <li>“CHI com manutenção/combustível”? <b>Errado</b> — só D+J+CMOB.</li>
+        <li>“a CAIXA coleta os preços”? <b>Errado</b> — é o IBGE.</li>
+        <li>“encargos complementares variam com o salário”? <b>Errado</b> — os sociais é que variam.</li>
+        <li>“IS para todo equipamento”? <b>Errado</b> — só veículos.</li>
+        <li>“Grupo C recebe incidência do A”? <b>Errado</b> — é o B.</li>
+        <li>Dúvida técnica genuína e sem eliminar por conceito? Considere o branco.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  </main>
+</div>
+<footer class="foot">Estudo elaborado a partir do Livro <b>SINAPI – Metodologias e Conceitos</b> (CAIXA, 11ª edição, 2026) e do Decreto nº 7.983/2013, para a prova de Analista Legislativo · Engenheiro Civil (banca Cebraspe). Valores e percentuais são para estudo; em orçamento real, consulte sempre a versão vigente do SINAPI e o Livro de Cálculos e Parâmetros. Bons estudos.</footer>
+</div>
+<script>
+(function(){
+  "use strict";
+  var root=document.documentElement, tb=document.getElementById('themeBtn');
+  function cur(){var a=root.getAttribute('data-theme');if(a)return a;return window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}
+  tb.addEventListener('click',function(){root.setAttribute('data-theme',cur()==='dark'?'light':'dark');});
+  var links=[].slice.call(document.querySelectorAll('.toc a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('active');});var t=map[e.target.id];if(t)t.classList.add('active');}});},{rootMargin:'-20% 0px -70% 0px'});
+  document.querySelectorAll('main section[id]').forEach(function(s){obs.observe(s);});
+  var Q=[
+    {t:"Orçamento — Decreto 7.983",v:"E",q:"O custo global de referência de obras de engenharia é obtido a partir das composições do projeto do edital que sejam menores ou iguais à média dos seus correspondentes nos custos unitários do SINAPI.",g:"Errado. O parâmetro é a <b>mediana</b>, não a média (art. 3º do Decreto 7.983/2013). Molde 3.",a:"Decreto 7.983/2013"},
+    {t:"Orçamento — Decreto 7.983",v:"C",q:"As referências de custo para obras de infraestrutura de transportes devem ser obtidas a partir das composições do SICRO, mantido pelo DNIT, e não do SINAPI.",g:"Certo. Art. 4º do Decreto 7.983/2013: transporte → SICRO/DNIT.",a:"Decreto 7.983/2013"},
+    {t:"Orçamento — Decreto 7.983",v:"E",q:"As referências do SINAPI já contemplam a metodologia e o percentual de BDI a ser aplicado sobre o custo global de referência.",g:"Errado. O SINAPI restringe-se à formação do <b>custo global de referência</b>; não inclui nem calcula BDI. Molde 5.",a:"SINAPI cap. 1"},
+    {t:"Orçamento — conceitos",v:"C",q:"Na formação do preço, o preço corresponde ao custo acrescido das despesas indiretas e do lucro da empresa executora.",g:"Certo. O manual define o preço como o valor contratual pago pelo contratante, nele incluídos todos os custos da obra, as despesas indiretas e o lucro da empresa executora (Preço = Custo + DI + Lucro = Custo + BDI). <b>Atenção à moldura:</b> isso é <b>formação do preço</b>. No <b>orçamento de referência</b> público, o lucro do BDI é de <b>referência</b> (arbitrado pela Administração), não o lucro real de cada licitante — ver a questão seguinte.",a:"SINAPI cap. 1 (§1.4/1.5)"},
+    {t:"Orçamento — referência (controle)",v:"E",q:"No orçamento de referência de uma obra pública, o lucro incorporado ao BDI corresponde ao lucro que será efetivamente auferido pela empresa contratada para executar o serviço.",g:"Errado. No orçamento de referência, o BDI — e o lucro nele contido — é um parâmetro de <b>referência</b> adotado/arbitrado pela Administração para aferir a aceitabilidade dos preços. O lucro efetivo é definido por cada licitante em sua proposta e só se materializa com a contratada. Reforço: o <b>SINAPI não inclui o BDI</b>, restringindo-se ao custo global de referência.",a:"Decreto 7.983/2013 · doutrina de controle"},
+    {t:"Orçamento — classificação",v:"C",q:"A estimativa de custo é uma avaliação expedita, baseada em custos históricos e em índices como o CUB, adequada às etapas iniciais e à análise de viabilidade do empreendimento.",g:"Certo. Estimativa de custo (grau de precisão mais baixo) usa índices como o CUB (NBR 12.721).",a:"SINAPI cap. 1"},
+    {t:"Orçamento — estrutura",v:"E",q:"Os custos com administração local, mobilização e desmobilização e manutenção do canteiro integram os custos diretos da obra.",g:"Errado. Esses são <b>custos indiretos</b>. Custos diretos são os dos serviços executados fisicamente (materiais, MO+encargos, equipamentos, EC).",a:"SINAPI cap. 1"},
+    {t:"Insumos",v:"C",q:"No SINAPI, os insumos são os elementos básicos da construção e compreendem materiais, mão de obra e equipamentos, adotados na formação das composições de serviço.",g:"Certo. É a divisão metodológica dos insumos.",a:"SINAPI cap. 3"},
+    {t:"Insumos — família homogênea",v:"E",q:"Na metodologia de família homogênea, tanto o insumo representativo quanto os representados têm seus preços coletados mensalmente pelo IBGE.",g:"Errado. Apenas o <b>representativo</b> é coletado mensalmente; os <b>representados</b> derivam de coeficiente de representatividade. Molde 5.",a:"SINAPI cap. 3/4"},
+    {t:"Insumos — família homogênea",v:"C",q:"Os coeficientes de representatividade têm abrangência nacional, exceto os das famílias de mão de obra, que são calculados por unidade da federação.",g:"Certo. Coeficientes nacionais, salvo mão de obra (por UF).",a:"SINAPI cap. 4"},
+    {t:"Insumos — documentos",v:"E",q:"O Caderno Técnico de uma composição substitui o Caderno de Encargos, dispensando a contratante de elaborá-lo.",g:"Errado. O Caderno Técnico <b>não substitui</b> o Caderno de Encargos, que é de responsabilidade da contratante. Molde 4.",a:"SINAPI cap. 3"},
+    {t:"Preço — coleta IBGE",v:"E",q:"Compete à CAIXA realizar a coleta mensal de preços dos insumos nas capitais, cabendo ao IBGE apenas divulgar os relatórios.",g:"Errado. Papéis invertidos: o <b>IBGE coleta</b> os preços; a <b>CAIXA</b> especifica e divulga. Molde 4.",a:"SINAPI cap. 4"},
+    {t:"Preço — coleta IBGE",v:"C",q:"Os preços de aquisição pesquisados consideram pagamento à vista e não incluem, em regra, o transporte até a obra (frete).",g:"Certo. À vista, sem frete (salvo indicação na ficha), sem descontos/escala.",a:"SINAPI cap. 4"},
+    {t:"Preço — mão de obra",v:"C",q:"A pesquisa de salários da mão de obra é realizada junto a construtoras, referindo-se a custos de equipes próprias, e não a regimes de empreitada ou terceirização.",g:"Certo. É exatamente a premissa da coleta de MO.",a:"SINAPI cap. 4"},
+    {t:"Preço — origem",v:"E",q:"No relatório de insumos, a notação CR indica que o preço foi diretamente coletado pelo IBGE no mês de referência.",g:"Errado. <b>C</b> = coletado; <b>CR</b> = obtido por coeficiente de representatividade. Molde 1.",a:"SINAPI cap. 4"},
+    {t:"Equipamento",v:"E",q:"O custo horário dos equipamentos no SINAPI é formado a partir do preço de locação das máquinas pesquisado no mercado.",g:"Errado. Baseia-se no preço de <b>aquisição</b>; a metodologia não trata de locação. Molde 5.",a:"SINAPI cap. 5"},
+    {t:"Equipamento",v:"C",q:"A vida útil considerada para os equipamentos é um conceito econômico: o período até que os custos de reparo superem o valor residual do bem.",g:"Certo. Definição do manual (vida útil econômica).",a:"SINAPI cap. 5"},
+    {t:"Equipamento",v:"C",q:"As horas disponíveis por ano (HDA) são obtidas multiplicando-se as horas trabalhadas por ano (HTA) pelo fator 1,25, correspondente a 80% de tempo produtivo e 20% improdutivo.",g:"Certo. HDA = HTA × 1,25.",a:"SINAPI cap. 5"},
+    {t:"Equipamento",v:"C",q:"Para a depreciação dos equipamentos, o SINAPI adota o método linear (linha reta).",g:"Certo. Depreciação linear, apropriando a disponibilidade (fator 1,25).",a:"SINAPI cap. 5"},
+    {t:"Equipamento",v:"E",q:"As parcelas de impostos e seguros compõem o custo horário de todos os equipamentos utilizados nas composições do SINAPI.",g:"Errado. Impostos e seguros (IPVA + seguro obrigatório) incidem <b>somente sobre veículos</b>; caminhão fora de estrada e terraplenagem não. Molde 5.",a:"SINAPI cap. 5"},
+    {t:"Equipamento — CHP/CHI",v:"C",q:"O custo horário produtivo (CHP) é a soma de depreciação, juros, manutenção, custos de materiais e custos de mão de obra na operação.",g:"Certo. CHP = D + J + M + CMAT + CMOB (veículos: + IS).",a:"SINAPI cap. 5"},
+    {t:"Equipamento — CHP/CHI",v:"E",q:"No custo horário improdutivo (CHI), além da depreciação e dos juros, são computados os custos de manutenção e de materiais na operação do equipamento.",g:"Errado. <b>CHI = D + J + CMOB</b>. Não entram manutenção nem materiais (o equipamento está com o motor geralmente desligado). Molde 2.",a:"SINAPI cap. 5"},
+    {t:"Equipamento — MO noturna",v:"C",q:"Para a mão de obra operativa noturna, considera-se a hora de 52 minutos e 30 segundos e acréscimo de 20% na remuneração, resultando em coeficiente majorado em 37,15%.",g:"Certo. Reflete o art. 73 da CLT aplicado ao custo horário.",a:"SINAPI cap. 5"},
+    {t:"Encargos sociais",v:"C",q:"Os encargos sociais incidem de forma percentual sobre os salários, pois variam conforme a remuneração, e têm origem na CLT, na Constituição de 1988 e em convenções coletivas.",g:"Certo. São percentuais sobre a folha/salário.",a:"SINAPI cap. 6"},
+    {t:"Encargos sociais — grupos",v:"C",q:"No modelo de apropriação dos encargos sociais, o Grupo A reúne os encargos básicos, como Previdência Social, FGTS, Salário-Educação e o Seguro contra Acidente de Trabalho.",g:"Certo. Grupo A = encargos sociais básicos.",a:"SINAPI cap. 6"},
+    {t:"Encargos sociais — grupos",v:"E",q:"O Grupo C dos encargos sociais, de natureza predominantemente indenizatória, recebe a incidência do Grupo A.",g:"Errado. O Grupo <b>C não recebe</b> incidência do A (quem recebe é o <b>B</b>). O C é indenizatório (aviso prévio, férias vencidas). Molde 1.",a:"SINAPI cap. 6"},
+    {t:"Encargos sociais — grupos",v:"C",q:"O 13º salário, o repouso semanal remunerado e os feriados integram o Grupo B dos encargos sociais, que recebe a incidência do Grupo A.",g:"Certo. Grupo B = remuneração sem prestação de serviço, e recebe incidência de A.",a:"SINAPI cap. 6"},
+    {t:"Encargos sociais",v:"E",q:"Os percentuais de encargos sociais adotados pelo SINAPI já incorporam os adicionais de periculosidade e de insalubridade aplicáveis.",g:"Errado. O SINAPI <b>não</b> considera noturno, periculosidade nem insalubridade; cabe ao orçamentista ajustar. Molde 5.",a:"SINAPI cap. 6"},
+    {t:"Encargos sociais",v:"C",q:"A apropriação dos encargos sociais varia conforme o regime de contratação (horista ou mensalista) e a localidade da obra.",g:"Certo. Variam por regime e por UF (rotatividade, chuvas, feriados, acordos locais).",a:"SINAPI cap. 6"},
+    {t:"Encargos complementares",v:"E",q:"Os encargos complementares, como transporte, alimentação e EPI, variam proporcionalmente aos salários da mão de obra.",g:"Errado. Os complementares <b>não variam</b> proporcionalmente ao salário; quem varia com o salário são os <b>encargos sociais</b>. Molde 6.",a:"SINAPI cap. 6"},
+    {t:"Encargos complementares",v:"C",q:"Entre as formas de estimar os encargos complementares, a CAIXA adota no SINAPI a associação direta à mão de obra como custo horário, e não a aplicação de um simples percentual.",g:"Certo. Método do custo horário direto — considerado o mais apropriado para referência.",a:"SINAPI cap. 6"}
+  ];
+  var bank=document.getElementById('qbank');
+  var total=0, hits=0;
+  var st=document.getElementById('scoreText'), sp=document.getElementById('scorePct');
+  var pill=document.getElementById('scorePill');
+  function refresh(){st.textContent=hits+' / '+total;sp.textContent=total?Math.round(hits/total*100)+'%':'—';if(total>0){pill.hidden=false;pill.textContent='Acertos '+hits+'/'+total;}}
+  Q.forEach(function(item,i){
+    var el=document.createElement('div');el.className='q';
+    el.innerHTML='<div class="q-top"><span class="q-id">'+(i+1<10?'0':'')+(i+1)+'</span><div><div class="q-theme">'+item.t+'</div><div class="q-text">'+item.q+'</div></div></div>'+
+      '<div class="q-actions"><button class="q-btn" data-v="C">Certo</button><button class="q-btn" data-v="E">Errado</button><span class="verdict"></span></div>'+
+      '<div class="gab"><span class="lab '+(item.v==='C'?'c':'e')+'">Gabarito: '+(item.v==='C'?'Certo':'Errado')+'</span> · <span class="art">'+item.a+'</span><div style="margin-top:6px">'+item.g+'</div></div>';
+    var btns=el.querySelectorAll('.q-btn');var verdict=el.querySelector('.verdict');
+    function answer(pick){if(el.classList.contains('done'))return;el.classList.add('done');total++;
+      btns.forEach(function(b){if(b.dataset.v===item.v)b.classList.add('correct');if(b.dataset.v===pick&&pick!==item.v)b.classList.add('wrongpick');});
+      if(pick===item.v){hits++;verdict.textContent='✓ Você acertou';verdict.style.color='var(--certo)';}
+      else if(pick){verdict.textContent='✗ Gabarito: '+(item.v==='C'?'Certo':'Errado');verdict.style.color='var(--errado)';}
+      else{verdict.textContent='Gabarito: '+(item.v==='C'?'Certo':'Errado');verdict.style.color='var(--ink-2)';}
+      refresh();}
+    btns.forEach(function(b){b.addEventListener('click',function(){answer(b.dataset.v);});});
+    el._reveal=function(){answer(null);};el._reset=function(){el.classList.remove('done');btns.forEach(function(b){b.classList.remove('correct','wrongpick');});verdict.textContent='';};
+    bank.appendChild(el);
+  });
+  document.getElementById('revealAll').addEventListener('click',function(){[].slice.call(bank.children).forEach(function(el){el._reveal();});});
+  document.getElementById('resetAll').addEventListener('click',function(){total=0;hits=0;[].slice.call(bank.children).forEach(function(el){el._reset();});pill.hidden=true;refresh();});
+  refresh();
+})();
+</script>
+</body></html>
+
+</body></html>

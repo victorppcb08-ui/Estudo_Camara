@@ -1,0 +1,911 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Caderno de Estruturas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F7F6F1;
+    --paper-raised: #FFFFFF;
+    --ink: #1E2530;
+    --ink-soft: #4B5563;
+    --line-blue: #2B5B84;
+    --line-blue-soft: #E4ECF3;
+    --steel: #6B7686;
+    --rule: rgba(30,37,48,0.12);
+    --grid: rgba(43,91,132,0.07);
+    --certo: #2F6F4E;
+    --certo-bg: #E6F2EB;
+    --errado: #A23B2E;
+    --errado-bg: #F7E9E6;
+    --focus: #2B5B84;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper: #12161C;
+      --paper-raised: #181D25;
+      --ink: #E8EAED;
+      --ink-soft: #ABB4C2;
+      --line-blue: #7FB0DB;
+      --line-blue-soft: #1D2C3A;
+      --steel: #8B96A8;
+      --rule: rgba(232,234,237,0.14);
+      --grid: rgba(127,176,219,0.08);
+      --certo: #63C093;
+      --certo-bg: #16261E;
+      --errado: #E2896F;
+      --errado-bg: #2B1C18;
+      --focus: #7FB0DB;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper: #12161C;
+    --paper-raised: #181D25;
+    --ink: #E8EAED;
+    --ink-soft: #ABB4C2;
+    --line-blue: #7FB0DB;
+    --line-blue-soft: #1D2C3A;
+    --steel: #8B96A8;
+    --rule: rgba(232,234,237,0.14);
+    --grid: rgba(127,176,219,0.08);
+    --certo: #63C093;
+    --certo-bg: #16261E;
+    --errado: #E2896F;
+    --errado-bg: #2B1C18;
+    --focus: #7FB0DB;
+  }
+
+  *{ box-sizing: border-box; }
+  body{
+    background: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 28px 28px;
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3{ font-family: "Newsreader", Georgia, serif; text-wrap: balance; margin: 0; }
+  .mono{ font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace; }
+
+  .wrap{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+  /* header */
+  header.hero{
+    padding-block: 8px 28px;
+    border-bottom: 2px solid var(--line-blue);
+    margin-bottom: 28px;
+  }
+  .eyebrow{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--line-blue);
+    margin-bottom: 10px;
+  }
+  h1{
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+  h1 em{ color: var(--line-blue); font-style: italic; }
+  .dek{
+    margin-top: 10px;
+    color: var(--ink-soft);
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 58ch;
+  }
+  .stat-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .stat{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 14px;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    min-width: 92px;
+  }
+  .stat .n{ font-family: "IBM Plex Mono", monospace; font-size: 1.15rem; font-weight: 600; color: var(--line-blue); font-variant-numeric: tabular-nums; }
+  .stat .l{ font-size: 0.68rem; color: var(--steel); text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* toc */
+  nav.toc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+  nav.toc a{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.76rem;
+    color: var(--line-blue);
+    text-decoration: none;
+    border: 1px solid var(--line-blue-soft);
+    background: var(--line-blue-soft);
+    padding: 6px 11px;
+    border-radius: 999px;
+    transition: background 0.15s ease;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible{ background: var(--line-blue); color: var(--paper-raised); }
+  nav.toc a:focus-visible{ outline: 2px solid var(--focus); outline-offset: 2px; }
+
+  /* callout */
+  .callout{
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--line-blue);
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin-bottom: 40px;
+  }
+  .callout h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .callout ul{ margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 8px; }
+  .callout li{ color: var(--ink-soft); font-size: 0.92rem; line-height: 1.55; }
+  .callout li b{ color: var(--ink); font-weight: 600; }
+
+  /* blocks */
+  section.block{ margin-bottom: 48px; scroll-margin-top: 20px; }
+  .block-head{
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .block-num{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85rem;
+    color: var(--line-blue);
+    border: 1px solid var(--line-blue);
+    border-radius: 3px;
+    padding: 1px 7px;
+    flex-shrink: 0;
+  }
+  .block h2{ font-size: 1.4rem; font-weight: 600; color: var(--ink); }
+  .theory{
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 12px 0 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--rule);
+  }
+  .theory b{ color: var(--ink); font-weight: 600; }
+
+  /* item cards */
+  .item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .item:last-child{ border-bottom: none; }
+  .item-num{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    color: var(--steel);
+    font-size: 0.95rem;
+    padding-top: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .item-body{ min-width: 0; }
+  .statement{
+    font-size: 0.96rem;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .verdict-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .pill{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+  .pill.certo{ background: var(--certo-bg); color: var(--certo); }
+  .pill.errado{ background: var(--errado-bg); color: var(--errado); }
+  .trap{
+    font-size: 0.72rem;
+    color: var(--steel);
+    font-style: italic;
+  }
+  .justif{
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .review{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    font-size: 0.72rem;
+    color: var(--steel);
+    cursor: pointer;
+    user-select: none;
+  }
+  .review input{ accent-color: var(--line-blue); width: 14px; height: 14px; cursor: pointer; }
+
+  /* gabarito table */
+  .gabarito-wrap{ overflow-x: auto; }
+  table.gabarito{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    min-width: 420px;
+  }
+  table.gabarito th{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--steel);
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 2px solid var(--line-blue);
+  }
+  table.gabarito td{
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink-soft);
+    vertical-align: middle;
+  }
+  table.gabarito td.num{ font-family: "IBM Plex Mono", monospace; color: var(--ink); font-variant-numeric: tabular-nums; }
+  table.gabarito td.v{ font-family: "IBM Plex Mono", monospace; font-weight: 600; }
+  table.gabarito td.v.c{ color: var(--certo); }
+  table.gabarito td.v.e{ color: var(--errado); }
+
+  .cat{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    color: var(--line-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+  table.confuse{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin-bottom: 8px;
+  }
+  table.confuse th{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--steel);
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 2px solid var(--line-blue);
+  }
+  table.confuse td{
+    padding: 10px;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink-soft);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  table.confuse td b{ color: var(--ink); }
+  .keynum{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin: 14px 0 4px;
+  }
+  .keynum-item{
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    flex-wrap: wrap;
+  }
+  .keynum-item .k{
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--line-blue);
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  .section-lead{
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 12px 0 20px;
+  }
+  .section-lead b{ color: var(--ink); font-weight: 600; }
+
+  .progress-line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    color: var(--steel);
+  }
+  .progress-track{
+    flex: 1;
+    height: 6px;
+    background: var(--line-blue-soft);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .progress-fill{
+    height: 100%;
+    background: var(--line-blue);
+    width: 0%;
+    transition: width 0.25s ease;
+  }
+
+  footer{
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--steel);
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .progress-fill, nav.toc a{ transition: none; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Concurso Câmara dos Deputados · Engenharia Civil · Estilo CEBRASPE</div>
+    <h1>Caderno de <em>Estruturas</em></h1>
+    <p class="dek">Revisão comentada de itens certo/errado sobre tensões e deformações, flexão simples e composta, análise estrutural, concreto armado, protensão e execução — mais um resumo estratégico de confusões clássicas e um simulado inédito de nível avançado, no espírito CEBRASPE, para Analista Legislativo.</p>
+    <div class="stat-row">
+      <div class="stat"><span class="n">33</span><span class="l">itens</span></div>
+      <div class="stat"><span class="n">06</span><span class="l">blocos</span></div>
+      <div class="stat"><span class="n">15</span><span class="l">inéditos</span></div>
+      <div class="stat"><span class="n mono">C/E</span><span class="l">formato</span></div>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Sumário">
+    <a href="#bloco1">01 · Tensões e flexão</a>
+    <a href="#bloco2">02 · Análise estrutural</a>
+    <a href="#bloco3">03 · Concreto e aço</a>
+    <a href="#bloco4">04 · Protensão e pré-moldados</a>
+    <a href="#bloco5">05 · Resumo estratégico</a>
+    <a href="#bloco6">06 · Simulado avançado</a>
+    <a href="#gabarito">Gabarito rápido</a>
+  </nav>
+
+  <div class="callout">
+    <h3>Como a banca costuma armar esses itens</h3>
+    <ul>
+      <li><b>Troca de grandeza:</b> o item define corretamente um conceito, mas substitui "tensão" por "esforço" ou "esforço normal" por "esforço cortante" no meio da frase (itens 85 e 89). Leia devagar cada substantivo técnico.</li>
+      <li><b>Palavra absoluta nem sempre é erro:</b> "sempre", "apenas" e "unicamente" derrubam o item quando contradizem uma exceção real (91, 98) — mas quando fazem parte da própria definição, deixam o item certo (94).</li>
+      <li><b>Definição de A aplicada a B:</b> a frase descreve perfeitamente um conceito, só que atribuído ao conceito vizinho — pré-tração descrita como pós-tração (100), viga Gerber chamada de hiperestática (93).</li>
+      <li><b>Regra prática invertida:</b> o item inverte qual método, qual fase ou qual situação é mais adequada, mantendo o resto do texto tecnicamente correto (90, 95, 102).</li>
+    </ul>
+  </div>
+
+  <div class="progress-line">
+    <span id="progress-label">0 de 18 revisados</span>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+  </div>
+
+  <!-- BLOCO 1 -->
+  <section class="block" id="bloco1">
+    <div class="block-head"><span class="block-num">01</span><h2>Tensões, deformações e flexão</h2></div>
+    <p class="theory">Tensão normal (<b>σ = N/A</b>) atua perpendicular à seção; tensão de cisalhamento (τ) atua no plano dela. Na <b>flexão simples</b> só existe momento fletor — o esforço normal é nulo em toda a seção, e é a <b>tensão</b> de flexão que varia linearmente com a altura, zerando na linha neutra. Na <b>flexão composta</b> soma-se um esforço normal ao momento, o que desloca a linha neutra — cortante não entra nessa definição. O coeficiente de Poisson (ν = −ε<sub>transversal</sub>/ε<sub>longitudinal</sub>) descreve a contração lateral sob tração axial; para materiais isotrópicos convencionais, 0 &lt; ν &lt; 0,5. O estado plano de tensões é uma idealização <b>2D</b> (uma direção principal considerada nula) — não o estado triplo (3D) completo.</p>
+
+    <div class="item">
+      <div class="item-num">85</div>
+      <div class="item-body">
+        <p class="statement">Na flexão composta, ocorre simultaneamente a ação de um momento fletor e de um esforço cortante transversal que altera a posição da linha neutra.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">troca cortante ↔ normal</span></div>
+        <p class="justif">Flexão composta é momento fletor + <b>esforço normal</b>, não cortante. É o esforço normal que desloca a linha neutra em relação ao centroide.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">86</div>
+      <div class="item-body">
+        <p class="statement">O módulo de Poisson expressa a relação entre a deformação transversal e a deformação longitudinal, sendo sempre um número positivo menor que 0,5 para materiais tradicionais.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Definição correta de ν; para materiais convencionais (aço, concreto) o valor fica entre 0 e 0,5, sempre positivo.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">87</div>
+      <div class="item-body">
+        <p class="statement">A tensão normal em uma seção transversal é definida como a razão entre a força normal atuante e a área da seção, e atua perpendicularmente à superfície da seção.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">É a definição clássica σ = N/A, com a tensão atuando perpendicular ao plano da seção.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">88</div>
+      <div class="item-body">
+        <p class="statement">No estado plano de tensões, é considerado o comportamento tridimensional do material, levando-se em conta todas as componentes da tensão em três direções ortogonais.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">2D chamado de 3D</span></div>
+        <p class="justif">Estado plano de tensões é exatamente a simplificação para <b>duas dimensões</b> — uma das direções principais é considerada nula. O estado triplo (3D) é outro conceito.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">89</div>
+      <div class="item-body">
+        <p class="statement">Na flexão simples, o esforço normal varia linearmente ao longo da altura da seção transversal, sendo nulo na linha neutra.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">esforço normal ↔ tensão normal</span></div>
+        <p class="justif">Na flexão simples o <b>esforço normal é zero</b> em toda a seção, por definição. Quem varia linearmente e zera na linha neutra é a <b>tensão</b> normal de flexão.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO 2 -->
+  <section class="block" id="bloco2">
+    <div class="block-head"><span class="block-num">02</span><h2>Análise estrutural: isostatismo e hiperestaticidade</h2></div>
+    <p class="theory">Estrutura <b>isostática</b>: reações e esforços internos saem apenas das equações de equilíbrio (ΣF<sub>x</sub> = ΣF<sub>y</sub> = ΣM = 0). <b>Hiperestática</b>: vínculos excedentes exigem equações de compatibilidade. No <b>método das forças</b>, as incógnitas são os hiperestáticos — remove-se vínculos até obter um sistema principal isostático e impõe-se compatibilidade de deslocamentos; ele compensa quando o <b>grau de hiperestaticidade é baixo</b>. No <b>método dos deslocamentos</b>, as incógnitas são os deslocamentos nodais independentes; ele compensa quando há <b>poucos graus de liberdade</b>, mesmo com muitos vínculos redundantes — o critério oposto ao do método das forças. A <b>viga Gerber</b> introduz rótulas internas para reduzir o grau hiperestático a zero, tornando-a isostática. O momento máximo depende de como as cargas estão dispostas no vão, não tem posição fixa.</p>
+
+    <div class="item">
+      <div class="item-num">90</div>
+      <div class="item-body">
+        <p class="statement">O método dos esforços é mais adequado que o método dos deslocamentos para estruturas com pequeno número de graus de liberdade e muitos vínculos.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">inversão dos métodos</span></div>
+        <p class="justif">É o contrário: poucos graus de liberdade com muitos vínculos redundantes é justamente o cenário em que o <b>método dos deslocamentos</b> tem menos incógnitas e compensa mais.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">91</div>
+      <div class="item-body">
+        <p class="statement">O valor máximo do momento fletor em uma viga em vão ocorre sempre no ponto médio do vão.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">generalização com "sempre"</span></div>
+        <p class="justif">Só é verdade em casos simétricos específicos (ex.: carga uniforme em viga biapoiada). Cargas concentradas fora do centro ou vigas contínuas deslocam o máximo do meio do vão.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">92</div>
+      <div class="item-body">
+        <p class="statement">O método dos esforços baseia-se na formulação da compatibilidade de deslocamentos a partir de um sistema isostático obtido pela remoção de vínculos hiperestáticos.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Descreve corretamente o método das forças: sistema principal isostático + equações de compatibilidade para achar os hiperestáticos.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">93</div>
+      <div class="item-body">
+        <p class="statement">A viga Gerber é um tipo de estrutura hiperestática, uma vez que possui mais vínculos do que o necessário para o equilíbrio.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">Gerber é isostática, não hiperestática</span></div>
+        <p class="justif">A viga Gerber existe para o efeito contrário: as rótulas internas eliminam o excesso de vínculos, tornando o conjunto <b>isostático</b>.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">94</div>
+      <div class="item-body">
+        <p class="statement">Uma estrutura isostática é aquela cujas reações e cujos esforços internos podem ser determinados unicamente pelas equações de equilíbrio da estática.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Definição correta — aqui "unicamente" está certo, pois é exatamente o que caracteriza o isostatismo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO 3 -->
+  <section class="block" id="bloco3">
+    <div class="block-head"><span class="block-num">03</span><h2>Concreto armado: propriedades e aços</h2></div>
+    <p class="theory">A resistência do concreto está fortemente ligada à relação <b>água/cimento</b> (Lei de Abrams): quanto menor a relação a/c, maior a resistência e a durabilidade. As emendas por traspasse (sobreposição de barras) devem <b>evitar</b> as regiões de maior solicitação, sendo deslocadas para não concentrar falha de aderência no ponto mais crítico. O <b>CA-50</b>, laminado a quente, tem patamar de escoamento definido e boa ductilidade — é o aço-padrão de armaduras passivas. O <b>CA-60</b>, trefilado/laminado a frio, ganha resistência à tração mas perde alongamento e tenacidade, sem escoamento definido. A retração do concreto tem parcelas em fases distintas: <b>retração plástica</b> (concreto fresco, por perda de água antes da pega) e <b>retração por secagem/autógena</b> (já no estado endurecido).</p>
+
+    <div class="item">
+      <div class="item-num">95</div>
+      <div class="item-body">
+        <p class="statement">As emendas por sobreposição de barras de aço devem ocorrer preferencialmente nas regiões de maior momento fletor, para garantir a ancoragem por aderência.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">emenda no local errado</span></div>
+        <p class="justif">É o oposto: emendas devem ficar, preferencialmente, em regiões de <b>menor</b> solicitação, longe do momento máximo.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">96</div>
+      <div class="item-body">
+        <p class="statement">A resistência à compressão do concreto é diretamente influenciada pela relação água/cimento, de modo que menores valores dessa relação tendem a aumentar a resistência do material.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Coerente com a Lei de Abrams: menor relação a/c → maior resistência.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">97</div>
+      <div class="item-body">
+        <p class="statement">O aço CA-50 apresenta escoamento definido e é indicado para estruturas de concreto armado por combinar resistência e boa ductilidade.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">CA-50 é laminado a quente, com patamar de escoamento bem definido e ductilidade adequada ao concreto armado.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">98</div>
+      <div class="item-body">
+        <p class="statement">A retração do concreto ocorre apenas na fase plástica, enquanto o material ainda não atingiu o estado endurecido.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">retração não é só na fase plástica</span></div>
+        <p class="justif">Também há retração por secagem e retração autógena, que ocorrem já com o concreto <b>endurecido</b>.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">99</div>
+      <div class="item-body">
+        <p class="statement">O processo de fabricação do aço por laminação a frio resulta em barras com maior resistência à tração, porém com menor alongamento e menor tenacidade.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">O trabalho a frio (ex.: CA-60) eleva a resistência, mas reduz ductilidade e tenacidade em relação ao aço laminado a quente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO 4 -->
+  <section class="block" id="bloco4">
+    <div class="block-head"><span class="block-num">04</span><h2>Protensão e elementos pré-moldados</h2></div>
+    <p class="theory">Na <b>pré-tração</b>, os cabos são tracionados antes da concretagem, ancorados nas cabeceiras da pista, e o concreto é lançado em seguida. Na <b>pós-tração</b>, o concreto é moldado primeiro com bainhas metálicas; os cabos passam por dentro e só são tracionados <b>depois</b> de o concreto atingir resistência suficiente. Em ambos os casos, a finalidade central da protensão é introduzir uma compressão prévia que combate as tensões de tração de serviço, controlando a fissuração. No dimensionamento de pré-moldados, as ações transitórias — transporte, içamento, montagem — costumam gerar esforços (às vezes com inversão de sinal) mais críticos que os da estrutura definitiva, e por isso devem ser sempre verificadas.</p>
+
+    <div class="item">
+      <div class="item-num">100</div>
+      <div class="item-body">
+        <p class="statement">Na protensão pós-tracionada, os cabos são esticados antes da concretagem e o concreto é lançado posteriormente ao tensionamento.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">pré-tração descrita como pós-tração</span></div>
+        <p class="justif">Essa sequência é da <b>pré-tração</b>. Na pós-tração o concreto é lançado primeiro (com bainhas) e os cabos são tracionados depois de endurecido.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">101</div>
+      <div class="item-body">
+        <p class="statement">A principal finalidade da protensão é reduzir ou eliminar as fissuras no concreto, aumentando sua capacidade de suportar esforços de tração.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Resume corretamente o objetivo central da protensão: compressão prévia que neutraliza a tração de serviço e controla a fissuração.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">102</div>
+      <div class="item-body">
+        <p class="statement">O dimensionamento de elementos pré-fabricados deve considerar os esforços da estrutura final montada, desconsiderando ações transitórias como transporte e içamento.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">ações transitórias não podem ser ignoradas</span></div>
+        <p class="justif">Transporte, içamento e montagem devem ser <b>obrigatoriamente</b> verificados — muitas vezes são a fase mais crítica do elemento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO 5 -->
+  <section class="block" id="bloco5">
+    <div class="block-head"><span class="block-num">05</span><h2>Resumo estratégico: confusões clássicas</h2></div>
+    <p class="section-lead">O CEBRASPE raramente inventa um erro conceitual do zero — ele pega uma definição correta e troca <b>um termo por seu vizinho</b>. Decore os pares abaixo pelo contraste, não pela definição isolada.</p>
+
+    <table class="confuse">
+      <thead><tr><th>Par que se confunde</th><th>Regra para não cair</th></tr></thead>
+      <tbody>
+        <tr><td><b>Esforço normal</b> × <b>tensão normal</b></td><td>Esforço é força resultante (N, em kN); tensão é força por área (σ, em MPa). Na flexão simples N = 0 em toda a seção, mas a tensão de flexão existe e varia linearmente.</td></tr>
+        <tr><td><b>Pré-tração</b> × <b>pós-tração</b></td><td>Pré-tração: cabo tracionado <b>antes</b> da concretagem, ancorado na pista. Pós-tração: concreto lançado <b>primeiro</b> (com bainha), cabo tracionado depois de endurecido.</td></tr>
+        <tr><td><b>Isostática</b> × <b>hiperestática</b></td><td>Isostática: equilíbrio resolve tudo. Hiperestática: sobra vínculo, exige compatibilidade de deslocamentos. A viga Gerber é isostática por construção — rótulas eliminam o excesso de vínculos.</td></tr>
+        <tr><td><b>Método das forças</b> × <b>método dos deslocamentos</b></td><td>Forças: incógnitas = hiperestáticos (compensa com grau de hiperestaticidade baixo). Deslocamentos: incógnitas = graus de liberdade (compensa com poucos GDL, mesmo com muitos vínculos).</td></tr>
+        <tr><td><b>E<sub>ci</sub></b> × <b>E<sub>cs</sub></b></td><td>E<sub>ci</sub> é o módulo tangente inicial. E<sub>cs</sub> é o módulo secante, sempre menor ou igual ao E<sub>ci</sub> (E<sub>cs</sub> = α<sub>i</sub>·E<sub>ci</sub>, com α<sub>i</sub> ≤ 1).</td></tr>
+        <tr><td><b>CA-50</b> × <b>CA-60</b></td><td>CA-50: laminado a quente, patamar de escoamento bem definido. CA-60: trefilado/laminado a frio, sem patamar definido, mais resistente e menos dúctil.</td></tr>
+        <tr><td><b>Protensão completa</b> × <b>limitada</b> × <b>parcial</b></td><td>Parcial (nível 1): admite fissuras, com abertura limitada (ELS-W) na combinação frequente. Limitada (nível 2): formação de fissuras (ELS-F) na combinação frequente e descompressão (ELS-D) na quase permanente. Completa (nível 3): ELS-F na combinação rara e ELS-D na frequente.</td></tr>
+        <tr><td><b>Prazo de desforma</b></td><td>A NBR 14931 (edição vigente: 2023) condiciona a retirada à resistência e ao módulo de elasticidade suficientes, conforme valores informados pelo projetista — <b>não</b> a um prazo fixo em dias. Os prazos clássicos da antiga NB-1 (3 dias para faces laterais, 14 para faces inferiores com pontaletes, 21 sem pontaletes) são referência histórica, não texto normativo atual.</td></tr>
+      </tbody>
+    </table>
+
+    <p class="section-lead" style="margin-bottom:6px;"><b>Números que a banca gosta de testar:</b></p>
+    <div class="keynum">
+      <div class="keynum-item"><span class="k">0 &lt; ν &lt; 0,5</span> faixa do coeficiente de Poisson em materiais tradicionais (concreto ≈ 0,2; aço ≈ 0,3)</div>
+      <div class="keynum-item"><span class="k">l<sub>b</sub> = (φ/4)·(f<sub>yd</sub>/f<sub>bd</sub>)</span> comprimento de ancoragem básico</div>
+      <div class="keynum-item"><span class="k">E<sub>cs</sub> = α<sub>i</sub>·E<sub>ci</sub></span> com α<sub>i</sub> = 0,8 + 0,2·f<sub>ck</sub>/80 ≤ 1,0</div>
+      <div class="keynum-item"><span class="k">grau = 3</span> hiperestaticidade interna de um quadro fechado plano de célula única, sem rótulas</div>
+    </div>
+
+    <div class="callout" style="margin-top:22px; margin-bottom:0;">
+      <h3>Estratégia de leitura do item</h3>
+      <ul>
+        <li>Sublinhe (mentalmente) todo substantivo técnico e confira se ele é o certo para a frase — troca de substantivo é a armadilha mais comum nesse tema.</li>
+        <li>Quando houver número, refaça a conta. O CEBRASPE adora um resultado que bate <b>exatamente</b> no limite citado (ex.: "superior a X" quando o valor real é igual a X).</li>
+        <li>Palavra absoluta não é veredito automático: confira se ela reproduz uma definição (correta) ou generaliza uma exceção (errada).</li>
+        <li>Identifique qual norma rege a afirmação (NBR 6118, NBR 14931, NBR 9062...) — itens desatualizados sobre o texto vigente são um dos recursos favoritos da banca.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BLOCO 6 -->
+  <section class="block" id="bloco6">
+    <div class="block-head"><span class="block-num">06</span><h2>Simulado inédito — nível avançado</h2></div>
+    <p class="section-lead">Quinze itens autorais, no padrão CEBRASPE, combinando conceitos, normas e pequenos cálculos — o nível de integração que costuma aparecer nas provas de Analista Legislativo.</p>
+
+    <div class="item">
+      <div class="item-num">103</div>
+      <div class="item-body">
+        <p class="cat">Tensões e flexão</p>
+        <p class="statement">Na flexão composta normal, quando a linha neutra não intercepta a seção transversal da peça, todas as fibras da seção apresentam tensões normais de mesmo sinal, configurando um estado de flexo-compressão (ou flexo-tração) sem inversão de sinal ao longo da altura.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Quando o esforço normal é dominante em relação ao momento, a linha neutra sai da seção e toda a peça fica comprimida (ou tracionada), sem mudança de sinal — é exatamente o caso de seção integralmente comprimida na flexo-compressão.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">104</div>
+      <div class="item-body">
+        <p class="cat">Concreto — módulos de elasticidade</p>
+        <p class="statement">O módulo de elasticidade tangente inicial do concreto (E<sub>ci</sub>) é sempre inferior ao módulo de elasticidade secante (E<sub>cs</sub>), pois este último considera a não linearidade do diagrama tensão-deformação em níveis mais avançados de carregamento.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">E<sub>ci</sub> e E<sub>cs</sub> invertidos</span></div>
+        <p class="justif">É o oposto: E<sub>cs</sub> = α<sub>i</sub>·E<sub>ci</sub>, com α<sub>i</sub> ≤ 1 — logo E<sub>cs</sub> é sempre <b>menor ou igual</b> a E<sub>ci</sub>, nunca maior.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">105</div>
+      <div class="item-body">
+        <p class="cat">Concreto — reologia</p>
+        <p class="statement">A fluência do concreto corresponde ao aumento de deformação ao longo do tempo sob tensão constante, sendo influenciada pela umidade relativa do ambiente, pela idade do concreto no momento do carregamento e pela espessura efetiva da peça.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Descrição correta da fluência e de seus principais fatores de influência, conforme tratado pela NBR 6118.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">106</div>
+      <div class="item-body">
+        <p class="cat">Aço para concreto armado</p>
+        <p class="statement">Barras de aço CA-25 são obtidas por processo de laminação a quente e, assim como o CA-50, apresentam patamar de escoamento bem definido.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">CA-25 e CA-50 são categorias de aço laminado a quente, com patamar de escoamento definido — a diferença está na resistência característica (250 MPa × 500 MPa), não na ductilidade ou no processo de fabricação.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">107</div>
+      <div class="item-body">
+        <p class="cat">Concreto armado — aderência</p>
+        <p class="statement">O comprimento de ancoragem básico de uma barra de aço é diretamente proporcional ao diâmetro da barra e à tensão de escoamento de cálculo do aço, e inversamente proporcional à resistência de aderência entre o aço e o concreto.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Coerente com l<sub>b</sub> = (φ/4)·(f<sub>yd</sub>/f<sub>bd</sub>): cresce com φ e f<sub>yd</sub>, diminui com f<sub>bd</sub>.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">108</div>
+      <div class="item-body">
+        <p class="cat">Análise estrutural</p>
+        <p class="statement">Um pórtico plano fechado (quadro fechado de célula única), sem qualquer rótula interna, apresenta grau de hiperestaticidade interna igual a três, independentemente das condições de vinculação externa (apoios).</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Cortar um anel fechado em qualquer ponto libera três esforços redundantes (N, V, M) nesse corte — resultado clássico, independente de como a estrutura está apoiada externamente.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">109</div>
+      <div class="item-body">
+        <p class="cat">Análise estrutural — viga Gerber</p>
+        <p class="statement">Em uma viga contínua inicialmente hiperestática de grau g, transformada em viga Gerber pela introdução de rótulas internas, o número mínimo de rótulas necessárias para torná-la isostática é igual a g.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Cada rótula bem posicionada introduz uma equação de condição (M = 0), eliminando um grau de hiperestaticidade por vez — por isso o número de rótulas para zerar o grau g é igual a g.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">110</div>
+      <div class="item-body">
+        <p class="cat">Protensão</p>
+        <p class="statement">Na protensão parcial, admite-se a fissuração do concreto sob a combinação frequente de ações, desde que respeitado o limite de abertura de fissuras, ao passo que, na protensão completa, exige-se o estado-limite de descompressão para a combinação frequente e o de formação de fissuras para a combinação rara.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">É a classificação por nível de protensão da NBR 6118: parcial (nível 1) verifica ELS-W na combinação frequente; limitada (nível 2), ELS-F na frequente e ELS-D na quase permanente; completa (nível 3), ELS-F na rara e ELS-D na frequente.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">111</div>
+      <div class="item-body">
+        <p class="cat">Protensão — perdas</p>
+        <p class="statement">As perdas de protensão classificam-se em imediatas — por atrito, acomodação da ancoragem e encurtamento imediato do concreto — e progressivas — por fluência e retração do concreto e relaxação do aço de protensão.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Classificação padrão adotada pela NBR 6118 para as perdas de protensão.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">112</div>
+      <div class="item-body">
+        <p class="cat">Pré-moldados</p>
+        <p class="statement">O dimensionamento das ligações entre elementos pré-moldados deve considerar não apenas a capacidade resistente na situação definitiva, mas também as fases de transporte, montagem e as tolerâncias de execução, que podem gerar solicitações distintas das previstas em projeto.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Coerente com a lógica da NBR 9062: fases transitórias e tolerâncias de execução são verificações obrigatórias, não dispensáveis.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">113</div>
+      <div class="item-body">
+        <p class="cat">Execução — desforma</p>
+        <p class="statement">Segundo a NBR 14931, a retirada das fôrmas e do escoramento de uma estrutura de concreto armado deve obedecer a prazos fixos estabelecidos em tabela normativa, independentemente da resistência à compressão efetivamente alcançada pelo concreto.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">norma vigente é baseada em resistência, não em tabela fixa</span></div>
+        <p class="justif">A NBR 14931 condiciona a retirada de fôrmas e escoramentos à resistência e ao módulo de elasticidade suficientes, conforme valores informados pelo projetista da estrutura. Não há prazo fixo que dispense essa verificação.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">114</div>
+      <div class="item-body">
+        <p class="cat">Execução — desforma</p>
+        <p class="statement">Em uma obra corrente, a retirada da fôrma lateral de um pilar pode ocorrer em prazo sensivelmente menor que a retirada do fundo de uma viga do mesmo pavimento, pois a fôrma lateral do pilar não desempenha função estrutural de suporte de carga durante a cura, ao contrário do fundo da viga.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Faces laterais apenas moldam a peça; faces inferiores de vigas sustentam peso próprio e sobrecarga de construção, exigindo resistência bem mais avançada antes da retirada.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">115</div>
+      <div class="item-body">
+        <p class="cat">Tensões — cálculo</p>
+        <p class="statement">Situação hipotética: um pilar de seção transversal quadrada com 30 cm de lado está submetido a uma força normal de compressão centrada de 450 kN. Assertiva: nessa situação, a tensão normal de compressão atuante na seção transversal do pilar é superior a 5 MPa.</p>
+        <div class="verdict-row"><span class="pill errado">ERRADO</span><span class="trap">o valor bate exatamente no limite citado</span></div>
+        <p class="justif">A = 0,30 × 0,30 = 0,09 m². σ = 450.000 N / 0,09 m² = 5.000.000 Pa = 5 MPa <b>exatos</b> — não superior a 5 MPa.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">116</div>
+      <div class="item-body">
+        <p class="cat">Poisson — cálculo</p>
+        <p class="statement">Situação hipotética: um corpo de prova cilíndrico de concreto, ensaiado à compressão simples, registra deformação específica longitudinal de 0,8‰ e deformação específica transversal de 0,16‰. Assertiva: o coeficiente de Poisson do material, nessas condições, é igual a 0,2.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">ν = ε<sub>transversal</sub> / ε<sub>longitudinal</sub> = 0,16 / 0,8 = 0,2 — compatível com a faixa típica do concreto.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">117</div>
+      <div class="item-body">
+        <p class="cat">Estado plano de tensões</p>
+        <p class="statement">No estado plano de tensões, as tensões principais podem ser obtidas por meio do círculo de Mohr, sendo que, nos planos onde atuam as tensões principais, as tensões de cisalhamento são nulas.</p>
+        <div class="verdict-row"><span class="pill certo">CERTO</span></div>
+        <p class="justif">Definição correta: planos principais são, por definição, os planos de cisalhamento nulo, localizáveis graficamente pelo círculo de Mohr.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GABARITO -->
+  <section class="block" id="gabarito">
+    <div class="block-head"><span class="block-num">✓</span><h2>Gabarito rápido</h2></div>
+    <p class="theory" style="border-bottom:none; padding-bottom:0;">Marque o item conforme revisa — o progresso fica salvo neste navegador.</p>
+    <div class="gabarito-wrap">
+      <table class="gabarito">
+        <thead><tr><th>Item</th><th>Tema</th><th>Julgamento</th><th>Revisado</th></tr></thead>
+        <tbody id="gabarito-body">
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    Itens 85–102: revisão comentada de questão aplicada. Itens 103–117: simulado autoral, no padrão CEBRASPE, elaborado para treino de nível avançado, revisado em 3/10/2026 (item 110 e duas linhas do quadro de confusões) — não são itens oficiais de nenhuma prova aplicada, mas seguem o estilo e a profundidade típicos de concursos de Analista Legislativo (Engenharia) da Câmara dos Deputados. Revise a teoria e o quadro de confusões clássicas antes de repetir os itens de memória.
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var data = [
+    [85,"Flexão composta","errado"],
+    [86,"Poisson","certo"],
+    [87,"Tensão normal","certo"],
+    [88,"Estado plano de tensões","errado"],
+    [89,"Flexão simples","errado"],
+    [90,"Método dos esforços","errado"],
+    [91,"Momento máximo","errado"],
+    [92,"Método das forças","certo"],
+    [93,"Viga Gerber","errado"],
+    [94,"Isostatismo","certo"],
+    [95,"Emendas de barras","errado"],
+    [96,"Relação água/cimento","certo"],
+    [97,"Aço CA-50","certo"],
+    [98,"Retração do concreto","errado"],
+    [99,"Laminação a frio","certo"],
+    [100,"Pós-tração","errado"],
+    [101,"Finalidade da protensão","certo"],
+    [102,"Pré-moldados","errado"],
+    [103,"Flexo-compressão","certo"],
+    [104,"E_ci × E_cs","errado"],
+    [105,"Fluência do concreto","certo"],
+    [106,"Aço CA-25","certo"],
+    [107,"Comprimento de ancoragem","certo"],
+    [108,"Quadro fechado","certo"],
+    [109,"Rótulas na viga Gerber","certo"],
+    [110,"Protensão parcial","certo"],
+    [111,"Perdas de protensão","certo"],
+    [112,"Ligações em pré-moldados","certo"],
+    [113,"Desforma — tabela fixa","errado"],
+    [114,"Desforma — pilar × viga","certo"],
+    [115,"Tensão normal (cálculo)","errado"],
+    [116,"Poisson (cálculo)","certo"],
+    [117,"Círculo de Mohr","certo"]
+  ];
+
+  var body = document.getElementById("gabarito-body");
+  var frag = document.createDocumentFragment();
+  data.forEach(function(row){
+    var tr = document.createElement("tr");
+    var vClass = row[2] === "certo" ? "c" : "e";
+    var vLabel = row[2] === "certo" ? "CERTO" : "ERRADO";
+    tr.innerHTML =
+      '<td class="num">' + row[0] + '</td>' +
+      '<td>' + row[1] + '</td>' +
+      '<td class="v ' + vClass + '">' + vLabel + '</td>' +
+      '<td><input type="checkbox" class="review-check" data-item="' + row[0] + '" id="chk-' + row[0] + '" aria-label="Marcar item ' + row[0] + ' como revisado"></td>';
+    frag.appendChild(tr);
+  });
+  body.appendChild(frag);
+
+  var STORAGE_KEY = "caderno-estruturas-revisados";
+  function loadState(){
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : {};
+    }catch(e){ return {}; }
+  }
+  function saveState(state){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }catch(e){}
+  }
+
+  var state = loadState();
+  var checks = document.querySelectorAll(".review-check");
+  var total = checks.length;
+
+  function updateProgress(){
+    var count = 0;
+    checks.forEach(function(c){ if(c.checked) count++; });
+    var pct = total ? Math.round((count/total)*100) : 0;
+    document.getElementById("progress-label").textContent = count + " de " + total + " revisados";
+    document.getElementById("progress-fill").style.width = pct + "%";
+  }
+
+  checks.forEach(function(c){
+    var item = c.getAttribute("data-item");
+    if(state[item]) c.checked = true;
+    c.addEventListener("change", function(){
+      state[item] = c.checked;
+      saveState(state);
+      updateProgress();
+    });
+  });
+
+  updateProgress();
+})();
+</script>
+
+</body></html>

@@ -1,0 +1,853 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>NBR 6118/2023 × Edital Câmara — Concreto Armado, Aço e Protendido (Cebraspe)</title>
+<style>
+  :root{
+    --bg:#EEF0F2; --surface:#FFFFFF; --surface-2:#F6F7F9;
+    --ink:#1B2127; --ink-2:#4A5560; --line:#D8DCE1;
+    --primary:#235A8C;
+    --primary-soft:#E7EEF5; --primary-line:#C4D6E6;
+    --certo:#1F7A4D; --certo-soft:#E5F2EA;
+    --errado:#BC3B3B; --errado-soft:#F7E7E7;
+    --alerta:#9A6410; --alerta-soft:#FBF0DA; --alerta-line:#E7CE97;
+    --shadow:0 1px 2px rgba(20,30,40,.06),0 8px 24px rgba(20,30,40,.05);
+    --font-display:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    --font-body:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --font-mono:ui-monospace,"SF Mono","Cascadia Code","JetBrains Mono",Menlo,Consolas,monospace;
+    --maxw:1180px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#12161A; --surface:#1A2027; --surface-2:#222A32;
+      --ink:#E7ECF1; --ink-2:#A2AEBA; --line:#2C353F;
+      --primary:#6FA8DC; --primary-soft:#1C2A39; --primary-line:#2F4A63;
+      --certo:#57B78A; --certo-soft:#16271F;
+      --errado:#E37A7A; --errado-soft:#2A1B1B;
+      --alerta:#DCAA4E; --alerta-soft:#2A2414; --alerta-line:#4A3E1F;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#EEF0F2; --surface:#FFFFFF; --surface-2:#F6F7F9;
+    --ink:#1B2127; --ink-2:#4A5560; --line:#D8DCE1;
+    --primary:#235A8C; --primary-soft:#E7EEF5; --primary-line:#C4D6E6;
+    --certo:#1F7A4D; --certo-soft:#E5F2EA;
+    --errado:#BC3B3B; --errado-soft:#F7E7E7;
+    --alerta:#9A6410; --alerta-soft:#FBF0DA; --alerta-line:#E7CE97;
+    --shadow:0 1px 2px rgba(20,30,40,.06),0 8px 24px rgba(20,30,40,.05);
+  }
+  :root[data-theme="dark"]{
+    --bg:#12161A; --surface:#1A2027; --surface-2:#222A32;
+    --ink:#E7ECF1; --ink-2:#A2AEBA; --line:#2C353F;
+    --primary:#6FA8DC; --primary-soft:#1C2A39; --primary-line:#2F4A63;
+    --certo:#57B78A; --certo-soft:#16271F;
+    --errado:#E37A7A; --errado-soft:#2A1B1B;
+    --alerta:#DCAA4E; --alerta-soft:#2A2414; --alerta-line:#4A3E1F;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  body{margin:0}
+  .page{
+    background:var(--bg); color:var(--ink);
+    font-family:var(--font-body); font-size:17px; line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4,.eyebrow,.chip,th,.q-btn,.toc,.badge,.numtable,.meta,.kbd{font-family:var(--font-display)}
+  code,.mono,.art{font-family:var(--font-mono)}
+  a{color:var(--primary);text-underline-offset:3px}
+
+  /* ---------- Top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb,var(--surface) 88%,transparent);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-in{max-width:var(--maxw);margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:14px}
+  .brand{font-family:var(--font-display);font-weight:700;font-size:15px;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+  .brand .mark{width:26px;height:26px;border-radius:6px;background:var(--primary);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:800;flex:none}
+  .brand small{color:var(--ink-2);font-weight:500}
+  .topbar .spacer{flex:1}
+  .theme-btn{font-family:var(--font-display);font-size:12.5px;font-weight:600;color:var(--ink-2);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+  .theme-btn:hover{color:var(--ink)}
+  .score-pill{font-family:var(--font-mono);font-size:12.5px;font-weight:600;color:var(--primary);background:var(--primary-soft);border:1px solid var(--primary-line);border-radius:999px;padding:6px 12px;white-space:nowrap}
+
+  /* ---------- Hero ---------- */
+  .hero{max-width:var(--maxw);margin:0 auto;padding:46px 22px 26px}
+  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--primary)}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.06;letter-spacing:-.022em;margin:.35em 0 .3em;text-wrap:balance;font-weight:800}
+  .lede{font-size:19px;color:var(--ink-2);max-width:65ch;margin:.2em 0 0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .chip{font-size:12.5px;font-weight:600;color:var(--ink-2);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 11px;display:inline-flex;gap:7px;align-items:center}
+  .chip b{color:var(--ink);font-weight:700}
+  .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--primary)}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 16px;box-shadow:var(--shadow)}
+  .stat .n{font-family:var(--font-display);font-size:30px;font-weight:800;letter-spacing:-.02em;color:var(--primary);font-variant-numeric:tabular-nums;line-height:1}
+  .stat .l{font-family:var(--font-display);font-size:12.5px;color:var(--ink-2);margin-top:7px;font-weight:600}
+  @media (max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+  /* ---------- Layout w/ TOC ---------- */
+  .shell{max-width:var(--maxw);margin:0 auto;padding:14px 22px 90px;display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
+  @media (max-width:940px){.shell{grid-template-columns:1fr;gap:0}}
+  .toc{position:sticky;top:64px;align-self:start;font-family:var(--font-display);font-size:13.5px;max-height:calc(100vh - 80px);overflow:auto;padding-right:6px}
+  @media (max-width:940px){.toc{position:static;max-height:none;margin:8px 0 20px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--surface)}}
+  .toc .tt{text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--ink-2);font-weight:700;margin:16px 0 8px}
+  .toc a{display:block;color:var(--ink-2);text-decoration:none;padding:5px 10px;border-radius:7px;border-left:2px solid transparent;line-height:1.3}
+  .toc a:hover{color:var(--ink);background:var(--surface-2)}
+  .toc a.active{color:var(--primary);border-left-color:var(--primary);background:var(--primary-soft);font-weight:600}
+  .toc a small{display:block;color:var(--ink-2);font-weight:400;font-size:11px}
+
+  main{min-width:0}
+  section{scroll-margin-top:72px;margin-bottom:12px}
+  section.block{background:transparent;padding-top:26px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--line);padding-bottom:12px;margin:34px 0 20px}
+  .sec-num{font-family:var(--font-mono);font-size:15px;font-weight:700;color:var(--primary);background:var(--primary-soft);border:1px solid var(--primary-line);border-radius:7px;padding:3px 9px;flex:none}
+  h2{font-size:clamp(22px,3.4vw,28px);letter-spacing:-.02em;margin:0;font-weight:800;text-wrap:balance}
+  h3{font-size:19px;letter-spacing:-.01em;margin:30px 0 6px;font-weight:700}
+  h4{font-size:15px;margin:20px 0 4px;font-weight:700;color:var(--ink)}
+  p{margin:.55em 0}
+  main ul{margin:.5em 0;padding-left:1.25em}
+  main li{margin:.3em 0}
+  strong{font-weight:700}
+  .art{font-size:.86em;color:var(--primary);font-weight:600;white-space:nowrap}
+
+  /* ---------- Callouts ---------- */
+  .call{border-radius:12px;padding:15px 17px;margin:18px 0;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+  .call .h{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.03em;text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+  .call .h .tag{width:20px;height:20px;border-radius:5px;display:grid;place-items:center;font-size:12px;flex:none;color:#fff;font-family:var(--font-display);font-weight:800}
+  .call p{margin:.35em 0}
+  .call.norma{background:var(--primary-soft);border-color:var(--primary-line)}
+  .call.norma .h{color:var(--primary)} .call.norma .tag{background:var(--primary)}
+  .call.trap{background:var(--alerta-soft);border-color:var(--alerta-line)}
+  .call.trap .h{color:var(--alerta)} .call.trap .tag{background:var(--alerta)}
+  .call.brain{background:var(--surface-2);border-color:var(--line)}
+  .call.brain .h{color:var(--ink)} .call.brain .tag{background:var(--ink-2)}
+
+  /* ---------- Tables ---------- */
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0;box-shadow:var(--shadow);background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+  .numtable td:not(:first-child),.numtable th:not(:first-child){font-family:var(--font-mono);font-variant-numeric:tabular-nums;text-align:center}
+  th{font-family:var(--font-display);text-align:left;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);font-weight:700;padding:11px 14px;background:var(--surface-2);border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top;font-family:var(--font-body)}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--surface-2)}
+  td:first-child{font-weight:600;font-family:var(--font-display);font-size:13.5px}
+  .cap{font-family:var(--font-display);font-size:12px;color:var(--ink-2);margin:-8px 0 18px;padding-left:2px}
+
+  /* map table edital x norma */
+  .maptbl td:first-child{font-family:var(--font-mono);color:var(--primary);font-weight:700;white-space:nowrap;font-size:13px}
+
+  /* ---------- Question bank ---------- */
+  .q{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;margin:14px 0;box-shadow:var(--shadow)}
+  .q-top{display:flex;gap:12px;align-items:flex-start}
+  .q-id{font-family:var(--font-mono);font-size:12.5px;font-weight:700;color:#fff;background:var(--ink-2);border-radius:7px;padding:3px 8px;flex:none;margin-top:2px}
+  .q-theme{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--primary);margin-bottom:2px}
+  .q-text{font-size:16.5px;line-height:1.55}
+  .q-actions{display:flex;gap:9px;margin-top:14px;flex-wrap:wrap;align-items:center}
+  .q-btn{font-family:var(--font-display);font-weight:700;font-size:14px;border-radius:9px;padding:8px 20px;cursor:pointer;border:1.5px solid var(--line);background:var(--surface-2);color:var(--ink);min-width:56px;transition:transform .05s ease}
+  .q-btn:hover{border-color:var(--ink-2)}
+  .q-btn:active{transform:translateY(1px)}
+  .q-btn:focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+  .q-btn[data-v="C"]:hover{border-color:var(--certo);color:var(--certo)}
+  .q-btn[data-v="E"]:hover{border-color:var(--errado);color:var(--errado)}
+  .q.done .q-btn{cursor:default;opacity:.55}
+  .q.done .q-btn.correct{opacity:1;background:var(--certo-soft);border-color:var(--certo);color:var(--certo)}
+  .q.done .q-btn.wrongpick{opacity:1;background:var(--errado-soft);border-color:var(--errado);color:var(--errado)}
+  .verdict{font-family:var(--font-display);font-size:13px;font-weight:700;margin-left:4px}
+  .gab{display:none;margin-top:14px;padding:14px 15px;border-radius:11px;border:1px solid var(--line);background:var(--surface-2);font-size:15px;line-height:1.55}
+  .q.done .gab{display:block}
+  .gab .lab{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;display:inline-block;padding:2px 8px;border-radius:6px;margin-bottom:7px}
+  .gab .lab.c{background:var(--certo-soft);color:var(--certo);border:1px solid var(--certo)}
+  .gab .lab.e{background:var(--errado-soft);color:var(--errado);border:1px solid var(--errado)}
+  .qbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:6px 0 8px;box-shadow:var(--shadow)}
+  .qbar .lft{font-family:var(--font-display);font-size:14px;font-weight:600;color:var(--ink-2)}
+  .qbar .lft b{color:var(--primary);font-family:var(--font-mono)}
+  .qbar button{font-family:var(--font-display);font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);border-radius:8px;padding:7px 13px;cursor:pointer}
+  .qbar button:hover{color:var(--ink);border-color:var(--ink-2)}
+
+  /* badges / small */
+  .badge{display:inline-block;font-family:var(--font-display);font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:.03em}
+  .b-ce{background:var(--certo-soft);color:var(--certo);border:1px solid var(--certo)}
+  .b-er{background:var(--errado-soft);color:var(--errado);border:1px solid var(--errado)}
+  .kbd{font-family:var(--font-mono);font-size:.8em;background:var(--surface-2);border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 6px;color:var(--ink-2)}
+  .foot{max-width:var(--maxw);margin:0 auto;padding:30px 22px 60px;color:var(--ink-2);font-family:var(--font-display);font-size:13px;border-top:1px solid var(--line)}
+  hr.soft{border:none;border-top:1px solid var(--line);margin:26px 0}
+  .lead-in{font-size:18px;color:var(--ink-2);border-left:3px solid var(--primary);padding-left:16px;margin:8px 0 20px}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:720px){.twocol{grid-template-columns:1fr}}
+  .mini{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+  .mini h4{margin-top:2px}
+</style>
+
+<div class="page">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><span class="mark">6118</span><span>Guia de Prova <small>· Câmara dos Deputados</small></span></div>
+    <div class="spacer"></div>
+    <span class="score-pill" id="scorePill" hidden>Acertos 0/0</span>
+    <button class="theme-btn" id="themeBtn" aria-label="Alternar tema">◐ Tema</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="eyebrow">NBR 6118/2023 · concatenada ao edital · leitura da banca Cebraspe</div>
+  <h1>Concreto armado, aço e protendido para a prova de Analista — Engenharia Civil</h1>
+  <p class="lede">Resumo estruturado da norma alinhado ponto a ponto ao item&nbsp;1 do edital, os números que a banca cobra, a lógica de pensamento da Cebraspe mapeada para <b>2026</b> e um banco de questões inéditas C/E com autocorreção.</p>
+  <div class="chips">
+    <span class="chip"><span class="dot"></span><b>Edital</b> 1 Projetos (1.1 a 1.2.3)</span>
+    <span class="chip"><span class="dot"></span><b>Norma</b> ABNT NBR 6118:2023</span>
+    <span class="chip"><span class="dot"></span><b>Banca</b> Cebraspe · Certo/Errado</span>
+    <span class="chip"><span class="dot"></span><b>Base</b> prova CAMDEP · itens 101–180</span>
+    <span class="chip"><span class="dot"></span><b>Extra</b> Concreto protendido + itens 86–88</span>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="n">7</div><div class="l">tópicos do edital cobertos</div></div>
+    <div class="stat"><div class="n">44</div><div class="l">questões C/E com gabarito</div></div>
+    <div class="stat"><div class="n">7</div><div class="l">padrões de pegadinha mapeados</div></div>
+    <div class="stat"><div class="n">40+</div><div class="l">números de norma na tabela‑síntese</div></div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="toc" aria-label="Índice">
+    <div class="tt">Estratégia</div>
+    <a href="#banca">A mente da banca · 2026</a>
+    <a href="#mapa">Mapa Edital × NBR</a>
+    <div class="tt">Resumo da norma</div>
+    <a href="#fund">1.1 · Projetos de fundações</a>
+    <a href="#conc">1.2 · Concreto armado e aço</a>
+    <a href="#analise">1.2.1 · Isostática × hiperestática</a>
+    <a href="#dim">1.2.2 · Pilares, vigas e lajes</a>
+    <a href="#formas">1.2.3 · Projetos de fôrmas</a>
+    <a href="#protensao">★ Concreto protendido<small>aço, pré/pós, cordoalhas</small></a>
+    <div class="tt">Consulta rápida</div>
+    <a href="#numeros">Os números que caem</a>
+    <div class="tt">Treino</div>
+    <a href="#questoes">Banco de questões C/E</a>
+    <a href="#vespera">Checklist da véspera</a>
+  </nav>
+
+  <main>
+
+  <!-- ============ BANCA ============ -->
+  <section id="banca" class="block">
+    <div class="sec-head"><span class="sec-num">01</span><h2>A mente da banca — como a Cebraspe pensa em 2026</h2></div>
+    <p class="lead-in">Na prova analisada, dos 80 itens objetivos (101–180), a Cebraspe não pediu quase nenhuma dedução longa: pediu <b>julgamento de afirmações</b>. Quem entende <em>como</em> ela transforma um texto verdadeiro em item ERRADO ganha mais pontos do que quem apenas decora fórmula. Abaixo, os sete moldes que se repetem — e que voltarão em 2026.</p>
+
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>O jogo é Certo/Errado, não múltipla escolha</div>
+      <p>Cada item vale por si e o erro pode anular o acerto (correção com desconto). Consequência prática: <b>na dúvida técnica real, deixar em branco costuma valer mais que chutar</b>. Item que “quase está certo” quase sempre foi tornado errado por <em>uma</em> palavra ou <em>um</em> número.</p>
+    </div>
+
+    <h3>Os 7 moldes de pegadinha (com o item real que os revela)</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Molde da banca</th><th>Como aparece</th><th>Item‑exemplo da prova</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Troca de um número</td><td>Valor plausível, porém fora da norma (6% no lugar de 8%; 20 cm no lugar de 18 cm)</td><td><span class="badge b-er">113</span> “6% da seção” · <span class="badge b-er">116</span> “8 mm e 20 cm”</td></tr>
+          <tr><td>2</td><td>Inversão de definição</td><td>Duas definições verdadeiras com os rótulos trocados</td><td><span class="badge b-er">112</span> armado↔protendido (ativa↔passiva)</td></tr>
+          <tr><td>3</td><td>Falso absoluto</td><td>Insere “somente”, “apenas”, “sempre”, “dispensável”, “necessariamente”</td><td><span class="badge b-er">102</span> ensaios “dispensáveis” · <span class="badge b-er">124</span> PEX “somente” água quente</td></tr>
+          <tr><td>4</td><td>Classificação errada</td><td>Move o elemento para a categoria vizinha</td><td><span class="badge b-er">105</span> radier como fundação “profunda”</td></tr>
+          <tr><td>5</td><td>Troca de causa/agente</td><td>Mecanismo real, agente errado (ou sinal invertido)</td><td><span class="badge b-er">164</span> “nitrato” (é sulfato) · <span class="badge b-er">163</span> carbonatação “aumenta” o pH (reduz)</td></tr>
+          <tr><td>6</td><td>Conta rápida disfarçada</td><td>Exige converter área de aço ↔ bitola/espaçamento de cabeça</td><td><span class="badge b-ce">114</span> estribo Ø5,0 c/18 · <span class="badge b-ce">117</span> Ø6,3 e Ø5,0 c/15</td></tr>
+          <tr><td>7</td><td>Meia‑verdade suprimida</td><td>Frase certa à qual falta uma condição essencial</td><td><span class="badge b-er">103</span> “despreza o atrito lateral” · <span class="badge b-er">177</span> “desnecessário travamento”</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Prognóstico 2026 — para onde a banca olha</div>
+      <p>A revisão de <b>2023</b> consolidou a NBR 6118:2014 + Emenda 1. Tende a virar item novo justamente o que <em>mudou de status</em> ou o que é “número redondo” fácil de adulterar:</p>
+      <ul>
+        <li><b>Classes de resistência até C90</b> (Grupo I: C20–C50; Grupo II: C55–C90) — a banca adora perguntar “o concreto estrutural vai só até C50”. <span class="badge b-er">Errado</span></li>
+        <li><b>Cobrimento × Classe de Agressividade Ambiental (CAA I–IV)</b> — tabela quase certa de cair; troca de um número.</li>
+        <li><b>Taxas de armadura</b> de pilar (0,4% mín. / 8% máx.) e de viga (0,15% mín. / 4% máx.) — molde 1.</li>
+        <li><b>Isostática × hiperestática</b>: efeito de recalque/temperatura — molde 7 (condição suprimida).</li>
+        <li><b>Espessuras e espaçamentos de laje</b> (7/8/10 cm; ø≤h/8; s≤2h≤20 cm) — molde 1.</li>
+        <li><b>ELU × ELS</b>, fluência e retração — conceituais, historicamente CERTOS quando bem escritos (não “corrija demais”).</li>
+        <li><b>Concreto protendido</b> — armadura ativa × passiva, ancoragem ativa × passiva, pré‑tração × pós‑tração, protensão parcial × completa, cordoalha aderente × engraxada. Inversão de definição praticamente garantida (capítulo próprio abaixo).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ MAPA ============ -->
+  <section id="mapa" class="block">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Mapa Edital × NBR 6118</h2></div>
+    <p>Onde cada linha do item 1 do edital “mora” dentro da norma — e o gancho que a banca costuma usar.</p>
+    <div class="tbl-wrap">
+      <table class="maptbl">
+        <thead><tr><th>Item do edital</th><th>Seções da NBR 6118</th><th>Gancho típico da Cebraspe</th></tr></thead>
+        <tbody>
+          <tr><td>1.1 Fundações</td><td>Seção 22 (sapatas, blocos, tubulões como <em>elementos estruturais</em>); durabilidade §6–7. Geotecnia é NBR 6122; SPT é NBR 6484.</td><td>Classificar superficial × profunda; ponta × atrito; agente agressivo (sulfato).</td></tr>
+          <tr><td>1.2 Concreto armado e aço</td><td>§5 objetivos; §6 diretrizes de durabilidade; §7 CAA, cobrimento, qualidade; §8 propriedades dos materiais; §10 ELU/ELS.</td><td>Definições ELU/ELS, fluência/retração, armadura ativa × passiva.</td></tr>
+          <tr><td>1.2.1 Isostática × hiperestática</td><td>§14 Análise estrutural (tipos: linear, linear c/ redistribuição, plástica, não linear).</td><td>Recalque/temperatura geram esforço só no hiperestático; redistribuição limitada por x/d.</td></tr>
+          <tr><td>1.2.2 Pilares</td><td>§18.4 detalhamento; §17 dimensionamento; §15 instabilidade/esbeltez.</td><td>Dim. mínima 19 cm; As 0,4%–8%; Ø≥10 mm; estribo.</td></tr>
+          <tr><td>1.2.2 Vigas</td><td>§17 (flexão/cisalhamento); §18.3 detalhamento.</td><td>ρmín 0,15%; máx 4%; estribo Ø≥5 e ≤bw/10; espaçamento.</td></tr>
+          <tr><td>1.2.2 Lajes</td><td>§13.2.4 espessuras; §19 dimensionamento; §20 detalhamento.</td><td>7/8/10 cm; ø≤h/8; s≤2h≤20 cm; armadura secundária.</td></tr>
+          <tr><td>1.2.3 Fôrmas</td><td>NBR 6118 §7.2.1/§14 (imperfeições, contraflecha); execução NBR 14931; projeto NBR 15696.</td><td>Pressão do concreto fresco; retirada de escoramento por resistência.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 1.1 FUNDAÇÕES ============ -->
+  <section id="fund" class="block">
+    <div class="sec-head"><span class="sec-num">1.1</span><h2>Projetos de fundações</h2></div>
+    <p>A NBR 6118 trata a fundação como <b>elemento estrutural</b> (Seção 22): sapatas, blocos sobre estacas, tubulões. O comportamento geotécnico (capacidade de carga, recalque, SPT) é das normas <span class="art">NBR 6122</span> e <span class="art">NBR 6484</span>, mas cai na mesma prova.</p>
+
+    <h3>Classificação — a base de tudo</h3>
+    <ul>
+      <li><b>Superficiais (rasas / diretas):</b> sapata isolada, sapata corrida, sapata associada, <b>radier</b>, bloco. Transmitem carga predominantemente pela <em>base</em>.</li>
+      <li><b>Profundas:</b> <b>estacas</b> e <b>tubulões</b> (e caixões). Transmitem carga pela <em>ponta</em>, pelo <em>atrito lateral</em> ou por ambos — a uma profundidade &gt; 3&nbsp;m e/ou &gt; 2× a menor dimensão em planta.</li>
+    </ul>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Pegadinha clássica (itens 103, 105)</div>
+      <p><b>Radier é fundação superficial</b>, nunca profunda (item 105 <span class="badge b-er">Errado</span>). E a capacidade de carga de estaca <b>não despreza o atrito lateral</b>: <code>Q<sub>rup</sub> = Q<sub>ponta</sub> + Q<sub>lateral</sub></code> (item 103 <span class="badge b-er">Errado</span>).</p>
+    </div>
+
+    <h3>Blocos e sapatas como elemento estrutural <span class="art">§22</span></h3>
+    <ul>
+      <li><b>Sapata rígida × flexível:</b> rígida quando <code>h ≥ (a − a<sub>p</sub>)/3</code> — trabalha por bielas comprimidas; flexível quando mais esbelta — verifica‑se flexão, cisalhamento e punção.</li>
+      <li><b>Bloco sobre estacas rígido</b> (h grande): método das bielas e tirantes; não se verifica cisalhamento como em viga. <b>Flexível</b>: comporta‑se como laje/viga.</li>
+      <li><b>Punção</b> (§19.5): verificação obrigatória em radiers, sapatas e blocos carregados por pilar — superfície de controle a <code>2d</code> da face.</li>
+    </ul>
+
+    <h3>Sondagem e agressividade</h3>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Direto da norma / normas correlatas</div>
+      <p><b>SPT (NBR 6484):</b> fornece o índice de resistência à penetração <b>N</b>, identifica o tipo de solo atravessado e localiza o(s) nível(is) d’água (item 101 <span class="badge b-ce">Certo</span>).</p>
+      <p><b>Agente agressivo em fundações:</b> o principal é o <b>sulfato</b> (ataque à pasta de cimento, etringita expansiva) — não o nitrato (item 164 <span class="badge b-er">Errado</span>). Em CAA IV recomenda‑se cimento resistente a sulfatos.</p>
+    </div>
+  </section>
+
+  <!-- ============ 1.2 CONCRETO ============ -->
+  <section id="conc" class="block">
+    <div class="sec-head"><span class="sec-num">1.2</span><h2>Estruturas de concreto armado e de aço — fundamentos</h2></div>
+
+    <h3>Concreto armado × protendido <span class="art">§3</span></h3>
+    <p>Distinção que a banca inverte de propósito (item 112):</p>
+    <div class="twocol">
+      <div class="mini"><h4>Concreto armado</h4><p>Concreto simples + <b>armadura passiva</b> — só reage quando a peça se deforma e tende a fissurar. O aço “espera” a solicitação.</p></div>
+      <div class="mini"><h4>Concreto protendido</h4><p>Concreto simples + <b>armadura ativa</b> — pré‑tracionada/pós‑tracionada, aplica tensão prévia que comprime o concreto <em>antes</em> das cargas.</p></div>
+    </div>
+
+    <h3>Estados‑limite <span class="art">§3.2 / §10</span> — conceito que costuma vir CERTO</h3>
+    <ul>
+      <li><b>ELU — Estado‑Limite Último:</b> ligado ao <em>colapso</em> ou a qualquer forma de ruína (perda de equilíbrio, esgotamento da capacidade resistente, instabilidade, fadiga). Item 108 <span class="badge b-ce">Certo</span>.</li>
+      <li><b>ELS — Estados‑Limite de Serviço:</b> durabilidade, aparência, conforto e boa utilização — fissuração (ELS‑W), deformação/flechas (ELS‑DEF), descompressão, vibração.</li>
+    </ul>
+
+    <h3>Deformações ao longo do tempo</h3>
+    <div class="twocol">
+      <div class="mini"><h4>Fluência</h4><p>Deformação <b>lenta sob carga constante</b>, ao longo do tempo (item 109 <span class="badge b-ce">Certo</span>). Depende de umidade, idade de carregamento e espessura fictícia.</p></div>
+      <div class="mini"><h4>Retração</h4><p>Variação <b>espontânea de volume</b> por perda de água/forças capilares, <em>independente de carga</em> (item 111 <span class="badge b-ce">Certo</span>).</p></div>
+    </div>
+
+    <h3>Durabilidade: CAA, cobrimento e qualidade do concreto <span class="art">§6–7</span></h3>
+    <p>Núcleo de durabilidade — e uma das tabelas mais cobradas (ver <a href="#numeros">Os números que caem</a>). A CAA (I a IV) governa <b>cobrimento</b>, <b>f<sub>ck</sub> mínimo</b> e <b>relação a/c máxima</b>.</p>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Onde a banca ataca</div>
+      <p>Nomes das classes (fraca/moderada/forte/muito forte) costumam vir <b>corretos</b> (item 115 <span class="badge b-ce">Certo</span>) — o erro entra no <b>número</b> do cobrimento ou do f<sub>ck</sub>, ou trocando a peça (laje × pilar).</p>
+    </div>
+
+    <h3>Estruturas de aço — o que a banca mistura</h3>
+    <ul>
+      <li><b>Steel deck:</b> a chapa de aço nervurada tem <b>dupla função</b> — fôrma na concretagem e <b>armadura positiva</b> em serviço (item 122 <span class="badge b-ce">Certo</span>). Dimensionamento por <span class="art">NBR 8800</span>.</li>
+      <li><b>Pré‑moldado × pré‑fabricado</b> <span class="art">NBR 9062</span>: pré‑<em>fabricado</em> é executado industrialmente com controle rigoroso; pré‑<em>moldado</em> pode ser feito no canteiro. Dizer que o pré‑moldado é “executado industrialmente no local definitivo” é <span class="badge b-er">Errado</span> (item 110).</li>
+      <li><b>Aporticadas:</b> estruturas de pré‑moldado de multipavimentos usam pórticos (pilares + vigas) — item 137 <span class="badge b-ce">Certo</span>.</li>
+    </ul>
+  </section>
+
+  <!-- ============ 1.2.1 ANÁLISE ============ -->
+  <section id="analise" class="block">
+    <div class="sec-head"><span class="sec-num">1.2.1</span><h2>Análise de estruturas isostáticas e hiperestáticas</h2></div>
+    <p>A Seção 14 da norma define os tipos de análise; a distinção iso/hiper é o pano de fundo conceitual mais cobrado — e cheio de “meia‑verdade suprimida”.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Aspecto</th><th>Isostática</th><th>Hiperestática</th></tr></thead>
+        <tbody>
+          <tr><td>Vínculos</td><td>Reações = equações de equilíbrio (3 no plano)</td><td>Vínculos redundantes (grau &gt; 0)</td></tr>
+          <tr><td>Cálculo dos esforços</td><td>Só equilíbrio; <b>independe da rigidez EI</b></td><td>Equilíbrio + compatibilidade; <b>depende da rigidez relativa EI</b></td></tr>
+          <tr><td>Recalque de apoio</td><td><b>Não</b> gera esforço interno (livre para deformar)</td><td><b>Gera</b> esforços adicionais</td></tr>
+          <tr><td>Variação de temperatura / retração</td><td><b>Não</b> gera esforço interno</td><td><b>Gera</b> esforços (impedimento à deformação)</td></tr>
+          <tr><td>Redundância / segurança</td><td>Ruptura de um vínculo → colapso</td><td>Redistribui esforços; mais reserva</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Tipos de análise estrutural <span class="art">§14.5</span></h3>
+    <ul>
+      <li><b>Linear:</b> comportamento elástico‑linear; rigidez com seção bruta e E<sub>ci</sub>. Base do dimensionamento no ELU (com majoração/minoração).</li>
+      <li><b>Linear com redistribuição:</b> reduz o momento sobre apoios multiplicando‑o por <b>δ</b> e recompõe o equilíbrio. Só em <b>estruturas hiperestáticas</b>.</li>
+      <li><b>Plástica:</b> rótulas plásticas / charneiras (linhas de ruptura em lajes).</li>
+      <li><b>Não linear:</b> considera relações constitutivas reais (fissuração, fluência); obrigatória em certas verificações de estabilidade global.</li>
+    </ul>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Limite da redistribuição <span class="art">§14.6.4.3</span></div>
+      <p>δ está amarrado à posição da linha neutra: <code>δ ≥ 0,44 + 1,25·(x/d)</code> para concretos até C50, com <code>δ ≥ 0,90</code> (nós móveis) e <code>δ ≥ 0,75</code> (nós fixos). <b>Mais aço tracionado → x/d maior → menos redistribuição permitida.</b> “Redistribuição ilimitada” é sempre <span class="badge b-er">Errado</span>.</p>
+    </div>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Ductilidade na flexão <span class="art">§14.6.4.3 / §17.2.3</span></div>
+      <p>Para garantir ruína dúctil sem redistribuição: <code>x/d ≤ 0,45</code> (concretos ≤ C50) e <code>x/d ≤ 0,35</code> (C55 a C90). Domínios 2 e 3 são desejáveis; domínio 4 (peça superarmada, ruptura frágil) deve ser evitado.</p>
+    </div>
+  </section>
+
+  <!-- ============ 1.2.2 DIMENSIONAMENTO ============ -->
+  <section id="dim" class="block">
+    <div class="sec-head"><span class="sec-num">1.2.2</span><h2>Dimensionamento de pilares, vigas e lajes</h2></div>
+
+    <h3>Pilares <span class="art">§18.4 / §15</span></h3>
+    <ul>
+      <li><b>Dimensão mínima:</b> seção transversal com lado ≥ <b>19 cm</b>. Entre 19 e 14 cm, permitido com majoração dos esforços (γ<sub>n</sub>); <b>nunca &lt; 14 cm</b> e área ≥ <b>360 cm²</b>.</li>
+      <li><b>Armadura longitudinal:</b> Ø ≥ <b>10 mm</b> e ≤ 1/8 da menor dimensão; <code>A<sub>s,mín</sub> = 0,15·N<sub>d</sub>/f<sub>yd</sub> ≥ 0,4%·A<sub>c</sub></code>; <b>A<sub>s,máx</sub> = 8%·A<sub>c</sub></b> (incluindo a sobreposição nas emendas).</li>
+      <li><b>Estribos:</b> Ø<sub>t</sub> ≥ <b>5 mm</b> ou ≥ Ø<sub>long</sub>/4; espaçamento ≤ menor de {<b>200 mm</b>; menor dimensão da seção; 12·Ø<sub>long</sub> (CA‑50)}.</li>
+      <li><b>Esbeltez:</b> <code>λ = ℓ<sub>e</sub>/i</code>. Efeitos de 2ª ordem podem ser dispensados se λ ≤ λ<sub>1</sub>. λ &gt; 90 exige método rigoroso; λ &gt; 200 não é permitido (salvo postes com N<sub>d</sub> &lt; 0,10·f<sub>cd</sub>·A<sub>c</sub>).</li>
+    </ul>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Pegadinha (item 113)</div>
+      <p>“Maior armadura possível = 6% da seção real” é <span class="badge b-er">Errado</span>. O valor da norma é <b>8%</b>, e é ele que <em>já inclui</em> a sobreposição nas emendas. O “6%” é o número plausível plantado pela banca (molde 1).</p>
+    </div>
+
+    <h3>Vigas <span class="art">§17 / §18.3</span></h3>
+    <ul>
+      <li><b>Largura mínima:</b> b<sub>w</sub> ≥ <b>12 cm</b> (excepcionalmente ≥ 10 cm atendendo condições de §13.2.2).</li>
+      <li><b>Armadura longitudinal de tração:</b> <code>ρ<sub>mín</sub> ≥ 0,15%</code> de A<sub>c</sub> (valor‑piso; ver Tabela 17.3 conforme f<sub>ck</sub>).</li>
+      <li><b>Taxa máxima (tração + compressão):</b> <code>A<sub>s</sub> + A′<sub>s</sub> ≤ 4%·A<sub>c</sub></code>, fora das regiões de emenda.</li>
+      <li><b>Estribos:</b> Ø ≥ <b>5 mm</b> e ≤ b<sub>w</sub>/<b>10</b>; taxa mínima <code>ρ<sub>sw,mín</sub> = 0,2·f<sub>ctm</sub>/f<sub>ywk</sub></code>.</li>
+      <li><b>Espaçamento longitudinal dos estribos:</b> se V<sub>Sd</sub> ≤ 0,67·V<sub>Rd2</sub> → s ≤ 0,6·d ≤ <b>300 mm</b>; se V<sub>Sd</sub> &gt; 0,67·V<sub>Rd2</sub> → s ≤ 0,3·d ≤ <b>200 mm</b>.</li>
+    </ul>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>A “conta de estribo” (itens 114 e 117)</div>
+      <p>Converter área de aço em bitola/espaçamento é rotina Cebraspe. Um estribo simples Ø5,0 mm tem 2 pernas: <code>A<sub>sw</sub> = 2 × 0,196 = 0,393 cm²</code>. Distribuído a cada 18 cm: <code>0,393/0,18 ≈ 2,18 cm²/m ≥ 2,14</code> → atende (item 114 <span class="badge b-ce">Certo</span>). Guarde as áreas: Ø5,0=<b>0,196</b>; Ø6,3=<b>0,312</b>; Ø8,0=<b>0,50</b>; Ø10=<b>0,80</b> cm².</p>
+    </div>
+
+    <h3>Lajes <span class="art">§13.2.4 / §19 / §20</span></h3>
+    <ul>
+      <li><b>Espessuras mínimas:</b> <b>7 cm</b> cobertura (não em balanço); <b>8 cm</b> piso (não em balanço); <b>10 cm</b> em balanço e lajes de veículo ≤ 30 kN; <b>12 cm</b> veículo &gt; 30 kN; <b>14 cm</b> lajes lisas; <b>16 cm</b> lajes‑cogumelo.</li>
+      <li><b>Bitola máxima da barra:</b> Ø ≤ <b>h/8</b>.</li>
+      <li><b>Espaçamento da armadura principal:</b> s ≤ <b>2h</b> ou <b>20 cm</b> (o menor).</li>
+      <li><b>Armadura secundária (distribuição):</b> ≥ 20% da principal <em>e</em> ≥ <b>0,9 cm²/m</b>; espaçamento ≤ <b>33 cm</b>.</li>
+      <li><b>Uma direção × duas direções:</b> laje retangular é <b>armada em duas direções (cruz)</b> quando <code>λ = ℓ<sub>y</sub>/ℓ<sub>x</sub> ≤ 2</code>; se λ &gt; 2, arma‑se em uma direção.</li>
+    </ul>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Pegadinha (item 116, laje h = 9 cm)</div>
+      <p>“Ø e espaçamento não podem passar de 8 mm e 20 cm” → <span class="badge b-er">Errado</span> nos dois. A bitola máxima é <b>h/8 = 90/8 = 11,25 mm</b> (não 8). E o espaçamento da armadura principal é <b>2h = 18 cm</b>, menor que 20 → o teto é <b>18 cm</b>, não 20.</p>
+    </div>
+  </section>
+
+  <!-- ============ 1.2.3 FÔRMAS ============ -->
+  <section id="formas" class="block">
+    <div class="sec-head"><span class="sec-num">1.2.3</span><h2>Projetos de fôrmas</h2></div>
+    <p>Fôrma é o <b>molde provisório</b> que dá forma e dimensão ao concreto fresco e o sustenta até que ele tenha resistência própria. O projeto (<span class="art">NBR 15696</span>) e a execução (<span class="art">NBR 14931</span>) dialogam com a NBR 6118 em geometria, contraflecha e tolerâncias.</p>
+
+    <h3>O que o projeto de fôrmas verifica</h3>
+    <ul>
+      <li><b>Pressão lateral do concreto fresco</b> sobre painéis verticais (pilares, paredes): cresce com a <b>velocidade de concretagem</b>, a altura de lançamento, a fluidez/consistência e diminui com a temperatura (pega mais rápida). É a ação dimensionante das fôrmas verticais.</li>
+      <li><b>Cargas verticais</b> sobre o escoramento: peso próprio do concreto + fôrma + armadura + <b>sobrecarga de execução</b> (operários, equipamentos, acúmulo).</li>
+      <li><b>Ações horizontais</b> e de estabilidade do cimbramento (contraventamento, vento em escoramentos altos).</li>
+      <li><b>Contraflecha</b> <span class="art">§14.2.4</span>: fôrma executada com flecha ascendente para compensar a deformação da peça sob carga.</li>
+    </ul>
+
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Retirada de fôrmas e escoramento</div>
+      <p>Só pode ocorrer quando o concreto tiver <b>resistência suficiente</b> para suportar as ações — nunca por prazo fixo isolado. A retirada é <b>progressiva</b>, começando pelas fôrmas laterais (sem função de suporte) e por último o escoramento de fundo, evitando choque e carregamento prematuro. “Desforma imediata após o adensamento” é <span class="badge b-er">Errado</span>.</p>
+    </div>
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>Como isso vira item</div>
+      <p>A banca costura fôrmas com <b>execução</b> e <b>orçamento</b>: reaproveitamento de chapas de compensado em edifícios de andar‑tipo (item 106), quantitativo de laje nervurada pela cuba/trilhos (item 148), vibração entre duas fôrmas (item 139). Pense em fôrma como <em>interface projeto–canteiro</em>.</p>
+    </div>
+  </section>
+
+  <!-- ============ 1.2.4 CONCRETO PROTENDIDO ============ -->
+  <section id="protensao" class="block">
+    <div class="sec-head"><span class="sec-num">1.2★</span><h2>Concreto protendido — teoria para a prova</h2></div>
+    <p class="lead-in">Protensão é a <b>pré‑compressão</b> introduzida na peça por uma <b>armadura ativa</b> de alta resistência, para contrapor as trações que as cargas provocariam. A Cebraspe quase não pede cálculo aqui: pede <em>definição trocada</em> — armadura ativa × passiva, ancoragem ativa × passiva, pré‑tração × pós‑tração, aderência × ancoragem mecânica, protensão parcial × completa. Domine esses pares e o bloco é seu.</p>
+
+    <h3>1 · Conceito e vantagens</h3>
+    <p>No concreto armado a armadura é <b>passiva</b>: só reage depois que a peça se deforma e tende a fissurar. No protendido a armadura é <b>ativa</b> — é tracionada previamente e, por reação, <b>comprime o concreto antes da entrada das cargas de serviço</b>. Como o concreto resiste bem à compressão, a seção passa a trabalhar quase toda comprimida, adiando (ou eliminando) a fissuração.</p>
+    <ul>
+      <li><b>Vãos maiores</b> e peças mais <b>esbeltas</b> (menor peso próprio).</li>
+      <li><b>Controle de fissuração</b> — pode‑se projetar a peça para não fissurar em serviço.</li>
+      <li><b>Durabilidade</b> maior: menos fissura → menos ingresso de agentes agressivos.</li>
+      <li>Aproveita <b>aços de altíssima resistência</b> (≈ 1900 MPa), inviáveis no concreto armado (fissurariam demais).</li>
+      <li>Permite <b>contraflecha</b> e recuperação de deformações.</li>
+    </ul>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>O par que a banca mais inverte — armadura ativa × passiva</div>
+      <p><b>Armadura passiva</b> = concreto armado; “espera” a solicitação. <b>Armadura ativa</b> = concreto protendido; é pré‑tensionada e comprime o concreto. Dizer que o armado usa armadura ativa (ou o protendido, passiva) é o clássico <span class="badge b-er">Errado</span> (molde 2 — item real 112).</p>
+    </div>
+
+    <h3>2 · Aço de protensão — tipos e características</h3>
+    <p>Aço de <b>alta resistência</b>, cerca de 3 a 4× o CA‑50: a resistência à tração característica <code>f<sub>ptk</sub></code> chega a ≈ 1900 MPa (vs. 500 MPa do CA‑50). Diferença conceitual importante: <b>não tem patamar de escoamento definido</b> — usa‑se o <b>escoamento convencional</b> <code>f<sub>pyk</sub></code> (≈ 0,9·f<sub>ptk</sub> nos de relaxação baixa).</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Produto</th><th>Norma</th><th>Característica</th></tr></thead>
+      <tbody>
+        <tr><td>Fios</td><td><span class="art">NBR 7482</span></td><td>Trefilados, Ø ≈ 4–9 mm; lisos, entalhados ou dentados; categorias CP‑145 a CP‑175; RN ou RB. Fornecidos em rolos/bobinas.</td></tr>
+        <tr><td>Cordoalhas</td><td><span class="art">NBR 7483</span></td><td>Vários fios enrolados em hélice — 3 fios ou <b>7 fios</b> (6 em torno de 1 central). Categorias <b>CP‑190</b> e <b>CP‑210</b>, <b>sempre RB</b>. As mais usadas na prática.</td></tr>
+        <tr><td>Barras</td><td>—</td><td>Laminadas, Ø &gt; 12 mm, alta resistência (ex.: sistema rosqueado tipo Dywidag), para pós‑tração de grandes esforços.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Como ler a designação e o que a norma fixa</div>
+      <p><b>CP‑XXX:</b> “CP” = concreto protendido; o número é a <b>f<sub>ptk</sub> mínima</b> em kgf/mm² (×10 ≈ MPa). Ex.: <b>CP‑190</b> ≈ 1900 MPa; <b>CP‑210</b> ≈ 2100 MPa.</p>
+      <p><b>RB × RN:</b> <b>RB</b> = <b>relaxação baixa</b> (tratamento termomecânico — estabilizada); <b>RN</b> = relaxação normal (aliviada). As cordoalhas são sempre RB.</p>
+      <p><b>Relaxação:</b> perda de tensão no aço mantido sob <b>deformação (comprimento) constante</b> ao longo do tempo (medida por Ψ<sub>1000</sub>, a 1000 h e 20 °C). A RB relaxa muito menos → perda progressiva menor.</p>
+      <p><b>Módulo de elasticidade:</b> obter por ensaio/fabricante; na falta, a NBR 6118 permite adotar <b>E<sub>p</sub> = 200 GPa</b> para fios e cordoalhas.</p>
+      <p><b>Cuidado especial:</b> por trabalhar sob tensão altíssima, é sensível à <b>corrosão sob tensão</b> e à <b>fragilização por hidrogênio</b> → exige proteção (bainha + calda de cimento, ou graxa + capa plástica).</p>
+    </div>
+
+    <h3>3 · Cordoalhas — tipos, dimensões e a engraxada</h3>
+    <p>A cordoalha de <b>7 fios</b> (seis fios em hélice em torno de um fio central reto, ligeiramente maior) é o produto padrão do protendido brasileiro. Diâmetros nominais: <b>9,5 mm</b> (3/8″), <b>12,7 mm</b> (1/2″) e <b>15,2 mm</b> (0,6″).</p>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>Cordoalha 7 fios · CP‑190 RB</th><th>Ø 9,5 mm</th><th>Ø 12,7 mm</th><th>Ø 15,2 mm</th></tr></thead>
+      <tbody>
+        <tr><td>Área nominal (aprox.)</td><td>0,55 cm²</td><td>1,01 cm²</td><td>1,40 cm²</td></tr>
+        <tr><td>Carga de ruptura (aprox.)</td><td>≈ 10,4 tf</td><td>≈ 18,7 tf</td><td>≈ 26,6 tf</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cap">Valores de catálogo conforme NBR 7483 (variam ligeiramente por fabricante). CP‑210 eleva a carga de ruptura para o mesmo diâmetro.</p>
+    <div class="twocol">
+      <div class="mini"><h4>Cordoalha nua (aderente)</h4><p>Vai dentro de uma <b>bainha</b> (metálica ou plástica) que, <em>após a protensão</em>, é <b>injetada com calda de cimento</b>. A calda cria <b>aderência</b> com o concreto e protege o aço. Protensão <b>aderente</b>.</p></div>
+      <div class="mini"><h4>Cordoalha engraxada e plastificada</h4><p><b>Monocordoalha</b> revestida de <b>graxa</b> (anticorrosiva + reduz o atrito na protensão) dentro de uma <b>capa de PEAD</b> (polietileno). A capa <b>impede a aderência</b> ao concreto → protensão <b>não aderente</b>. Típica de <b>lajes protendidas, radier e pisos</b>.</p></div>
+    </div>
+
+    <h3>4 · Métodos de execução — pré‑tração × pós‑tração</h3>
+    <p>É o coração do assunto (e dos itens 86 e 88). A diferença está em <b>quando</b> se estira a armadura em relação à concretagem e em <b>como</b> a protensão é transferida ao concreto.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Aspecto</th><th>Pré‑tração</th><th>Pós‑tração</th></tr></thead>
+      <tbody>
+        <tr><td>Momento do estiramento</td><td><b>Antes</b> de concretar</td><td><b>Depois</b> de o concreto endurecer</td></tr>
+        <tr><td>Onde se ancora ao estirar</td><td>Nas <b>cabeceiras da pista</b> de protensão (fora da peça)</td><td>Na <b>própria peça</b> já endurecida</td></tr>
+        <tr><td>Transferência da protensão</td><td>Por <b>aderência</b> aço‑concreto, ao <b>cortar/soltar</b> os fios após a cura</td><td>Por <b>ancoragens mecânicas</b> nas extremidades (cunhas + placa)</td></tr>
+        <tr><td>Bainha / dutos</td><td>Não usa (fio fica embebido no concreto)</td><td>Cordoalha corre em <b>bainha/duto</b> deixado na peça</td></tr>
+        <tr><td>Aderência</td><td>Sempre <b>aderente</b></td><td><b>Aderente</b> (bainha injetada) ou <b>não aderente</b> (engraxada)</td></tr>
+        <tr><td>Onde se usa</td><td><b>Pré‑moldados de fábrica</b>: lajes alveolares, vigotas, painéis, estacas, dormentes</td><td><b>Moldado no local</b>: pontes, vigas de grande vão, lajes protendidas, radier</td></tr>
+      </tbody>
+    </table></div>
+    <div class="call norma">
+      <div class="h"><span class="tag">§</span>Sequência da pré‑tração (item 88 — CERTO)</div>
+      <p>(1) estira‑se e ancora‑se fios/cordoalhas na pista <b>antes de concretar</b>; (2) concreta‑se e aguarda‑se a <b>cura</b> (resistência mínima de transferência); (3) transfere‑se a protensão <b>pela aderência</b>, ao <b>relaxar (cortar)</b> os fios previamente tracionados. Existe um <em>comprimento de transferência</em> ao longo do qual a força passa do aço ao concreto.</p>
+    </div>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Ancoragem ativa × passiva (item 86 — ERRADO)</div>
+      <p><b>Ancoragem ativa:</b> extremidade onde se aplica o macaco e se <b>estira</b> a armadura. <b>Ancoragem passiva:</b> extremidade oposta, <b>não tracionada</b> — ancora o próprio cabo/fio/cordoalha (extremidade “morta”). <b>Nenhuma</b> delas serve para “posicionar armadura transversal (estribos)” — isso é feito por espaçadores/armação de montagem. A troca de conceito no item 86 o torna <span class="badge b-er">Errado</span>.</p>
+    </div>
+
+    <h3>5 · Níveis de protensão × Estados‑Limite de Serviço</h3>
+    <p>A NBR 6118 gradua a protensão conforme o grau de fissuração admitido, amarrando cada nível a verificações de ELS e à classe de agressividade (Tabela 13.4). Da mais “protegida” à mais econômica:</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Nível</th><th>Verificação de ELS</th><th>Comportamento</th></tr></thead>
+      <tbody>
+        <tr><td><b>Completa</b> (nível 3)</td><td>ELS‑F (comb. frequente) + ELS‑D (comb. quase permanente)</td><td>Sem fissuras na maior parte da vida útil.</td></tr>
+        <tr><td><b>Limitada</b> (nível 2)</td><td>ELS‑F (comb. rara) + ELS‑D (comb. frequente)</td><td>Fissuração muito restrita.</td></tr>
+        <tr><td><b>Parcial</b> (nível 1)</td><td>ELS‑W: abertura de fissura <b>w<sub>k</sub> ≤ 0,2 mm</b> (comb. frequente)</td><td>Admite fissura controlada, que abre e fecha com a carga variável.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>Protensão parcial (item 87 — CERTO)</div>
+      <p>Descrição‑padrão da protensão parcial: sob <b>cargas permanentes</b> a peça pode ser projetada para <b>permanecer sem fissuras</b>; ao entrar a <b>carga variável</b>, as fissuras <b>abrem de forma controlada</b> (w<sub>k</sub> ≤ 0,2 mm) e, ao retirá‑la, a protensão as <b>fecha</b>. Esse “abre e fecha” com o carregamento variável é a assinatura do nível 1.</p>
+    </div>
+    <p class="cap">ELS‑D = descompressão · ELS‑F = formação de fissuras · ELS‑W = abertura de fissuras. Siglas que a banca gosta de embaralhar.</p>
+
+    <h3>6 · Perdas de protensão</h3>
+    <p>A força que efetivamente atua no concreto é menor que a aplicada pelo macaco. As perdas dividem‑se em:</p>
+    <div class="twocol">
+      <div class="mini"><h4>Imediatas</h4><ul>
+        <li><b>Atrito</b> do cabo na bainha (só na pós‑tração): perde‑se ao longo do traçado curvo/reto.</li>
+        <li><b>Acomodação da ancoragem</b> (encunhamento) — recuo das cunhas ao travar.</li>
+        <li><b>Encurtamento elástico</b> imediato do concreto ao ser comprimido.</li>
+      </ul></div>
+      <div class="mini"><h4>Progressivas (diferidas)</h4><ul>
+        <li><b>Retração</b> do concreto.</li>
+        <li><b>Fluência</b> do concreto sob a compressão permanente.</li>
+        <li><b>Relaxação</b> do aço de protensão (menor nos RB).</li>
+      </ul></div>
+    </div>
+
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>3 itens reais da banca (o gatilho deste capítulo) — julgue e confira</div>
+      <p><b>86.</b> Na pré‑tração, as ancoragens ativas destinam‑se ao estiramento das armaduras de protensão, e as passivas, ao posicionamento das armaduras transversais no interior da peça. → <span class="badge b-er">ERRADO</span> — a ancoragem passiva ancora o <em>próprio cabo</em> na extremidade não tracionada; não posiciona estribos.</p>
+      <p><b>87.</b> A protensão parcial permite trabalhar com abertura de fissura controlada, podendo permanecer sem fissuras sob cargas permanentes e com fissuras que abrem/fecham conforme a carga variável. → <span class="badge b-ce">CERTO</span> — nível 1 (ELS‑W, w<sub>k</sub> ≤ 0,2 mm).</p>
+      <p><b>88.</b> A pré‑tração baseia‑se no estiramento e ancoragem de fios/cordoalhas antes da concretagem; após a cura, pela aderência, transfere‑se a protensão pelo relaxamento (corte) dos fios. → <span class="badge b-ce">CERTO</span> — descrição fiel da pré‑tração (transferência por aderência).</p>
+    </div>
+    <div class="call trap">
+      <div class="h"><span class="tag">!</span>Pegadinhas de protensão — reflexos para 2026</div>
+      <ul>
+        <li><b>ativa ↔ passiva</b> (armadura e ancoragem): o alvo nº 1.</li>
+        <li><b>pré‑tração ↔ pós‑tração</b>: pré = antes de concretar, transfere por <b>aderência</b>; pós = depois, transfere por <b>ancoragem mecânica</b>.</li>
+        <li>“Toda protensão é aderente” → <span class="badge b-er">Errado</span> (a cordoalha <b>engraxada</b> é <b>não aderente</b>).</li>
+        <li>“Cordoalha CP‑190 é de relaxação normal” → <span class="badge b-er">Errado</span> (cordoalha é <b>sempre RB</b>).</li>
+        <li>“Aço de protensão tem patamar de escoamento definido como o CA‑50” → <span class="badge b-er">Errado</span> (usa escoamento <b>convencional</b>).</li>
+        <li>Número CP (190/210) = <b>f<sub>ptk</sub></b> em kgf/mm² ×10; não confundir com f<sub>ck</sub> do concreto.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ NÚMEROS ============ -->
+  <section id="numeros" class="block">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Os números que caem — consulta rápida</h2></div>
+    <p class="lead-in">Imprima esta seção. É o material que a banca converte em pegadinha do “molde 1” (troca de um número). Se estes valores estiverem na ponta da língua, você blinda 8 a 12 itens.</p>
+
+    <h4>Classe de Agressividade Ambiental — cobrimento nominal (concreto armado, Δc = 10 mm)</h4>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>CAA</th><th>I · Fraca</th><th>II · Moderada</th><th>III · Forte</th><th>IV · Muito forte</th></tr></thead>
+      <tbody>
+        <tr><td>Laje (mm)</td><td>20</td><td>25</td><td>35</td><td>45</td></tr>
+        <tr><td>Viga / Pilar (mm)</td><td>25</td><td>30</td><td>40</td><td>50</td></tr>
+        <tr><td>Em contato c/ solo (mm)</td><td>30</td><td>30</td><td>40</td><td>50</td></tr>
+      </tbody>
+    </table></div>
+    <p class="cap">Ambientes: I rural/submersa · II urbana · III marinha/industrial · IV respingos de maré/indústria química.</p>
+
+    <h4>CAA — qualidade mínima do concreto (armado)</h4>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>Parâmetro</th><th>I</th><th>II</th><th>III</th><th>IV</th></tr></thead>
+      <tbody>
+        <tr><td>f<sub>ck</sub> mínimo</td><td>C20</td><td>C25</td><td>C30</td><td>C40</td></tr>
+        <tr><td>Relação a/c máx.</td><td>0,65</td><td>0,60</td><td>0,55</td><td>0,45</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Taxas de armadura</h4>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>Elemento</th><th>Mínima</th><th>Máxima</th></tr></thead>
+      <tbody>
+        <tr><td>Pilar</td><td>0,15·N<sub>d</sub>/f<sub>yd</sub> ≥ 0,4%·A<sub>c</sub></td><td>8%·A<sub>c</sub> (c/ emendas)</td></tr>
+        <tr><td>Viga (long. tração)</td><td>0,15%·A<sub>c</sub></td><td>4%·A<sub>c</sub> (As+A′s)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Bitolas e espaçamentos — detalhamento</h4>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>Regra</th><th>Valor</th></tr></thead>
+      <tbody>
+        <tr><td>Ø mín. barra longitudinal de pilar</td><td>10 mm (e ≤ 1/8 da menor dimensão)</td></tr>
+        <tr><td>Ø mín. estribo</td><td>5,0 mm (viga: ≤ b<sub>w</sub>/10)</td></tr>
+        <tr><td>Ø máx. barra de laje</td><td>≤ h/8</td></tr>
+        <tr><td>Espaç. armadura principal de laje</td><td>≤ 2h e ≤ 20 cm</td></tr>
+        <tr><td>Espaç. armadura secundária de laje</td><td>≤ 33 cm (As ≥ 0,9 cm²/m)</td></tr>
+        <tr><td>Espaç. long. estribo de viga</td><td>≤ 0,6d ≤ 30 cm (ou 0,3d ≤ 20 cm)</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Dimensões mínimas e classes</h4>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>Item</th><th>Valor</th></tr></thead>
+      <tbody>
+        <tr><td>Dimensão mínima de pilar</td><td>19 cm (limite absoluto 14 cm c/ γ<sub>n</sub>; A ≥ 360 cm²)</td></tr>
+        <tr><td>Largura mínima de viga</td><td>12 cm (excepc. 10 cm)</td></tr>
+        <tr><td>Espessura mín. laje piso / cobertura</td><td>8 cm / 7 cm</td></tr>
+        <tr><td>Espessura mín. laje em balanço</td><td>10 cm</td></tr>
+        <tr><td>Classes de resistência</td><td>Grupo I: C20–C50 · Grupo II: C55–C90</td></tr>
+        <tr><td>Área de aço (cm²) Ø5,0 / 6,3 / 8,0 / 10,0</td><td>0,196 / 0,312 / 0,50 / 0,80</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>Aço de protensão — o essencial que a banca troca</h4>
+    <div class="tbl-wrap"><table class="numtable">
+      <thead><tr><th>Item</th><th>Valor / regra</th></tr></thead>
+      <tbody>
+        <tr><td>Resistência f<sub>ptk</sub> (cordoalha comum)</td><td>CP‑190 ≈ 1900 MPa · CP‑210 ≈ 2100 MPa</td></tr>
+        <tr><td>Escoamento convencional f<sub>pyk</sub></td><td>≈ 0,9·f<sub>ptk</sub> (sem patamar definido)</td></tr>
+        <tr><td>Módulo E<sub>p</sub> (falta de ensaio)</td><td>200 GPa (fios e cordoalhas)</td></tr>
+        <tr><td>Cordoalha 7 fios — diâmetros</td><td>9,5 / 12,7 / 15,2 mm (sempre RB)</td></tr>
+        <tr><td>Relaxação</td><td>RB (baixa) × RN (normal) — cordoalha é sempre RB</td></tr>
+        <tr><td>Normas do aço</td><td>Fios NBR 7482 · Cordoalhas NBR 7483</td></tr>
+        <tr><td>Transferência: pré × pós</td><td>Pré = aderência (corte) · Pós = ancoragem mecânica</td></tr>
+        <tr><td>Cordoalha engraxada</td><td>Graxa + capa PEAD = protensão NÃO aderente</td></tr>
+        <tr><td>Níveis de protensão</td><td>Completa (3) · Limitada (2) · Parcial (1: ELS‑W, w<sub>k</sub> ≤ 0,2 mm)</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ============ QUESTÕES ============ -->
+  <section id="questoes" class="block">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Banco de questões C/E — estilo Cebraspe</h2></div>
+    <p class="lead-in">44 itens Certo/Errado na voz da banca — incluindo um bloco de <b>Concreto protendido</b> e os <b>3 itens reais 86–88</b> da Câmara. Julgue mentalmente, clique <span class="kbd">Certo</span> ou <span class="kbd">Errado</span> e confira o gabarito comentado, ancorado no artigo da norma. O placar fica no topo.</p>
+
+    <div class="qbar">
+      <div class="lft">Placar: <b id="scoreText">0 / 0</b> · aproveitamento <b id="scorePct">—</b></div>
+      <div style="display:flex;gap:8px">
+        <button id="revealAll">Revelar todos</button>
+        <button id="resetAll">Reiniciar</button>
+      </div>
+    </div>
+
+    <div id="qbank"></div>
+  </section>
+
+  <!-- ============ VÉSPERA ============ -->
+  <section id="vespera" class="block">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Checklist da véspera</h2></div>
+    <div class="twocol">
+      <div class="mini">
+        <h4>Grave sem pensar</h4>
+        <ul>
+          <li>Cobrimento CAA: laje 20/25/35/45 · viga‑pilar 25/30/40/50.</li>
+          <li>Pilar: dim. 19 cm · As 0,4%–8% · Ø≥10 · estribo Ø≥5.</li>
+          <li>Viga: b<sub>w</sub>≥12 · ρ 0,15%–4% · estribo ≤b<sub>w</sub>/10.</li>
+          <li>Laje: 7/8/10 cm · Ø≤h/8 · s≤2h≤20 cm · sec.≥0,9 cm²/m.</li>
+          <li>Áreas Ø: 5,0=0,196 · 6,3=0,312 · 8=0,50 · 10=0,80.</li>
+        </ul>
+      </div>
+      <div class="mini">
+        <h4>Reflexos contra pegadinha</h4>
+        <ul>
+          <li>Viu “somente/apenas/sempre/dispensável”? Desconfie — molde 3.</li>
+          <li>Número redondo e conveniente? Confira contra a tabela — molde 1.</li>
+          <li>Duas definições no mesmo item? Cheque se trocaram os rótulos — molde 2.</li>
+          <li>Recalque/temperatura “gera esforço”? Só no hiperestático — molde 7.</li>
+          <li>Radier, sulfato, carbonatação (↓pH), armadura passiva: os favoritos.</li>
+          <li>Dúvida técnica genuína e sem eliminar por norma? Considere deixar em branco.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="call brain">
+      <div class="h"><span class="tag">i</span>Discursiva (estudo de caso)</div>
+      <p>A prova cobrou 3 estudos de caso: (1) mudança de uso/leiaute com <b>novos carregamentos</b> → verificar projeto estrutural existente, ART/RRT, inspeção, laudo; (2) leitura de <b>avanço físico × físico‑financeiro</b> (obra atrasada, valor agregado); (3) <b>patologias</b> do concreto (lixiviação, fissuração, corrosão de armadura) + ensaios + recuperação. Para 2026, treine estruturar resposta em: <em>diagnóstico → norma aplicável → ensaio/verificação → intervenção → documento (laudo/ART)</em>.</p>
+    </div>
+  </section>
+
+  </main>
+</div>
+
+<footer class="foot">
+  Material de estudo gerado a partir da prova CESPE/UnB — Câmara dos Deputados (Analista Legislativo · Engenheiro Civil), do item 1 do edital e da ABNT NBR 6118:2023. Os valores normativos são para estudo; em projeto real, consulte sempre o texto vigente da norma. Bons estudos.
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  // ---- Theme toggle ----
+  var root=document.documentElement, tb=document.getElementById('themeBtn');
+  function cur(){var a=root.getAttribute('data-theme');if(a)return a;return window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}
+  tb.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';root.setAttribute('data-theme',n);});
+
+  // ---- TOC active highlight ----
+  var links=[].slice.call(document.querySelectorAll('.toc a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  var obs=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('active');});var t=map[e.target.id];if(t)t.classList.add('active');}});
+  },{rootMargin:'-20% 0px -70% 0px'});
+  document.querySelectorAll('main section[id]').forEach(function(s){obs.observe(s);});
+
+  // ---- Question bank ----
+  var Q=[
+    {t:"Fundações",v:"E",q:"O radier, por transmitir as cargas da edificação diretamente ao solo por meio de uma laje contínua, é classificado como fundação profunda.",g:"Radier é fundação <b>superficial (direta)</b>. Profundas são estacas e tubulões. Molde 4 — classificação errada.",a:"NBR 6122"},
+    {t:"Fundações",v:"E",q:"A capacidade de carga de uma estaca isolada é obtida considerando apenas a resistência de ponta, desprezando-se a parcela de atrito lateral.",g:"Errado: Q<sub>rup</sub> = Q<sub>ponta</sub> + Q<sub>lateral</sub>. Suprimir o atrito é meia‑verdade (molde 7).",a:"NBR 6122"},
+    {t:"Fundações",v:"C",q:"O ensaio SPT (NBR 6484) permite identificar o tipo de solo atravessado, medir o índice de resistência à penetração N e localizar o nível d'água.",g:"Certo. É exatamente o que o SPT fornece — informação/geometria do subsolo e resistência à cravação.",a:"NBR 6484"},
+    {t:"Fundações",v:"E",q:"Em fundações, o principal agente químico agressivo ao concreto é o nitrato presente nos solos e em suas águas.",g:"Errado: o principal é o <b>sulfato</b> (ataque expansivo por etringita). Molde 5 — troca de agente. Em CAA IV usa‑se cimento resistente a sulfatos.",a:"NBR 6118 §7"},
+    {t:"Fundações",v:"C",q:"Uma sapata é considerada rígida quando sua altura h é maior ou igual a (a − a_p)/3, situação em que se admite comportamento de bielas comprimidas.",g:"Certo. É o critério da norma para sapata rígida; a flexível (mais esbelta) exige verificação de flexão, cisalhamento e punção.",a:"NBR 6118 §22.6"},
+
+    {t:"Concreto — fundamentos",v:"E",q:"A diferença entre concreto armado e protendido está em que, no armado, associa-se o concreto simples a uma armadura ativa e, no protendido, a uma armadura passiva.",g:"Errado — os rótulos estão trocados (molde 2). Armado = armadura <b>passiva</b>; protendido = armadura <b>ativa</b>.",a:"NBR 6118 §3.1"},
+    {t:"Concreto — fundamentos",v:"C",q:"Estados-limite últimos (ELU) relacionam-se ao colapso ou a qualquer forma de ruína estrutural; estados-limite de serviço (ELS), à durabilidade, à aparência e ao conforto do usuário.",g:"Certo. Definição fiel da norma. Conceituais bem escritos costumam vir CERTOS — não 'corrija demais'.",a:"NBR 6118 §3.2"},
+    {t:"Concreto — fundamentos",v:"C",q:"Fluência é a deformação que ocorre em peças de concreto ao longo do tempo sob carga constante; retração é a variação espontânea de volume, independente de carregamento.",g:"Certo para ambos. Fluência depende de carga sustentada; retração ocorre mesmo sem carga.",a:"NBR 6118 §8.2.11"},
+    {t:"Concreto — fundamentos",v:"E",q:"O concreto estrutural abrangido pela NBR 6118 limita-se à classe de resistência C50.",g:"Errado. A norma abrange Grupo I (C20–C50) e <b>Grupo II (C55–C90)</b>. Molde 1/3 — limite plantado.",a:"NBR 6118 §8.2.1"},
+    {t:"Concreto — fundamentos",v:"C",q:"O cobrimento nominal das armaduras varia conforme a classe de agressividade ambiental, definida em quatro níveis: fraca, moderada, forte e muito forte.",g:"Certo. CAA I a IV = fraca/moderada/forte/muito forte, e o cobrimento cresce com a agressividade. O erro, quando há, está no número, não no nome.",a:"NBR 6118 §6.4 / 7.4"},
+
+    {t:"Durabilidade",v:"E",q:"Para a classe de agressividade ambiental II (moderada), o cobrimento nominal mínimo de vigas e pilares de concreto armado é de 25 mm.",g:"Errado. Em CAA II, viga/pilar = <b>30 mm</b>. Os 25 mm são de CAA I. Molde 1.",a:"NBR 6118 Tab. 7.2"},
+    {t:"Durabilidade",v:"C",q:"Para concreto armado em classe de agressividade IV, exige-se f_ck mínimo de 40 MPa e relação água/cimento máxima de 0,45.",g:"Certo. CAA IV: C40 e a/c ≤ 0,45. Boa memorização blinda vários itens.",a:"NBR 6118 Tab. 7.1"},
+    {t:"Patologia",v:"E",q:"A carbonatação do concreto provoca aumento do pH da água contida nos poros da pasta de cimento.",g:"Errado — a carbonatação <b>reduz</b> o pH (de ~13 para ~9), despassivando a armadura e favorecendo a corrosão. Molde 5 — sinal invertido.",a:"NBR 6118 §6"},
+    {t:"Patologia",v:"C",q:"Na reação álcali-agregado ocorre formação de gel expansivo, com aumento de volume capaz de causar fissuração do concreto.",g:"Certo. RAA é expansiva e fissurante; prevenção por seleção de agregados e cimento.",a:"NBR 6118 §6"},
+
+    {t:"Análise estrutural",v:"C",q:"Em estruturas isostáticas, recalques de apoio e variações de temperatura não introduzem esforços internos adicionais na estrutura.",g:"Certo. Sem redundância de vínculos, a estrutura se deforma livremente; só o hiperestático 'sente' esses efeitos.",a:"NBR 6118 §14"},
+    {t:"Análise estrutural",v:"E",q:"Em estruturas hiperestáticas, a distribuição dos esforços solicitantes independe da rigidez relativa (EI) dos elementos.",g:"Errado. No hiperestático, os esforços <b>dependem</b> da rigidez relativa — é preciso compatibilidade, não só equilíbrio. Molde 7.",a:"NBR 6118 §14.5"},
+    {t:"Análise estrutural",v:"E",q:"A análise linear com redistribuição permite reduzir ilimitadamente os momentos negativos sobre os apoios de vigas contínuas.",g:"Errado. A redução é limitada por δ, função de x/d: δ ≥ 0,44 + 1,25·(x/d), com pisos de 0,75 (nós fixos) e 0,90 (nós móveis). 'Ilimitadamente' é sempre falso.",a:"NBR 6118 §14.6.4.3"},
+    {t:"Análise estrutural",v:"C",q:"Para assegurar ductilidade na flexão sem redistribuição, a norma limita a posição da linha neutra a x/d ≤ 0,45 para concretos até C50.",g:"Certo (e ≤ 0,35 para C55–C90). Domínio 4 / peça superarmada, de ruptura frágil, deve ser evitado.",a:"NBR 6118 §14.6.4.3"},
+
+    {t:"Pilares",v:"E",q:"A maior armadura longitudinal possível em pilares é de 6% da seção real, considerando-se inclusive a sobreposição de armadura nas regiões de emenda.",g:"Errado. O limite é <b>8%</b> de A_c (e é ele que já inclui a sobreposição nas emendas). Molde 1 — item real 113.",a:"NBR 6118 §17.3.5.3.2"},
+    {t:"Pilares",v:"C",q:"A armadura longitudinal mínima de um pilar é dada por 0,15·N_d/f_yd, respeitado o valor mínimo de 0,4% da área da seção de concreto.",g:"Certo. É a definição da armadura mínima de pilar na norma.",a:"NBR 6118 §17.3.5.3.1"},
+    {t:"Pilares",v:"E",q:"É permitido projetar pilar com seção transversal de dimensão mínima igual a 12 cm, desde que se majorem os esforços solicitantes.",g:"Errado. A dimensão nominal mínima é 19 cm; em casos especiais admite-se até <b>14 cm</b> (nunca menos) com o coeficiente γ_n. 12 cm não é permitido.",a:"NBR 6118 §13.2.3"},
+    {t:"Pilares",v:"C",q:"Nas armaduras transversais de pilares, o diâmetro do estribo deve ser maior ou igual a 5 mm ou a um quarto do diâmetro da barra longitudinal.",g:"Certo. Ø_t ≥ 5 mm ou ≥ Ø_long/4; espaçamento ≤ menor de {200 mm; menor dimensão; 12·Ø_long para CA‑50}.",a:"NBR 6118 §18.4.3"},
+    {t:"Pilares",v:"C",q:"Pilares com índice de esbeltez superior a 90 exigem a consideração da fluência e o uso de método de cálculo rigoroso para os efeitos de segunda ordem.",g:"Certo. Para 90 < λ ≤ 140 exige-se fluência e método geral/rigoroso; λ > 200 não é permitido (salvo postes pouco carregados).",a:"NBR 6118 §15.8"},
+
+    {t:"Vigas",v:"E",q:"Em vigas de concreto armado, o diâmetro do estribo é limitado a um oitavo da largura da alma (b_w/8).",g:"Errado. O limite é <b>b_w/10</b> (e Ø ≥ 5 mm). Molde 1.",a:"NBR 6118 §18.3.3.2"},
+    {t:"Vigas",v:"C",q:"A taxa geométrica mínima de armadura longitudinal de tração em vigas é, como valor-piso, de 0,15% da área da seção de concreto.",g:"Certo. ρ_mín ≥ 0,15% (o valor exato depende de f_ck, Tab. 17.3, mas 0,15% é o piso).",a:"NBR 6118 §17.3.5.2.1"},
+    {t:"Vigas",v:"E",q:"A soma das armaduras de tração e de compressão em uma viga pode atingir, no máximo, 6% da área de concreto, fora das regiões de emenda.",g:"Errado. O máximo é <b>4%</b> de A_c (As + A′s), fora das emendas. Molde 1.",a:"NBR 6118 §17.3.5.2.4"},
+    {t:"Vigas",v:"C",q:"Para uma armadura transversal de 2,00 cm²/m, estribos simples de 5,0 mm (duas pernas, A_sw = 0,393 cm²) espaçados a cada 18 cm são suficientes.",g:"Certo. 0,393/0,18 ≈ 2,18 cm²/m ≥ 2,00 → atende. É a 'conta de estribo' que a banca cobra (molde 6).",a:"NBR 6118 §17.4"},
+
+    {t:"Lajes",v:"E",q:"A espessura mínima de uma laje maciça de piso, não em balanço, é de 7 cm.",g:"Errado. Piso não em balanço = <b>8 cm</b>; 7 cm é o mínimo para laje de cobertura não em balanço. Molde 1.",a:"NBR 6118 §13.2.4.1"},
+    {t:"Lajes",v:"E",q:"Em uma laje maciça de 9 cm de espessura, o diâmetro das barras e o espaçamento da armadura principal não podem ultrapassar, respectivamente, 8 mm e 20 cm.",g:"Errado nos dois. Ø máx = h/8 = 11,25 mm (não 8); espaçamento principal ≤ 2h = 18 cm < 20 cm. Item real 116.",a:"NBR 6118 §20.1 / §13.2.4.2"},
+    {t:"Lajes",v:"C",q:"A armadura secundária de flexão de uma laje armada em uma direção deve ser maior ou igual a 20% da armadura principal e a 0,9 cm²/m.",g:"Certo. Além disso, o espaçamento da secundária é ≤ 33 cm.",a:"NBR 6118 §20.1"},
+    {t:"Lajes",v:"E",q:"Uma laje retangular apoiada nos quatro lados com relação entre vãos ly/lx igual a 1,8 deve ser calculada como armada em uma só direção.",g:"Errado. Com λ = ly/lx ≤ 2, a laje é armada em <b>duas direções</b> (cruz). Só acima de 2 se arma em uma direção.",a:"NBR 6118 §14.7.3"},
+
+    {t:"Fôrmas",v:"E",q:"O escoramento de uma laje pode ser retirado imediatamente após o adensamento do concreto, desde que a fôrma lateral seja mantida.",g:"Errado. A retirada só ocorre quando o concreto atinge <b>resistência suficiente</b>, de forma progressiva. Desforma prematura provoca deformação/ruína.",a:"NBR 14931"},
+    {t:"Fôrmas",v:"C",q:"A pressão lateral do concreto fresco sobre as fôrmas de um pilar aumenta com a velocidade de concretagem e com a fluidez do concreto.",g:"Certo. Maior velocidade e maior fluidez elevam a pressão; temperatura mais alta (pega rápida) a reduz. É a ação dimensionante das fôrmas verticais.",a:"NBR 15696"},
+
+    {t:"Protendido — conceito",v:"E",q:"No concreto protendido, a armadura é do tipo passiva, ou seja, reage apenas depois que a peça se deforma e tende a fissurar sob a ação das cargas.",g:"Errado. No protendido a armadura é <b>ativa</b> — pré‑tracionada, comprime o concreto antes das cargas. Passiva é a do concreto armado. Molde 2.",a:"NBR 6118 §3.1"},
+    {t:"Protendido — conceito",v:"C",q:"A protensão permite o emprego de aços de alta resistência e o controle da fissuração, resultando em peças mais esbeltas e capazes de vencer maiores vãos.",g:"Certo. São as vantagens típicas: pré‑compressão adia/elimina a fissura, o que viabiliza aços de ≈1900 MPa e seções mais leves.",a:"NBR 6118 §3"},
+    {t:"Protendido — aço",v:"C",q:"Na designação CP‑190 RB de uma cordoalha, o número 190 corresponde à resistência à tração mínima do aço (da ordem de 1900 MPa) e a sigla RB indica relaxação baixa.",g:"Certo. CP = concreto protendido; 190 = f<sub>ptk</sub> em kgf/mm² (×10 ≈ MPa); RB = relaxação baixa (estabilizada).",a:"NBR 7483"},
+    {t:"Protendido — aço",v:"E",q:"As cordoalhas de sete fios das categorias CP‑190 e CP‑210 são normalmente fornecidas na condição de relaxação normal (RN).",g:"Errado. Cordoalhas são fornecidas <b>sempre em relaxação baixa (RB)</b>. Molde 5 — troca de característica.",a:"NBR 7483"},
+    {t:"Protendido — aço",v:"C",q:"Na ausência de ensaio específico, admite‑se módulo de elasticidade igual a 200 GPa para fios e cordoalhas de protensão.",g:"Certo. É o valor que a NBR 6118 permite adotar na falta de ensaio/dado do fabricante.",a:"NBR 6118 §8.4.5"},
+    {t:"Protendido — execução",v:"C",q:"Na pré‑tração, a transferência da força de protensão ao concreto ocorre por aderência, mediante o corte dos fios após o concreto atingir resistência suficiente.",g:"Certo. Pré‑tração transfere por <b>aderência</b> ao relaxar/cortar os fios curados. É a essência do método (item real 88).",a:"NBR 6118 §3.1"},
+    {t:"Protendido — execução",v:"E",q:"Na pós‑tração, a força de protensão é transferida ao concreto exclusivamente por aderência, dispensando dispositivos de ancoragem nas extremidades da peça.",g:"Errado. Na pós‑tração a transferência se dá por <b>ancoragens mecânicas</b> (cunhas + placa) nas extremidades. Aderência (pré‑tração) é outro método. Molde 2.",a:"NBR 6118 §3.1"},
+    {t:"Protendido — cordoalha",v:"C",q:"A cordoalha engraxada e plastificada, revestida por graxa e capa de polietileno de alta densidade, é empregada em sistemas de protensão não aderente.",g:"Certo. A graxa protege e reduz atrito; a capa de PEAD impede a aderência ao concreto → protensão <b>não aderente</b> (lajes, radier, pisos).",a:"NBR 6118 §3"},
+    {t:"Protendido · item real 86",v:"E",q:"No processo de fabricação de peças pré‑moldadas protendidas por pré‑tração, as ancoragens ativas destinam‑se ao estiramento das armaduras de protensão, enquanto as passivas destinam‑se ao posicionamento das armaduras transversais no interior da peça.",g:"Errado. A ancoragem passiva ancora o <b>próprio cabo</b> na extremidade não tracionada — não posiciona estribos. Metade verdadeira + metade inventada = item errado (molde 2/7).",a:"Câmara 2026 · item 86"},
+    {t:"Protendido · item real 87",v:"C",q:"A protensão parcial permite que a peça trabalhe com abertura de fissura controlada, podendo ser projetada para permanecer sem fissuras sob cargas permanentes e com fissuras que se abrem e se fecham conforme o carregamento variável é aplicado e retirado.",g:"Certo. É a descrição do nível 1 (protensão parcial): ELS‑W com w<sub>k</sub> ≤ 0,2 mm na combinação frequente.",a:"Câmara 2026 · item 87"},
+    {t:"Protendido · item real 88",v:"C",q:"A protensão por pré‑tração baseia‑se no estiramento e ancoragem de fios/cordoalhas antes da concretagem; após a cura, devido à aderência criada, a peça é submetida à transferência da protensão por meio do relaxamento (corte) dos fios/cordoalhas previamente tracionados.",g:"Certo. Descrição fiel da pré‑tração: estira antes de concretar, cura e transfere por <b>aderência</b> ao cortar os fios.",a:"Câmara 2026 · item 88"}
+  ];
+
+  var bank=document.getElementById('qbank');
+  var total=0, hits=0;
+  var st=document.getElementById('scoreText'), sp=document.getElementById('scorePct');
+  var pill=document.getElementById('scorePill'), pillT=pill;
+  function refresh(){
+    st.textContent=hits+' / '+total;
+    sp.textContent= total? Math.round(hits/total*100)+'%':'—';
+    if(total>0){pill.hidden=false;pill.textContent='Acertos '+hits+'/'+total;}
+  }
+  Q.forEach(function(item,i){
+    var el=document.createElement('div');
+    el.className='q';
+    el.innerHTML=
+      '<div class="q-top">'+
+        '<span class="q-id">'+(i+1<10?'0':'')+(i+1)+'</span>'+
+        '<div><div class="q-theme">'+item.t+'</div><div class="q-text">'+item.q+'</div></div>'+
+      '</div>'+
+      '<div class="q-actions">'+
+        '<button class="q-btn" data-v="C">Certo</button>'+
+        '<button class="q-btn" data-v="E">Errado</button>'+
+        '<span class="verdict"></span>'+
+      '</div>'+
+      '<div class="gab"><span class="lab '+(item.v==='C'?'c':'e')+'">Gabarito: '+(item.v==='C'?'Certo':'Errado')+'</span> · <span class="art">'+item.a+'</span><div style="margin-top:6px">'+item.g+'</div></div>';
+    var btns=el.querySelectorAll('.q-btn');
+    var verdict=el.querySelector('.verdict');
+    function answer(pick){
+      if(el.classList.contains('done'))return;
+      el.classList.add('done');
+      total++;
+      btns.forEach(function(b){
+        if(b.dataset.v===item.v)b.classList.add('correct');
+        if(b.dataset.v===pick && pick!==item.v)b.classList.add('wrongpick');
+      });
+      if(pick===item.v){hits++;verdict.textContent='✓ Você acertou';verdict.style.color='var(--certo)';}
+      else if(pick){verdict.textContent='✗ Gabarito: '+(item.v==='C'?'Certo':'Errado');verdict.style.color='var(--errado)';}
+      else {verdict.textContent='Gabarito: '+(item.v==='C'?'Certo':'Errado');verdict.style.color='var(--ink-2)';}
+      refresh();
+    }
+    btns.forEach(function(b){b.addEventListener('click',function(){answer(b.dataset.v);});});
+    el._reveal=function(){answer(null);};
+    el._reset=function(){el.classList.remove('done');btns.forEach(function(b){b.classList.remove('correct','wrongpick');});verdict.textContent='';};
+    bank.appendChild(el);
+  });
+
+  document.getElementById('revealAll').addEventListener('click',function(){
+    [].slice.call(bank.children).forEach(function(el){el._reveal();});
+  });
+  document.getElementById('resetAll').addEventListener('click',function(){
+    total=0;hits=0;[].slice.call(bank.children).forEach(function(el){el._reset();});
+    pill.hidden=true;refresh();
+  });
+  refresh();
+})();
+</script>
+
+</body></html>
