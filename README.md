@@ -12,11 +12,20 @@ Materiais de estudo para a prova da Câmara dos Deputados (Cebraspe).
 | Orçamento: SINAPI | [Estudo estratégico do SINAPI (PDF)](Engenharia_Civil/Orcamento_SINAPI/SINAPI_Estudo_Estrategico.pdf) · [pasta](Engenharia_Civil/Orcamento_SINAPI) | Metodologia, encargos sociais e complementares, custo horário de equipamentos e 31 questões |
 | Instalações prediais de água fria e água quente: NBR 5626:2020 | [Resumo de estudo (PDF)](Engenharia_Civil/Instalacoes_Prediais_Agua_Fria_e_Quente/NBR_5626-2020_Resumo_de_estudo.pdf) · [Word](Engenharia_Civil/Instalacoes_Prediais_Agua_Fria_e_Quente/NBR_5626-2020_Resumo_de_estudo.docx) · [pasta](Engenharia_Civil/Instalacoes_Prediais_Agua_Fria_e_Quente) | Resumo da norma, sete esquemas e questões 117 a 163 do Caderno 07 comentadas |
 
+## Direito Administrativo
+
+| Assunto | Material | O que traz |
+|---|---|---|
+| Responsabilidade civil do Estado (item 6 do edital) | [Estudo estratégico (PDF)](Direito_Administrativo/Responsabilidade_Civil_do_Estado/Responsabilidade_Civil_do_Estado.pdf) · [pasta](Direito_Administrativo/Responsabilidade_Civil_do_Estado) | Mapa do edital × Cap. 15 de Maria Sylvia, pegadinhas da banca, 158 questões dos Cadernos 06 e 07 comentadas, itens da Câmara 2012 e simulado de 24 itens |
+
 ## Arquivos de origem
 
 - [NBR 5626:2020, sistemas prediais de água fria e água quente](nbr-5626-2020-emenda-sistemas-prediais-de-agua-fria-e-quente_compress.pdf)
 - [Caderno 07, Engenharia Civil, Edificações, Instalações (TEC Concursos)](Caderno_07_Eng%C2%AA_Civil_Edifica%C3%A7%C3%B5es_Instala%C3%A7%C3%B5es.pdf)
+- [Direito Administrativo, Maria Sylvia Zanella Di Pietro](Direito_Administrativo_Maria_Sylvia_Zane.pdf)
+- [Caderno 06, Direito Administrativo, Responsabilidade Civil do Estado (TEC Concursos)](06_Caderno%2006_Dir_Adm_Resp_Civil_Estado.pdf)
+- [Caderno 07, Direito Administrativo, Responsabilidade Civil (TEC Concursos)](07_Caderno%20Dir.%20Administrativo%20-%20RESPONSABILIDADE%20CIVIL.pdf)
 
 ## Organização
 
-Cada assunto tem uma pasta dentro de `Engenharia_Civil/`, com o material em PDF, a versão editável ou interativa e um `LEIA-ME.md` explicando o conteúdo. Os PDFs abrem direto no GitHub. Os arquivos `.html` são páginas interativas: baixe e abra no navegador. Esta tabela é atualizada a cada material novo.
+Cada assunto tem uma pasta dentro da área (`Engenharia_Civil/`, `Direito_Administrativo/`), com o material em PDF, a versão editável ou interativa e um `LEIA-ME.md` explicando o conteúdo. Os PDFs abrem direto no GitHub. Os arquivos `.html` são páginas interativas: baixe e abra no navegador. Esta tabela é atualizada a cada material novo.

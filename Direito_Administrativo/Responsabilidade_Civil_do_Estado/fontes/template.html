@@ -1,0 +1,811 @@
+<title>Responsabilidade Civil do Estado</title>
+<meta name="description" content="Estudo estratégico do item 6 do edital da Câmara dos Deputados (Cebraspe): teoria do Cap. 15 de Maria Sylvia Zanella Di Pietro, pegadinhas e 185 questões comentadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: coluna de leitura única (~44rem) com barra de navegação fixa pelos itens do edital; tabelas e o fluxograma rolam na própria caixa. */
+:root {
+  --bg: #f4f7f4;
+  --surface: #ffffff;
+  --ink: #17211b;
+  --muted: #536158;
+  --line: #d3ddd5;
+  --accent: #1b6a43;          /* verde do plenário da Câmara */
+  --accent-ink: #ffffff;
+  --accent-soft: #e2efe6;
+  --trap: #a8261d;            /* pegadinha */
+  --trap-soft: #fbeae7;
+  --gold: #7d5f0c;            /* itens da própria Câmara */
+  --gold-soft: #f6eed6;
+  --ok: #1d7446;
+  --bad: #b2271d;
+  --ok-soft: #e1f1e7;
+  --bad-soft: #fbe6e3;
+  --f-display: "Literata", "Iowan Old Style", Georgia, serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-1: .8125rem; --s0: 1rem; --s1: 1.125rem; --s2: 1.375rem; --s3: 1.75rem; --s4: 2.375rem;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1511; --surface: #151f19; --ink: #e2eae4; --muted: #9caaa1; --line: #2a3a30;
+    --accent: #5fc28e; --accent-ink: #0b1a11; --accent-soft: #1a3224;
+    --trap: #ff8f84; --trap-soft: #3a1d1a; --gold: #e2c46e; --gold-soft: #322c17;
+    --ok: #6fd39c; --bad: #ff8f84; --ok-soft: #173325; --bad-soft: #3a1d1a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1511; --surface: #151f19; --ink: #e2eae4; --muted: #9caaa1; --line: #2a3a30;
+  --accent: #5fc28e; --accent-ink: #0b1a11; --accent-soft: #1a3224;
+  --trap: #ff8f84; --trap-soft: #3a1d1a; --gold: #e2c46e; --gold-soft: #322c17;
+  --ok: #6fd39c; --bad: #ff8f84; --ok-soft: #173325; --bad-soft: #3a1d1a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 var(--s0)/1.6 var(--f-body); margin: 0; }
+.wrap { max-width: 46rem; margin: 0 auto; padding-inline: 16px; padding-block: 0 4rem; }
+h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; line-height: 1.2; margin: 0; }
+h2 { font-size: var(--s3); font-weight: 700; }
+h3 { font-size: var(--s2); font-weight: 600; margin-top: 2.25rem; }
+h4 { font-size: var(--s1); font-weight: 600; margin-top: 1.5rem; }
+p { margin: .75rem 0; }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+.ref { font-family: var(--f-mono); font-size: .86em; color: var(--muted); white-space: nowrap; }
+.eyebrow { font: 500 var(--s-1)/1.3 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Cabeçalho */
+.masthead { padding-block: 2.5rem 1.5rem; border-bottom: 1px solid var(--line); }
+.masthead h1 { font-size: var(--s4); font-weight: 700; margin-top: .5rem; }
+.masthead .lead { font-size: var(--s1); color: var(--muted); max-width: 38rem; }
+.facts { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1rem; font-size: var(--s-1); color: var(--muted); }
+.facts b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Navegação */
+nav.itens { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+nav.itens .rail { max-width: 46rem; margin: 0 auto; padding: .5rem 16px; display: flex; gap: .375rem; overflow-x: auto; scrollbar-width: none; }
+nav.itens a { flex: none; text-decoration: none; color: var(--ink); font: 500 var(--s-1)/1 var(--f-mono); padding: .5rem .625rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav.itens a:hover { border-color: var(--accent); color: var(--accent); }
+
+section.mod { padding-top: 2.75rem; scroll-margin-top: 3.5rem; }
+.modhead { display: grid; grid-template-columns: auto 1fr; gap: .25rem 1rem; align-items: baseline; padding-bottom: .75rem; border-bottom: 2px solid var(--ink); }
+.modhead .num { font: 600 var(--s3)/1 var(--f-mono); color: var(--accent); }
+.modhead .sub { grid-column: 2; color: var(--muted); font-size: var(--s-1); }
+.modhead h2 { min-width: 0; }
+
+/* Caixas */
+.box { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 1rem 1.125rem; margin: 1.25rem 0; }
+.box > :first-child { margin-top: 0; }
+.box > :last-child { margin-bottom: 0; }
+.box h4 { margin-top: 0; font-size: var(--s0); font-family: var(--f-body); font-weight: 600; }
+.trap { border-color: color-mix(in srgb, var(--trap) 45%, var(--line)); background: var(--trap-soft); }
+.trap h4 { color: var(--trap); }
+.trap ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+.trap li { margin: .4rem 0; }
+.banca { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); background: var(--accent-soft); }
+.banca h4 { color: var(--accent); }
+.camara { border-color: color-mix(in srgb, var(--gold) 45%, var(--line)); background: var(--gold-soft); }
+.camara h4 { color: var(--gold); }
+blockquote { margin: 1rem 0; padding: .25rem 0 .25rem 1rem; border-left: 3px solid var(--accent); font-family: var(--f-display); font-size: var(--s1); }
+blockquote cite { display: block; font: 400 var(--s-1) var(--f-mono); color: var(--muted); margin-top: .25rem; font-style: normal; }
+ul.tight { padding-left: 1.2rem; } ul.tight li { margin: .3rem 0; }
+
+/* Tabelas */
+.tbl { overflow-x: auto; margin: 1.25rem 0; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .9375rem; }
+th, td { text-align: left; vertical-align: top; padding: .55rem .75rem; border-bottom: 1px solid var(--line); }
+th { font: 600 var(--s-1)/1.3 var(--f-body); color: var(--muted); background: color-mix(in srgb, var(--accent-soft) 55%, var(--surface)); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tbl.wide table { min-width: 38rem; }
+
+/* Fluxo de decisão */
+.fluxo { display: grid; gap: .5rem; margin: 1.25rem 0; }
+.etapa { display: grid; grid-template-columns: 4.25rem 1fr; gap: .75rem; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: .75rem .875rem; }
+.etapa .tag { font: 600 var(--s-1)/1.2 var(--f-mono); color: var(--accent); padding-top: .15rem; }
+.etapa p { margin: 0; }
+.etapa .ramos { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .5rem; margin-top: .5rem; }
+.ramo { border: 1px dashed var(--line); border-radius: var(--r); padding: .5rem .625rem; font-size: .9375rem; min-width: 0; }
+.ramo b { display: block; font-weight: 600; }
+.seta { text-align: center; color: var(--muted); font-size: var(--s-1); line-height: 1; }
+
+/* Linha do tempo */
+.tempo { list-style: none; padding: 0; margin: 1.25rem 0; border-left: 2px solid var(--line); }
+.tempo li { position: relative; padding: 0 0 .9rem 1.1rem; }
+.tempo li::before { content: ""; position: absolute; left: -6px; top: .45rem; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.tempo li.chave::before { background: var(--accent); }
+.tempo .ano { font: 600 var(--s-1) var(--f-mono); color: var(--accent); }
+
+/* Placar */
+.placar { display: grid; gap: .6rem; margin: 1rem 0; }
+.barra { display: grid; grid-template-columns: 7.5rem 1fr 4.5rem; gap: .75rem; align-items: center; font-size: var(--s-1); }
+.barra .rot { font-family: var(--f-mono); }
+.barra .trilho { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; display: flex; }
+.barra .trilho i { display: block; height: 100%; }
+.barra .trilho i.ok { background: var(--ok); }
+.barra .trilho i.bad { background: var(--bad); }
+.barra .val { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+.placar-total { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: baseline; font-size: var(--s-1); color: var(--muted); }
+.placar-total b { font: 600 var(--s2) var(--f-mono); color: var(--ink); }
+
+/* Questões */
+.qbloco { margin-top: 1.75rem; }
+.qbar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; justify-content: space-between; padding: .625rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.qbar .conta { font: 500 var(--s-1) var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.qbar .ctrl { display: flex; flex-wrap: wrap; gap: .375rem; }
+button { font: 500 var(--s-1)/1 var(--f-body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: .5rem .7rem; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.qlist { display: grid; gap: .875rem; margin-top: .875rem; }
+.q { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: .875rem 1rem; min-width: 0; }
+.q.acertou { border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); }
+.q.errou { border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
+.q .meta { display: flex; flex-wrap: wrap; gap: .25rem .5rem; align-items: center; font: 400 .75rem/1.35 var(--f-mono); color: var(--muted); }
+.chip { display: inline-block; padding: .15rem .4rem; border-radius: 3px; font: 600 .6875rem/1.2 var(--f-mono); letter-spacing: .04em; text-transform: uppercase; }
+.chip.cam { background: var(--gold-soft); color: var(--gold); border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent); }
+.chip.anul { background: var(--trap-soft); color: var(--trap); }
+.chip.aut { background: var(--accent-soft); color: var(--accent); }
+.q .enun p { margin: .5rem 0; }
+.q .enun p.it { padding-left: .75rem; border-left: 2px solid var(--line); }
+.opts { display: grid; gap: .375rem; margin-top: .75rem; }
+.opts.ce { grid-template-columns: repeat(2, minmax(0, 8rem)); }
+.opt { text-align: left; display: grid; grid-template-columns: 1.5rem 1fr; gap: .4rem; padding: .55rem .65rem; line-height: 1.45; font-size: .9375rem; font-weight: 400; }
+.opts.ce .opt { grid-template-columns: 1fr; text-align: center; font-weight: 600; }
+.opt .l { font: 600 .875rem var(--f-mono); color: var(--muted); }
+.opt.certa { border-color: var(--ok); background: var(--ok-soft); }
+.opt.marcada-errada { border-color: var(--bad); background: var(--bad-soft); }
+.opt:disabled { cursor: default; color: var(--ink); }
+.resp { margin-top: .75rem; padding-top: .75rem; border-top: 1px dashed var(--line); font-size: .9375rem; }
+.resp .veredito { font: 600 var(--s-1) var(--f-mono); text-transform: uppercase; letter-spacing: .05em; }
+.resp .veredito.ok { color: var(--ok); } .resp .veredito.bad { color: var(--bad); } .resp .veredito.neu { color: var(--muted); }
+.resp .alerta { margin-top: .5rem; padding: .5rem .65rem; background: var(--trap-soft); border-radius: var(--r); }
+.resp .alerta b { color: var(--trap); }
+.vazio { color: var(--muted); font-size: var(--s-1); padding: .75rem 0; }
+.painel { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+.aviso-reset { font-size: var(--s-1); color: var(--muted); }
+
+/* Plano */
+.agenda { display: grid; gap: .5rem; margin: 1rem 0; }
+.dia { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .625rem .75rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+.dia .data { font: 600 var(--s-1)/1.4 var(--f-mono); color: var(--accent); font-variant-numeric: tabular-nums; }
+.dia p { margin: 0; }
+.dia small { color: var(--muted); }
+.check { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: .4rem; }
+.check li { display: grid; grid-template-columns: 1.25rem 1fr; gap: .5rem; }
+.check li::before { content: "□"; color: var(--accent); font-family: var(--f-mono); }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: var(--s-1); }
+
+@media (max-width: 30rem) {
+  .barra { grid-template-columns: 5.5rem 1fr 3.75rem; }
+  .etapa { grid-template-columns: 1fr; gap: .25rem; }
+  .dia { grid-template-columns: 1fr; gap: .25rem; }
+  .masthead h1 { font-size: var(--s3); }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* Versão PDF: gabaritos revelados, sem controles */
+html.modo-pdf body { background: #fff; color: #17211b; }
+html.modo-pdf nav.itens, html.modo-pdf .qbar .ctrl, html.modo-pdf .painel, html.modo-pdf .aviso-reset, html.modo-pdf .so-tela { display: none !important; }
+html.modo-pdf .q, html.modo-pdf .box, html.modo-pdf .etapa, html.modo-pdf .dia, html.modo-pdf tr { break-inside: avoid; }
+html.modo-pdf section.mod { padding-top: 1.5rem; }
+html.modo-pdf .wrap { max-width: none; }
+html.modo-pdf body { font-size: 12.5px; line-height: 1.5; }
+html.modo-pdf .q { padding: .55rem .75rem; }
+html.modo-pdf .qlist { gap: .5rem; }
+html.modo-pdf .opts { gap: .2rem; margin-top: .4rem; }
+html.modo-pdf .opt { padding: .3rem .5rem; font-size: 12px; }
+html.modo-pdf .opts.ce { grid-template-columns: repeat(2, 6rem); }
+html.modo-pdf .resp { margin-top: .45rem; padding-top: .45rem; font-size: 12px; }
+html.modo-pdf .resp p { margin: .3rem 0; }
+html.modo-pdf .q .enun p { margin: .3rem 0; }
+html.modo-pdf .placar, html.modo-pdf #placar-total { display: none; }
+</style>
+
+<header class="masthead">
+  <div class="wrap" style="padding-block:0">
+    <div class="eyebrow">Câmara dos Deputados · Cebraspe · Edital, item 6</div>
+    <h1>Responsabilidade Civil do Estado</h1>
+    <p class="lead">Estudo estratégico montado a partir do edital: cada item ligado ao Cap. 15 de Maria Sylvia Zanella Di Pietro (<em>Responsabilidade Extracontratual do Estado</em>) e às questões dos Cadernos 06 e 07, com o olhar de quem elabora a prova.</p>
+    <div class="facts">
+      <span>Prova: <b>17/01/2027</b></span>
+      <span id="contagem">Faltam <b>97 dias</b> (a partir de 12/10/2026)</span>
+      <span><b>__NTOTAL__</b> questões comentadas</span>
+      <span><b>__NCEB__</b> do Cebraspe, de 2020 a 2026</span>
+    </div>
+  </div>
+</header>
+
+<nav class="itens" aria-label="Itens do edital">
+  <div class="rail">
+    <a href="#mapa">Mapa</a><a href="#i61">6.1</a><a href="#i62">6.2</a><a href="#i63">6.3</a><a href="#i64">6.4</a><a href="#i65">6.5</a><a href="#pegadinhas">Pegadinhas</a><a href="#simulado">Simulado</a><a href="#plano">Plano</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ======================= MAPA ======================= -->
+<section class="mod" id="mapa">
+  <div class="modhead"><span class="num">0</span><h2>Mapa do edital</h2><span class="sub">Ponto de partida: como os cinco subitens se encadeiam</span></div>
+
+  <p>O item 6 do edital não é uma lista solta. Os cinco subitens formam o raciocínio que o examinador espera que você faça diante de qualquer caso concreto. O <strong>6.1</strong> dá o regime geral (quem responde e com qual teoria). Os itens <strong>6.2</strong> e <strong>6.3</strong> separam o caso pelo tipo de conduta. O <strong>6.4</strong> diz o que precisa ser provado em cada caso. O <strong>6.5</strong> é o caminho inverso: o que derruba ou reduz o dever de indenizar.</p>
+
+  <div class="fluxo" role="list" aria-label="Roteiro de análise de um caso">
+    <div class="etapa" role="listitem"><span class="tag">6.1</span><div><p><strong>Quem causou o dano?</strong> Agente de pessoa jurídica de direito público ou de pessoa privada prestadora de serviço público, agindo nessa qualidade. Se for estatal que explora atividade econômica, saia do art. 37, § 6º.</p></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">6.2 · 6.3</span><div><p><strong>Qual foi a conduta?</strong></p>
+      <div class="ramos">
+        <div class="ramo"><b>Comissiva (6.2)</b>Objetiva, risco administrativo. Ato lícito ou ilícito.</div>
+        <div class="ramo"><b>Omissão específica (6.3)</b>Dever específico de agir (preso, aluno, paciente sob custódia). STF: objetiva.</div>
+        <div class="ramo"><b>Omissão genérica (6.3)</b>Buraco na via, enchente, policiamento comum. Subjetiva: culpa do serviço.</div>
+      </div></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">6.4</span><div><p><strong>O que a vítima prova?</strong> Conduta + dano + nexo causal (dano direto e imediato). Na omissão genérica, também a falta do serviço. Se o ato foi lícito, o dano precisa ser anormal e específico.</p></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">6.5</span><div><p><strong>O Estado se defende atacando o nexo.</strong> Força maior, culpa exclusiva da vítima e fato exclusivo de terceiro excluem. Culpa concorrente só atenua. No risco integral, nada exclui.</p></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">6.1</span><div><p><strong>Reparação.</strong> Ação contra a pessoa jurídica (nunca contra o agente, segundo o STF), prazo de 5 anos, regresso contra o agente só com dolo ou culpa.</p></div></div>
+  </div>
+
+  <h3>Edital × Cap. 15 da Maria Sylvia × cadernos</h3>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Item do edital</th><th>Onde está no Cap. 15</th><th>O que a banca mais cobra</th><th class="n">Questões</th></tr></thead>
+    <tbody>
+      <tr><td><strong>6.1</strong> Responsabilidade civil do Estado no direito brasileiro</td><td>15.1 Delimitação · 15.2 Evolução · 15.3 Direito positivo · 15.6 Leis e regulamentos · 15.7 Atos jurisdicionais · 15.8 Reparação do dano</td><td>Risco administrativo como regra; quem responde (§ 6º); dupla garantia (Tema 940); regresso com dolo ou culpa; notários (Tema 777)</td><td class="n" id="cnt-61">—</td></tr>
+      <tr><td><strong>6.2</strong> Ato comissivo</td><td>15.2.3 (teoria do risco) · 15.3 (requisitos, ato lícito, arts. 188, 929 e 930 do CC)</td><td>Objetiva; ato lícito indenizável; agente objetiva × subjetiva</td><td class="n" id="cnt-62">—</td></tr>
+      <tr><td><strong>6.3</strong> Omissão</td><td>15.5 Responsabilidade do Estado por omissão (e 15.4, força maior + omissão)</td><td>Genérica subjetiva × específica objetiva; detento (Tema 592); foragido (Tema 362)</td><td class="n" id="cnt-63">—</td></tr>
+      <tr><td><strong>6.4</strong> Requisitos</td><td>15.2.3 (pressupostos) · 15.3 (os cinco requisitos do § 6º) · 15.5 (dano direto e imediato)</td><td>Nexo causal; dano anormal e específico; agir "nessa qualidade"</td><td class="n" id="cnt-64">—</td></tr>
+      <tr><td><strong>6.5</strong> Excludentes e atenuantes</td><td>15.4 Causas excludentes e atenuantes</td><td>Culpa exclusiva × concorrente; força maior com omissão; caso fortuito</td><td class="n" id="cnt-65">—</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Como o Cebraspe cobra este tema</h3>
+  <div class="box banca">
+    <h4>O que os <span id="n-ceb">__NCEB__</span> itens dos cadernos mostram</h4>
+    <ul class="tight">
+      <li><strong>O núcleo se repete.</strong> Risco administrativo como regra, nexo causal indispensável, culpa exclusiva exclui e concorrente atenua, regresso só com dolo ou culpa. Essas quatro ideias aparecem em mais da metade dos itens (86 de 158).</li>
+      <li><strong>A jurisprudência do STF é cobrada pelo texto da tese.</strong> Temas 940, 592, 362, 777 e 130 aparecem quase literalmente. Decore a frase da tese, não só o resultado.</li>
+      <li><strong>As anulações mostram onde ficam as pegadinhas.</strong> As 7 questões anuladas estão todas em zonas de divergência: danos nucleares, omissão, litisconsórcio com o agente, desconto em folha, teoria do nexo, caso fortuito e estatal sem qualificação. Onde Maria Sylvia e o STF discordam, o examinador costuma errar ou armar a pegadinha.</li>
+      <li><strong>O comando decide a resposta.</strong> "Segundo a doutrina clássica" e "segundo o STF" levam a respostas diferentes no mesmo tema (omissão, caso fortuito, ação contra o agente). Leia o comando antes do item.</li>
+      <li><strong>Palavras absolutas derrubam itens.</strong> "Sempre", "somente", "qualquer", "independentemente", "presunção absoluta", "posição consensual": em quase todos os casos o item é ERRADO.</li>
+    </ul>
+  </div>
+
+  <div class="box camara">
+    <h4>A própria Câmara já cobrou</h4>
+    <p>Em 2026, no concurso de Policial Legislativo da Câmara, o Cebraspe cobrou a dupla garantia: a ação vai contra o Estado, que tem regresso contra o servidor com dolo ou culpa (CERTO). Em 2012, a prova de Analista Legislativo trouxe três itens seguidos: a data da responsabilidade objetiva, as prestadoras privadas e a morte de detento. Os três estão nos módulos abaixo, com o gabarito oficial e o que mudou desde então.</p>
+  </div>
+
+  <h3>Onde Maria Sylvia e a banca divergem</h3>
+  <p>O edital indica a autora, mas a banca corrige pelo STF quando há tese fixada. Estude as duas posições e deixe o comando da questão escolher.</p>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Tema</th><th>Maria Sylvia (Cap. 15)</th><th>STF e gabaritos do Cebraspe</th><th>Como marcar</th></tr></thead>
+    <tbody>
+      <tr><td>Omissão</td><td>Subjetiva, com presunção de culpa (15.5)</td><td>Genérica: subjetiva. Específica: objetiva (Tema 592)</td><td>"Em regra" ou "doutrina clássica" → subjetiva. "Dever específico" ou "STF" → objetiva</td></tr>
+      <tr><td>Caso fortuito</td><td>Não exclui; só a força maior exclui (15.4)</td><td>Itens genéricos dão CERTO para "caso fortuito e força maior excluem"</td><td>Com o nome da autora → distinção. Sem ele → os dois excluem</td></tr>
+      <tr><td>Ação contra o agente</td><td>Admite ação direta e litisconsórcio, com Cahali e Celso Antônio (15.8)</td><td>Agente é parte ilegítima (Tema 940)</td><td>Quase sempre o STF</td></tr>
+      <tr><td>Denunciação da lide</td><td>Cabe só se o autor alegou dolo ou culpa do agente (15.8)</td><td>Não é obrigatória; Lei 8.112, art. 122, § 2º, exige ação regressiva</td><td>"Imprescindível" → ERRADO</td></tr>
+      <tr><td>Danos nucleares</td><td>Risco integral (15.2.3)</td><td>Lei 6.453/77 admite excludentes; item anulado em 2023</td><td>"Independe de culpa" → CERTO</td></tr>
+      <tr><td>Atos jurisdicionais</td><td>Critica a irresponsabilidade (15.7)</td><td>Em regra não indenizam, salvo CF, art. 5º, LXXV</td><td>"Em regra não geram indenização" → CERTO</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="so-tela">Seu placar</h3>
+  <p class="so-tela">As respostas ficam salvas neste navegador. Use o placar para saber qual item do edital revisar primeiro.</p>
+  <div class="placar" id="placar"></div>
+  <div class="placar-total so-tela" id="placar-total"></div>
+  <div class="painel">
+    <button type="button" id="btn-reset">Zerar respostas</button>
+    <button type="button" id="btn-reset-ok" hidden>Confirmar: apagar todas</button>
+    <span class="aviso-reset" id="aviso-reset" hidden>Isso apaga suas respostas salvas neste navegador.</span>
+  </div>
+</section>
+
+<!-- ======================= 6.1 ======================= -->
+<section class="mod" id="i61">
+  <div class="modhead"><span class="num">6.1</span><h2>Responsabilidade civil do Estado no direito brasileiro</h2><span class="sub">MSZ 15.1, 15.2, 15.3, 15.6, 15.7 e 15.8</span></div>
+
+  <h3>A. Conceito, evolução e teorias</h3>
+  <blockquote>"A responsabilidade extracontratual do Estado corresponde à obrigação de reparar danos causados a terceiros em decorrência de comportamentos comissivos ou omissivos, materiais ou jurídicos, lícitos ou ilícitos, imputáveis aos agentes públicos."<cite>MSZ 15.1</cite></blockquote>
+  <ul class="tight">
+    <li>A responsabilidade é <strong>do Estado</strong>, pessoa jurídica. Falar em "responsabilidade da Administração" é impróprio, porque a Administração não tem personalidade.</li>
+    <li>Abrange as <strong>três funções</strong> (administrativa, legislativa e jurisdicional). Nas duas últimas, só em casos excepcionais.</li>
+    <li>É sempre <strong>civil</strong>, de ordem pecuniária, e <strong>extracontratual</strong>: a contratual tem regras próprias.</li>
+    <li>No direito privado a responsabilidade exige ato ilícito. No administrativo, também nasce de <strong>ato lícito</strong> que imponha a alguém ônus maior que o dos demais.</li>
+  </ul>
+
+  <div class="tbl wide"><table>
+    <thead><tr><th>Teoria</th><th>Ideia central</th><th>Detalhes que caem</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Irresponsabilidade</strong></td><td>Estado absoluto; responsabilizá-lo o igualaria ao súdito</td><td>"The king can do no wrong", "le roi ne peut mal faire". EUA abandonam em 1946 (Federal Tort Claims Act), Inglaterra em 1947 (Crown Proceedings Act). <strong>O Brasil nunca adotou.</strong></td></tr>
+      <tr><td><strong>Civilistas: atos de império × gestão</strong></td><td>Responde pelos atos de gestão, não pelos de império</td><td>Separava a pessoa do Rei (império) da do Estado (gestão). Caiu porque a personalidade do Estado é una.</td></tr>
+      <tr><td><strong>Civilistas: culpa civil</strong></td><td>Responde se provada a culpa do funcionário (subjetiva), como o patrão pelo empregado</td><td>Inspirou o art. 15 do CC/1916.</td></tr>
+      <tr><td><strong>Publicistas: culpa do serviço</strong></td><td>Culpa anônima: o serviço não funcionou, funcionou mal ou funcionou atrasado</td><td>Caso Blanco (1873). Sistematizada por Paul Duez. Sinônimos: culpa administrativa, acidente administrativo, faute du service. Ainda é subjetiva.</td></tr>
+      <tr><td><strong>Publicistas: risco administrativo</strong></td><td>Objetiva: troca a culpa pelo nexo causal; admite excludentes</td><td>Fundamento: igualdade perante os encargos sociais (art. 13 da Declaração de 1789). <strong>Regra da CF/88.</strong></td></tr>
+      <tr><td><strong>Publicistas: risco integral</strong></td><td>Objetiva sem excludentes; o Estado como "segurador universal"</td><td>Danos nucleares (CF, art. 21, XXIII, d; Lei 6.453/77); atentados terroristas e atos de guerra contra aeronaves de empresas brasileiras (Leis 10.309/01 e 10.744/03); CC, arts. 246, 393 e 399.</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>A distinção entre risco administrativo e risco integral é de Hely Lopes Meirelles. Yussef Cahali a critica: a diferença estaria só na consequência (admitir ou não excludentes). Para MSZ, a divergência é mais de terminologia do que de fundo: todos concordam que a responsabilidade é objetiva e que algumas circunstâncias excluem ou diminuem o dever de indenizar.</p>
+
+  <h4>Linha do tempo no direito brasileiro <span class="ref">MSZ 15.3</span></h4>
+  <ol class="tempo">
+    <li><span class="ano">1824 e 1891</span><br>Constituições só previam a responsabilidade do funcionário por abuso ou omissão. Leis esparsas (estradas de ferro, telégrafos, correios) previam a do Estado, solidária com o funcionário.</li>
+    <li><span class="ano">CC/1916, art. 15</span><br>Responsabilidade subjetiva ("procedendo de modo contrário ao direito ou faltando a dever prescrito por lei").</li>
+    <li><span class="ano">1934 e 1937</span><br>Responsabilidade solidária entre Estado e funcionário, por negligência, omissão ou abuso.</li>
+    <li class="chave"><span class="ano">1946, art. 194</span><br><strong>Responsabilidade objetiva.</strong> Regresso contra o funcionário "quando tiver havido culpa deste".</li>
+    <li><span class="ano">1967, art. 105 (e EC 1/1969, art. 107)</span><br>Mantém a regra e acrescenta o <strong>dolo</strong> ao lado da culpa para o regresso.</li>
+    <li class="chave"><span class="ano">1988, art. 37, § 6º</span><br>Estende a objetiva às <strong>pessoas privadas prestadoras de serviço público</strong>. Regresso nos casos de dolo ou culpa.</li>
+    <li><span class="ano">CC/2002, art. 43</span><br>Só menciona as pessoas de direito público interno: "atrasado" em relação à CF, diz MSZ.</li>
+  </ol>
+
+  <div class="box trap">
+    <h4>Pegadinhas do bloco A</h4>
+    <ul>
+      <li><strong>"Risco integral é a regra."</strong> Errado. A regra é o risco administrativo. O examinador às vezes escreve a definição correta do risco administrativo com o nome "risco integral".</li>
+      <li><strong>"Culpa anônima / falta do serviço é a teoria da CF."</strong> Errado. É teoria subjetiva, usada para a omissão genérica.</li>
+      <li><strong>"Objetiva somente a partir da CF/88."</strong> Pela doutrina, errado: foi em 1946. Mas a Câmara 2012 deu CERTO (veja abaixo). Em 2022 a banca deu CERTO para "a partir de 1946".</li>
+      <li><strong>Sinônimos que confundem:</strong> culpa administrativa = culpa do serviço = culpa anônima = acidente administrativo = faute du service.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.1A"></div>
+
+  <h3>B. Quem responde</h3>
+  <p>O art. 37, § 6º, contém duas regras: a <strong>responsabilidade objetiva</strong> da pessoa jurídica e a <strong>responsabilidade subjetiva</strong> do agente (MSZ 15.3).</p>
+  <blockquote>"As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa."<cite>CF, art. 37, § 6º</cite></blockquote>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Sujeito</th><th>Regime</th><th>Observação</th></tr></thead>
+    <tbody>
+      <tr><td>União, estados, DF, municípios, autarquias, fundações de direito público</td><td>Objetiva (§ 6º)</td><td>Órgãos (secretaria, polícia civil, Corpo de Bombeiros, a própria Câmara dos Deputados) <strong>não</strong> respondem: responde a pessoa jurídica.</td></tr>
+      <tr><td>Empresas públicas, sociedades de economia mista e fundações privadas <strong>prestadoras de serviço público</strong></td><td>Objetiva (§ 6º)</td><td>Respondem com patrimônio próprio; o ente político, subsidiariamente.</td></tr>
+      <tr><td>Estatais que <strong>exploram atividade econômica</strong></td><td>Regime privado (CF, art. 173, § 1º, II)</td><td>Fora do § 6º. Pode haver objetiva por outra lei (CDC), não pelo risco administrativo.</td></tr>
+      <tr><td>Concessionárias e permissionárias</td><td>Objetiva perante usuários <strong>e não usuários</strong> (Tema 130)</td><td>Respondem só pelo dano decorrente do serviço. Poder concedente: <strong>subsidiário</strong>. A fiscalização não exclui nem atenua (Lei 8.987/95, art. 25).</td></tr>
+      <tr><td>Tabeliães e registradores</td><td>Estado: objetiva. Notário: subjetiva</td><td>Tema 777: regresso obrigatório nos casos de dolo ou culpa, sob pena de improbidade. Lei 8.935/94, art. 22.</td></tr>
+      <tr><td>Organizadora de concurso (privada)</td><td>Objetiva da organizadora; Estado subsidiário</td><td>Tema 512: concurso cancelado por indícios de fraude.</td></tr>
+    </tbody>
+  </table></div>
+  <p>"Terceiro" é qualquer vítima, inclusive servidor público (STF, AI 473.381). "Agente" abrange agentes políticos, servidores, empregados, temporários e particulares em colaboração, sem importar o título.</p>
+  <div class="box trap">
+    <h4>Pegadinhas do bloco B</h4>
+    <ul>
+      <li><strong>Trocar "prestadoras de serviço público" por "exploradoras de atividade econômica"</strong> ou simplesmente apagar a qualificação. É a alteração de letra mais frequente.</li>
+      <li><strong>"Objetiva para usuários e subjetiva para não usuários."</strong> Era a posição antiga (RE 262.651), superada pelo Tema 130. MSZ sempre a criticou.</li>
+      <li><strong>"Poder concedente responde solidariamente."</strong> Errado: subsidiariamente.</li>
+      <li><strong>"Estado responde pela culpa do serviço nos atos de notários."</strong> Errado: responde objetivamente (Tema 777).</li>
+      <li><strong>Órgão como réu</strong> ("a polícia civil responderá"). Órgão não tem personalidade.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.1B"></div>
+
+  <h3>C. Reparação do dano, regresso e prescrição</h3>
+  <ul class="tight">
+    <li><strong>Via administrativa:</strong> possível, se a Administração reconhece a responsabilidade e há acordo sobre o valor. Senão, ação judicial (MSZ 15.8).</li>
+    <li><strong>Contra quem:</strong> a pessoa jurídica. O STF fixou a <strong>dupla garantia</strong>: para a vítima, um patrimônio solvente; para o agente, só responder perante a pessoa jurídica (RE 327.904; Tema 940). O agente é parte ilegítima.</li>
+    <li><strong>Doutrina × STF:</strong> MSZ, com Cahali e Celso Antônio, admite litisconsórcio facultativo e até ação direta contra o agente. Para a denunciação da lide, MSZ distingue: não cabe se a ação se funda só na responsabilidade objetiva ou na culpa anônima (o Estado traria fundamento novo); cabe se o autor já alegou dolo ou culpa do agente. A Lei 8.112, art. 122, § 2º, manda o servidor responder "perante a Fazenda Pública, em ação regressiva".</li>
+    <li><strong>Regresso:</strong> subjetivo, depende de dolo ou culpa, e pressupõe que o Estado tenha indenizado. É dever, não faculdade (Lei 4.619/65: ação obrigatória, em 60 dias do trânsito em julgado; Tema 777: "sob pena de improbidade").</li>
+    <li><strong>Juízes, MP, advocacia pública e defensoria:</strong> regresso só por <strong>dolo ou fraude</strong> (CPC, arts. 143, 181, 184 e 187).</li>
+    <li><strong>Prescrição:</strong> 5 anos contra pessoas de direito público e privadas prestadoras (Lei 9.494/97, art. 1º-C; Decreto 20.910/32). Termo inicial: ciência do dano. O ressarcimento ao erário por ilícito civil prescreve (Tema 666); só o decorrente de improbidade dolosa é imprescritível (Tema 897).</li>
+  </ul>
+  <div class="box trap">
+    <h4>Pegadinhas do bloco C</h4>
+    <ul>
+      <li><strong>Requisitos da objetiva aplicados ao regresso</strong> ("basta conduta, dano e nexo"). Regresso exige dolo ou culpa, sempre.</li>
+      <li><strong>"Somente contra o Estado."</strong> Pode ser autarquia, fundação ou prestadora privada. A PF 2025 deu ERRADO; a Câmara 2026 deu CERTO para "diretamente contra o Estado", sem o "somente".</li>
+      <li><strong>"A vítima pode escolher o réu."</strong> Para o STF, não.</li>
+      <li><strong>"Regresso só por dolo."</strong> Também por culpa (salvo juízes e membros das funções essenciais: dolo ou fraude).</li>
+      <li><strong>"Reparação necessariamente judicial."</strong> Errado.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.1C"></div>
+
+  <h3>D. Atos legislativos, jurisdicionais e casos especiais</h3>
+  <h4>Leis e regulamentos <span class="ref">MSZ 15.6</span></h4>
+  <p>Contra a responsabilidade: soberania do Legislativo, generalidade das leis, eleição dos parlamentares pelos próprios cidadãos. A favor: o Legislativo deve obediência à Constituição; nem toda lei é geral; o mandato é para fazer leis constitucionais. Hoje se aceita a responsabilidade em quatro hipóteses:</p>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Hipótese</th><th>Condição</th></tr></thead>
+    <tbody>
+      <tr><td>Lei inconstitucional</td><td>Prévia declaração do vício pelo STF, mais dano e nexo</td></tr>
+      <tr><td>Regulamento ou ato normativo inconstitucional (inclusive de agência)</td><td>Prévia declaração judicial do vício</td></tr>
+      <tr><td>Regulamento ou ato normativo <strong>ilegal</strong></td><td>Dispensa declaração prévia: discute-se a ilegalidade na própria ação de indenização</td></tr>
+      <tr><td>Lei de efeitos concretos</td><td>Gera responsabilidade <strong>mesmo se constitucional</strong>: é ato administrativo quanto ao conteúdo</td></tr>
+      <tr><td>Omissão legislativa ou regulamentar</td><td>MI 283: declarada a mora e vencido o prazo, indenização contra a União. Na revisão geral anual (art. 37, X) o STF negou indenização</td></tr>
+    </tbody>
+  </table></div>
+  <h4>Atos jurisdicionais <span class="ref">MSZ 15.7</span></h4>
+  <ul class="tight">
+    <li>Regra na jurisprudência: <strong>não geram indenização</strong>. MSZ critica e rebate os argumentos (soberania, independência, "juiz não é funcionário", coisa julgada): a indenização não altera a coisa julgada.</li>
+    <li>Exceções expressas: <strong>erro judiciário</strong> e <strong>prisão além do tempo fixado na sentença</strong> (CF, art. 5º, LXXV; CPP, art. 630).</li>
+    <li>Juiz responde em regresso por dolo, fraude ou recusa, omissão ou retardamento injustificado (CPC, art. 143). A ação vai contra o Estado (RE 228.977).</li>
+    <li>Atos judiciais <strong>não jurisdicionais</strong> (administrativos) seguem a regra geral, objetiva.</li>
+  </ul>
+  <div class="box trap">
+    <h4>Pegadinhas do bloco D</h4>
+    <ul>
+      <li><strong>"A mera declaração de inconstitucionalidade basta."</strong> Errado: falta dano e nexo.</li>
+      <li><strong>"Obra pública, por ser de interesse público, não gera indenização."</strong> Errado: ato lícito com dano anormal e específico indeniza.</li>
+      <li><strong>"Trânsito em julgado impede a indenização por erro judiciário."</strong> Errado.</li>
+      <li><strong>Ato administrativo do Judiciário ou do Legislativo exige culpa.</strong> Errado: segue a regra objetiva.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.1D"></div>
+</section>
+
+<!-- ======================= 6.2 ======================= -->
+<section class="mod" id="i62">
+  <div class="modhead"><span class="num">6.2</span><h2>Responsabilidade por ato comissivo</h2><span class="sub">MSZ 15.2.3 e 15.3</span></div>
+  <p>Na conduta comissiva vale o <strong>risco administrativo</strong>: a culpa é substituída pelo nexo de causalidade entre o funcionamento do serviço e o prejuízo. É indiferente se o serviço funcionou bem ou mal.</p>
+  <h4>Pressupostos da responsabilidade objetiva <span class="ref">MSZ 15.2.3</span></h4>
+  <ol class="tight">
+    <li>Ato <strong>lícito ou ilícito</strong> praticado por agente público.</li>
+    <li>Dano <strong>específico</strong> (atinge um ou alguns membros da coletividade) e <strong>anormal</strong> (supera os inconvenientes normais da vida em sociedade).</li>
+    <li><strong>Nexo de causalidade</strong> entre o ato e o dano.</li>
+  </ol>
+  <p>Alguns autores dizem que o Estado só responde por ato <em>antijurídico</em>. MSZ aceita a expressão desde que "antijurídico" signifique o ato ilícito <strong>e</strong> o ato lícito que cause dano anormal e específico. Do contrário, danos de obra pública feita licitamente ficariam sem indenização.</p>
+  <h4>O exemplo de ato lícito da MSZ: estado de necessidade</h4>
+  <p>Destruir coisa alheia para remover perigo iminente não é ilícito (CC, art. 188, II). Mesmo assim, se o dono não foi culpado pelo perigo, tem direito à indenização (art. 929). Se o perigo foi criado por terceiro, quem indenizou tem regresso contra ele (art. 930). Aplicado ao Estado no poder de polícia: o Estado indeniza o dono e cobra do terceiro.</p>
+  <div class="box banca">
+    <h4>Jurisprudência que a banca usa</h4>
+    <ul class="tight">
+      <li><strong>Tema 1055 (RE 1.209.429):</strong> é objetiva a responsabilidade por jornalista ferido por policiais em manifestação com tumulto. Excludente: culpa exclusiva, se ele descumprir advertência ostensiva sobre área de grave risco.</li>
+      <li><strong>Tema 1237 (ARE 1.385.315, 2024):</strong> morte ou ferimento em operação de segurança pública gera responsabilidade pelo risco administrativo; é do Estado o ônus de provar excludentes; perícia inconclusiva sobre a origem do disparo não basta para afastar a responsabilidade.</li>
+    </ul>
+  </div>
+  <div class="box trap">
+    <h4>Pegadinhas do 6.2</h4>
+    <ul>
+      <li><strong>"Presunção absoluta de culpa."</strong> Na objetiva a culpa não é presumida: é irrelevante.</li>
+      <li><strong>"Exige dolo ou culpa do servidor."</strong> Só para o regresso.</li>
+      <li><strong>"Ato lícito não gera responsabilidade"</strong> ou "o fundamento é a legalidade". O fundamento é a isonomia (repartição dos encargos sociais).</li>
+      <li><strong>Para o ato ilícito não se exige dano anormal e específico.</strong> Esse filtro é do ato lícito.</li>
+      <li><strong>Excludente de ilicitude penal</strong> (legítima defesa, estado de necessidade) não afasta, por si, a responsabilidade civil do Estado.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.2"></div>
+</section>
+
+<!-- ======================= 6.3 ======================= -->
+<section class="mod" id="i63">
+  <div class="modhead"><span class="num">6.3</span><h2>Responsabilidade por omissão</h2><span class="sub">MSZ 15.5 e 15.4</span></div>
+  <p>É o tema mais controvertido do capítulo, e por isso o mais fértil em pegadinhas. Há duas correntes:</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Corrente</th><th>Tese</th><th>Quem defende</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Objetiva</strong></td><td>O § 6º não distingue ação de omissão: basta o nexo entre o prejuízo e a omissão</td><td>Segundo MSZ, a maioria da doutrina parece pender para ela</td></tr>
+      <tr><td><strong>Subjetiva (culpa do serviço)</strong></td><td>O Estado responde se o serviço não funcionou, funcionou atrasado ou funcionou mal</td><td>Cretella Júnior, Cahali, Oswaldo e Celso Antônio Bandeira de Mello e <strong>Maria Sylvia</strong></td></tr>
+    </tbody>
+  </table></div>
+  <h4>A posição de Maria Sylvia</h4>
+  <ul class="tight">
+    <li>Na omissão, o dano em regra <strong>não é causado por agente público</strong>: vem de fato da natureza ou de terceiro, que o Estado poderia ter evitado.</li>
+    <li>Exige <strong>dever de agir</strong> e <strong>possibilidade de agir</strong>. A possibilidade se mede no caso concreto, pela <strong>reserva do possível</strong> (razoabilidade).</li>
+    <li>Enquanto a conduta comissiva gera responsabilidade sendo lícita ou ilícita, <strong>a omissão tem de ser ilícita</strong>.</li>
+    <li>Há <strong>presunção de culpa</strong> do Poder Público (com Celso Antônio): o lesado não prova culpa; o Estado é que deve provar que agiu com diligência.</li>
+  </ul>
+  <h4>A posição do STF, que a banca cobra</h4>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Situação</th><th>Regime</th><th>Fonte</th></tr></thead>
+    <tbody>
+      <tr><td>Omissão <strong>genérica</strong> (via mal conservada, enchente, falta de policiamento comum)</td><td>Subjetiva: falta do serviço, sem identificar o agente</td><td>Doutrina clássica; gabaritos de 2022 a 2026</td></tr>
+      <tr><td>Omissão <strong>específica</strong>, com dever jurídico de agir</td><td>Objetiva, risco administrativo</td><td>STF; ApexBrasil 2024; TCE-RS 2025</td></tr>
+      <tr><td>Morte de detento</td><td>Responde se descumpriu o dever específico de proteção (CF, art. 5º, XLIX)</td><td>Tema 592 (RE 841.526)</td></tr>
+      <tr><td>Superlotação e condições degradantes</td><td>Indeniza inclusive dano moral do preso</td><td>Tema 365 (RE 580.252)</td></tr>
+      <tr><td>Crime de foragido</td><td>Só com nexo causal direto entre o momento da fuga e o crime</td><td>Tema 362 (RE 608.880)</td></tr>
+      <tr><td>Explosão em comércio de fogos</td><td>Só se violado dever específico: licença concedida sem as cautelas, ou irregularidade conhecida</td><td>Tema 366 (RE 136.861)</td></tr>
+    </tbody>
+  </table></div>
+  <p>MSZ registra a evolução do STF: a Corte exigia o dano direto e imediato (fuga há "meses" rompe o nexo), mas passou a alargar a responsabilidade em casos como o estupro praticado por fugitivo beneficiado por descumprimento da Lei de Execução Penal (RE 409.203) e a falta de policiamento ostensivo em áreas de alta periculosidade (STA 223).</p>
+  <div class="box trap">
+    <h4>Pegadinhas do 6.3</h4>
+    <ul>
+      <li><strong>"Não há responsabilidade por omissão."</strong> Sempre errado.</li>
+      <li><strong>"Posição consensual da doutrina."</strong> Errado: não há consenso.</li>
+      <li><strong>"Omissão é sempre objetiva"</strong> ou <strong>"sempre subjetiva, segundo o STF"</strong>. As duas estão erradas.</li>
+      <li><strong>"Subjetiva mesmo com dever específico, como a custódia de preso."</strong> Errado, pelo Tema 592.</li>
+      <li><strong>"Omissão pode decorrer de atos lícitos."</strong> Errado, segundo MSZ: a omissão precisa ser ilícita.</li>
+      <li><strong>Foragido "dias após a fuga".</strong> O critério é o nexo direto, não a contagem de dias.</li>
+      <li><strong>Conclusão certa com fundamento errado</strong> (furto de veículo retido "por conduta comissiva"): o Cebraspe marca ERRADO.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.3"></div>
+</section>
+
+<!-- ======================= 6.4 ======================= -->
+<section class="mod" id="i64">
+  <div class="modhead"><span class="num">6.4</span><h2>Requisitos para demonstrar a responsabilidade</h2><span class="sub">MSZ 15.2.3, 15.3 e 15.5</span></div>
+  <h4>Os cinco requisitos do art. 37, § 6º <span class="ref">MSZ 15.3</span></h4>
+  <ol class="tight">
+    <li>Ato lesivo praticado por agente de <strong>pessoa jurídica de direito público</strong> ou de <strong>pessoa privada prestadora de serviço público</strong>.</li>
+    <li>A entidade privada deve <strong>prestar serviço público</strong> (ficam fora as exploradoras de atividade econômica), e responde só pelos danos <strong>decorrentes desse serviço</strong>.</li>
+    <li>Dano causado <strong>a terceiros</strong>, em decorrência da prestação do serviço: é o nexo de causa e efeito. "Terceiro" é usuário ou não usuário.</li>
+    <li>Dano causado por <strong>agente</strong> dessas pessoas, de qualquer categoria: políticos, administrativos ou particulares em colaboração.</li>
+    <li>O agente deve agir <strong>nessa qualidade</strong>: não basta ser agente; é preciso estar no exercício da função.</li>
+  </ol>
+  <h4>O que provar, caso a caso</h4>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Cenário</th><th>Conduta</th><th>Dano</th><th>Nexo</th><th>Culpa</th></tr></thead>
+    <tbody>
+      <tr><td>Ato comissivo ilícito</td><td>Sim</td><td>Sim</td><td>Sim</td><td>Não</td></tr>
+      <tr><td>Ato comissivo lícito</td><td>Sim</td><td>Anormal e específico</td><td>Sim</td><td>Não</td></tr>
+      <tr><td>Omissão específica (STF)</td><td>Violação do dever específico</td><td>Sim</td><td>Sim</td><td>Não</td></tr>
+      <tr><td>Omissão genérica</td><td>Fato administrativo (omissão)</td><td>Sim</td><td>Sim</td><td>Falta do serviço (para MSZ, presumida)</td></tr>
+      <tr><td>Regresso contra o agente</td><td>Sim</td><td>Pagamento pelo Estado</td><td>Sim</td><td><strong>Dolo ou culpa</strong></td></tr>
+    </tbody>
+  </table></div>
+  <h4>Dano</h4>
+  <ul class="tight">
+    <li>Material ou moral. O dano moral não depende de reflexo patrimonial.</li>
+    <li><strong>Anormal</strong> = supera os inconvenientes normais da vida em sociedade (intensidade). <strong>Específico</strong> = atinge pessoas determinadas (destinatário). Os dois juntos formam o "dano antijurídico" exigido para o ato lícito.</li>
+  </ul>
+  <h4>Nexo causal</h4>
+  <p>A teoria cobrada é a do <strong>dano direto e imediato</strong> (ou da interrupção do nexo causal; CC, art. 403; STF, RE 130.764): o dano precisa ser efeito necessário da causa. Danos indiretos ou remotos, em regra, não se indenizam porque surgem concausas. Equivalência dos antecedentes (conditio sine qua non) é a teoria do direito penal; causalidade adequada é defendida por parte da doutrina civil.</p>
+  <div class="box trap">
+    <h4>Pegadinhas do 6.4</h4>
+    <ul>
+      <li><strong>Troca das definições</strong> de dano anormal e dano específico.</li>
+      <li><strong>"Equivalência dos antecedentes e causalidade adequada."</strong> Para o Cebraspe, ERRADO: a resposta é dano direto e imediato.</li>
+      <li><strong>"Responsabilidade independe do nexo."</strong> Sempre errado.</li>
+      <li><strong>Agente fora da função</strong> (perito em consultório particular, delegado usando a carteira para lazer): o Estado não responde.</li>
+      <li><strong>Agente que exorbita da função</strong>, mas age nessa qualidade: o Estado responde e cobra em regresso.</li>
+      <li><strong>"Exige condenação penal ou punição disciplinar."</strong> Errado: instâncias independentes.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.4"></div>
+</section>
+
+<!-- ======================= 6.5 ======================= -->
+<section class="mod" id="i65">
+  <div class="modhead"><span class="num">6.5</span><h2>Excludentes e atenuantes</h2><span class="sub">MSZ 15.4</span></div>
+  <p>Como o fundamento da responsabilidade é o nexo causal, ela deixa de existir quando o serviço público não é a causa do dano, e incide atenuada quando ele não é a causa única.</p>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Circunstância</th><th>Efeito</th><th>Exceções e detalhes</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Força maior</strong>: imprevisível, inevitável e estranha à vontade das partes (tempestade, terremoto, raio)</td><td>Exclui</td><td>Não exclui se aliada à <strong>omissão</strong> do Estado (bueiros sem limpeza, árvore podre). Aí incide a culpa do serviço.</td></tr>
+      <tr><td><strong>Caso fortuito</strong></td><td>MSZ: <strong>não exclui</strong> (ato humano ou falha da Administração, como o rompimento de adutora ou cabo elétrico)</td><td>O CC (art. 393, parágrafo único) parece igualar os conceitos. Em itens genéricos o Cebraspe trata os dois como excludentes.</td></tr>
+      <tr><td><strong>Culpa exclusiva da vítima</strong></td><td>Exclui</td><td>No transporte de pessoas, a culpa do passageiro só reduz a indenização (CC, art. 738, parágrafo único).</td></tr>
+      <tr><td><strong>Culpa concorrente da vítima</strong></td><td><strong>Atenua</strong> (CC, art. 945)</td><td>A banca chama de "compensação de culpas". A responsabilidade continua objetiva.</td></tr>
+      <tr><td><strong>Fato de terceiro</strong> (inclusive multidão ou delinquentes)</td><td>Exclui</td><td>Não exclui se houver omissão estatal; nem no estado de necessidade (CC, arts. 188, II, e 930); nem no transporte de pessoas (CC, art. 735; Súmula 187 do STF*).</td></tr>
+      <tr><td>Fiscalização do poder concedente</td><td>Não exclui nem atenua</td><td>Lei 8.987/95, art. 25; Lei 14.133/21, art. 120.</td></tr>
+      <tr><td>Risco integral</td><td>Nenhuma excludente</td><td>Lei 6.453/77, arts. 6º e 8º, contém exceções para danos nucleares.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="ref" style="white-space:normal">* MSZ atribui a Súmula 187 ao STJ; ela é do STF: "a responsabilidade contratual do transportador, pelo acidente com o passageiro, não é elidida por culpa de terceiro, contra o qual tem ação regressiva". O CC/2002 a reproduziu no art. 735. No transporte de pessoas, a única excludente é a força maior (art. 734).</p>
+  <p>Quem prova a excludente é o Estado (Tema 1237, para operações policiais).</p>
+  <div class="box trap">
+    <h4>Pegadinhas do 6.5</h4>
+    <ul>
+      <li><strong>"Culpa concorrente exclui."</strong> A mais cobrada de todas: atenua.</li>
+      <li><strong>Listas misturadas</strong> ("caso fortuito, força maior e culpa concorrente excluem"): procure o elemento intruso.</li>
+      <li><strong>Evento da natureza com um detalhe de omissão</strong> no enunciado (árvore em péssimo estado). O detalhe muda o gabarito.</li>
+      <li><strong>"Fato imprevisível exclui automaticamente."</strong> Não, se havia omissão.</li>
+      <li><strong>"O ônus de provar a excludente é da vítima."</strong> É do Estado.</li>
+      <li><strong>Pedido de "segundo Maria Sylvia" com caso fortuito</strong>: aí ele não exclui.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="6.5"></div>
+</section>
+
+<!-- ======================= PEGADINHAS ======================= -->
+<section class="mod" id="pegadinhas">
+  <div class="modhead"><span class="num">!</span><h2>As 20 pegadinhas do examinador</h2><span class="sub">Revisão rápida. Se ler a frase da esquerda, pense na da direita.</span></div>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Se o item disser…</th><th>Lembre</th><th>Gabarito típico</th></tr></thead>
+    <tbody>
+      <tr><td>"Adota-se a teoria do risco integral"</td><td>A regra é o risco administrativo</td><td>Errado</td></tr>
+      <tr><td>"Bastando a demonstração do dano"</td><td>Sempre há nexo</td><td>Errado</td></tr>
+      <tr><td>"Culpa concorrente exclui"</td><td>Atenua (CC, art. 945)</td><td>Errado</td></tr>
+      <tr><td>"Culpa da vítima pode excluir ou atenuar"</td><td>Exclusiva exclui; concorrente atenua</td><td>Certo</td></tr>
+      <tr><td>"Força maior sempre exclui"</td><td>Não com omissão estatal</td><td>Errado</td></tr>
+      <tr><td>"Caso fortuito e força maior excluem" (item genérico)</td><td>Posição da banca</td><td>Certo</td></tr>
+      <tr><td>"Segundo Maria Sylvia, caso fortuito exclui"</td><td>Para ela, só a força maior</td><td>Errado</td></tr>
+      <tr><td>"Responsabilidade objetiva = presunção de culpa"</td><td>Na objetiva a culpa é irrelevante</td><td>Errado</td></tr>
+      <tr><td>"Omissão é sempre subjetiva (ou sempre objetiva)"</td><td>Genérica × específica</td><td>Errado</td></tr>
+      <tr><td>"Morte de detento: subjetiva mesmo com dever específico"</td><td>Tema 592: objetiva</td><td>Errado</td></tr>
+      <tr><td>"Vítima pode acionar o servidor diretamente"</td><td>Tema 940: dupla garantia</td><td>Errado</td></tr>
+      <tr><td>"Regresso independe de dolo ou culpa"</td><td>Regresso é subjetivo</td><td>Errado</td></tr>
+      <tr><td>"Regresso só em caso de dolo"</td><td>Dolo ou culpa (juízes: dolo ou fraude)</td><td>Errado</td></tr>
+      <tr><td>"Exploradoras de atividade econômica respondem pelo § 6º"</td><td>Só prestadoras de serviço público</td><td>Errado</td></tr>
+      <tr><td>"Concessionária: subjetiva para não usuários"</td><td>Tema 130: objetiva para ambos</td><td>Errado</td></tr>
+      <tr><td>"Poder concedente responde solidariamente"</td><td>Subsidiariamente</td><td>Errado</td></tr>
+      <tr><td>"Atos lícitos não geram indenização"</td><td>Geram, com dano anormal e específico</td><td>Errado</td></tr>
+      <tr><td>"Dano anormal é o que atinge pessoas determinadas"</td><td>Isso é dano específico</td><td>Errado</td></tr>
+      <tr><td>"Teoria da equivalência dos antecedentes"</td><td>Dano direto e imediato</td><td>Errado</td></tr>
+      <tr><td>"Prescrição de 5 anos não alcança as prestadoras privadas"</td><td>Alcança (Lei 9.494/97, art. 1º-C)</td><td>Errado</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box">
+    <h4>Técnica de leitura para o Cebraspe</h4>
+    <ol class="tight">
+      <li>Leia o <strong>comando</strong> primeiro: doutrina clássica, Maria Sylvia ou STF?</li>
+      <li>Identifique a <strong>conduta</strong> (comissiva, omissão genérica, omissão específica) e quem é o <strong>réu</strong>.</li>
+      <li>Procure o <strong>detalhe do enunciado</strong> que muda o caso: árvore podre, fora do serviço, preso sob custódia, "dias após a fuga".</li>
+      <li>Circule as <strong>palavras absolutas</strong>: sempre, somente, qualquer, independentemente, consensual.</li>
+      <li>Confira o <strong>fundamento</strong>, não só a conclusão: conclusão certa com justificativa errada é ERRADO.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======================= SIMULADO ======================= -->
+<section class="mod" id="simulado">
+  <div class="modhead"><span class="num">✎</span><h2>Simulado do examinador</h2><span class="sub">24 itens inéditos, no padrão Cebraspe, montados a partir do Cap. 15</span></div>
+  <p>Estes itens foram escritos como eu os escreveria para a prova da Câmara: frases da Maria Sylvia com uma palavra trocada, cenários com cargos da própria Casa e as divergências que a banca gosta de explorar. Faça depois de estudar os cinco módulos.</p>
+  <div class="qbloco" data-t="SIM"></div>
+</section>
+
+<!-- ======================= PLANO ======================= -->
+<section class="mod" id="plano">
+  <div class="modhead"><span class="num">⌚</span><h2>Plano até 17/01/2027</h2><span class="sub">Estudo do tema e revisões espaçadas</span></div>
+  <p>São cerca de 6 horas de estudo inicial, em três sessões, mais cinco revisões curtas até a véspera. As datas partem de hoje, 12/10/2026.</p>
+  <div class="agenda">
+    <div class="dia"><span class="data">13/10 (ter)</span><p><strong>Sessão 1 · 2h.</strong> Mapa do edital. Ler MSZ 15.1 a 15.3. Módulo 6.1 (blocos A e B) e as questões desses blocos.</p></div>
+    <div class="dia"><span class="data">15/10 (qui)</span><p><strong>Sessão 2 · 2h.</strong> Ler MSZ 15.4 e 15.5. Módulos 6.2, 6.3 e 6.5 com as questões.</p></div>
+    <div class="dia"><span class="data">17/10 (sáb)</span><p><strong>Sessão 3 · 2h.</strong> Ler MSZ 15.6 a 15.8 e o Resumo do capítulo. Módulo 6.1 (blocos C e D) e 6.4. Tabela de pegadinhas.</p></div>
+    <div class="dia"><span class="data">18/10 (dom)</span><p><strong>Revisão 1 · 40 min.</strong> Refazer só as questões erradas (filtro "Erradas" em cada bloco).</p></div>
+    <div class="dia"><span class="data">24/10 (sáb)</span><p><strong>Revisão 2 · 45 min.</strong> Simulado do examinador inteiro. Meta: 20 de 24.</p></div>
+    <div class="dia"><span class="data">16/11 (seg)</span><p><strong>Revisão 3 · 1h.</strong> Tabela "Onde Maria Sylvia e a banca divergem" + todas as questões de 6.3 e 6.5.</p></div>
+    <div class="dia"><span class="data">14/12 (seg)</span><p><strong>Revisão 4 · 1h.</strong> Zerar as respostas e refazer todas as questões. Meta: 85% de acerto. <small>Confira também se o STF fixou tese nova sobre o tema depois de outubro de 2026.</small></p></div>
+    <div class="dia"><span class="data">11/01 (seg)</span><p><strong>Revisão final · 30 min.</strong> As 20 pegadinhas e o checklist abaixo.</p></div>
+  </div>
+  <h3>Checklist da véspera</h3>
+  <ul class="check">
+    <li>Art. 37, § 6º, de cor: pessoas, "nessa qualidade", "terceiros", regresso com dolo ou culpa.</li>
+    <li>1946 = responsabilidade objetiva. 1967 = dolo ao lado da culpa. 1988 = prestadoras privadas.</li>
+    <li>Risco administrativo é a regra; risco integral só em dano nuclear e atentado contra aeronave.</li>
+    <li>Comissiva: objetiva, ato lícito ou ilícito. Lícito exige dano anormal e específico.</li>
+    <li>Omissão genérica: subjetiva (culpa do serviço). Específica: objetiva. MSZ: subjetiva com presunção de culpa.</li>
+    <li>Temas: 940 (dupla garantia), 592 (detento), 362 (foragido), 777 (notários), 130 (não usuário), 512 (concurso), 1055 (jornalista), 1237 (operação policial).</li>
+    <li>Nexo: dano direto e imediato.</li>
+    <li>Culpa exclusiva exclui; concorrente atenua; força maior com omissão não exclui.</li>
+    <li>Caso fortuito: MSZ não exclui; banca, em item genérico, exclui.</li>
+    <li>Regresso: dolo ou culpa; juízes e membros das funções essenciais: dolo ou fraude.</li>
+    <li>Prescrição: 5 anos, também para as prestadoras privadas.</li>
+    <li>Atos jurisdicionais: em regra não indenizam; erro judiciário e prisão além do tempo, sim.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Fontes: Maria Sylvia Zanella Di Pietro, <em>Direito Administrativo</em>, Cap. 15 (Responsabilidade Extracontratual do Estado); Caderno 06 (146 questões) e Caderno 07 (71 questões) do TEC Concursos, Cebraspe, 2020 a 2026; prova e gabarito definitivo da Câmara dos Deputados de 2012 (Cebraspe). As 158 questões únicas dos cadernos foram extraídas automaticamente e conferidas contra os gabaritos dos cadernos. Os comentários e o simulado são autorais. Teses do STF citadas pelo número do tema de repercussão geral; confirme novas teses até a prova.</p>
+</footer>
+</main>
+
+<script>
+const DADOS = /*__DADOS__*/[];
+const CHAVE = 'resp-civil-estado-v1';
+const ROTULOS = { '6.1A': '6.1 A Teorias', '6.1B': '6.1 B Quem responde', '6.1C': '6.1 C Ação e regresso', '6.1D': '6.1 D Leg. e jud.', '6.2': '6.2 Comissivo', '6.3': '6.3 Omissão', '6.4': '6.4 Requisitos', '6.5': '6.5 Excludentes', 'SIM': 'Simulado' };
+let resp = {};
+try { resp = JSON.parse(localStorage.getItem(CHAVE) || '{}') || {}; } catch (e) { resp = {}; }
+function salvar() { try { localStorage.setItem(CHAVE, JSON.stringify(resp)); } catch (e) {} }
+
+const porId = {}; DADOS.forEach(q => porId[q.id] = q);
+const filtro = {};
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+function gabLetra(q) { return q.tipo === 'CE' ? (q.gab === 'Certo' ? 'C' : q.gab === 'Errado' ? 'E' : null) : (q.gab.length === 1 ? q.gab.toLowerCase() : null); }
+function situacao(q) {
+  const r = resp[q.id]; if (!r) return 'nova';
+  if (q.gab === 'Anulada') return 'anulada';
+  return r === gabLetra(q) ? 'acertou' : 'errou';
+}
+
+function htmlQuestao(q, revelar) {
+  const r = resp[q.id];
+  const mostra = revelar || !!r;
+  const certa = gabLetra(q);
+  const chips = [];
+  if (q.camara) chips.push('<span class="chip cam">Câmara</span>');
+  if (q.gab === 'Anulada') chips.push('<span class="chip anul">Anulada</span>');
+  if (q.origem === 'autoral') chips.push('<span class="chip aut">Inédita</span>');
+  const meta = q.origem === 'autoral' ? 'Simulado do examinador · item ' + q.n : esc(q.fonte);
+  const enun = q.enunciado.map(p => '<p' + (/^(I|II|III|IV|V)\s/.test(p) ? ' class="it"' : '') + '>' + esc(p) + '</p>').join('');
+  let opts;
+  if (q.tipo === 'CE') {
+    opts = '<div class="opts ce">' + [['C', 'Certo'], ['E', 'Errado']].map(([l, t]) => {
+      let cls = 'opt';
+      if (mostra && certa === l) cls += ' certa';
+      if (r === l && certa && r !== certa) cls += ' marcada-errada';
+      return '<button type="button" class="' + cls + '" data-q="' + q.id + '" data-op="' + l + '"' + (r ? ' disabled' : '') + ' aria-pressed="' + (r === l) + '">' + t + '</button>';
+    }).join('') + '</div>';
+  } else {
+    opts = '<div class="opts">' + q.opcoes.map(([l, t]) => {
+      let cls = 'opt';
+      if (mostra && certa === l) cls += ' certa';
+      if (r === l && certa && r !== certa) cls += ' marcada-errada';
+      return '<button type="button" class="' + cls + '" data-q="' + q.id + '" data-op="' + l + '"' + (r ? ' disabled' : '') + ' aria-pressed="' + (r === l) + '"><span class="l">' + l + ')</span><span>' + esc(t) + '</span></button>';
+    }).join('') + '</div>';
+  }
+  let corpo = '';
+  if (mostra) {
+    const s = situacao(q);
+    let ver, vcls;
+    if (q.gab === 'Anulada') { ver = 'Questão anulada'; vcls = 'neu'; }
+    else if (!r) { ver = 'Gabarito: ' + (q.tipo === 'CE' ? q.gab : q.gab); vcls = 'neu'; }
+    else if (s === 'acertou') { ver = 'Acertou · gabarito ' + q.gab; vcls = 'ok'; }
+    else { ver = 'Errou · gabarito ' + q.gab; vcls = 'bad'; }
+    corpo = '<div class="resp"><div class="veredito ' + vcls + '">' + ver + '</div><p>' + esc(q.c) + '</p>' +
+      (q.a ? '<div class="alerta"><b>Pegadinha:</b> ' + esc(q.a) + '</div>' : '') + '</div>';
+  }
+  const cls = 'q' + (r && q.gab !== 'Anulada' ? (situacao(q) === 'acertou' ? ' acertou' : ' errou') : '');
+  return '<article class="' + cls + '" id="q-' + q.id + '"><div class="meta">' + chips.join('') + '<span>' + meta + '</span></div><div class="enun">' + enun + '</div>' + opts + corpo + '</article>';
+}
+
+function desenhaBloco(el) {
+  const t = el.dataset.t;
+  const lista = DADOS.filter(q => q.t === t);
+  const f = filtro[t] || 'todas';
+  const revelar = document.documentElement.classList.contains('modo-pdf') || el.dataset.revelar === '1';
+  const vis = lista.filter(q => f === 'todas' || (f === 'novas' && !resp[q.id]) || (f === 'erradas' && situacao(q) === 'errou'));
+  const feitas = lista.filter(q => resp[q.id] && q.gab !== 'Anulada');
+  const ac = feitas.filter(q => situacao(q) === 'acertou').length;
+  el.innerHTML = '<div class="qbar"><span class="conta">' + lista.length + ' questões · ' + feitas.length + ' respondidas · ' + ac + ' acertos</span><div class="ctrl">' +
+    [['todas', 'Todas'], ['novas', 'Não respondidas'], ['erradas', 'Erradas']].map(([k, v]) => '<button type="button" data-filtro="' + k + '" aria-pressed="' + (f === k) + '">' + v + '</button>').join('') +
+    '<button type="button" data-revelar aria-pressed="' + (el.dataset.revelar === '1') + '">Mostrar gabaritos</button></div></div>' +
+    '<div class="qlist">' + (vis.length ? vis.map(q => htmlQuestao(q, revelar)).join('') : '<p class="vazio">Nenhuma questão neste filtro.</p>') + '</div>';
+}
+
+function desenhaPlacar() {
+  const ordem = ['6.1A', '6.1B', '6.1C', '6.1D', '6.2', '6.3', '6.4', '6.5', 'SIM'];
+  let totF = 0, totA = 0, totQ = 0;
+  document.getElementById('placar').innerHTML = ordem.map(t => {
+    const lista = DADOS.filter(q => q.t === t && q.gab !== 'Anulada');
+    const f = lista.filter(q => resp[q.id]); const a = f.filter(q => situacao(q) === 'acertou').length;
+    totF += f.length; totA += a; totQ += lista.length;
+    const pa = lista.length ? a / lista.length * 100 : 0, pe = lista.length ? (f.length - a) / lista.length * 100 : 0;
+    return '<div class="barra"><span class="rot">' + ROTULOS[t] + '</span><span class="trilho" role="img" aria-label="' + a + ' acertos e ' + (f.length - a) + ' erros em ' + lista.length + '"><i class="ok" style="width:' + pa + '%"></i><i class="bad" style="width:' + pe + '%"></i></span><span class="val">' + f.length + '/' + lista.length + '</span></div>';
+  }).join('');
+  const pct = totF ? Math.round(totA / totF * 100) : 0;
+  document.getElementById('placar-total').innerHTML = '<span><b>' + totF + '</b> de ' + totQ + ' respondidas</span><span><b>' + pct + '%</b> de acerto</span>';
+}
+
+function redesenha(t) {
+  document.querySelectorAll('.qbloco').forEach(el => { if (!t || el.dataset.t === t) desenhaBloco(el); });
+  desenhaPlacar();
+}
+
+document.addEventListener('click', ev => {
+  const op = ev.target.closest('.opt');
+  if (op && !op.disabled) {
+    const q = porId[op.dataset.q]; resp[q.id] = op.dataset.op; salvar();
+    const art = document.getElementById('q-' + q.id);
+    const bloco = art.closest('.qbloco');
+    art.outerHTML = htmlQuestao(q, bloco.dataset.revelar === '1');
+    desenhaPlacar();
+    const conta = bloco.querySelector('.conta');
+    const lista = DADOS.filter(x => x.t === bloco.dataset.t);
+    const feitas = lista.filter(x => resp[x.id] && x.gab !== 'Anulada');
+    conta.textContent = lista.length + ' questões · ' + feitas.length + ' respondidas · ' + feitas.filter(x => situacao(x) === 'acertou').length + ' acertos';
+    return;
+  }
+  const fb = ev.target.closest('[data-filtro]');
+  if (fb) { const bl = fb.closest('.qbloco'); filtro[bl.dataset.t] = fb.dataset.filtro; desenhaBloco(bl); return; }
+  const rv = ev.target.closest('[data-revelar]');
+  if (rv) { const bl = rv.closest('.qbloco'); bl.dataset.revelar = bl.dataset.revelar === '1' ? '0' : '1'; desenhaBloco(bl); return; }
+});
+
+const bReset = document.getElementById('btn-reset'), bOk = document.getElementById('btn-reset-ok'), aviso = document.getElementById('aviso-reset');
+bReset.addEventListener('click', () => { const abre = bOk.hidden; bOk.hidden = !abre; aviso.hidden = !abre; bReset.textContent = abre ? 'Cancelar' : 'Zerar respostas'; });
+bOk.addEventListener('click', () => { resp = {}; salvar(); bOk.hidden = true; aviso.hidden = true; bReset.textContent = 'Zerar respostas'; redesenha(); });
+
+// contagens da tabela do mapa
+const cnt = g => DADOS.filter(q => q.origem !== 'autoral' && g.includes(q.t)).length;
+document.getElementById('cnt-61').textContent = cnt(['6.1A', '6.1B', '6.1C', '6.1D']);
+document.getElementById('cnt-62').textContent = cnt(['6.2']);
+document.getElementById('cnt-63').textContent = cnt(['6.3']);
+document.getElementById('cnt-64').textContent = cnt(['6.4']);
+document.getElementById('cnt-65').textContent = cnt(['6.5']);
+
+// contagem regressiva
+(function () {
+  const prova = new Date(2027, 0, 17), hoje = new Date(); hoje.setHours(0, 0, 0, 0);
+  const d = Math.round((prova - hoje) / 864e5);
+  const el = document.getElementById('contagem');
+  if (d > 1) el.innerHTML = 'Faltam <b>' + d + ' dias</b>';
+  else if (d === 1) el.innerHTML = '<b>A prova é amanhã</b>';
+  else if (d === 0) el.innerHTML = '<b>A prova é hoje</b>';
+  else el.innerHTML = 'Prova realizada';
+})();
+
+if (location.hash === '#pdf') document.documentElement.classList.add('modo-pdf');
+redesenha();
+</script>

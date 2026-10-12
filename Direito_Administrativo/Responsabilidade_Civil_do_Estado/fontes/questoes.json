@@ -1,0 +1,3796 @@
+[
+ {
+  "id": "3815432",
+  "cab": "CEBRASPE (CESPE) - ACE (TCE-MG)/TCE MG/Ciência da Computação/2026",
+  "prova": "ACE (TCE-MG)/TCE MG/Ciência da Computação",
+  "ano": 2026,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que diz respeito à responsabilidade civil do Estado no direito brasileiro, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Não há possibilidade de responsabilidade civil do Estado por omissão."
+   ],
+   [
+    "b",
+    "Segundo a teoria do dano imediato, a responsabilidade civil se estabelece em relação aos efeitos diretos e imediatos causados pela conduta do agente para atribuição de responsabilidade objetiva do Estado."
+   ],
+   [
+    "c",
+    "No direito brasileiro, adota-se a teoria da culpa integral como fundamento para a caracterização da responsabilidade civil do Estado."
+   ],
+   [
+    "d",
+    "A culpa concorrente da vítima é causa excludente de responsabilidade civil do Estado."
+   ],
+   [
+    "e",
+    "É prescindível a análise da culpa da vítima para a demonstração da responsabilidade civil do Estado, haja vista que esta é objetiva, ou seja, independente de dolo ou culpa."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 1,
+  "num07": 1
+ },
+ {
+  "id": "3883081",
+  "cab": "CEBRASPE (CESPE) - AFRE (SEFAZ RN)/SEFAZ RN/2026",
+  "prova": "AFRE (SEFAZ RN)/SEFAZ RN",
+  "ano": 2026,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Em relação ao regime constitucional da responsabilidade civil do Estado e à natureza dos atos praticados pela administração pública, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Havendo prejuízo anormal e específico por conduta de agente público, o Estado é obrigado a indenizar o prejudicado."
+   ],
+   [
+    "b",
+    "A indenização por danos decorrentes de condutas lícitas é restrita a perdas materiais."
+   ],
+   [
+    "c",
+    "A indenização devida em razão da prática de ato ilícito restringe-se a danos anormais e específicos."
+   ],
+   [
+    "d",
+    "Para fins de responsabilidade civil do Estado, é imprescindível a análise quanto à licitude do ato lesivo."
+   ],
+   [
+    "e",
+    "A responsabilidade é solidária quando se trata de danos causados por terceiro em nome da administração pública."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 2,
+  "num07": 2
+ },
+ {
+  "id": "4148298",
+  "cab": "CEBRASPE (CESPE) - GPE (UNEAL)/UNEAL/Planejamento/2026",
+  "prova": "GPE (UNEAL)/UNEAL/Planejamento",
+  "ano": 2026,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Sobre o direito administrativo, julgue o item seguinte.",
+   "A responsabilidade civil ou extracontratual do Estado é objeto que se exclui do âmbito do direito administrativo, sendo regulada por normas de direito privado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 3
+ },
+ {
+  "id": "4148369",
+  "cab": "CEBRASPE (CESPE) - GPE (UNEAL)/UNEAL/Planejamento/2026",
+  "prova": "GPE (UNEAL)/UNEAL/Planejamento",
+  "ano": 2026,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item.",
+   "A responsabilidade civil do Estado no Brasil é objetiva, fundada na teoria do risco integral, bastando a demonstração da ocorrência do dano."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 4
+ },
+ {
+  "id": "4148379",
+  "cab": "CEBRASPE (CESPE) - GPE (UNEAL)/UNEAL/Planejamento/2026",
+  "prova": "GPE (UNEAL)/UNEAL/Planejamento",
+  "ano": 2026,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item.",
+   "Em relação ao nexo de causalidade na responsabilidade civil do Estado, o Brasil adota a teoria da equivalência dos antecedentes e da causalidade adequada."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 5,
+  "num07": 3
+ },
+ {
+  "id": "3284212",
+  "cab": "CEBRASPE (CESPE) - PMF (INSS)/INSS/2025",
+  "prova": "PMF (INSS)/INSS",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No tocante à responsabilidade civil do Estado, julgue o item subsequente. O ato ilícito culposo causador de dano praticado por perito médico federal no desempenho de seu ofício privado em consultório médico particular atrai a responsabilidade civil do Estado, em virtude da qualidade de agente público do perito."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 6
+ },
+ {
+  "id": "3284213",
+  "cab": "CEBRASPE (CESPE) - PMF (INSS)/INSS/2025",
+  "prova": "PMF (INSS)/INSS",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "No tocante à responsabilidade civil do Estado, julgue o item subsequente. No direito brasileiro, a responsabilidade civil do Estado prescinde da existência de dolo ou culpa, ao passo que a configuração da responsabilidade do agente público requer a presença desses elementos subjetivos."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 7,
+  "num07": 4
+ },
+ {
+  "id": "3312851",
+  "cab": "CEBRASPE (CESPE) - AA (ANM)/ANM/Administração/2025",
+  "prova": "AA (ANM)/ANM/Administração",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito dos direitos e das garantias fundamentais e da administração pública, julgue o item a seguir.",
+   "Ação para reparação de danos causados por agente público deve ser ajuizada contra o Estado ou, quando cabível, contra a pessoa jurídica privada prestadora de serviço público, sendo parte ilegítima passiva o autor do ato danoso."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 8,
+  "num07": 5
+ },
+ {
+  "id": "3361434",
+  "cab": "CEBRASPE (CESPE) - AAmb (IBAMA)/IBAMA/Proteção, Conservação, Licenciamento, Monitoramento e Qualidade Ambiental/2025",
+  "prova": "AAmb (IBAMA)/IBAMA/Proteção, Conservação, Licenciamento, Monitoramento e Qualidade Ambiental",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado e da improbidade administrativa, julgue o item a seguir.",
+   "No Brasil, a responsabilidade civil do Estado por ato comissivo é objetiva, fundada na teoria do risco administrativo, isto é, é necessário, em regra, comprovar a existência de conduta estatal, a ocorrência de dano e o nexo de causalidade entre a conduta e o dano provocado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 9
+ },
+ {
+  "id": "3374000",
+  "cab": "CEBRASPE (CESPE) - Ana Min (MPE CE)/MPE CE/Direito/2025",
+  "prova": "Ana Min (MPE CE)/MPE CE/Direito",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, aos princípios e poderes da administração pública e aos atos administrativos, julgue o item subsequente.",
+   "Na linha evolutiva das teorias da responsabilidade civil do Estado, a teoria da irresponsabilidade civil do Estado, típica da era absolutista e atualmente superada no ordenamento jurídico pátrio, impedia a responsabilização do Estado por seus atos e inviabilizava o direito à reparação."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 10
+ },
+ {
+  "id": "3429053",
+  "cab": "CEBRASPE (CESPE) - Del Pol (PC CE)/PC CE/2025",
+  "prova": "Del Pol (PC CE)/PC CE",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Assinale a opção correta em relação à responsabilidade civil."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A culpa decorrente da negligência está associada à falta de aptidão ou habilidade específica para a realização de uma atividade técnica ou científica."
+   ],
+   [
+    "b",
+    "A teoria da culpa pressupõe a intenção deliberada do agente em ofender o direito ou ocasionar prejuízo a outrem."
+   ],
+   [
+    "c",
+    "A responsabilidade civil objetiva é aquela entre cujos pressupostos se encontra o elemento culpa."
+   ],
+   [
+    "d",
+    "A teoria do risco profissional é restrita à responsabilidade subjetiva dos empregadores por acidentes causados diretamente a seus empregados."
+   ],
+   [
+    "e",
+    "A teoria do risco administrativo exclui a necessidade de se provar a culpa do agente estatal para fins de responsabilização civil, entretanto requer que o dano sofrido e o nexo de causalidade estejam interligados com a atividade pública."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 11
+ },
+ {
+  "id": "3441737",
+  "cab": "CEBRASPE (CESPE) - AJ (STM)/STM/Administrativa/\"Sem Especialidade\"/2025",
+  "prova": "AJ (STM)/STM/Administrativa/\"Sem Especialidade\"",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item a seguir, considerando, no que couber, a jurisprudência dos tribunais superiores.",
+   "A teoria do risco administrativo somente se aplica aos casos de responsabilização civil do Estado por condutas comissivas."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 12
+ },
+ {
+  "id": "3450856",
+  "cab": "CEBRASPE (CESPE) - TJ (STM)/STM/Administrativa/\"Sem Especialidade\"/2025",
+  "prova": "TJ (STM)/STM/Administrativa/\"Sem Especialidade\"",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Em relação à responsabilidade civil do Estado, julgue o item seguinte.",
+   "A teoria do risco integral prevê ao Estado, pelo simples envolvimento no evento, a obrigação de reparação do dano causado ao particular, não sendo possível a produção de prova com vistas a elidir essa responsabilidade, dada a condição de seguradora universal que a administração pública assume."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 13,
+  "num07": 6
+ },
+ {
+  "id": "3495314",
+  "cab": "CEBRASPE (CESPE) - Adm (FUB)/FUB/2025",
+  "prova": "Adm (FUB)/FUB",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca do regime jurídico administrativo, dos poderes da administração pública e da responsabilidade civil do Estado, julgue o item a seguir.",
+   "O Brasil adota a teoria do dano direto ou imediato para a configuração do nexo de causalidade na demonstração da responsabilidade civil do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 14,
+  "num07": 7
+ },
+ {
+  "id": "3495323",
+  "cab": "CEBRASPE (CESPE) - Adm (FUB)/FUB/2025",
+  "prova": "Adm (FUB)/FUB",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca do regime jurídico administrativo, dos poderes da administração pública e da responsabilidade civil do Estado, julgue o item a seguir.",
+   "Para a responsabilização civil do Estado, é necessária a demonstração da ação do agente público, do dano e do nexo de causalidade, além da comprovação de dolo ou culpa do servidor."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 15
+ },
+ {
+  "id": "3597427",
+  "cab": "CEBRASPE (CESPE) - AJ (TJ PA)/TJ PA/Administração/2025",
+  "prova": "AJ (TJ PA)/TJ PA/Administração",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que concerne à responsabilidade civil da administração pública e à Lei de Acesso à Informação, julgue o item subsequente.",
+   "A responsabilidade civil objetiva do Estado obriga a administração pública a reparar todo dano causado por seus agentes no exercício de suas funções, dada a presunção absoluta de culpa estatal."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 16
+ },
+ {
+  "id": "3661477",
+  "cab": "CEBRASPE (CESPE) - APE (TCE-RS)/TCE RS/Arquitetura/2025",
+  "prova": "APE (TCE-RS)/TCE RS/Arquitetura",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item seguinte, com relação à responsabilidade civil do Estado segundo o ordenamento jurídico brasileiro.",
+   "Caso um ato lícito do Estado cause dano anormal e específico a determinado indivíduo, o dever de indenizar se fundamenta no princípio da isonomia, e não no princípio da legalidade."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 17,
+  "num07": 8
+ },
+ {
+  "id": "3661479",
+  "cab": "CEBRASPE (CESPE) - APE (TCE-RS)/TCE RS/Arquitetura/2025",
+  "prova": "APE (TCE-RS)/TCE RS/Arquitetura",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item seguinte, com relação à responsabilidade civil do Estado segundo o ordenamento jurídico brasileiro.",
+   "Como regra geral, adota-se a teoria do risco integral como fundamento para a responsabilidade civil objetiva do Estado, que somente é afastada em caso de comprovação de culpa exclusiva da vítima ou de terceiro, ou em caso de força maior."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 18
+ },
+ {
+  "id": "3733846",
+  "cab": "CEBRASPE (CESPE) - NeR (TJ RR)/TJ RR/Remoção/2025",
+  "prova": "NeR (TJ RR)/TJ RR/Remoção",
+  "ano": 2025,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No âmbito da evolução histórica das teorias relativas à responsabilidade civil do Estado, a teoria da culpa administrativa foi consagrada por"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "León Duguit, que considerava que a falta do serviço poderia consumar-se pelo mau funcionamento do serviço."
+   ],
+   [
+    "b",
+    "Louis Rolland, segundo o qual a falta do serviço poderia ser confirmada pelo mau funcionamento do serviço."
+   ],
+   [
+    "c",
+    "Paul Duez, que considerava que a falta do serviço poderia consumar-se pelo retardamento do serviço."
+   ],
+   [
+    "d",
+    "Maurice Hauriou, que considerava que a falta do serviço poderia ser confirmada pela inexistência do serviço."
+   ],
+   [
+    "e",
+    "León Duguit, segundo o qual a falta do serviço poderia ser consumada pela inexistência do serviço."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 19,
+  "num07": 9
+ },
+ {
+  "id": "2817066",
+  "cab": "CEBRASPE (CESPE) - ERAC (ANAC)/ANAC/Qualquer Área de Formação/2024",
+  "prova": "ERAC (ANAC)/ANAC/Qualquer Área de Formação",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Helena, agindo na condição de servidora ocupante de cargo público de determinada agência reguladora, praticou ato administrativo que causou dano a terceiro, o qual ajuizou ação de indenização contra a agência.",
+   "Considerando a situação hipotética precedente, julgue o item seguinte.",
+   "A agência, como pessoa jurídica de direito público, deverá arcar com os danos causados por Helena, com base na responsabilidade civil objetiva do Estado, devendo o terceiro comprovar a culpa de Helena."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 20
+ },
+ {
+  "id": "2875355",
+  "cab": "CEBRASPE (CESPE) - Ana CT (CAPES)/CAPES/Geral/2024",
+  "prova": "Ana CT (CAPES)/CAPES/Geral",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item a seguir, acerca da responsabilidade civil do Estado.",
+   "A responsabilidade civil do Estado consiste na sua obrigação de reparar economicamente os danos que causar a terceiros no âmbito patrimonial ou moral."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 21
+ },
+ {
+  "id": "2933925",
+  "cab": "CEBRASPE (CESPE) - Ana Adm (CM Maceió)/CM Maceió/2024",
+  "prova": "Ana Adm (CM Maceió)/CM Maceió",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Em relação à responsabilidade civil do Estado, julgue o próximo item, considerando as disposições da CF e a jurisprudência do STF.",
+   "O nexo causal entre a conduta imputada à administração pública e o dano ocasionado ao particular é elemento essencial para a caracterização da responsabilidade civil do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 22
+ },
+ {
+  "id": "3048721",
+  "cab": "CEBRASPE (CESPE) - ACE (TCE PR)/TCE PR/Jurídica/2024",
+  "prova": "ACE (TCE PR)/TCE PR/Jurídica",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "De acordo com a doutrina majoritária acerca da responsabilidade civil do Estado, julgue os itens a seguir.",
+   "I Em regra, a responsabilidade do Estado é subjetiva.",
+   "II A responsabilidade civil do Estado, em qualquer hipótese, exige a prática de uma conduta comissiva.",
+   "III No Brasil, como regra, adota-se a teoria do risco administrativo, que admite a exclusão da responsabilidade civil do Estado, por exemplo, na hipótese de culpa exclusiva da vítima.",
+   "IV O nexo de causalidade entre a lesão e a conduta atribuível ao Estado é um dos requisitos indispensáveis para a configuração da responsabilidade civil do Estado.",
+   "Estão certos apenas os itens"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "I e II."
+   ],
+   [
+    "b",
+    "II e III."
+   ],
+   [
+    "c",
+    "III e IV."
+   ],
+   [
+    "d",
+    "I, II e IV."
+   ],
+   [
+    "e",
+    "I, III e IV."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 23
+ },
+ {
+  "id": "3078641",
+  "cab": "CEBRASPE (CESPE) - ACE (TCE AC)/TCE AC/Administração/2024",
+  "prova": "ACE (TCE AC)/TCE AC/Administração",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere a direito administrativo, julgue o item a seguir.",
+   "Em se tratando de responsabilidade civil do Estado, conforme a teoria do risco administrativo, a responsabilidade independe do nexo causal e ocorrerá ainda que a culpa seja da própria vítima."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 24
+ },
+ {
+  "id": "3103037",
+  "cab": "CEBRASPE (CESPE) - ERSPT (ANATEL)/ANATEL/Direito/2024",
+  "prova": "ERSPT (ANATEL)/ANATEL/Direito",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item seguinte.",
+   "A conhecida frase The king can do no wrong (O rei não erra) está associada à teoria da irresponsabilidade do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 25
+ },
+ {
+  "id": "3202210",
+  "cab": "CEBRASPE (CESPE) - AJ TSE/TSE/Administrativa/\"Sem Especialidade\"/2024",
+  "prova": "AJ TSE/TSE/Administrativa/\"Sem Especialidade\"",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item que se segue.",
+   "A responsabilidade civil por danos nucleares, tenham eles sido causados por ato comissivo ou omissivo, independe da existência de culpa."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 26
+ },
+ {
+  "id": "3206684",
+  "cab": "CEBRASPE (CESPE) - TJ TSE/TSE/Administrativa/Agente da Policia Judicial/2024",
+  "prova": "TJ TSE/TSE/Administrativa/Agente da Policia Judicial",
+  "ano": 2024,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, julgue o item a seguir, considerando as disposições legais e o entendimento jurisprudencial dos tribunais superiores.",
+   "Excepcionalmente, é possível a responsabilização civil do Estado em decorrência de atos lícitos."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 27
+ },
+ {
+  "id": "2332184",
+  "cab": "CEBRASPE (CESPE) - Prom Jus (MPE AM)/MPE AM/2023",
+  "prova": "Prom Jus (MPE AM)/MPE AM",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Considerando os requisitos para a caracterização da responsabilidade do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Segundo a jurisprudência do STF, há sempre responsabilidade do poder público nos casos de morte de pessoas presas em estabelecimento prisional do Estado, devido a seu dever de zelar pela integridade física dos indivíduos nessa situação."
+   ],
+   [
+    "b",
+    "Admite-se dano moral como causa de responsabilidade extracontratual do Estado, desde que se demonstre repercussão patrimonial da lesão."
+   ],
+   [
+    "c",
+    "A culpa da vítima ou de terceiros afasta a responsabilidade civil do Estado."
+   ],
+   [
+    "d",
+    "O nexo de causalidade entre a ação ou omissão estatal e o resultado danoso deve ser demonstrado apenas nos casos de responsabilidade subjetiva do Estado."
+   ],
+   [
+    "e",
+    "O princípio da responsabilidade civil do Estado não é absoluto, apesar de esta ser objetiva em muitas situações."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 28,
+  "num07": 10
+ },
+ {
+  "id": "2339346",
+  "cab": "CEBRASPE (CESPE) - Per Crim (POLC AL)/POLC AL/Direito/2023",
+  "prova": "Per Crim (POLC AL)/POLC AL/Direito",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, com fundamento na Constituição Federal de 1988 (CF) e na jurisprudência consolidada do Supremo Tribunal Federal (STF), julgue o seguinte item.",
+   "Conforme a doutrina clássica, quanto à responsabilização do Estado por danos ocasionados aos particulares, a CF adotou a teoria da culpa anônima, ou culpa do serviço, cujo pressuposto é o mau funcionamento ou o retardamento do serviço."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 29
+ },
+ {
+  "id": "2367872",
+  "cab": "CEBRASPE (CESPE) - Prom Jus (MPE SC)/MPE SC/2023",
+  "prova": "Prom Jus (MPE SC)/MPE SC",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, aos consórcios públicos, parcerias voluntárias e contratos com a administração pública, julgue o próximo item.",
+   "A responsabilidade civil da administração pública em caso de danos nucleares é objetiva, independentemente de culpa, em decorrência da teoria do risco integral, na qual o nexo causal é fortalecido, de modo a não ser rompido pelo implemento de causas que normalmente o descaracterizariam, como culpa da vítima, fato de terceiro ou força maior."
+  ],
+  "opcoes": [],
+  "gabarito": "Anulada",
+  "num06": 30
+ },
+ {
+  "id": "2400419",
+  "cab": "CEBRASPE (CESPE) - AJ 02 (TJ ES)/TJ ES/Judiciária/Direito/2023",
+  "prova": "AJ 02 (TJ ES)/TJ ES/Judiciária/Direito",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que diz respeito à responsabilidade civil do Estado, julgue o item subsequente.",
+   "A responsabilidade objetiva aplica-se às pessoas jurídicas de direito público em casos de atos comissivos e de atos omissivos, independentemente da licitude, ou não, do comportamento do agente público."
+  ],
+  "opcoes": [],
+  "gabarito": "Anulada",
+  "num06": 31
+ },
+ {
+  "id": "2414396",
+  "cab": "CEBRASPE (CESPE) - ACI (CGDF)/CG DF/Finanças e Controle/2023",
+  "prova": "ACI (CGDF)/CG DF/Finanças e Controle",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que tange aos requisitos para caracterizar responsabilidade extracontratual do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Nem todo evento causador de dano relacionado ao serviço público configura a responsabilidade civil do Estado."
+   ],
+   [
+    "b",
+    "No caso de responsabilidade objetiva estatal, não existe elemento subjetivo relevante."
+   ],
+   [
+    "c",
+    "Uma vez provados a existência de dano e o elemento subjetivo da conduta estatal, é cabível atribuir responsabilidade civil ao poder público."
+   ],
+   [
+    "d",
+    "Pode-se configurar a responsabilidade civil do Estado por infração ao dever de diligência, desde que haja norma jurídica a impor condutas estatais específicas para a situação na qual ocorreu dano ao lesado."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 32,
+  "num07": 11
+ },
+ {
+  "id": "2459852",
+  "cab": "CEBRASPE (CESPE) - Prof (SEE PE)/SEE PE/Braillista/2023",
+  "prova": "Prof (SEE PE)/SEE PE/Braillista",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item seguinte, considerando os poderes administrativos e a responsabilidade civil do Estado.",
+   "A responsabilidade civil do Estado exige sempre a prática de ato comissivo por parte de algum servidor público."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 33
+ },
+ {
+  "id": "2473275",
+  "cab": "CEBRASPE (CESPE) - Proc Mun (PGM SP)/Pref SP/2023",
+  "prova": "Proc Mun (PGM SP)/Pref SP",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Julgue os seguintes itens, a respeito da responsabilidade civil do estado.",
+   "I Conforme a CF, a responsabilidade civil estatal subsume-se à teoria do risco integral, no que diz respeito tanto às condutas estatais comissivas quanto às omissivas.",
+   "II Sob o regime da responsabilidade objetiva, a administração pública responderá civilmente pela ação ou omissão administrativa mesmo diante de evidências de ocorrência de culpa atribuível à própria vítima.",
+   "III Em caso de inobservância do dever específico de proteção previsto na CF, o Estado é responsável pela morte de detento.",
+   "IV O Estado não responde objetivamente por danos decorrentes de crime praticado por pessoa foragida do sistema prisional, quando não for demonstrado o nexo causal direto entre o momento da fuga e a conduta praticada.",
+   "V A ação por danos causados por agente público deve ser ajuizada contra o Estado ou a pessoa jurídica de direito privado prestadora de serviço público, sendo parte ilegítima para a ação o autor do ato, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa.",
+   "Assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Apenas os itens I e II estão certos."
+   ],
+   [
+    "b",
+    "Apenas os itens III e V estão certos."
+   ],
+   [
+    "c",
+    "Apenas os itens I, II e IV estão certos."
+   ],
+   [
+    "d",
+    "Apenas os itens III, IV e V estão certos."
+   ],
+   [
+    "e",
+    "Todos os itens estão certos."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 34,
+  "num07": 12
+ },
+ {
+  "id": "2498012",
+  "cab": "CEBRASPE (CESPE) - Proc (PGE RR)/PGE RR/2023",
+  "prova": "Proc (PGE RR)/PGE RR",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito dos agentes públicos e seu regime constitucional, julgue o item a seguir.",
+   "Sendo os agentes públicos mandatários do Estado, a exorbitância de seus poderes implica sua responsabilidade exclusiva pelos danos que possam causar a terceiros."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 35
+ },
+ {
+  "id": "2591966",
+  "cab": "CEBRASPE (CESPE) - Ana (MPE RO)/MPE RO/Auditoria/2023",
+  "prova": "Ana (MPE RO)/MPE RO/Auditoria",
+  "ano": 2023,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Com base no regramento constitucional acerca da responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "As pessoas jurídicas de direito público e as de direito privado responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa."
+   ],
+   [
+    "b",
+    "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável, independentemente de dolo ou culpa."
+   ],
+   [
+    "c",
+    "As pessoas jurídicas de direito público e as de direito privado responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável, independentemente de dolo ou culpa."
+   ],
+   [
+    "d",
+    "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa."
+   ],
+   [
+    "e",
+    "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, vedado o direito de regresso contra o responsável, independentemente de dolo ou culpa."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 36,
+  "num07": 13
+ },
+ {
+  "id": "1968181",
+  "cab": "CEBRASPE (CESPE) - AAAJ (DP DF)/DP DF/Direito e Legislação/2022",
+  "prova": "AAAJ (DP DF)/DP DF/Direito e Legislação",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, dos serviços públicos e da organização administrativa, julgue o seguinte item.",
+   "A responsabilização civil do Estado pressupõe, conjunta e necessariamente, as implicações penais e administrativas decorrentes do dano."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 37
+ },
+ {
+  "id": "2013876",
+  "cab": "CEBRASPE (CESPE) - Per Of (PC PB)/PC PB/Criminal/Área Geral/2022",
+  "prova": "Per Of (PC PB)/PC PB/Criminal/Área Geral",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "A responsabilidade civil do Estado impõe que"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "a ilicitude do agente seja um ato antijurídico."
+   ],
+   [
+    "b",
+    "o ato de improbidade seja crime próprio de servidor público."
+   ],
+   [
+    "c",
+    "a prescrição quinquenal contra a fazenda pública restrinja-se a pessoas jurídicas de direito público da administração direta e indireta."
+   ],
+   [
+    "d",
+    "seja confirmado o nexo causal entre o fato administrativo e o dano provocado pela conduta, para a comprovação da responsabilidade objetiva do Estado."
+   ],
+   [
+    "e",
+    "a ação regressiva contra servidor que cause ilícito e aja com dolo ou culpa seja imprescritível."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 38
+ },
+ {
+  "id": "2015210",
+  "cab": "CEBRASPE (CESPE) - Tec Per (PC PB)/PC PB/Área Geral/2022",
+  "prova": "Tec Per (PC PB)/PC PB/Área Geral",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que concerne à responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A responsabilidade contratual corresponde à obrigação de reparação dos danos a terceiros, por comportamento comissivo ou omissivo."
+   ],
+   [
+    "b",
+    "A responsabilidade civil do Estado é subjetiva em caso de ataques terroristas a aeronaves e acidentes nucleares."
+   ],
+   [
+    "c",
+    "A teoria da responsabilidade objetiva determina que, para receber a indenização, a vítima deverá comprovar o ato, o dano, o nexo causal, a culpa e o dolo."
+   ],
+   [
+    "d",
+    "A pessoa jurídica de direito privado responde por ato omissivo ou comissivo, culposo ou doloso, causado por seu agente na prestação de serviços públicos, que gere prejuízo ao erário ou a terceiros."
+   ],
+   [
+    "e",
+    "Para que se caracterize a omissão do poder público, é preciso individualizar as condutas de negligência, imprudência e imperícia."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 39,
+  "num07": 14
+ },
+ {
+  "id": "2028192",
+  "cab": "CEBRASPE (CESPE) - Adm (FUB)/FUB/2022",
+  "prova": "Adm (FUB)/FUB",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item que se segue.",
+   "O ordenamento jurídico brasileiro, a partir da Constituição Federal de 1946, adotou, como regra geral, para efeitos de responsabilidade extracontratual do Estado, a teoria do risco administrativo, admitindo hipóteses de exclusão da responsabilidade estatal, a exemplo da culpa exclusiva da vítima."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 40,
+  "num07": 15
+ },
+ {
+  "id": "2119127",
+  "cab": "CEBRASPE (CESPE) - Prom Jus (MPE SE)/MPE SE/2022",
+  "prova": "Prom Jus (MPE SE)/MPE SE",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Com base na doutrina clássica e na jurisprudência do STF, é correto afirmar que, quanto à responsabilidade civil do Estado, a Constituição Federal de 1988 adota, em regra, a"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "teoria da culpa anônima."
+   ],
+   [
+    "b",
+    "teoria da irresponsabilidade."
+   ],
+   [
+    "c",
+    "teoria da falta do serviço."
+   ],
+   [
+    "d",
+    "teoria do risco integral."
+   ],
+   [
+    "e",
+    "teoria do risco administrativo."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 41
+ },
+ {
+  "id": "2156812",
+  "cab": "CEBRASPE (CESPE) - Proc (MP TCE-SC)/TCE SC/2022",
+  "prova": "Proc (MP TCE-SC)/TCE SC",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Determinado registrador oficial, no exercício de suas funções notariais e de registro no ano de 2022, agiu com negligência, ocasionando lesão ao erário e danos a terceiros. Tendo como referência essa situação hipotética e as disposições da Constituição Federal de 1988, da legislação pertinente e da jurisprudência do Supremo Tribunal Federal relativas aos atos de tabeliães e registradores oficiais, julgue o item a seguir.",
+   "Na situação narrada, a averiguação da responsabilidade civil do Estado orienta-se pela teoria da culpa do serviço."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 42
+ },
+ {
+  "id": "2208321",
+  "cab": "CEBRASPE (CESPE) - AGE (SEE PE)/SEE PE/Geral/2022",
+  "prova": "AGE (SEE PE)/SEE PE/Geral",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca do controle da administração pública e da responsabilidade civil do Estado, observadas a Constituição Federal de 1988 e a jurisprudência dos tribunais superiores, julgue o item a seguir.",
+   "O Estado responde objetivamente pelos danos ocasionados a profissional da imprensa ferido por agentes policiais durante cobertura jornalística, em manifestações em que haja tumulto ou conflitos entre policiais e manifestantes."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 43,
+  "num07": 16
+ },
+ {
+  "id": "2208322",
+  "cab": "CEBRASPE (CESPE) - AGE (SEE PE)/SEE PE/Geral/2022",
+  "prova": "AGE (SEE PE)/SEE PE/Geral",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca do controle da administração pública e da responsabilidade civil do Estado, observadas a Constituição Federal de 1988 e a jurisprudência dos tribunais superiores, julgue o item a seguir.",
+   "Prevalece no ordenamento jurídico brasileiro, no tocante à responsabilização civil do Estado, a teoria do risco integral."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 44
+ },
+ {
+  "id": "2613075",
+  "cab": "CEBRASPE (CESPE) - ATCI (MCom)/MCom/2022",
+  "prova": "ATCI (MCom)/MCom",
+  "ano": 2022,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Considerando o controle da administração pública e a responsabilidade civil do Estado nos termos da jurisprudência do STF e da Constituição Federal de 1988, julgue o item a seguir.",
+   "A dicotomia atos de império versus atos de gestão, no âmbito da administração pública, deve ser o ponto de partida para se aferir a existência de responsabilidade do Estado por danos ocasionados a administrados."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 45,
+  "num07": 17
+ },
+ {
+  "id": "3348044",
+  "cab": "CEBRASPE (CESPE) - TJ TRT10/TRT 10/Administrativa/\"Sem Especialidade\"/2025",
+  "prova": "TJ TRT10/TRT 10/Administrativa/\"Sem Especialidade\"",
+  "ano": 2025,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que diz respeito ao acesso à informação, à proteção de dados e à responsabilidade civil do Estado, julgue o item que se segue.",
+   "A responsabilidade civil relativa a danos ocasionados a particulares pelas concessionárias de serviço público segue a lógica da teoria do risco integral."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 46
+ },
+ {
+  "id": "2796448",
+  "cab": "CEBRASPE (CESPE) - Esc Pol (PC PE)/PC PE/2024",
+  "prova": "Esc Pol (PC PE)/PC PE",
+  "ano": 2024,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "A responsabilidade civil de concessionária de transporte rodoviário no exercício do serviço público é"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "subjetiva, devendo-se demonstrar a ação, o resultado e o nexo causal, além do dolo ou da culpa."
+   ],
+   [
+    "b",
+    "objetiva, fundada no risco administrativo, devendo-se demonstrar a ação, o resultado e o nexo de causalidade."
+   ],
+   [
+    "c",
+    "objetiva, fundada no risco integral, devendo-se demonstrar apenas o resultado."
+   ],
+   [
+    "d",
+    "objetiva, fundada no risco do negócio, devendo-se demonstrar a ação, o resultado e o nexo de causalidade."
+   ],
+   [
+    "e",
+    "objetiva, fundada no risco integral, devendo-se demonstrar a ação, o resultado e o nexo de causalidade."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 47
+ },
+ {
+  "id": "2854349",
+  "cab": "CEBRASPE (CESPE) - ERSTT (ANTT)/ANTT/\"Sem Área\"/2024",
+  "prova": "ERSTT (ANTT)/ANTT/\"Sem Área\"",
+  "ano": 2024,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Quanto à delegação dos serviços públicos, ao controle da administração pública e à contratação sem licitação, julgue o item a seguir.",
+   "Para uma concessionária de serviço público responder por danos que eventualmente causar a usuário, é necessário que este demonstre ter havido dolo ou culpa de preposto da pessoa jurídica."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 48
+ },
+ {
+  "id": "3206584",
+  "cab": "CEBRASPE (CESPE) - TJ TSE/TSE/Administrativa/\"Sem Especialidade\"/2024",
+  "prova": "TJ TSE/TSE/Administrativa/\"Sem Especialidade\"",
+  "ano": 2024,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, julgue o item a seguir, considerando as disposições legais e o entendimento jurisprudencial dos tribunais superiores.",
+   "Para a responsabilização de pessoa jurídica de direito privado prestadora de serviços públicos, não é necessária a demonstração de culpa em relação a danos que tenham sido causados por seus agentes a terceiros usuários e não usuários do serviço público por ela prestado"
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 49
+ },
+ {
+  "id": "2424371",
+  "cab": "CEBRASPE (CESPE) - Ana (CNMP)/CNMP/Tecnologia da Informação e Comunicação/Desenvolvimento de Sistemas/2023",
+  "prova": "Ana (CNMP)/CNMP/Tecnologia da Informação e Comunicação/Desenvolvimento de Sistemas",
+  "ano": 2023,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Com base na Constituição Federal de 1988 e na Lei n.º 8.112/1990, julgue o item a seguir.",
+   "As pessoas jurídicas de direito público e as de direito privado exploradoras de atividade econômica responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, vedado o direito de regresso contra o responsável nos casos de dolo ou culpa."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 50
+ },
+ {
+  "id": "2450543",
+  "cab": "CEBRASPE (CESPE) - Ana Reg (AGER MT)/AGER MT/Economia/2023",
+  "prova": "Ana Reg (AGER MT)/AGER MT/Economia",
+  "ano": 2023,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Havendo dano causado ao usuário, o concessionário prestador de serviço público deverá responder"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "de forma objetiva e solidariamente com o poder concedente, em qualquer situação."
+   ],
+   [
+    "b",
+    "de forma objetiva e solidariamente com o poder concedente, desde que haja dolo ou culpa de agente público."
+   ],
+   [
+    "c",
+    "conjuntamente com o Estado de forma objetiva e solidária, independentemente de dolo ou culpa."
+   ],
+   [
+    "d",
+    "de forma objetiva, ao passo que o poder concedente responderá de forma subsidiária."
+   ],
+   [
+    "e",
+    "subjetivamente pelos prejuízos, ao passo que o poder concedente assumirá a responsabilidade de forma objetiva."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 51,
+  "num07": 20
+ },
+ {
+  "id": "2452982",
+  "cab": "CEBRASPE (CESPE) - PFN (PGFN)/PGFN/2023",
+  "prova": "PFN (PGFN)/PGFN",
+  "ano": 2023,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Um ônibus de empresa concessionária de transporte público de passageiros transitava pelas ruas da cidade, dentro do limite permitido de velocidade, quando foi abalroado por veículo particular que trafegava em altíssima velocidade. Em decorrência da batida, o motorista perdeu o controle da direção do ônibus, que foi lançado para a calçada, atingiu um pedestre, que estava no ponto de ônibus, e derrubou o muro de uma casa vizinha. Diversos passageiros do ônibus ficaram feridos. O pedestre atingido pelo ônibus morreu imediatamente, antes da chegada do socorro. Nessa situação hipotética, a responsabilidade da concessionária de serviço público é"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "subjetiva, no que tange à morte do pedestre, e objetiva, no que tange aos passageiros que estavam dentro do ônibus e ao proprietário da casa cujo muro foi derrubado."
+   ],
+   [
+    "b",
+    "subjetiva no que tange ao pedestre morto, aos passageiros que estavam dentro do ônibus e ao proprietário da casa cujo muro foi derrubado."
+   ],
+   [
+    "c",
+    "objetiva, no que tange ao pedestre morto e aos passageiros que estavam dentro do ônibus, e subjetiva, no que tange ao proprietário da casa cujo muro foi derrubado."
+   ],
+   [
+    "d",
+    "subjetiva, no que tange ao pedestre morto e aos passageiros que estavam dentro do ônibus, e objetiva, no que tange ao proprietário da casa cujo muro foi derrubado."
+   ],
+   [
+    "e",
+    "objetiva no que tange ao pedestre morto, aos passageiros que estavam dentro do ônibus e ao proprietário da casa cujo muro foi derrubado."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 52
+ },
+ {
+  "id": "1972639",
+  "cab": "CEBRASPE (CESPE) - Esp GT (TELEBRAS)/TELEBRAS/Advogado/2022",
+  "prova": "Esp GT (TELEBRAS)/TELEBRAS/Advogado",
+  "ano": 2022,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item subsequente, relativos à responsabilidade civil do Estado, às sociedades de economia mistas, às empresas estatais e às empresas prestadoras de serviços de telecomunicação, à luz da legislação de regência e da jurisprudência dos tribunais superiores.",
+   "Em respeito ao disposto no artigo 37, § 6.º, da Constituição Federal, a ação de ressarcimento por danos causados por agente público de sociedade de economia mista deve ser ajuizada contra a referida entidade, sendo parte ilegítima o agente público autor do ato."
+  ],
+  "opcoes": [],
+  "gabarito": "Anulada",
+  "num06": 53
+ },
+ {
+  "id": "1989644",
+  "cab": "CEBRASPE (CESPE) - DP SE/DPE SE/2022",
+  "prova": "DP SE/DPE SE",
+  "ano": 2022,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "A responsabilidade de concessionária prestadora de serviço público concedido por danos causados a usuários"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "não é excluída mesmo se os efeitos danosos resultarem de caso fortuito."
+   ],
+   [
+    "b",
+    "é excluída somente se o evento danoso for proveniente de força maior."
+   ],
+   [
+    "c",
+    "é excluída se provada a culpa da vítima."
+   ],
+   [
+    "d",
+    "pode ser excluída se houve fiscalização pelo órgão competente."
+   ],
+   [
+    "e",
+    "pode ser atenuada quando fiscalizada pelo órgão competente."
+   ]
+  ],
+  "gabarito": "Anulada",
+  "num06": 54
+ },
+ {
+  "id": "2208581",
+  "cab": "CEBRASPE (CESPE) - AGE (SEE PE)/SEE PE/Direito/2022",
+  "prova": "AGE (SEE PE)/SEE PE/Direito",
+  "ano": 2022,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "À luz da Constituição Federal de 1988 (CF) e da jurisprudência do Supremo Tribunal Federal (STF), julgue o item a seguir, acerca dos serviços públicos.",
+   "A responsabilidade civil das pessoas jurídicas de direito privado prestadoras de serviço público é subjetiva relativamente a terceiros usuários e objetiva no tocante a não usuários do serviço."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 55
+ },
+ {
+  "id": "3962945",
+  "cab": "CEBRASPE (CESPE) - TL (CAM DEP)/CAM DEP/Policial Legislativo Federal/2026",
+  "prova": "TL (CAM DEP)/CAM DEP/Policial Legislativo Federal",
+  "ano": 2026,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No tocante aos agentes públicos e à responsabilidade civil do Estado, julgue o item subsequente.",
+   "No caso de ilícito praticado por agente público contra terceiro, a ação de indenização por danos materiais deve ser ajuizada diretamente contra o Estado, que tem o direito de regresso contra o servidor em caso de culpa ou dolo."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 56
+ },
+ {
+  "id": "4148376",
+  "cab": "CEBRASPE (CESPE) - GPE (UNEAL)/UNEAL/Planejamento/2026",
+  "prova": "GPE (UNEAL)/UNEAL/Planejamento",
+  "ano": 2026,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item.",
+   "A possibilidade de direito de regresso na responsabilidade civil do Estado depende da demonstração de dolo ou culpa do agente."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 57
+ },
+ {
+  "id": "3495310",
+  "cab": "CEBRASPE (CESPE) - Adm (FUB)/FUB/2025",
+  "prova": "Adm (FUB)/FUB",
+  "ano": 2025,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca do regime jurídico administrativo, dos poderes da administração pública e da responsabilidade civil do Estado, julgue o item a seguir.",
+   "A administração pública somente terá direito de regresso contra o agente responsável pelo ato que ocasionou a responsabilidade civil do Estado quando demonstrar o dolo ou a culpa do agente."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 58
+ },
+ {
+  "id": "3552572",
+  "cab": "CEBRASPE (CESPE) - EPF/PF/2025",
+  "prova": "EPF/PF",
+  "ano": 2025,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item a seguir, relativo a noções de direito administrativo.",
+   "A pessoa que sofrer algum dano por ato praticado por um servidor público no exercício da função poderá ajuizar ação de indenização somente contra o Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 59,
+  "num07": 27
+ },
+ {
+  "id": "3681718",
+  "cab": "CEBRASPE (CESPE) - ACE (TCE MS)/TCE MS/Direito/2025",
+  "prova": "ACE (TCE MS)/TCE MS/Direito",
+  "ano": 2025,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Durante o retorno de uma fiscalização, um servidor efetivo do TCE/MS dirigia uma viatura oficial quando, por distração, colidiu de forma culposa, com um veículo particular, tendo causado danos materiais ao particular.",
+   "Considerando as regras de responsabilidade civil aplicáveis ao servidor público e ao Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "O Estado responde subjetivamente pelos danos causados ao particular, não sendo assegurado o direito de regresso contra o servidor visto que não houve dolo."
+   ],
+   [
+    "b",
+    "O Estado responde objetivamente pelos danos causados ao particular, assegurado o direito de regresso contra o servidor somente no caso de dolo."
+   ],
+   [
+    "c",
+    "O servidor não responde subjetivamente, pois a conduta foi praticada durante o exercício da função pública, o que caracteriza excludente de responsabilidade."
+   ],
+   [
+    "d",
+    "O servidor não responde diretamente perante o particular prejudicado, ainda que tenha agido com culpa; a responsabilidade é do Estado, assegurado o direito de regresso contra o servidor."
+   ],
+   [
+    "e",
+    "Apenas o servidor será responsabilizado civilmente, já que o dano decorreu de ato pessoal (distração) durante a condução."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 60
+ },
+ {
+  "id": "3732678",
+  "cab": "CEBRASPE (CESPE) - NeR (TJ RR)/TJ RR/Provimento/2025",
+  "prova": "NeR (TJ RR)/TJ RR/Provimento",
+  "ano": 2025,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Lucas, Pedro, João e Frederico são servidores públicos que, no exercício de suas funções, causaram prejuízo a terceiros. Lucas é servidor da secretaria da saúde de certo estado; Pedro, do gabinete do governador de certo estado; João, de autarquia estadual; e Frederico, de fundação pública estadual.",
+   "Nessa situação, conforme o entendimento jurisprudencial do STF, responderá direta e civilmente pelo prejuízo causado"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "João, apenas."
+   ],
+   [
+    "b",
+    "Frederico, apenas."
+   ],
+   [
+    "c",
+    "o Estado."
+   ],
+   [
+    "d",
+    "Lucas, apenas."
+   ],
+   [
+    "e",
+    "Pedro, apenas."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 61
+ },
+ {
+  "id": "2775373",
+  "cab": "CEBRASPE (CESPE) - Ana CT I (CNPq)/CNPq/Administração e Recursos Logísticos/2024",
+  "prova": "Ana CT I (CNPq)/CNPq/Administração e Recursos Logísticos",
+  "ano": 2024,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Marcos, funcionário de pessoa jurídica de direito privado prestadora de serviço público de transporte de passageiros no Distrito Federal, ao conduzir ônibus de propriedade da sociedade empresária durante a execução do serviço público concedido, foi responsável por acidente que ocasionou danos materiais no veículo de propriedade de Alessandro.",
+   "A partir dessa situação hipotética, julgue o item a seguir de acordo com a doutrina e a jurisprudência do Supremo Tribunal Federal (STF).",
+   "No polo passivo de eventual ação de indenização proposta por Alessandro, deverá constar ou o Distrito Federal, ou a pessoa jurídica de direito privado prestadora do serviço público, ou Marcos, responsável pelo acidente."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 62
+ },
+ {
+  "id": "2795820",
+  "cab": "CEBRASPE (CESPE) - Ag Pol (PC PE)/PC PE/2024",
+  "prova": "Ag Pol (PC PE)/PC PE",
+  "ano": 2024,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Considerando as disposições da CF acerca da responsabilidade civil do Estado, julgue os itens a seguir.",
+   "I As polícias civis responderão pelos danos que seus agentes, nessa qualidade, eventualmente causarem a terceiros.",
+   "II O direito de regresso do Estado contra o responsável pelo dano é assegurado nos casos de dolo ou culpa do agente causador do dano.",
+   "III A responsabilidade civil por danos nucleares independe da existência de culpa.",
+   "Assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Apenas o item I está certo."
+   ],
+   [
+    "b",
+    "Apenas o item II está certo."
+   ],
+   [
+    "c",
+    "Apenas os itens I e II estão certos."
+   ],
+   [
+    "d",
+    "Apenas os itens II e III estão certos."
+   ],
+   [
+    "e",
+    "Todos os itens estão certos."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 63,
+  "num07": 28
+ },
+ {
+  "id": "3103039",
+  "cab": "CEBRASPE (CESPE) - ERSPT (ANATEL)/ANATEL/Direito/2024",
+  "prova": "ERSPT (ANATEL)/ANATEL/Direito",
+  "ano": 2024,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item seguinte.",
+   "Para segurança da administração pública, a reparação de dano extracontratual deve ocorrer necessariamente por meio de ação judicial."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 64
+ },
+ {
+  "id": "3202209",
+  "cab": "CEBRASPE (CESPE) - AJ TSE/TSE/Administrativa/\"Sem Especialidade\"/2024",
+  "prova": "AJ TSE/TSE/Administrativa/\"Sem Especialidade\"",
+  "ano": 2024,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item que se segue.",
+   "O direito de regresso do Estado contra o agente causador do dano depende da demonstração da conduta, do prejuízo causado ao terceiro e do nexo de causalidade entre o referido prejuízo e a conduta, sendo prescindível a comprovação de dolo ou culpa."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 65
+ },
+ {
+  "id": "2332187",
+  "cab": "CEBRASPE (CESPE) - Prom Jus (MPE AM)/MPE AM/2023",
+  "prova": "Prom Jus (MPE AM)/MPE AM",
+  "ano": 2023,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Em relação ao direito de regresso, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "O poder público responde pela indenização por dano causado a particular em razão de ato de notário ou tabelião, assegurado o direito de regresso contra o delegatário da atividade."
+   ],
+   [
+    "b",
+    "A ação regressiva é dispensável para que o agente público causador do dano ressarça o Estado do que este houver desembolsado como indenização à vítima."
+   ],
+   [
+    "c",
+    "Nas ações de responsabilidade civil do Estado, a vítima do dano pode optar por incluir no polo passivo da relação processual, desde logo, o agente público causador do ilícito."
+   ],
+   [
+    "d",
+    "Em regra, a responsabilidade do Estado e o decorrente direito de regresso são possíveis mesmo quando o agente atuar fora de suas funções profissionais."
+   ],
+   [
+    "e",
+    "Uma vez ajuizada ação contra o Estado para indenizar vítima de dano causado por agente público, o poder público pode promover imediatamente ação regressiva contra esse agente público."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 66,
+  "num07": 29
+ },
+ {
+  "id": "2397434",
+  "cab": "CEBRASPE (CESPE) - AJ 02 (TJ ES)/TJ ES/Apoio Especializado/Direito/2023",
+  "prova": "AJ 02 (TJ ES)/TJ ES/Apoio Especializado/Direito",
+  "ano": 2023,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Em relação aos poderes e aos princípios da administração pública, à responsabilidade civil do Estado e aos serviços públicos, julgue o seguinte item.",
+   "Se uma pessoa ajuizar ação de indenização com base na responsabilidade objetiva do Estado e demonstrar dolo de agente público, é juridicamente admissível inserir o agente em litisconsórcio passivo com a pessoa jurídica de direito público demandada."
+  ],
+  "opcoes": [],
+  "gabarito": "Anulada",
+  "num06": 67
+ },
+ {
+  "id": "2415154",
+  "cab": "CEBRASPE (CESPE) - ACI (CGDF)/CG DF/Planejamento e Orçamento/2023",
+  "prova": "ACI (CGDF)/CG DF/Planejamento e Orçamento",
+  "ano": 2023,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Assinale a opção correta referente à responsabilidade do Estado."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A Constituição Federal de 1988 prevê responsabilidade civil preventiva da administração pública nos casos de dano iminente."
+   ],
+   [
+    "b",
+    "O dano moral passível de indenização por ato ilícito estatal é aquele necessariamente decorrente de dano patrimonial."
+   ],
+   [
+    "c",
+    "No caso de dano praticado por agente público integrante de pessoa jurídica da administração pública indireta do Distrito Federal (DF), caberá à própria pessoa jurídica, e não ao DF, suportar a indenização."
+   ],
+   [
+    "d",
+    "Delegatários e concessionários de serviço público não se submetem à responsabilidade objetiva aplicável ao poder público em geral."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 68,
+  "num07": 30
+ },
+ {
+  "id": "2486043",
+  "cab": "CEBRASPE (CESPE) - NeR (TJ SC)/TJ SC/Provimento/2023",
+  "prova": "NeR (TJ SC)/TJ SC/Provimento",
+  "ano": 2023,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado e de seus agentes, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "O direito de regresso, indisponível e de índole obrigatória, deve ser necessariamente exercido pelo Estado contra o agente público que tenha perpetrado dano, sendo investigada sua responsabilidade subjetiva na espécie."
+   ],
+   [
+    "b",
+    "O STF equiparou a responsabilidade de notários e de registradores oficiais à das pessoas jurídicas de direito privado prestadoras de serviço público."
+   ],
+   [
+    "c",
+    "O Estado responde pelos atos dos tabeliães e registradores oficiais que, no exercício de suas funções, causem danos a terceiros, desde que seja possível aferir o dolo ou culpa desses agentes."
+   ],
+   [
+    "d",
+    "Os notários e oficiais de registro respondem objetivamente pelos atos dos substitutos que designarem ou escreventes que autorizarem."
+   ],
+   [
+    "e",
+    "A pessoa natural que sofrer prejuízo material em virtude de inexatidão na lavratura de certidão por cartório de registro civil fará jus a indenização por perdas e danos, reparados diretamente pelo Estado, com base na aplicação da teoria do risco integral à hipótese."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 69,
+  "num07": 31
+ },
+ {
+  "id": "1939489",
+  "cab": "CEBRASPE (CESPE) - Del Pol (PC RJ)/PC RJ/2022",
+  "prova": "Del Pol (PC RJ)/PC RJ",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Maria trafegava em seu carro na Ponte Rio-Niterói, durante a manhã, a caminho do trabalho, sentido Rio de Janeiro, quando, em meio ao trânsito lento, foi surpreendida por uma viatura da polícia civil, que passou de forma brusca e acelerada ao lado de seu veículo, causando um leve abalroamento, que levou a motorista a colidir contra o veículo à sua frente, o que, afinal, causou graves danos a esses dois carros. Apesar do acidente e dos danos materiais aos dois veículos, não houve feridos. Apsós confeccionar a declaração de acidente de trânsito no site da Polícia Rodoviária Federal, Maria resolveu comparecer ao plantão da Corregedoria-Geral da Polícia Civil, para noticiar o ocorrido, tendo indicado o número da unidade policial inscrito na viatura, assim como o horário em que o abalroamento havia acontecido. Em sua apuração preliminar, a corregedoria identificou os policiais civis que estavam na viatura, assim como constatou que eles não se dirigiam a nenhuma diligência policial na ocasião, apenas buscavam fugir do engarrafamento. Após regular sindicância administrativa disciplinar, os policiais foram punidos. Ao tomar conhecimento do resultado da apuração da Corregedoria-Geral de Polícia Civil, Maria decidiu ajuizar ação para obter do Estado reparação civil, tendo em vista os danos causados ao seu veículo.",
+   "A partir dessa situação hipotética, assinale a opção correta, com relação à responsabilidade civil dos servidores públicos."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Maria deverá ajuizar ação de responsabilidade civil em desfavor do policial que conduzia a viatura quando do abalroamento, já que foi apurado, no procedimento disciplinar, que ele atuou com dolo ou culpa."
+   ],
+   [
+    "b",
+    "A ação por danos causados por agente público deve ser ajuizada contra o Estado, não sendo possível a responsabilização civil do servidor que causou o dano, nem mesmo em ação de regresso."
+   ],
+   [
+    "c",
+    "Cabe à vítima do dano a escolha do polo passivo da demanda, podendo ela ajuizar ação contra o servidor policial civil que causou o dano ou contra o Estado, ente político."
+   ],
+   [
+    "d",
+    "Ação por danos causados por agente público deve ser ajuizada contra o Estado ou contra pessoa jurídica de direito privado prestadora de serviço público, sendo parte ilegítima para a ação o autor do ato, em observância ao princípio da dupla garantia, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa."
+   ],
+   [
+    "e",
+    "É cabível ação de regresso contra o agente responsável pelo dano somente nos casos de ato doloso."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 70
+ },
+ {
+  "id": "1939544",
+  "cab": "CEBRASPE (CESPE) - Del Pol (PC RJ)/PC RJ/2022",
+  "prova": "Del Pol (PC RJ)/PC RJ",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Delegado de polícia de estado da Federação, estimulado por amigos em momento de descontração, apresentou a carteira funcional para entrar, sem pagar, em sofisticado evento esportivo internacional organizado pela iniciativa privada. O delegado argumentou na entrada do evento que precisava ingressar com um grupo de pessoas para, em conjunto, apurarem eventual prática de ilícitos. Após o constrangimento causado, o delegado ingressou com mais dez amigos no referido recinto e assistiu ao evento sem ser importunado. Alguns dias depois, os organizadores do evento ajuízam ação em face do Estado pedindo que o ente público pague pelos ingressos e indenize os organizadores por danos morais. Tudo com base no art. 37, § 6.º da CF, que prevê a responsabilidade civil objetiva do Estado.",
+   "Considerando-se essa situação hipotética, é correto afirmar que"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "o princípio da moralidade administrativa obriga que o poder público tome providências diante da grave conduta do delegado de polícia, devendo seu ato ser punido, e o particular que sofreu o prejuízo ser compensado pelo erário, que deverá, na sequência, buscar o devido regresso do mau servidor."
+   ],
+   [
+    "b",
+    "o referido artigo da CF é inaplicável à hipótese, haja vista que o delegado, a despeito do seu discurso, não estava no exercício de suas funções públicas. Sem embargo, o servidor pode responder diretamente pelo prejuízo que causou."
+   ],
+   [
+    "c",
+    "a teoria da imputação volitiva, corolário da teoria do órgão, implica em a ação dos agentes públicos ser reputada ao ente a que se vincula. Logo, o poder público deve responder por culpa in vigilando pela má conduta dos seus agentes, ao menos subsidiariamente."
+   ],
+   [
+    "d",
+    "o delegado de polícia deverá responder administrativamente pela sua conduta e abuso de autoridade. Assim, tão logo a administração pública tenha ciência do ocorrido, deverá investigar e punir o agente público, assegurando-lhe, no entanto, o devido processo legal, que pressupõe contraditório e ampla defesa técnica."
+   ],
+   [
+    "e",
+    "o poder público, por força da teoria da aparência — explicitada pela apresentação da carteira funcional — deve responder pelo risco administrativo criado, independentemente de demonstração de culpa. Assim, apenas a prova do dano será necessária aos organizadores do evento."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 71,
+  "num07": 32
+ },
+ {
+  "id": "1942601",
+  "cab": "CEBRASPE (CESPE) - AFT (SEFAZ SE)/SEFAZ SE/Geral/2022",
+  "prova": "AFT (SEFAZ SE)/SEFAZ SE/Geral",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "A respeito da ação regressiva, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Tal ação é cabível na hipótese de ação culposa do agente, ainda que a administração tenha sido absolvida em ação improcedente."
+   ],
+   [
+    "b",
+    "O prazo prescricional para ação regressiva contra concessionário ou permissionário é de três anos, contados do trânsito em julgado da decisão condenatória."
+   ],
+   [
+    "c",
+    "A ação de regresso é baseada na doutrina da teoria objetiva."
+   ],
+   [
+    "d",
+    "Na hipótese de condenação de ressarcimento ao erário, o servidor terá o prazo de trinta dias para liquidar a dívida com a administração, com parcelamento em até 24 meses."
+   ],
+   [
+    "e",
+    "A responsabilidade do concessionário é primária e subjetiva, uma vez que depende da comprovação de culpa ou dolo."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 72
+ },
+ {
+  "id": "2028191",
+  "cab": "CEBRASPE (CESPE) - Adm (FUB)/FUB/2022",
+  "prova": "Adm (FUB)/FUB",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item que se segue.",
+   "Somente os danos ocasionados por agentes pertencentes aos quadros das pessoas jurídicas de direito público dão ensejo à responsabilidade civil do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 73
+ },
+ {
+  "id": "2028197",
+  "cab": "CEBRASPE (CESPE) - Adm (FUB)/FUB/2022",
+  "prova": "Adm (FUB)/FUB",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item que se segue.",
+   "No âmbito do direito de regresso a ser exercido pelo Estado em face do servidor público responsável por dano ao erário, não é permitida a fixação unilateral pela administração pública de descontos sobre os vencimentos do servidor."
+  ],
+  "opcoes": [],
+  "gabarito": "Anulada",
+  "num06": 74
+ },
+ {
+  "id": "2151815",
+  "cab": "CEBRASPE (CESPE) - Aud Est (SECONT ES)/SECONT ES/Ciências Jurídicas/2022",
+  "prova": "Aud Est (SECONT ES)/SECONT ES/Ciências Jurídicas",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito de responsabilidade civil do Estado, julgue o item subsequente.",
+   "O direito de obter indenização em decorrência de responsabilidade civil do Estado prescreve em cinco anos, não se aplicando esse prazo a pessoas jurídicas de direito privado prestadoras de serviços públicos."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 75
+ },
+ {
+  "id": "2151828",
+  "cab": "CEBRASPE (CESPE) - Aud Est (SECONT ES)/SECONT ES/Ciências Jurídicas/2022",
+  "prova": "Aud Est (SECONT ES)/SECONT ES/Ciências Jurídicas",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito de responsabilidade civil do Estado, julgue o item subsequente.",
+   "A responsabilidade civil do Estado é objetiva com relação aos danos causados a terceiros por agentes públicos, seja por dolo ou culpa, podendo ser acordado o pagamento da reparação na esfera administrativa, desde que a administração pública reconheça desde logo a sua responsabilidade e haja entendimento entre os envolvidos quanto ao valor da indenização."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 76,
+  "num07": 33
+ },
+ {
+  "id": "2181711",
+  "cab": "CEBRASPE (CESPE) - Of (PM RO)/PM RO/Combatente/2022",
+  "prova": "Of (PM RO)/PM RO/Combatente",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Pedro, soldado da Polícia Militar do Estado de Rondônia, conduzia viatura quando, por desatenção, colidiu contra automóvel de propriedade da cidadã Rosa, causando-lhe danos materiais. A partir dessa situação hipotética, assinale a opção correta, relativa à responsabilidade civil do Estado."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Caso queira ajuizar ação para reparar o dano que sofreu, Rosa deverá promovê-la contra o estado de Rondônia, e não contra a pessoa do soldado Pedro."
+   ],
+   [
+    "b",
+    "Se Rosa propuser ação apenas contra o estado de Rondônia, isso afastará a possibilidade de o soldado Pedro ser posteriormente responsabilizado pelo evento."
+   ],
+   [
+    "c",
+    "Caso ajuíze ação para reparar o dano que sofreu, Rosa somente terá sucesso nessa demanda se conseguir demonstrar culpa ou dolo do soldado Pedro na condução da viatura."
+   ],
+   [
+    "d",
+    "Ainda que o estado de Rondônia provasse que o acidente fora causado por culpa exclusiva de Rosa, ele deveria responder pelos danos causados ao automóvel dela."
+   ],
+   [
+    "e",
+    "Em casos como o narrado, não há necessidade de dano para que se configure responsabilidade civil do Estado."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 77
+ },
+ {
+  "id": "2181712",
+  "cab": "CEBRASPE (CESPE) - Of (PM RO)/PM RO/Combatente/2022",
+  "prova": "Of (PM RO)/PM RO/Combatente",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "A respeito do direito de regresso na responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Para haver direito de regresso do Estado contra agente público causador de dano, é necessário que o dolo ou a culpa deste conste expressamente na própria ação judicial em que o Estado tenha sido condenado."
+   ],
+   [
+    "b",
+    "Mesmo sem relação de causa e efeito entre o dano e a conduta do agente público, pode-se configurar a responsabilidade deste."
+   ],
+   [
+    "c",
+    "Não há direito de regresso do Estado contra agente público se o ato praticado por este não tiver sido doloso ou culposo e se o Estado não tiver sido compelido a indenizar o dano decorrente de tal ato."
+   ],
+   [
+    "d",
+    "As regras sobre responsabilidade civil e direito de regresso no direito administrativo são, basicamente, as mesmas vigentes no direito civil."
+   ],
+   [
+    "e",
+    "A promoção de ação regressiva contra agente público causador de dano é faculdade que se caracteriza como exercício de poder discricionário do Estado."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 78,
+  "num07": 34
+ },
+ {
+  "id": "2182032",
+  "cab": "CEBRASPE (CESPE) - Of (CBM RO)/CBM RO/Combatente/2022",
+  "prova": "Of (CBM RO)/CBM RO/Combatente",
+  "ano": 2022,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Conforme as disposições presentes na Constituição da República Federativa do Brasil (CF/1988), as condutas praticadas por agentes públicos que causem danos a terceiros geram responsabilização para as pessoas jurídicas de direito"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "público, sem a possibilidade de direito de regresso."
+   ],
+   [
+    "b",
+    "privado prestadoras de serviço público, sem a possibilidade de direito de regresso."
+   ],
+   [
+    "c",
+    "privado que explorem atividade econômica e as prestadoras de serviço público."
+   ],
+   [
+    "d",
+    "privado que explorem atividade econômica."
+   ],
+   [
+    "e",
+    "público e de direito privado prestadoras de serviço público, com a possibilidade de regresso."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 79
+ },
+ {
+  "id": "3883084",
+  "cab": "CEBRASPE (CESPE) - AFRE (SEFAZ RN)/SEFAZ RN/2026",
+  "prova": "AFRE (SEFAZ RN)/SEFAZ RN",
+  "ano": 2026,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "A respeito do reconhecimento da responsabilidade civil do Estado e da aplicação de excludentes dessa responsabilidade, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Admite-se excludente de responsabilidade quando a vítima concorre para a ocorrência do dano."
+   ],
+   [
+    "b",
+    "Em caso de força maior, é admissível a culpa do serviço público quando comprovada omissão específica."
+   ],
+   [
+    "c",
+    "O Estado tem responsabilidade subsidiária por danos decorrentes de atos exclusivos de terceiros."
+   ],
+   [
+    "d",
+    "Mesmo na hipótese de culpa exclusiva da vítima, subsiste o requisito do nexo de causalidade para a responsabilização do Estado."
+   ],
+   [
+    "e",
+    "A exclusão de responsabilidade do Estado exige a comprovação de dolo ou culpa do agente estatal que causou o dano."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 80,
+  "num07": 35
+ },
+ {
+  "id": "3972222",
+  "cab": "CEBRASPE (CESPE) - Med (TCE RN)/TCE RN/2026",
+  "prova": "Med (TCE RN)/TCE RN",
+  "ano": 2026,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item a seguir, observada a jurisprudência dos tribunais superiores.",
+   "A aferição da responsabilidade civil do Estado admite o sistema de compensação de culpas, de modo que, se tiver havido participação da pessoa lesada no evento que lhe ocasionou danos, o dever do Estado em reparar os prejuízos deve ser atenuado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 81
+ },
+ {
+  "id": "4145982",
+  "cab": "CEBRASPE (CESPE) - AAD (UNEAL)/UNEAL/Direito/2026",
+  "prova": "AAD (UNEAL)/UNEAL/Direito",
+  "ano": 2026,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito do poder de polícia, da responsabilidade civil do Estado, da improbidade administrativa, dos princípios aplicáveis aos serviços públicos e das sociedades de economia mista, julgue o próximo item.",
+   "A demonstração de culpa concorrente da vítima na ocorrência de dano é causa atenuante da responsabilidade civil do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 82
+ },
+ {
+  "id": "4148373",
+  "cab": "CEBRASPE (CESPE) - GPE (UNEAL)/UNEAL/Planejamento/2026",
+  "prova": "GPE (UNEAL)/UNEAL/Planejamento",
+  "ano": 2026,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item.",
+   "A culpa da vítima pode ser causa excludente ou atenuante da responsabilidade civil do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 83
+ },
+ {
+  "id": "3342053",
+  "cab": "CEBRASPE (CESPE) - AJ TRT10/TRT 10/Administrativa/Contabilidade/2025",
+  "prova": "AJ TRT10/TRT 10/Administrativa/Contabilidade",
+  "ano": 2025,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito do processo administrativo federal, consoante a Lei n.º 9.784/1999, ao controle da administração pública, à responsabilidade civil do Estado, ao acesso à informação e ao previsto no Decreto n.º 9.830/2019, julgue o item a seguir.",
+   "Caso fortuito, força maior e culpa concorrente da vítima são causas excludentes da responsabilidade do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 84,
+  "num07": 36
+ },
+ {
+  "id": "3373952",
+  "cab": "CEBRASPE (CESPE) - Ana Min (MPE CE)/MPE CE/Direito/2025",
+  "prova": "Ana Min (MPE CE)/MPE CE/Direito",
+  "ano": 2025,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, aos princípios e poderes da administração pública e aos atos administrativos, julgue o item subsequente.",
+   "Não cabe a responsabilidade civil do Estado por evento danoso causado exclusivamente pela vítima, haja vista a inexistência, nesse caso, de nexo causal entre a atuação da administração pública e o dano ocorrido."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 85
+ },
+ {
+  "id": "3400492",
+  "cab": "CEBRASPE (CESPE) - AFRE RJ/SEFAZ RJ/2025",
+  "prova": "AFRE RJ/SEFAZ RJ",
+  "ano": 2025,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "No que diz respeito à responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Cabe ao particular o ônus probatório para afastar excludentes de responsabilidade civil do Estado."
+   ],
+   [
+    "b",
+    "A culpa concorrente é causa excludente da responsabilidade civil do Estado, uma vez que rompe o nexo de causalidade."
+   ],
+   [
+    "c",
+    "A teoria adotada no Brasil em relação ao nexo de causalidade para a responsabilidade civil do Estado é a da equivalência dos antecedentes causais."
+   ],
+   [
+    "d",
+    "Para a caracterização da responsabilidade civil estatal, a existência de um dano, a ação ou omissão administrativa e a ocorrência de nexo causal entre o dano e a ação ou omissão são os três requisitos mínimos para a aplicação da responsabilidade objetiva, inexistindo causa excludente da responsabilidade estatal."
+   ],
+   [
+    "e",
+    "Apesar de a responsabilidade civil do Estado ser objetiva, o direito de regresso da administração pública somente ocorrerá quando houver dolo ou culpa do agente."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 86
+ },
+ {
+  "id": "3441735",
+  "cab": "CEBRASPE (CESPE) - AJ (STM)/STM/Administrativa/\"Sem Especialidade\"/2025",
+  "prova": "AJ (STM)/STM/Administrativa/\"Sem Especialidade\"",
+  "ano": 2025,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item a seguir, considerando, no que couber, a jurisprudência dos tribunais superiores.",
+   "A ocorrência de fatos imprevisíveis como caso fortuito e força maior funciona como excludente da responsabilidade estatal quando dessas situações decorrem danos a particular, porquanto há rompimento do nexo causal entre a ação do Estado e o dano ocasionado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 87
+ },
+ {
+  "id": "3495326",
+  "cab": "CEBRASPE (CESPE) - Adm (FUB)/FUB/2025",
+  "prova": "Adm (FUB)/FUB",
+  "ano": 2025,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca do regime jurídico administrativo, dos poderes da administração pública e da responsabilidade civil do Estado, julgue o item a seguir.",
+   "A culpa exclusiva da vítima configura causa excludente de responsabilidade civil do Estado, haja vista o rompimento do nexo de causalidade entre o ato do agente público e o dano."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 88
+ },
+ {
+  "id": "3683327",
+  "cab": "CEBRASPE (CESPE) - AECE (TCE MS)/TCE MS/Ciências Contábeis/2025",
+  "prova": "AECE (TCE MS)/TCE MS/Ciências Contábeis",
+  "ano": 2025,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado e de causas excludentes e atenuantes dessa responsabilidade, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A existência de risco administrativo afasta a necessidade de qualquer análise do comportamento da vítima ou da presença de excludentes de responsabilidade."
+   ],
+   [
+    "b",
+    "A ocorrência de caso fortuito ou força maior exclui automaticamente a responsabilidade do Estado, independentemente da análise do nexo causal."
+   ],
+   [
+    "c",
+    "O Estado pode ser responsabilizado por atos de terceiros, mesmo que não exista qualquer relação entre o fato danoso e a atividade estatal."
+   ],
+   [
+    "d",
+    "A culpa exclusiva da vítima é circunstância que pode afastar a responsabilidade do Estado, caso fique demonstrada a inexistência de nexo causal entre a conduta estatal e o dano."
+   ],
+   [
+    "e",
+    "A responsabilidade do Estado por omissão é sempre objetiva, pois decorre do simples descumprimento do dever legal de agir."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 89
+ },
+ {
+  "id": "2775369",
+  "cab": "CEBRASPE (CESPE) - Ana CT I (CNPq)/CNPq/Administração e Recursos Logísticos/2024",
+  "prova": "Ana CT I (CNPq)/CNPq/Administração e Recursos Logísticos",
+  "ano": 2024,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Marcos, funcionário de pessoa jurídica de direito privado prestadora de serviço público de transporte de passageiros no Distrito Federal, ao conduzir ônibus de propriedade da sociedade empresária durante a execução do serviço público concedido, foi responsável por acidente que ocasionou danos materiais no veículo de propriedade de Alessandro.",
+   "A partir dessa situação hipotética, julgue o item a seguir de acordo com a doutrina e a jurisprudência do Supremo Tribunal Federal (STF).",
+   "No que se refere à responsabilidade civil do Estado, a Constituição Federal de 1988 adota a teoria do risco administrativo, de modo que o valor da indenização devida a Alessandro poderá ser reduzido, caso seja comprovada a culpa concorrente da vítima."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 90
+ },
+ {
+  "id": "2841458",
+  "cab": "CEBRASPE (CESPE) - Ana Min (MPE TO)/MPE TO/Especializado/Administração de Banco de Dados/2024",
+  "prova": "Ana Min (MPE TO)/MPE TO/Especializado/Administração de Banco de Dados",
+  "ano": 2024,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere ao direito administrativo, julgue o item a seguir.",
+   "A força maior e o caso fortuito excluem a responsabilidade civil do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 91,
+  "num07": 37
+ },
+ {
+  "id": "3039372",
+  "cab": "CEBRASPE (CESPE) - AFTM (Pref Mossoró)/Pref Mossoró/\"Sem Área\"/2024",
+  "prova": "AFTM (Pref Mossoró)/Pref Mossoró/\"Sem Área\"",
+  "ano": 2024,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Em determinado município, durante uma tempestade, uma árvore em péssimo estado de conservação, localizada em uma praça pública administrada pela prefeitura local, caiu sobre um veículo particular estacionado na via, o qual sofreu danos significativos.",
+   "Acerca dessa situação hipotética, julgue o seguinte item.",
+   "Na hipótese, não há responsabilidade civil do município, pois a tempestade constitui excludente de responsabilidade por força maior."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 92
+ },
+ {
+  "id": "3079248",
+  "cab": "CEBRASPE (CESPE) - ACE (TCE AC)/TCE AC/Direito/2024",
+  "prova": "ACE (TCE AC)/TCE AC/Direito",
+  "ano": 2024,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere aos princípios da administração pública, à responsabilidade civil do Estado e à permissão de serviços públicos, julgue o item subsequente.",
+   "A responsabilidade civil do Estado pode subsistir ainda que se tenha constatado a ocorrência de força maior."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 93,
+  "num07": 38
+ },
+ {
+  "id": "3103051",
+  "cab": "CEBRASPE (CESPE) - ERSPT (ANATEL)/ANATEL/Direito/2024",
+  "prova": "ERSPT (ANATEL)/ANATEL/Direito",
+  "ano": 2024,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item seguinte.",
+   "Tanto no caso de força maior quanto no de caso fortuito, a origem do evento excludente da responsabilidade do Estado pode decorrer de ato praticado pelo poder público."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 94,
+  "num07": 39
+ },
+ {
+  "id": "3202348",
+  "cab": "CEBRASPE (CESPE) - AJ TSE/TSE/Administrativa/Contabilidade/2024",
+  "prova": "AJ TSE/TSE/Administrativa/Contabilidade",
+  "ano": 2024,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item que se segue.",
+   "A força maior é considerada causa excludente da responsabilidade civil estatal."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 95
+ },
+ {
+  "id": "3206682",
+  "cab": "CEBRASPE (CESPE) - TJ TSE/TSE/Administrativa/Agente da Policia Judicial/2024",
+  "prova": "TJ TSE/TSE/Administrativa/Agente da Policia Judicial",
+  "ano": 2024,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, julgue o item a seguir, considerando as disposições legais e o entendimento jurisprudencial dos tribunais superiores.",
+   "A culpa concorrente da vítima é causa excludente da responsabilidade civil estatal."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 96
+ },
+ {
+  "id": "2304801",
+  "cab": "CEBRASPE (CESPE) - Proc (MP TCERJ)/TCE RJ/2023",
+  "prova": "Proc (MP TCERJ)/TCE RJ",
+  "ano": 2023,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito do Decreto-lei n.º 220/1975 — Estatuto do Servidor Público do Estado do Rio de Janeiro —, dos bens públicos e da responsabilidade do estado, julgue o item a seguir.",
+   "Nem sempre a ocorrência de caso fortuito e força maior afasta a responsabilidade extracontratual do estado, o que ocorre, por exemplo, nas situações em que o fato era evitável."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 97
+ },
+ {
+  "id": "2690016",
+  "cab": "CEBRASPE (CESPE) - AACE (TC DF)/TC DF/Gestão/Serviços Técnico-Administrativos/2023",
+  "prova": "AACE (TC DF)/TC DF/Gestão/Serviços Técnico-Administrativos",
+  "ano": 2023,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "No que concerne aos poderes e princípios da administração pública e à responsabilidade do Estado, julgue o item seguinte.",
+   "Se um cidadão sofre dano em seu patrimônio por evento da natureza, isso caracteriza força maior, que afasta a possibilidade de responsabilização civil do poder público."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 98,
+  "num07": 40
+ },
+ {
+  "id": "2722840",
+  "cab": "CEBRASPE (CESPE) - Proc Con (TCE MS)/TCE MS/2023",
+  "prova": "Proc Con (TCE MS)/TCE MS",
+  "ano": 2023,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que concerne à responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Qualquer dano que um servidor público causar a outrem gerará responsabilidade civil para o Estado."
+   ],
+   [
+    "b",
+    "Para que o Estado possa ser responsabilizado por ato normativo, este deve ter sido declarado inconstitucional anteriormente pelo Supremo Tribunal Federal, em controle de constitucionalidade."
+   ],
+   [
+    "c",
+    "Atos lícitos da administração pública não geram responsabilidade civil para o Estado."
+   ],
+   [
+    "d",
+    "Fato decorrente de força maior pode ensejar responsabilidade civil do poder público."
+   ],
+   [
+    "e",
+    "O fato de uma conduta que gerou dano a particular ter sido praticada por terceiro não integrante da administração pública obsta a responsabilização civil do Estado."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 99,
+  "num07": 41
+ },
+ {
+  "id": "1937221",
+  "cab": "CEBRASPE (CESPE) - AFCE (TCE-SC)/TCE SC/Administração/2022",
+  "prova": "AFCE (TCE-SC)/TCE SC/Administração",
+  "ano": 2022,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item a seguir, considerando as disposições doutrinárias acerca do direito administrativo e as previsões em vigor da Lei federal n.º 14.133/2021, da Lei estadual n.º 6.745/1985 (Estatuto dos Servidores do Estado de Santa Catarina) e da Lei Complementar estadual n.º 255/2004.",
+   "A culpa concorrente é uma das hipóteses em que fica completamente excluída a responsabilidade civil do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 100
+ },
+ {
+  "id": "1942600",
+  "cab": "CEBRASPE (CESPE) - AFT (SEFAZ SE)/SEFAZ SE/Geral/2022",
+  "prova": "AFT (SEFAZ SE)/SEFAZ SE/Geral",
+  "ano": 2022,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que diz respeito à responsabilidade do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Dano anormal é aquele que alcança destinatários determinados, ou seja, que atinge um indivíduo ou uma classe delimitada de indivíduos."
+   ],
+   [
+    "b",
+    "Caso fortuito exclui a responsabilidade estatal."
+   ],
+   [
+    "c",
+    "Dano específico é aquele que ultrapassa os inconvenientes naturais e esperados da vida em sociedade."
+   ],
+   [
+    "d",
+    "Dano antijurídico exige a presença do dano anormal e do dano específico."
+   ],
+   [
+    "e",
+    "As concausas afastam a culpa concorrente."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 101,
+  "num07": 42
+ },
+ {
+  "id": "4085749",
+  "cab": "CEBRASPE (CESPE) - APGM (Pref Porto Alegre)/Pref Porto Alegre/2026",
+  "prova": "APGM (Pref Porto Alegre)/Pref Porto Alegre",
+  "ano": 2026,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Em relação à responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A responsabilidade do Estado por omissão é subjetiva na modalidade culpa anônima ou falta do serviço, que se configura nos casos em que determinado serviço público não funcionou, funcionou mal ou funcionou tardiamente, independentemente da identificação do agente causador do dano."
+   ],
+   [
+    "b",
+    "A teoria do risco integral, adotada como regra geral pelo ordenamento brasileiro para a responsabilidade civil do Estado, impede o reconhecimento de causas excludentes da responsabilidade estatal, inclusive nas hipóteses de culpa exclusiva da vítima."
+   ],
+   [
+    "c",
+    "O caso fortuito e a força maior são causas excludentes da responsabilidade civil do Estado apenas nas hipóteses de condutas comissivas, sendo insuscetíveis de afastar a responsabilidade nas hipóteses de omissão estatal."
+   ],
+   [
+    "d",
+    "A responsabilidade do Estado por condutas omissivas é objetiva, equiparando-se ao regime aplicável às condutas comissivas, por força da disciplina constitucional da matéria, que não distingue as duas modalidades de conduta estatal."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 102,
+  "num07": 44
+ },
+ {
+  "id": "4148366",
+  "cab": "CEBRASPE (CESPE) - GPE (UNEAL)/UNEAL/Planejamento/2026",
+  "prova": "GPE (UNEAL)/UNEAL/Planejamento",
+  "ano": 2026,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item.",
+   "Não há possibilidade de responsabilidade civil do Estado por ato omissivo, uma vez que tal responsabilidade só se configura pela ação do agente."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 103
+ },
+ {
+  "id": "4173794",
+  "cab": "CEBRASPE (CESPE) - Ana Reg (ARSAL)/ARSAL/Direito/2026",
+  "prova": "Ana Reg (ARSAL)/ARSAL/Direito",
+  "ano": 2026,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Em relação aos poderes da administração pública e à responsabilidade civil do Estado, julgue o item subsequente.",
+   "Segundo entendimento do STF, a responsabilidade civil do Estado por omissão é subjetiva, ainda que exista dever jurídico específico de agir, como ocorre em situações de custódia estatal de detento, casos em que, para a responsabilização do poder público, será necessário demonstrar os elementos caracterizadores da culpa da administração."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 104
+ },
+ {
+  "id": "4193511",
+  "cab": "CEBRASPE (CESPE) - ACI (CGE AL)/CGE AL/2026",
+  "prova": "ACI (CGE AL)/CGE AL",
+  "ano": 2026,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado e do controle da administração pública, julgue o item a seguir.",
+   "Há responsabilidade civil do Estado quando pessoa foragida do sistema prisional, dias após sua fuga do presídio, pratica ato contra terceiro."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 105
+ },
+ {
+  "id": "3661480",
+  "cab": "CEBRASPE (CESPE) - APE (TCE-RS)/TCE RS/Arquitetura/2025",
+  "prova": "APE (TCE-RS)/TCE RS/Arquitetura",
+  "ano": 2025,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item seguinte, com relação à responsabilidade civil do Estado segundo o ordenamento jurídico brasileiro.",
+   "A responsabilidade civil do Estado por omissão é, em regra, subjetiva, admitindo-se, entretanto, o reconhecimento da responsabilidade objetiva caso a omissão estatal viole um dever jurídico específico de agir previsto na ordem normativa, como ocorre na hipótese de morte de detento sob custódia do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 106,
+  "num07": 45
+ },
+ {
+  "id": "2838966",
+  "cab": "CEBRASPE (CESPE) - Ana (APEX)/ApexBrasil/Aquisições e Jurídico/2024",
+  "prova": "Ana (APEX)/ApexBrasil/Aquisições e Jurídico",
+  "ano": 2024,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "De acordo com entendimento dominante na jurisprudência do STF, a responsabilidade civil do Estado decorrente de omissão relacionada a dever específico de agir tem natureza"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "objetiva e decorre da aplicação da teoria do risco administrativo."
+   ],
+   [
+    "b",
+    "subjetiva e decorre da aplicação da teoria do nexo causal probabilístico."
+   ],
+   [
+    "c",
+    "objetiva e decorre da aplicação da teoria do risco integral."
+   ],
+   [
+    "d",
+    "subjetiva e decorre da aplicação da teoria da equivalência das condições."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 107,
+  "num07": 46
+ },
+ {
+  "id": "3103038",
+  "cab": "CEBRASPE (CESPE) - ERSPT (ANATEL)/ANATEL/Direito/2024",
+  "prova": "ERSPT (ANATEL)/ANATEL/Direito",
+  "ano": 2024,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item seguinte.",
+   "A responsabilidade do Estado por atos omissivos pode surgir de atos lícitos, de atos ilícitos e de atos materiais."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 108,
+  "num07": 47
+ },
+ {
+  "id": "3103043",
+  "cab": "CEBRASPE (CESPE) - ERSPT (ANATEL)/ANATEL/Direito/2024",
+  "prova": "ERSPT (ANATEL)/ANATEL/Direito",
+  "ano": 2024,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item seguinte.",
+   "De acordo com a posição consensual da doutrina administrativista, a responsabilidade do Estado por ato omissivo depende da demonstração de culpa."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 109,
+  "num07": 48
+ },
+ {
+  "id": "3202351",
+  "cab": "CEBRASPE (CESPE) - AJ TSE/TSE/Administrativa/Contabilidade/2024",
+  "prova": "AJ TSE/TSE/Administrativa/Contabilidade",
+  "ano": 2024,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item que se segue.",
+   "Para a caracterização da responsabilidade por omissão estatal, é necessária a violação de um dever jurídico específico de agir do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 110,
+  "num07": 49
+ },
+ {
+  "id": "2367634",
+  "cab": "CEBRASPE (CESPE) - Proc (PGE ES)/PGE ES/2023",
+  "prova": "Proc (PGE ES)/PGE ES",
+  "ano": 2023,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Antônio, réu em processo criminal, estava internado em estado estável em um hospital estadual quando, em uma madrugada, um desafeto o encontrou e o alvejou com tiros de arma de fogo, que posteriormente foram constatados como causa eficiente da morte de Antônio.",
+   "Nessa situação hipotética, à luz da responsabilidade civil do Estado,"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "caso Antônio estivesse acompanhado quando sofreu o homicídio, haveria excludente de ilicitude da responsabilidade do Estado."
+   ],
+   [
+    "b",
+    "ainda que Antônio estivesse acordado quando sofreu o homicídio, ficaria afastada a alegação de excludente de ilicitude quanto à responsabilidade do Estado."
+   ],
+   [
+    "c",
+    "seria afastada a alegação de excludente de responsabilidade do Estado por fato de terceiro apenas se fosse provada a inexistência de agentes de segurança no local no momento do crime."
+   ],
+   [
+    "d",
+    "caso Antônio estivesse acordado no momento do homicídio, seria afastada a responsabilidade do Estado."
+   ],
+   [
+    "e",
+    "caso Antônio não estivesse algemado no momento do homicídio, seria afastada a responsabilidade do Estado."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 111,
+  "num07": 50
+ },
+ {
+  "id": "2367847",
+  "cab": "CEBRASPE (CESPE) - Prom Jus (MPE SC)/MPE SC/2023",
+  "prova": "Prom Jus (MPE SC)/MPE SC",
+  "ano": 2023,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à repartição de competências na CF, aos princípios da administração pública e à responsabilidade civil do poder público, julgue o item subsequente.",
+   "O Estado não pode ser responsabilizado civilmente por atos de omissão."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 112
+ },
+ {
+  "id": "2722860",
+  "cab": "CEBRASPE (CESPE) - Proc Con (TCE MS)/TCE MS/2023",
+  "prova": "Proc Con (TCE MS)/TCE MS",
+  "ano": 2023,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "O dever de reparação de delegatário de serviço público, no caso de conduta omissiva, configura-se quando"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "comprovada a culpa, apenas."
+   ],
+   [
+    "b",
+    "comprovados o fato administrativo, o dano, o nexo de causalidade e a culpa."
+   ],
+   [
+    "c",
+    "comprovado o dolo, apenas."
+   ],
+   [
+    "d",
+    "comprovados o dano, o nexo de causalidade e a culpa, apenas."
+   ],
+   [
+    "e",
+    "comprovados o fato administrativo, o dano, o nexo de causalidade e o dolo."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 113,
+  "num07": 51
+ },
+ {
+  "id": "2213196",
+  "cab": "CEBRASPE (CESPE) - Aud Con Sub (TCE PB)/TCE PB/2022",
+  "prova": "Aud Con Sub (TCE PB)/TCE PB",
+  "ano": 2022,
+  "assunto": "Responsabilidade Civil por Atos Omissivos",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito do controle da administração pública, das licitações e dos contratos administrativos, das concessões, da organização administrativa e da responsabilidade civil do Estado, julgue o item a seguir.",
+   "Caso um ciclista sofra danos materiais em razão de queda sofrida em via pública mal conservada, a indenização devida demandará apenas a comprovação do dano e do nexo causal."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 114,
+  "num07": 52
+ },
+ {
+  "id": "3599465",
+  "cab": "CEBRASPE (CESPE) - AJ (TJ PA)/TJ PA/Direito/2025",
+  "prova": "AJ (TJ PA)/TJ PA/Direito",
+  "ano": 2025,
+  "assunto": "Responsabilidade por Atos Legislativos e Judiciais",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que concerne à responsabilidade civil, penal e administrativa dos agentes públicos, bem como à improbidade administrativa, julgue o item subsequente, observando, no que for cabível, a jurisprudência do STF.",
+   "A responsabilidade civil do Estado em decorrência de atos judiciais é fundamentada na teoria da culpa administrativa, de modo que o administrado somente poderá exercer o direito à reparação dos prejuízos sofridos se comprovar mau funcionamento do serviço."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 115
+ },
+ {
+  "id": "3202350",
+  "cab": "CEBRASPE (CESPE) - AJ TSE/TSE/Administrativa/Contabilidade/2024",
+  "prova": "AJ TSE/TSE/Administrativa/Contabilidade",
+  "ano": 2024,
+  "assunto": "Responsabilidade por Atos Legislativos e Judiciais",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item que se segue.",
+   "Nos casos em que o réu tenha sido condenado criminalmente por erro judiciário, o trânsito em julgado da sentença condenatória impede que o Estado seja responsabilizado civilmente pelo referido ato judicial."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 116
+ },
+ {
+  "id": "2339352",
+  "cab": "CEBRASPE (CESPE) - Per Crim (POLC AL)/POLC AL/Direito/2023",
+  "prova": "Per Crim (POLC AL)/POLC AL/Direito",
+  "ano": 2023,
+  "assunto": "Responsabilidade por Atos Legislativos e Judiciais",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, com fundamento na Constituição Federal de 1988 (CF) e na jurisprudência consolidada do Supremo Tribunal Federal (STF), julgue o seguinte item.",
+   "Para a doutrina clássica, os atos administrativos praticados pelos Poderes Judiciário e Legislativo só ensejam a responsabilização do Estado quando for verificada culpa na prática de tais atos eivados de lesividade e ilegitimidade."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 117
+ },
+ {
+  "id": "2498025",
+  "cab": "CEBRASPE (CESPE) - Proc (PGE RR)/PGE RR/2023",
+  "prova": "Proc (PGE RR)/PGE RR",
+  "ano": 2023,
+  "assunto": "Responsabilidade por Atos Legislativos e Judiciais",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "Em relação à responsabilidade civil do Estado e a sua evolução histórica no contexto brasileiro, julgue o item seguinte.",
+   "É plenamente admissível a responsabilidade estatal pelo dano causado por lei inconstitucional."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 118
+ },
+ {
+  "id": "1994117",
+  "cab": "CEBRASPE (CESPE) - DP TO/DPE TO/2022",
+  "prova": "DP TO/DPE TO",
+  "ano": 2022,
+  "assunto": "Responsabilidade por Atos Legislativos e Judiciais",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Os atos emanados da administração pública que produzam danos estarão sujeitos à responsabilidade civil. No que tange aos atos legislativos,"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "a responsabilidade civil é atribuída ao Estado em relação aos danos gerados por ato praticado com base em lei inconstitucional, sendo a lei, e não o ato, causa direta da responsabilidade."
+   ],
+   [
+    "b",
+    "é vedada a atribuição de responsabilidade civil ao Estado, uma vez que atos legislativos não produzem danos indenizáveis aos indivíduos."
+   ],
+   [
+    "c",
+    "a responsabilidade civil atribuída ao Estado é circunscrita aos atos legislativos emanados do Poder Executivo."
+   ],
+   [
+    "d",
+    "a responsabilidade civil é atribuída ao Estado quando a lei, objeto de declaração de inconstitucionalidade, produz danos aos particulares."
+   ],
+   [
+    "e",
+    "é vedada a atribuição de responsabilidade civil ao Estado, porque a responsabilidade é restrita aos atos administrativos."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 119,
+  "num07": 53
+ },
+ {
+  "id": "2102124",
+  "cab": "CEBRASPE (CESPE) - Proc DF/PG DF/2022",
+  "prova": "Proc DF/PG DF",
+  "ano": 2022,
+  "assunto": "Responsabilidade por Atos Legislativos e Judiciais",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item subsequente, relativos aos direitos dos usuários de serviços públicos, a tombamento, à responsabilidade do Estado, a atos de improbidade administrativa e ao Plano Distrital de Política para Mulheres (PDPM).",
+   "Em regra, atos jurisdicionais não são aptos a gerar indenização com base no regime jurídico da responsabilidade do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 120,
+  "num07": 54
+ },
+ {
+  "id": "2270085",
+  "cab": "CEBRASPE (CESPE) - ATrib (Pref Maringá)/Pref Maringá/2022",
+  "prova": "ATrib (Pref Maringá)/Pref Maringá",
+  "ano": 2022,
+  "assunto": "Responsabilidade por Atos Legislativos e Judiciais",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Para que seja possível responsabilizar o Estado por atos legislativos inconstitucionais, é imprescindível que"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "haja nexo causal entre a lei inconstitucional e o dano ocorrido."
+   ],
+   [
+    "b",
+    "a lei tenha caráter genérico e abstrato."
+   ],
+   [
+    "c",
+    "a inconstitucionalidade tenha sido reconhecida pelo Poder Legislativo antes de declarada pelo Poder Judiciário."
+   ],
+   [
+    "d",
+    "a lei tenha sido promulgada pelo Congresso Nacional."
+   ],
+   [
+    "e",
+    "tenha ocorrido vício de inconstitucionalidade material."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 121
+ },
+ {
+  "id": "3075570",
+  "cab": "CEBRASPE (CESPE) - Ana Adm (TCE AC)/TCE AC/Direito/2024",
+  "prova": "Ana Adm (TCE AC)/TCE AC/Direito",
+  "ano": 2024,
+  "assunto": "Casos Especiais (Danos decorrentes de Obra Pública, Responsabilidade dos Tabeliães, etc.)",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade do Estado e aos serviços públicos, julgue o seguinte item.",
+   "Como obras públicas são realizações da administração em prol do interesse público, delas não resulta dano indenizável a título de responsabilidade do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 122
+ },
+ {
+  "id": "2520659",
+  "cab": "CEBRASPE (CESPE) - ATM (Pref Fortaleza)/Pref Fortaleza/2023",
+  "prova": "ATM (Pref Fortaleza)/Pref Fortaleza",
+  "ano": 2023,
+  "assunto": "Casos Especiais (Danos decorrentes de Obra Pública, Responsabilidade dos Tabeliães, etc.)",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, julgue o item que se segue.",
+   "O Estado não poderá ser responsabilizado objetivamente por atos de tabeliães e registradores oficiais que, no exercício de suas funções, causem danos a terceiros, devido ao fato de os serviços notariais e de registro serem exercidos em caráter privado, por delegação do Poder Público."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 123
+ },
+ {
+  "id": "2520660",
+  "cab": "CEBRASPE (CESPE) - ATM (Pref Fortaleza)/Pref Fortaleza/2023",
+  "prova": "ATM (Pref Fortaleza)/Pref Fortaleza",
+  "ano": 2023,
+  "assunto": "Casos Especiais (Danos decorrentes de Obra Pública, Responsabilidade dos Tabeliães, etc.)",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, julgue o item que se segue.",
+   "A responsabilidade civil do Estado por danos nucleares independe da existência de culpa."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 124
+ },
+ {
+  "id": "3950180",
+  "cab": "CEBRASPE (CESPE) - Proc (CM Boa Vista (RR))/CM Boa Vista (RR)/2026",
+  "prova": "Proc (CM Boa Vista (RR))/CM Boa Vista (RR)",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Julgue os seguintes itens, acerca da responsabilidade civil do Estado.",
+   "I É inaplicável a responsabilidade civil do Estado em virtude de lesão decorrente de ato baseado em lei declarada inconstitucional.",
+   "II Independentemente de a vítima da lesão ser um terceiro não usuário do serviço público, a responsabilidade civil do Estado é objetiva.",
+   "III O permissionário de serviço público responde objetivamente pelas lesões que causar, quando relacionadas à prestação do serviço público.",
+   "IV A teoria do risco administrativo, em que se aquilata o comportamento do Estado em relação à lesão, é admitida no Brasil.",
+   "Assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Apenas os itens I, II e III estão certos."
+   ],
+   [
+    "b",
+    "Apenas os itens I, II e IV estão certos."
+   ],
+   [
+    "c",
+    "Apenas os itens I, III e IV estão certos."
+   ],
+   [
+    "d",
+    "Apenas os itens II, III e IV estão certos."
+   ],
+   [
+    "e",
+    "Todos os itens estão certos."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 125,
+  "num07": 55
+ },
+ {
+  "id": "3954390",
+  "cab": "CEBRASPE (CESPE) - Ana Amb (Ipaam)/IPAAM/Direito/2026",
+  "prova": "Ana Amb (Ipaam)/IPAAM/Direito",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "A responsabilidade civil comissiva do Estado é, em regra,"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "subjetiva."
+   ],
+   [
+    "b",
+    "objetiva, fundada no risco administrativo, havendo a possibilidade de ação regressiva, independentemente de dolo ou culpa do agente."
+   ],
+   [
+    "c",
+    "objetiva, fundada no risco integral, havendo a possibilidade de ação regressiva, independentemente de dolo ou culpa do agente."
+   ],
+   [
+    "d",
+    "objetiva, fundada no risco administrativo, havendo a possibilidade de ação regressiva se houver dolo ou culpa do agente."
+   ],
+   [
+    "e",
+    "objetiva, fundada no risco integral, havendo a possibilidade de ação regressiva se houver dolo ou culpa do agente."
+   ]
+  ],
+  "gabarito": "D",
+  "num06": 126
+ },
+ {
+  "id": "3972221",
+  "cab": "CEBRASPE (CESPE) - Med (TCE RN)/TCE RN/2026",
+  "prova": "Med (TCE RN)/TCE RN",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item a seguir, observada a jurisprudência dos tribunais superiores.",
+   "Segundo a teoria do risco integral, adotada pela Constituição Federal de 1988 para embasar a responsabilidade civil do Estado, no caso de erro médico imputado a conduta negligente de servidor público do SUS, que se omita em seu dever de prestar atendimento, deve o Estado responder objetivamente perante a vítima."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 127,
+  "num07": 56
+ },
+ {
+  "id": "3994522",
+  "cab": "CEBRASPE (CESPE) - TNS (SEMA AM)/SEMA AM/Administrativo/2026",
+  "prova": "TNS (SEMA AM)/SEMA AM/Administrativo",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "A culpa concorrente da vítima em face da responsabilidade civil do Estado"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "mitiga essa responsabilidade, que, apesar de objetiva, é dividida com a vítima."
+   ],
+   [
+    "b",
+    "é inócua, pois a responsabilidade é objetiva."
+   ],
+   [
+    "c",
+    "exclui essa responsabilidade, que se caracteriza como subjetiva."
+   ],
+   [
+    "d",
+    "mitiga essa responsabilidade, que é subjetiva."
+   ],
+   [
+    "e",
+    "exclui essa responsabilidade, pois a vítima contribuiu para o resultado, tornando-se, assim, responsável."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 128
+ },
+ {
+  "id": "3994894",
+  "cab": "CEBRASPE (CESPE) - TNS (SEMA AM)/SEMA AM/Administrativo/2026",
+  "prova": "TNS (SEMA AM)/SEMA AM/Administrativo",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Assinale a opção correta no que concerne à responsabilidade civil do servidor público por danos causados ao patrimônio público."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A responsabilidade civil do servidor é subjetiva, exigindo a prova de dolo ou culpa, e o dano ao erário pode ser ressarcido mediante desconto em folha de pagamento, desde que haja anuência do servidor ou previsão legal específica."
+   ],
+   [
+    "b",
+    "O servidor que causa danos a bens públicos em estrito cumprimento do dever legal fica isento de qualquer reparação civil, em todos os casos."
+   ],
+   [
+    "c",
+    "A absolvição do servidor no juízo criminal por ausência de provas impede, automaticamente, a sua responsabilização civil e administrativa perante a repartição."
+   ],
+   [
+    "d",
+    "A responsabilidade civil do servidor por danos causados ao patrimônio público é objetiva, dispensando-se a comprovação de culpa ou dolo para que haja o dever de indenizar o erário."
+   ],
+   [
+    "e",
+    "O direito de regresso da administração pública contra o servidor prescreve em dois anos, contados do trânsito em julgado da sentença condenatória contra o Estado."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 129,
+  "num07": 57
+ },
+ {
+  "id": "4041964",
+  "cab": "CEBRASPE (CESPE) - Alun Of (PM DF)/PM DF/2026",
+  "prova": "Alun Of (PM DF)/PM DF",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "José, policial militar da PMDF, conduzia uma viatura durante operação de serviço, quando se envolveu em acidente de trânsito com Pedro, que dirigia seu carro particular.",
+   "Nessa situação hipotética, no que concerne à responsabilidade civil do Estado,"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "o Distrito Federal somente será responsabilizado se houver demonstração de dolo ou culpa de José, haja vista a predominância do interesse público sobre o interesse privado."
+   ],
+   [
+    "b",
+    "independentemente da demonstração de dolo ou culpa de José, caso o Distrito Federal seja responsabilizado, haverá a possibilidade de ação de regresso em face do policial militar."
+   ],
+   [
+    "c",
+    "caso fique demonstrada a culpa concorrente de Pedro para o acidente, a responsabilidade civil do Distrito Federal será atenuada, porém não excluída."
+   ],
+   [
+    "d",
+    "a responsabilidade civil do Distrito Federal é objetiva, com fundamento na teoria do risco integral."
+   ],
+   [
+    "e",
+    "para a responsabilização civil do Distrito Federal, há necessidade apenas de demonstração da ação ou omissão do agente José e do dano a Pedro."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 130,
+  "num07": 58
+ },
+ {
+  "id": "4085745",
+  "cab": "CEBRASPE (CESPE) - APGM (Pref Porto Alegre)/Pref Porto Alegre/2026",
+  "prova": "APGM (Pref Porto Alegre)/Pref Porto Alegre",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Um veículo oficial conduzido por servidor municipal, no exercício de suas funções, colidiu com um automóvel particular, o que causou danos materiais ao proprietário. Verificou-se, contudo, que o particular contribuíra para o acidente porque trafegava em velocidade superior à permitida no local.",
+   "Na situação hipotética precedente, o Estado"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "deve responder objetivamente pelos danos causados pelo servidor no exercício da função, sendo a culpa concorrente do particular causa atenuante da responsabilidade estatal, com possibilidade de redução proporcional da indenização."
+   ],
+   [
+    "b",
+    "não deve responder pelos danos causados, pois a contribuição do particular para o evento danoso rompe integralmente o nexo de causalidade entre a conduta do agente público e o dano sofrido pelo particular."
+   ],
+   [
+    "c",
+    "tem responsabilidade civil subjetiva, que depende da comprovação de culpa do servidor público pelo particular lesado, por se tratar de acidente de trânsito que envolveu conduta comissiva de agente público."
+   ],
+   [
+    "d",
+    "deve responder pelos danos causados pelo agente público apenas caso comprovado que este estivesse atuando estritamente dentro dos limites de sua competência funcional, sendo excluída a responsabilidade estatal nas hipóteses em que o servidor extrapola suas atribuições."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 131
+ },
+ {
+  "id": "4146968",
+  "cab": "CEBRASPE (CESPE) - Ass Arr (Pref Porto Velho)/Pref Porto Velho/2026",
+  "prova": "Ass Arr (Pref Porto Velho)/Pref Porto Velho",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Assinale a opção correta acerca da responsabilidade civil estatal."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A responsabilidade civil prevista na CF exclui danos causados por concessionárias de serviço público."
+   ],
+   [
+    "b",
+    "O direito de regresso assegurado à pessoa jurídica de direito público contra o agente causador de dano a terceiros pode ser exercido independentemente de dolo ou culpa, bastando a comprovação do nexo causal entre a conduta do agente e o prejuízo suportado pelo erário."
+   ],
+   [
+    "c",
+    "A responsabilidade civil das pessoas jurídicas de direito público por dano causado a terceiros não exige a punição do agente público responsável pela conduta lesiva, sendo suficiente que o dano decorra de atividade atribuível ao Estado e que reste demonstrado o nexo causal entre essa atividade e o prejuízo sofrido."
+   ],
+   [
+    "d",
+    "A responsabilidade civil objetiva do Estado é afastada nos casos de culpa concorrente da vítima, caso fortuito e força maior, hipóteses em que o Estado fica desobrigado do dever de indenizar."
+   ],
+   [
+    "e",
+    "O direito de regresso da pessoa jurídica de direito público contra o agente causador de dano a terceiros pode ser exercido somente em casos de culpa grave, por força do princípio da proporcionalidade, da razoabilidade e da eficiência."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 132
+ },
+ {
+  "id": "3384910",
+  "cab": "CEBRASPE (CESPE) - AFP (SEFAZ RJ)/SEFAZ RJ/Administrativo Financeira/2025",
+  "prova": "AFP (SEFAZ RJ)/SEFAZ RJ/Administrativo Financeira",
+  "ano": 2025,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "Julgue os seguintes itens, em relação à responsabilidade civil do Estado.",
+   "I A responsabilidade civil do Estado é subjetiva, fundada no risco integral, devendo haver a demonstração da ação do agente e o resultado.",
+   "II A culpa exclusiva da vítima é causa excludente de responsabilidade do Estado, ao passo que a culpa concorrente não interfere na responsabilidade, uma vez que esta é objetiva.",
+   "III A responsabilidade civil de concessionária de serviço público é objetiva em relação aos usuários e subjetiva em relação aos não usuários.",
+   "IV O Estado deve indenizar o condenado por erro judiciário, assim como o que ficar preso além do tempo fixado na sentença.",
+   "Assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Nenhum item está certo."
+   ],
+   [
+    "b",
+    "Apenas o item I está certo."
+   ],
+   [
+    "c",
+    "Apenas o item II está certo."
+   ],
+   [
+    "d",
+    "Apenas o item III está certo."
+   ],
+   [
+    "e",
+    "Apenas o item IV está certo."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 133
+ },
+ {
+  "id": "3441733",
+  "cab": "CEBRASPE (CESPE) - AJ (STM)/STM/Administrativa/\"Sem Especialidade\"/2025",
+  "prova": "AJ (STM)/STM/Administrativa/\"Sem Especialidade\"",
+  "ano": 2025,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item a seguir, considerando, no que couber, a jurisprudência dos tribunais superiores.",
+   "O polo passivo de ação de indenização em razão de dano causado a particular por magistrado no exercício de suas funções deve contemplar, conjuntamente, o Estado e o magistrado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 134
+ },
+ {
+  "id": "3441736",
+  "cab": "CEBRASPE (CESPE) - AJ (STM)/STM/Administrativa/\"Sem Especialidade\"/2025",
+  "prova": "AJ (STM)/STM/Administrativa/\"Sem Especialidade\"",
+  "ano": 2025,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue o item a seguir, considerando, no que couber, a jurisprudência dos tribunais superiores.",
+   "Segundo a jurisprudência do STF, no caso de fraude em concurso público gerar dano material a candidato, o Estado responderá solidariamente com a organizadora do certame."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 135,
+  "num07": 61
+ },
+ {
+  "id": "3639160",
+  "cab": "CEBRASPE (CESPE) - AFT (SEFAZ SE)/SEFAZ SE/Geral/2025",
+  "prova": "AFT (SEFAZ SE)/SEFAZ SE/Geral",
+  "ano": 2025,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Atualmente, alguns doutrinadores do direito administrativo têm defendido como fundamento da responsabilidade civil do Estado a adoção da teoria do risco social, segundo a qual os atos estatais se dividem em atos de império e atos de gestão."
+   ],
+   [
+    "b",
+    "A administração pública responde civilmente pelos danos causados por seus agentes, salvo se eles estiverem amparados por causa excludente de ilicitude penal."
+   ],
+   [
+    "c",
+    "Em caso de responsabilidade civil do Estado por rompimento de barragem, é possível a comprovação de prejuízos de ordem material por prova exclusivamente testemunhal, diante da impossibilidade de produção ou utilização de outro meio probatório."
+   ],
+   [
+    "d",
+    "O termo inicial da prescrição para o ajuizamento de ações de responsabilidade civil em face do Estado por ilícitos praticados por seus agentes é a data do fato."
+   ],
+   [
+    "e",
+    "Nas ações de responsabilidade civil do Estado, é imprescindível a denunciação da lide ao suposto agente público causador do ato lesivo."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 136,
+  "num07": 62
+ },
+ {
+  "id": "2756960",
+  "cab": "CEBRASPE (CESPE) - Of BM (CBM PA)/CBM PA/Combatente/2024",
+  "prova": "Of BM (CBM PA)/CBM PA/Combatente",
+  "ano": 2024,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Com base no regramento constitucional acerca da responsabilidade civil do Estado, julgue os itens subsequentes.",
+   "I O CBMPA responderá pelos danos que seus militares, nessa qualidade, causarem a terceiros.",
+   "II Uma empresa pública paraense prestadora de serviços especializados nas áreas de ciências agrárias e humanas responderá pelos danos que seus agentes, nessa qualidade, causarem a terceiros.",
+   "III Na responsabilidade civil da Administração Pública, o direito de regresso contra o responsável prescinde de dolo ou culpa do agente causador do dano.",
+   "Assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Nenhum item está certo."
+   ],
+   [
+    "b",
+    "Apenas o item I está certo."
+   ],
+   [
+    "c",
+    "Apenas o item II está certo."
+   ],
+   [
+    "d",
+    "Apenas o item III está certo."
+   ],
+   [
+    "e",
+    "Todos os itens estão certos."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 137,
+  "num07": 63
+ },
+ {
+  "id": "2789358",
+  "cab": "CEBRASPE (CESPE) - Prof NU Jr (ITAIPU)/ITAIPU/Advogado/2024",
+  "prova": "Prof NU Jr (ITAIPU)/ITAIPU/Advogado",
+  "ano": 2024,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "Ato de um empregado de empresa pública prestadora de serviço público acarretou oscilação de energia elétrica em parte do sistema, ocasionando prejuízo a terceiros.",
+   "Nessa situação hipotética, em conformidade com a CF,"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "a teoria aplicada para a responsabilidade civil da empresa pública é subjetiva, diversamente da utilizada para o Estado, que é objetiva."
+   ],
+   [
+    "b",
+    "a teoria adotada para a responsabilidade civil do Estado pela CF é a do risco integral."
+   ],
+   [
+    "c",
+    "mesmo tendo ocorrido erro do empregado no exercício de atividade da empresa pública, será necessária a demonstração do dano e do nexo de causalidade para haver a responsabilidade civil da prestadora do serviço."
+   ],
+   [
+    "d",
+    "caso haja culpa concorrente da empresa (por intermédio de seu empregado) e do beneficiário do serviço, será rompido o nexo de causalidade, de forma que não haverá responsabilidade civil do empresa pública."
+   ],
+   [
+    "e",
+    "há direito de regresso da empresa pública em relação ao seu empregado, devendo esta demonstrar apenas a prática do ato, o dano e o nexo de causalidade."
+   ]
+  ],
+  "gabarito": "C",
+  "num06": 138,
+  "num07": 64
+ },
+ {
+  "id": "2921881",
+  "cab": "CEBRASPE (CESPE) - DP AC/DPE AC/2024",
+  "prova": "DP AC/DPE AC",
+  "ano": 2024,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "ME",
+  "enunciado": [
+   "A teoria adotada no Brasil em relação ao nexo de causalidade na responsabilidade civil do Estado é a"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "teoria do dano direto ou imediato."
+   ],
+   [
+    "b",
+    "teoria da causa mais eficiente."
+   ],
+   [
+    "c",
+    "teoria da equivalência dos antecedentes."
+   ],
+   [
+    "d",
+    "teoria do efeito indireto."
+   ],
+   [
+    "e",
+    "teoria da conditio sine qua non."
+   ]
+  ],
+  "gabarito": "Anulada",
+  "num06": 139
+ },
+ {
+  "id": "3103035",
+  "cab": "CEBRASPE (CESPE) - ERSPT (ANATEL)/ANATEL/Direito/2024",
+  "prova": "ERSPT (ANATEL)/ANATEL/Direito",
+  "ano": 2024,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item seguinte.",
+   "Considere que Carlos, por descuido, tenha causado incêndio na casa de Patrícia, e que, para salvá-la, tenha sido necessário que servidores públicos destruíssem uma parede da casa vizinha, pertencente a Joana. Nesse caso, Joana poderá pleitear a responsabilização civil do Estado pela destruição que os servidores causaram, hipótese em que o Estado poderá ajuizar ação regressiva contra Carlos."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 140,
+  "num07": 65
+ },
+ {
+  "id": "3103046",
+  "cab": "CEBRASPE (CESPE) - ERSPT (ANATEL)/ANATEL/Direito/2024",
+  "prova": "ERSPT (ANATEL)/ANATEL/Direito",
+  "ano": 2024,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item seguinte.",
+   "Para a caracterização da responsabilidade objetiva do Estado, não é necessário que o indivíduo causador do dano tenha agido na qualidade de agente público."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num06": 141,
+  "num07": 66
+ },
+ {
+  "id": "3206683",
+  "cab": "CEBRASPE (CESPE) - TJ TSE/TSE/Administrativa/Agente da Policia Judicial/2024",
+  "prova": "TJ TSE/TSE/Administrativa/Agente da Policia Judicial",
+  "ano": 2024,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, julgue o item a seguir, considerando as disposições legais e o entendimento jurisprudencial dos tribunais superiores.",
+   "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, ainda que estes sejam servidores públicos em exercício, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num06": 142
+ },
+ {
+  "id": "2450420",
+  "cab": "CEBRASPE (CESPE) - Ana Reg (AGER MT)/AGER MT/Direito/2023",
+  "prova": "Ana Reg (AGER MT)/AGER MT/Direito",
+  "ano": 2023,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Em caso de explosão que cause danos a terceiros em estabelecimento comercial que comercialize clandestinamente fogos de artifício, a responsabilidade civil do Estado será subjetiva, por ausência de fiscalização específica."
+   ],
+   [
+    "b",
+    "No caso de um suposto erro médico em hospital público, respaldado pela omissão administrativa, a responsabilidade civil do Estado passa a ser subjetiva."
+   ],
+   [
+    "c",
+    "Caso foragido do sistema prisional dirigindo veículo em alta velocidade colida com um terceiro e cause-lhe dano, a responsabilidade do Estado será objetiva, devendo o Estado indenizar a vítima."
+   ],
+   [
+    "d",
+    "Quanto à responsabilidade das pessoas jurídicas de direito privado prestadoras de serviços públicos, o Estado somente será responsabilizado se houver comprovação de omissão do ente público."
+   ],
+   [
+    "e",
+    "Em caso de concurso público organizado por instituição privada ser cancelado por indícios de existência de fraude, o Estado estará isento de ressarcir qualquer dano causado aos candidatos."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 143,
+  "num07": 67
+ },
+ {
+  "id": "2593553",
+  "cab": "CEBRASPE (CESPE) - Ana (MPE RO)/MPE RO/Jornalismo/2023",
+  "prova": "Ana (MPE RO)/MPE RO/Jornalismo",
+  "ano": 2023,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "A conduta omissiva ou comissiva de notários ou oficiais de registro que provoque dano a terceiros constitui responsabilidade civil do Estado, devendo a respectiva ação ser proposta diretamente contra o Estado."
+   ],
+   [
+    "b",
+    "Empresas públicas e sociedades de economia mista exploradoras de atividade econômica são regidas, em regra, pela responsabilidade civil objetiva."
+   ],
+   [
+    "c",
+    "A responsabilidade civil do estado será objetiva mesmo quando decorrer de fato imprevisível."
+   ],
+   [
+    "d",
+    "Configurada a omissão do Estado, a responsabilidade civil será objetiva."
+   ],
+   [
+    "e",
+    "Caso uma obra pública tenha sido executada, mediante contrato administrativo, por empreiteiro privado e tenha sido provado dano provocado por este, o Estado não responderá pelo dano."
+   ]
+  ],
+  "gabarito": "A",
+  "num06": 144,
+  "num07": 68
+ },
+ {
+  "id": "2673533",
+  "cab": "CEBRASPE (CESPE) - Proc (PGE SE)/PGE SE/2023",
+  "prova": "Proc (PGE SE)/PGE SE",
+  "ano": 2023,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "No que diz respeito ao direito de regresso, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "O direito de regresso não pode ser invocado nos casos de atos meramente culposos de agente público."
+   ],
+   [
+    "b",
+    "Agente público que deva ressarcir o Estado em caráter regressivo somente pode ser responsabilizado na via judicial."
+   ],
+   [
+    "c",
+    "Não tem direito de regresso contra o poder concedente o concessionário de serviço público que tenha causado dano."
+   ],
+   [
+    "d",
+    "Pelo fato de exercerem atividade a título privado, não cabe responsabilização do Estado por atos de notários e registradores nem, em consequência, direito de regresso contra estes."
+   ],
+   [
+    "e",
+    "Juízes podem ser responsabilizados com base no direito de regresso."
+   ]
+  ],
+  "gabarito": "E",
+  "num06": 145,
+  "num07": 69
+ },
+ {
+  "id": "2732306",
+  "cab": "CEBRASPE (CESPE) - Alun Of (PM PA)/PM PA/2023",
+  "prova": "Alun Of (PM PA)/PM PA",
+  "ano": 2023,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "06+07",
+  "tipo": "ME",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, julgue os itens seguintes.",
+   "I Os danos ocasionados a particulares em decorrência de atos de multidões, via de regra, não atraem a responsabilização do Estado, porquanto considera-se que tais atos são praticados por terceiros.",
+   "II O suicídio de detentos, ainda que ocorrido no interior do estabelecimento prisional, configura culpa exclusiva da vítima, eximindo o Estado de responsabilização extracontratual.",
+   "III A mera declaração de inconstitucionalidade de uma lei é razão suficiente para se caracterizar a responsabilidade civil do Estado em face do administrado, considerada a ilegítima atuação do Poder Legislativo.",
+   "Assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Nenhum item está certo."
+   ],
+   [
+    "b",
+    "Apenas o item I está certo."
+   ],
+   [
+    "c",
+    "Apenas o item II está certo."
+   ],
+   [
+    "d",
+    "Apenas o item III está certo."
+   ],
+   [
+    "e",
+    "Todos os itens estão certos."
+   ]
+  ],
+  "gabarito": "B",
+  "num06": 146,
+  "num07": 70
+ },
+ {
+  "id": "1711621",
+  "cab": "CEBRASPE (CESPE) - Prom Jus (MPE AP)/MPE AP/2021",
+  "prova": "Prom Jus (MPE AP)/MPE AP",
+  "ano": 2021,
+  "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+  "caderno": "07",
+  "tipo": "ME",
+  "enunciado": [
+   "A respeito da responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Segundo o entendimento do STF, no caso de omissão da atuação estatal, a responsabilidade será sempre subjetiva, ou seja, somente existirá quando demonstrado culpa ou dolo do agente estatal."
+   ],
+   [
+    "b",
+    "Para a configuração da responsabilidade civil do Estado por dano, é desnecessário que o ato lesivo seja ilícito, bastando que haja nexo de causalidade entre a ação estatal e o dano anormal e específico, ou seja, que o dano tenha ultrapassado os inconvenientes normais da vida em sociedade, em desfavor de pessoas ou grupos determinados."
+   ],
+   [
+    "c",
+    "O poder público e os concessionários de serviços públicos respondem, objetiva e solidariamente, por danos causados aos usuários."
+   ],
+   [
+    "d",
+    "A tese da reserva do possível é amplamente aceita pelos tribunais superiores, principalmente no contexto de ações que busquem impor ao poder público a obrigação de efetivar políticas públicas previstas em lei."
+   ],
+   [
+    "e",
+    "Segundo o STF e o STJ, o suicídio de pessoa em cumprimento de pena dentro de estabelecimento prisional não enseja a responsabilidade civil do Estado, por consistir em ato de iniciativa exclusiva da própria vítima."
+   ]
+  ],
+  "gabarito": "B",
+  "num07": 18
+ },
+ {
+  "id": "4249217",
+  "cab": "CEBRASPE (CESPE) - Ana Tran (DETRAN AL)/DETRAN AL/Administração/2026",
+  "prova": "Ana Tran (DETRAN AL)/DETRAN AL/Administração",
+  "ano": 2026,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à administração direta, indireta e fundacional, julgue o item a seguir.",
+   "Caso uma autarquia federal cause danos materiais a terceiros na prestação de serviço público, a sua responsabilidade civil será objetiva, fundamentada na teoria do risco administrativo, aplicando-se idêntica regra às empresas públicas prestadoras de serviços públicos."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num07": 19
+ },
+ {
+  "id": "1624286",
+  "cab": "CEBRASPE (CESPE) - DPF/PF/2021",
+  "prova": "DPF/PF",
+  "ano": 2021,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item que se seguem.",
+   "Conforme a teoria do risco administrativo, uma empresa estatal dotada de personalidade jurídica de direito privado que exerça atividade econômica responderá objetivamente pelos danos que seus agentes, nessa qualidade, causarem a terceiros, resguardado o direito de regresso contra o causador do dano."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num07": 21
+ },
+ {
+  "id": "1727741",
+  "cab": "CEBRASPE (CESPE) - Of (CBM AL)/CBM AL/Combatente/2021",
+  "prova": "Of (CBM AL)/CBM AL/Combatente",
+  "ano": 2021,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "Com relação à organização administrativa e à responsabilidade civil do Estado, julgue o item seguinte.",
+   "A Caixa Econômica Federal é empresa pública prestadora de serviços de natureza privada e possui responsabilidade objetiva pelos atos praticados pelos seus agentes."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num07": 22
+ },
+ {
+  "id": "1120734",
+  "cab": "CEBRASPE (CESPE) - AJ (TJ PA)/TJ PA/Direito/2020",
+  "prova": "AJ (TJ PA)/TJ PA/Direito",
+  "ano": 2020,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "07",
+  "tipo": "ME",
+  "enunciado": [
+   "Quanto à responsabilidade civil por danos causados por seus agentes a terceiros, uma entidade da administração indireta, dotada de personalidade jurídica de direito privado e exploradora de atividade econômica estará sujeita"
+  ],
+  "opcoes": [
+   [
+    "a",
+    "ao regime da responsabilidade civil objetiva do Estado."
+   ],
+   [
+    "b",
+    "ao regime jurídico da responsabilidade civil privada."
+   ],
+   [
+    "c",
+    "à teoria do risco administrativo."
+   ],
+   [
+    "d",
+    "à teoria da falta do serviço."
+   ],
+   [
+    "e",
+    "à teoria do risco integral."
+   ]
+  ],
+  "gabarito": "B",
+  "num07": 23
+ },
+ {
+  "id": "1439169",
+  "cab": "CEBRASPE (CESPE) - ATCI NS (ME)/ME/Perfil Profissional 2/Direito/2020",
+  "prova": "ATCI NS (ME)/ME/Perfil Profissional 2/Direito",
+  "ano": 2020,
+  "assunto": "Responsabilidade Objetiva das Empresas Estatais e das Prestadoras de Serviços Públicos",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue o item a seguir.",
+   "Considere que o caminhão de Alípio tenha sido retido por alegado excesso de peso após passar pela balança de pesagem de determinada concessionária em uma rodovia federal. Considere ainda que, enquanto Alípio era levado pelo agente ao interior do escritório da concessionária para a lavratura do auto de infração, seu caminhão tenha sido furtado nas dependências do referido posto de pesagem. Nessa situação hipotética, é devida indenização a Alípio, pois a conduta do agente foi comissiva, o que configura a responsabilidade objetiva do Estado."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num07": 24
+ },
+ {
+  "id": "4251369",
+  "cab": "CEBRASPE (CESPE) - Ana Tran (DETRAN AL)/DETRAN AL/Direito/2026",
+  "prova": "Ana Tran (DETRAN AL)/DETRAN AL/Direito",
+  "ano": 2026,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "No que concerne à responsabilidade civil do Estado, à improbidade administrativa e às organizações sociais, julgue o item que se seguem.",
+   "Caso um servidor público de uma autarquia, agindo nessa qualidade, cause dano a terceiro, a pessoa que sofrer o dano poderá cobrar em juízo a reparação civil diretamente do mencionado servidor, se este tiver agido com culpa ou dolo."
+  ],
+  "opcoes": [],
+  "gabarito": "Errado",
+  "num07": 25
+ },
+ {
+  "id": "4252942",
+  "cab": "CEBRASPE (CESPE) - Ass Tran (DETRAN AL)/DETRAN AL/2026",
+  "prova": "Ass Tran (DETRAN AL)/DETRAN AL",
+  "ano": 2026,
+  "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item a seguir, relativos à responsabilidade civil.",
+   "A responsabilidade objetiva da pessoa jurídica pelos danos causados por seus agentes não se estende à pretensão regressiva contra o agente responsável, cuja responsabilização depende da demonstração de dolo ou culpa."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num07": 26
+ },
+ {
+  "id": "1796674",
+  "cab": "CEBRASPE (CESPE) - Ag PJ (PC SE)/PC SE/2021",
+  "prova": "Ag PJ (PC SE)/PC SE",
+  "ano": 2021,
+  "assunto": "Excludentes e Atenuantes de Responsabilidade",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "No que se refere à responsabilidade civil do Estado por condutas dos seus agentes, julgue o item seguinte.",
+   "Caso um cidadão seja atingido por disparo de arma de fogo realizado por policial civil de Sergipe, o estado poderá isentar-se da responsabilidade caso consiga comprovar culpa exclusiva da vítima."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num07": 43
+ },
+ {
+  "id": "4222327",
+  "cab": "CEBRASPE (CESPE) - NeR (TJ MT)/TJ MT/Provimento/2026",
+  "prova": "NeR (TJ MT)/TJ MT/Provimento",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "07",
+  "tipo": "ME",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, julgue os itens que se seguem.",
+   "I O Estado responde, objetivamente, pelos atos dos tabeliães e registradores oficiais que, no exercício de suas funções, causem dano a terceiros.",
+   "II A responsabilidade do Estado relaciona-se à atuação de todo agente público no exercício da função pública: agentes políticos, servidores públicos estatutários, celetistas, temporários e até particulares em colaboração com o poder público.",
+   "III Depois de indenizar a vítima de dano causado por agente público no exercício da função, o Estado tem o dever de cobrar, regressivamente, o valor desembolsado perante o agente público causador efetivo do dano, tenha ele agido com dolo ou culpa.",
+   "Assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "Apenas o item II está certo."
+   ],
+   [
+    "b",
+    "Apenas o item III está certo."
+   ],
+   [
+    "c",
+    "Apenas os itens I e II estão certos."
+   ],
+   [
+    "d",
+    "Apenas os itens I e III estão certos."
+   ],
+   [
+    "e",
+    "Todos os itens estão certos."
+   ]
+  ],
+  "gabarito": "E",
+  "num07": 59
+ },
+ {
+  "id": "4252944",
+  "cab": "CEBRASPE (CESPE) - Ass Tran (DETRAN AL)/DETRAN AL/2026",
+  "prova": "Ass Tran (DETRAN AL)/DETRAN AL",
+  "ano": 2026,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "07",
+  "tipo": "CE",
+  "enunciado": [
+   "Julgue o item a seguir, relativos à responsabilidade civil.",
+   "A responsabilidade objetiva prevista constitucionalmente para as pessoas jurídicas de direito público dispensa a demonstração de culpa do agente causador do dano, mas não afasta a necessidade de comprovação do nexo causal entre a atuação estatal e o prejuízo sofrido."
+  ],
+  "opcoes": [],
+  "gabarito": "Certo",
+  "num07": 60
+ },
+ {
+  "id": "1119035",
+  "cab": "CEBRASPE (CESPE) - AJ (TJ PA)/TJ PA/Administração/2020",
+  "prova": "AJ (TJ PA)/TJ PA/Administração",
+  "ano": 2020,
+  "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+  "caderno": "07",
+  "tipo": "ME",
+  "enunciado": [
+   "Acerca da responsabilidade civil do Estado, assinale a opção correta."
+  ],
+  "opcoes": [
+   [
+    "a",
+    "É vedado ao Estado realizar pagamento administrativo de dano causado a terceiro, devendo aguardar eventual condenação em ação judicial para proceder ao pagamento mediante precatório."
+   ],
+   [
+    "b",
+    "O Estado não deve indenizar prejuízos oriundos de alteração de política econômico-tributária caso não se tenha comprometido previamente por meio de planejamento específico."
+   ],
+   [
+    "c",
+    "A nomeação tardia de candidatos aprovados em concurso público gera direito a indenização caso se comprove cabalmente erro da administração pública."
+   ],
+   [
+    "d",
+    "A responsabilidade civil das pessoas jurídicas de direito privado prestadoras de serviço público é objetiva relativamente a terceiros usuários, mas subsidiária para não usuários."
+   ],
+   [
+    "e",
+    "O inadimplemento dos encargos trabalhistas dos empregados de empresa terceirizada não gera responsabilidade solidária do poder público, mas tão somente subsidiária."
+   ]
+  ],
+  "gabarito": "B",
+  "num07": 71
+ }
+]
