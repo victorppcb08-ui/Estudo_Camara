@@ -18,6 +18,12 @@ Materiais de estudo para a prova da Câmara dos Deputados (Cebraspe).
 |---|---|---|
 | Responsabilidade civil do Estado (item 6 do edital) | [Estudo estratégico (PDF)](Direito_Administrativo/Responsabilidade_Civil_do_Estado/Responsabilidade_Civil_do_Estado.pdf) · [pasta](Direito_Administrativo/Responsabilidade_Civil_do_Estado) | Mapa do edital × Cap. 15 de Maria Sylvia, pegadinhas da banca, 158 questões dos Cadernos 06 e 07 comentadas, itens da Câmara 2012 e simulado de 24 itens |
 
+## Gestão Pública
+
+| Assunto | Material | O que traz |
+|---|---|---|
+| Governança e gestão pública (itens 8 e 9 do edital) | [Estudo estratégico (PDF)](Gestao_Publica/Governanca_e_Gestao_Publica/Governanca_e_Gestao_Publica.pdf) · [pasta](Gestao_Publica/Governanca_e_Gestao_Publica) | Modelos de gestão, Nova Governança Pública (Osborne), redes e parcerias, coprodução, valor público, governança × governabilidade, mecanismos, Decreto 9.203/2017 e 94 itens certo/errado comentados |
+
 ## Arquivos de origem
 
 - [NBR 5626:2020, sistemas prediais de água fria e água quente](nbr-5626-2020-emenda-sistemas-prediais-de-agua-fria-e-quente_compress.pdf)
@@ -28,4 +34,4 @@ Materiais de estudo para a prova da Câmara dos Deputados (Cebraspe).
 
 ## Organização
 
-Cada assunto tem uma pasta dentro da área (`Engenharia_Civil/`, `Direito_Administrativo/`), com o material em PDF, a versão editável ou interativa e um `LEIA-ME.md` explicando o conteúdo. Os PDFs abrem direto no GitHub. Os arquivos `.html` são páginas interativas: baixe e abra no navegador. Esta tabela é atualizada a cada material novo.
+Cada assunto tem uma pasta dentro da área (`Engenharia_Civil/`, `Direito_Administrativo/`, `Gestao_Publica/`), com o material em PDF, a versão editável ou interativa e um `LEIA-ME.md` explicando o conteúdo. Os PDFs abrem direto no GitHub. Os arquivos `.html` são páginas interativas: baixe e abra no navegador. Esta tabela é atualizada a cada material novo.

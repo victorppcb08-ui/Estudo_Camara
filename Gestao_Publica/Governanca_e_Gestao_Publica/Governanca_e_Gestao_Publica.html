@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{color-scheme:light}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Governança e Gestão Pública</title>
+<meta name="description" content="Estudo dos tópicos 8 e 9 do edital da Câmara dos Deputados (Cebraspe): modelos de gestão, Nova Governança Pública, valor público e Decreto 9.203/2017.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: coluna de leitura única (~44rem) com barra de navegação fixa pelos itens do edital; tabelas e o fluxograma rolam na própria caixa. */
+:root {
+  --bg: #f4f7f4;
+  --surface: #ffffff;
+  --ink: #17211b;
+  --muted: #536158;
+  --line: #d3ddd5;
+  --accent: #1b6a43;          /* verde do plenário da Câmara */
+  --accent-ink: #ffffff;
+  --accent-soft: #e2efe6;
+  --trap: #a8261d;            /* pegadinha */
+  --trap-soft: #fbeae7;
+  --gold: #7d5f0c;            /* itens da própria Câmara */
+  --gold-soft: #f6eed6;
+  --ok: #1d7446;
+  --bad: #b2271d;
+  --ok-soft: #e1f1e7;
+  --bad-soft: #fbe6e3;
+  --f-display: "Literata", "Iowan Old Style", Georgia, serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-1: .8125rem; --s0: 1rem; --s1: 1.125rem; --s2: 1.375rem; --s3: 1.75rem; --s4: 2.375rem;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1511; --surface: #151f19; --ink: #e2eae4; --muted: #9caaa1; --line: #2a3a30;
+    --accent: #5fc28e; --accent-ink: #0b1a11; --accent-soft: #1a3224;
+    --trap: #ff8f84; --trap-soft: #3a1d1a; --gold: #e2c46e; --gold-soft: #322c17;
+    --ok: #6fd39c; --bad: #ff8f84; --ok-soft: #173325; --bad-soft: #3a1d1a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1511; --surface: #151f19; --ink: #e2eae4; --muted: #9caaa1; --line: #2a3a30;
+  --accent: #5fc28e; --accent-ink: #0b1a11; --accent-soft: #1a3224;
+  --trap: #ff8f84; --trap-soft: #3a1d1a; --gold: #e2c46e; --gold-soft: #322c17;
+  --ok: #6fd39c; --bad: #ff8f84; --ok-soft: #173325; --bad-soft: #3a1d1a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 var(--s0)/1.6 var(--f-body); margin: 0; }
+.wrap { max-width: 46rem; margin: 0 auto; padding-inline: 16px; padding-block: 0 4rem; }
+h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; line-height: 1.2; margin: 0; }
+h2 { font-size: var(--s3); font-weight: 700; }
+h3 { font-size: var(--s2); font-weight: 600; margin-top: 2.25rem; }
+h4 { font-size: var(--s1); font-weight: 600; margin-top: 1.5rem; }
+p { margin: .75rem 0; }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+.ref { font-family: var(--f-mono); font-size: .86em; color: var(--muted); white-space: nowrap; }
+.eyebrow { font: 500 var(--s-1)/1.3 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Cabeçalho */
+.masthead { padding-block: 2.5rem 1.5rem; border-bottom: 1px solid var(--line); }
+.masthead h1 { font-size: var(--s4); font-weight: 700; margin-top: .5rem; }
+.masthead .lead { font-size: var(--s1); color: var(--muted); max-width: 38rem; }
+.facts { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1rem; font-size: var(--s-1); color: var(--muted); }
+.facts b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Navegação */
+nav.itens { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+nav.itens .rail { max-width: 46rem; margin: 0 auto; padding: .5rem 16px; display: flex; gap: .375rem; overflow-x: auto; scrollbar-width: none; }
+nav.itens a { flex: none; text-decoration: none; color: var(--ink); font: 500 var(--s-1)/1 var(--f-mono); padding: .5rem .625rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav.itens a:hover { border-color: var(--accent); color: var(--accent); }
+
+section.mod { padding-top: 2.75rem; scroll-margin-top: 3.5rem; }
+.modhead { display: grid; grid-template-columns: auto 1fr; gap: .25rem 1rem; align-items: baseline; padding-bottom: .75rem; border-bottom: 2px solid var(--ink); }
+.modhead .num { font: 600 var(--s3)/1 var(--f-mono); color: var(--accent); }
+.modhead .sub { grid-column: 2; color: var(--muted); font-size: var(--s-1); }
+.modhead h2 { min-width: 0; }
+
+/* Caixas */
+.box { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 1rem 1.125rem; margin: 1.25rem 0; }
+.box > :first-child { margin-top: 0; }
+.box > :last-child { margin-bottom: 0; }
+.box h4 { margin-top: 0; font-size: var(--s0); font-family: var(--f-body); font-weight: 600; }
+.trap { border-color: color-mix(in srgb, var(--trap) 45%, var(--line)); background: var(--trap-soft); }
+.trap h4 { color: var(--trap); }
+.trap ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+.trap li { margin: .4rem 0; }
+.banca { border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); background: var(--accent-soft); }
+.banca h4 { color: var(--accent); }
+.camara { border-color: color-mix(in srgb, var(--gold) 45%, var(--line)); background: var(--gold-soft); }
+.camara h4 { color: var(--gold); }
+blockquote { margin: 1rem 0; padding: .25rem 0 .25rem 1rem; border-left: 3px solid var(--accent); font-family: var(--f-display); font-size: var(--s1); }
+blockquote cite { display: block; font: 400 var(--s-1) var(--f-mono); color: var(--muted); margin-top: .25rem; font-style: normal; }
+ul.tight { padding-left: 1.2rem; } ul.tight li { margin: .3rem 0; }
+
+/* Tabelas */
+.tbl { overflow-x: auto; margin: 1.25rem 0; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: .9375rem; }
+th, td { text-align: left; vertical-align: top; padding: .55rem .75rem; border-bottom: 1px solid var(--line); }
+th { font: 600 var(--s-1)/1.3 var(--f-body); color: var(--muted); background: color-mix(in srgb, var(--accent-soft) 55%, var(--surface)); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tbl.wide table { min-width: 38rem; }
+
+/* Fluxo de decisão */
+.fluxo { display: grid; gap: .5rem; margin: 1.25rem 0; }
+.etapa { display: grid; grid-template-columns: 4.25rem 1fr; gap: .75rem; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: .75rem .875rem; }
+.etapa .tag { font: 600 var(--s-1)/1.2 var(--f-mono); color: var(--accent); padding-top: .15rem; }
+.etapa p { margin: 0; }
+.etapa .ramos { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .5rem; margin-top: .5rem; }
+.ramo { border: 1px dashed var(--line); border-radius: var(--r); padding: .5rem .625rem; font-size: .9375rem; min-width: 0; }
+.ramo b { display: block; font-weight: 600; }
+.seta { text-align: center; color: var(--muted); font-size: var(--s-1); line-height: 1; }
+
+/* Linha do tempo */
+.tempo { list-style: none; padding: 0; margin: 1.25rem 0; border-left: 2px solid var(--line); }
+.tempo li { position: relative; padding: 0 0 .9rem 1.1rem; }
+.tempo li::before { content: ""; position: absolute; left: -6px; top: .45rem; width: 10px; height: 10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.tempo li.chave::before { background: var(--accent); }
+.tempo .ano { font: 600 var(--s-1) var(--f-mono); color: var(--accent); }
+
+/* Placar */
+.placar { display: grid; gap: .6rem; margin: 1rem 0; }
+.barra { display: grid; grid-template-columns: 7.5rem 1fr 4.5rem; gap: .75rem; align-items: center; font-size: var(--s-1); }
+.barra .rot { font-family: var(--f-mono); }
+.barra .trilho { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; display: flex; }
+.barra .trilho i { display: block; height: 100%; }
+.barra .trilho i.ok { background: var(--ok); }
+.barra .trilho i.bad { background: var(--bad); }
+.barra .val { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+.placar-total { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: baseline; font-size: var(--s-1); color: var(--muted); }
+.placar-total b { font: 600 var(--s2) var(--f-mono); color: var(--ink); }
+
+/* Questões */
+.qbloco { margin-top: 1.75rem; }
+.qbar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; justify-content: space-between; padding: .625rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.qbar .conta { font: 500 var(--s-1) var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.qbar .ctrl { display: flex; flex-wrap: wrap; gap: .375rem; }
+button { font: 500 var(--s-1)/1 var(--f-body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: .5rem .7rem; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.qlist { display: grid; gap: .875rem; margin-top: .875rem; }
+.q { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: .875rem 1rem; min-width: 0; }
+.q.acertou { border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); }
+.q.errou { border-color: color-mix(in srgb, var(--bad) 55%, var(--line)); }
+.q .meta { display: flex; flex-wrap: wrap; gap: .25rem .5rem; align-items: center; font: 400 .75rem/1.35 var(--f-mono); color: var(--muted); }
+.chip { display: inline-block; padding: .15rem .4rem; border-radius: 3px; font: 600 .6875rem/1.2 var(--f-mono); letter-spacing: .04em; text-transform: uppercase; }
+.chip.cam { background: var(--gold-soft); color: var(--gold); border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent); }
+.chip.anul { background: var(--trap-soft); color: var(--trap); }
+.chip.aut { background: var(--accent-soft); color: var(--accent); }
+.q .enun p { margin: .5rem 0; }
+.q .enun p.it { padding-left: .75rem; border-left: 2px solid var(--line); }
+.opts { display: grid; gap: .375rem; margin-top: .75rem; }
+.opts.ce { grid-template-columns: repeat(2, minmax(0, 8rem)); }
+.opt { text-align: left; display: grid; grid-template-columns: 1.5rem 1fr; gap: .4rem; padding: .55rem .65rem; line-height: 1.45; font-size: .9375rem; font-weight: 400; }
+.opts.ce .opt { grid-template-columns: 1fr; text-align: center; font-weight: 600; }
+.opt .l { font: 600 .875rem var(--f-mono); color: var(--muted); }
+.opt.certa { border-color: var(--ok); background: var(--ok-soft); }
+.opt.marcada-errada { border-color: var(--bad); background: var(--bad-soft); }
+.opt:disabled { cursor: default; color: var(--ink); }
+.resp { margin-top: .75rem; padding-top: .75rem; border-top: 1px dashed var(--line); font-size: .9375rem; }
+.resp .veredito { font: 600 var(--s-1) var(--f-mono); text-transform: uppercase; letter-spacing: .05em; }
+.resp .veredito.ok { color: var(--ok); } .resp .veredito.bad { color: var(--bad); } .resp .veredito.neu { color: var(--muted); }
+.resp .alerta { margin-top: .5rem; padding: .5rem .65rem; background: var(--trap-soft); border-radius: var(--r); }
+.resp .alerta b { color: var(--trap); }
+.vazio { color: var(--muted); font-size: var(--s-1); padding: .75rem 0; }
+.painel { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+.aviso-reset { font-size: var(--s-1); color: var(--muted); }
+
+/* Plano */
+.agenda { display: grid; gap: .5rem; margin: 1rem 0; }
+.dia { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .625rem .75rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+.dia .data { font: 600 var(--s-1)/1.4 var(--f-mono); color: var(--accent); font-variant-numeric: tabular-nums; }
+.dia p { margin: 0; }
+.dia small { color: var(--muted); }
+.check { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: .4rem; }
+.check li { display: grid; grid-template-columns: 1.25rem 1fr; gap: .5rem; }
+.check li::before { content: "□"; color: var(--accent); font-family: var(--f-mono); }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: var(--s-1); }
+
+@media (max-width: 30rem) {
+  .barra { grid-template-columns: 5.5rem 1fr 3.75rem; }
+  .etapa { grid-template-columns: 1fr; gap: .25rem; }
+  .dia { grid-template-columns: 1fr; gap: .25rem; }
+  .masthead h1 { font-size: var(--s3); }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+/* Versão PDF: gabaritos revelados, sem controles */
+html.modo-pdf body { background: #fff; color: #17211b; }
+html.modo-pdf nav.itens, html.modo-pdf .qbar .ctrl, html.modo-pdf .painel, html.modo-pdf .aviso-reset, html.modo-pdf .so-tela { display: none !important; }
+html.modo-pdf .q, html.modo-pdf .box, html.modo-pdf .etapa, html.modo-pdf .dia, html.modo-pdf tr { break-inside: avoid; }
+html.modo-pdf section.mod { padding-top: 1.5rem; }
+html.modo-pdf .wrap { max-width: none; }
+html.modo-pdf body { font-size: 12.5px; line-height: 1.5; }
+html.modo-pdf .q { padding: .55rem .75rem; }
+html.modo-pdf .qlist { gap: .5rem; }
+html.modo-pdf .opts { gap: .2rem; margin-top: .4rem; }
+html.modo-pdf .opt { padding: .3rem .5rem; font-size: 12px; }
+html.modo-pdf .opts.ce { grid-template-columns: repeat(2, 6rem); }
+html.modo-pdf .resp { margin-top: .45rem; padding-top: .45rem; font-size: 12px; }
+html.modo-pdf .resp p { margin: .3rem 0; }
+html.modo-pdf .q .enun p { margin: .3rem 0; }
+html.modo-pdf .placar, html.modo-pdf #placar-total { display: none; }
+</style>
+<style>html.modo-pdf #relampago { display: none !important; }</style>
+<header class="masthead">
+  <div class="wrap" style="padding-block:0">
+    <div class="eyebrow">Câmara dos Deputados · Analista Legislativo · Cebraspe · Edital, itens 8 e 9</div>
+    <h1>Governança e Gestão Pública</h1>
+    <p class="lead">Dos modelos de gestão à Nova Governança Pública, ao valor público e ao Decreto nº 9.203/2017. Estudo organizado subitem por subitem do edital, com as fontes que a banca usa e itens escritos do ponto de vista de quem elabora a prova.</p>
+    <div class="facts">
+      <span>Prova: <b>17/01/2027</b></span>
+      <span id="contagem">Faltam <b>97 dias</b></span>
+      <span><b>94</b> itens certo/errado comentados</span>
+      <span><b>9</b> subitens do edital</span>
+    </div>
+  </div>
+</header>
+
+<nav class="itens" aria-label="Subitens do edital">
+  <div class="rail">
+    <a href="#mapa">Mapa</a><a href="#s8">8</a><a href="#s81">8.1</a><a href="#s82">8.2</a><a href="#s83">8.3</a><a href="#s84">8.4</a><a href="#s91">9.1</a><a href="#s92">9.2</a><a href="#s93">9.3</a><a href="#s94">9.4</a><a href="#pegadinhas">Pegadinhas</a><a href="#relampago">Relâmpago</a><a href="#fontes">Fontes</a><a href="#plano">Plano</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ======================= MAPA ======================= -->
+<section class="mod" id="mapa">
+  <div class="modhead"><span class="num">0</span><h2>Mapa do edital</h2><span class="sub">Os dois tópicos contam uma única história</span></div>
+  <p>Os tópicos 8 e 9 não são temas soltos. O tópico 8 é a <strong>história</strong>: como o Estado passou do patrimonialismo à burocracia, da burocracia ao gerencialismo e deste à governança em rede. O tópico 9 é a <strong>institucionalização</strong> dessa história no governo federal: o conceito de governança, seus mecanismos, o valor público como finalidade e o Decreto nº 9.203/2017 como norma. O conceito de valor público aparece duas vezes (8.4 e 9.3) de propósito: é a ponte entre os dois tópicos.</p>
+
+  <div class="fluxo" role="list" aria-label="Encadeamento dos tópicos 8 e 9">
+    <div class="etapa" role="listitem"><span class="tag">8</span><div><p><strong>Modelos de gestão.</strong> Patrimonialismo (confusão entre público e privado) → burocracia (impessoalidade, controle de processos) → nova gestão pública (resultados, eficiência, cliente).</p></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">8.1</span><div><p><strong>Nova Governança Pública.</strong> O Estado deixa de produzir sozinho e passa a coordenar uma rede de atores (Osborne, 2006).</p>
+      <div class="ramos">
+        <div class="ramo"><b>8.2 · Com quem</b>Redes, articulação entre órgãos e entes, parcerias com mercado e terceiro setor.</div>
+        <div class="ramo"><b>8.3 · Com o cidadão</b>Coprodução, participação e transparência ativa.</div>
+        <div class="ramo"><b>8.4 · Para quê</b>Valor público e cadeia de valor (insumo → produto → impacto).</div>
+      </div></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">9.1 · 9.2</span><div><p><strong>Governança como sistema.</strong> Conceito, diferença para governabilidade e gestão, alinhamento estratégico e os três mecanismos: liderança, estratégia e controle.</p></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">9.3</span><div><p><strong>Finalidade.</strong> Gerar valor público, entregar resultados com sustentabilidade e avaliar o impacto das políticas.</p></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">9.4</span><div><p><strong>A norma.</strong> Decreto nº 9.203/2017: definições, 6 princípios, 11 diretrizes, 3 mecanismos, CIG, comitês internos, riscos, auditoria e integridade.</p></div></div>
+  </div>
+
+  <h3>Peso provável de cada subitem</h3>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Subitem</th><th>Fonte que decide o gabarito</th><th>Tipo de cobrança esperado</th><th>Prioridade</th></tr></thead>
+    <tbody>
+      <tr><td><strong>9.4</strong> Decreto 9.203</td><td>Texto do decreto</td><td>Literal: troca de palavras, princípio × diretriz, âmbito, CIG</td><td>Máxima</td></tr>
+      <tr><td><strong>9.1</strong> Governança × governabilidade</td><td>Bresser-Pereira, PDRAE, TCU</td><td>Inversão de conceitos; governança × gestão</td><td>Máxima</td></tr>
+      <tr><td><strong>9.2</strong> Mecanismos</td><td>Decreto, art. 5º; TCU</td><td>Definição de um mecanismo atribuída a outro</td><td>Alta</td></tr>
+      <tr><td><strong>8</strong> Modelos</td><td>PDRAE, Weber, Abrucio, Hood</td><td>Características trocadas; evolução "linear"</td><td>Alta</td></tr>
+      <tr><td><strong>8.1</strong> NPG</td><td>Osborne; Secchi; Kissler e Heidemann</td><td>NPM × NPG × NSP; mecanismo de coordenação</td><td>Alta</td></tr>
+      <tr><td><strong>8.4 · 9.3</strong> Valor público</td><td>Moore; decreto; Martins e Marini</td><td>Triângulo estratégico; eficiência × eficácia × efetividade</td><td>Média-alta</td></tr>
+      <tr><td><strong>8.3</strong> Coprodução e transparência</td><td>Ostrom; Arnstein; LAI</td><td>Coprodução × terceirização; transparência ativa × passiva</td><td>Média</td></tr>
+      <tr><td><strong>8.2</strong> Redes e parcerias</td><td>Leis de PPP, OS, OSCIP, MROSC, consórcios</td><td>Instrumento trocado; vedações da PPP</td><td>Média</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="box banca">
+    <h4>Como o Cebraspe cobra temas de gestão pública</h4>
+    <ul class="tight">
+      <li><strong>Edital como roteiro.</strong> Os itens costumam repetir as palavras do subitem: "coprodução do bem público", "cadeia de valor público", "alinhamento estratégico". Cada expressão do edital tem, neste estudo, uma definição pronta.</li>
+      <li><strong>Norma pela letra.</strong> No Decreto 9.203 a banca troca uma palavra: "razoável" por "absoluta", "avaliar, direcionar e monitorar" por "planejar, executar e controlar", princípio por diretriz.</li>
+      <li><strong>Doutrina pela inversão.</strong> Em teoria, o item típico pega dois conceitos vizinhos e troca as definições: governança × governabilidade, eficiência × eficácia, NPM × NPG, termo de fomento × termo de colaboração.</li>
+      <li><strong>Exemplo real.</strong> No TCDF 2024 (Auditor), a banca considerou errado atribuir à governança a capacidade de intermediar interesses da sociedade civil, porque, na linha de Bresser-Pereira, isso diz respeito à governabilidade.</li>
+      <li><strong>Absolutos.</strong> "Rompe integralmente", "exclusivamente", "definitivo", "segurança absoluta" quase sempre indicam ERRADO.</li>
+    </ul>
+  </div>
+
+  <h3>Seu placar</h3>
+  <p class="so-tela">As respostas ficam salvas neste navegador.</p>
+  <div class="placar" id="placar"></div>
+  <div class="placar-total so-tela" id="placar-total"></div>
+  <div class="painel">
+    <button type="button" id="btn-reset">Zerar respostas</button>
+    <button type="button" id="btn-reset-ok" hidden>Confirmar: apagar todas</button>
+    <span class="aviso-reset" id="aviso-reset" hidden>Isso apaga suas respostas salvas neste navegador.</span>
+  </div>
+</section>
+
+<!-- ======================= 8 ======================= -->
+<section class="mod" id="s8">
+  <div class="modhead"><span class="num">8</span><h2>Evolução dos modelos de gestão pública</h2><span class="sub">Patrimonialismo, burocracia e nova gestão pública</span></div>
+  <div class="tbl wide"><table>
+    <thead><tr><th></th><th>Patrimonialismo</th><th>Burocracia</th><th>Nova gestão pública</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Base</strong></td><td>Dominação tradicional (Weber)</td><td>Dominação racional-legal (Weber)</td><td>Escolha pública, teoria da agência, gestão empresarial</td></tr>
+      <tr><td><strong>Lógica</strong></td><td>Estado como extensão do soberano; res publica confundida com res principis</td><td>Impessoalidade, formalismo, hierarquia, profissionalização, mérito</td><td>Eficiência, resultados, descentralização, foco no cliente</td></tr>
+      <tr><td><strong>Controle</strong></td><td>Lealdade pessoal</td><td>A priori, dos processos (desconfiança prévia)</td><td>A posteriori, dos resultados (confiança limitada)</td></tr>
+      <tr><td><strong>Problema típico</strong></td><td>Nepotismo, corrupção, cargos como prebendas e sinecuras</td><td>Disfunções de Merton: formalismo, papelório, resistência a mudanças, autorreferência</td><td>Cidadão reduzido a cliente; fragmentação; foco intraorganizacional</td></tr>
+      <tr><td><strong>Brasil</strong></td><td>Colônia, Império, República Velha</td><td>Reforma do DASP (1936-1938, Vargas)</td><td>DL 200/1967 (primeira tentativa); PDRAE e MARE (1995, Bresser-Pereira); EC 19/1998 (eficiência)</td></tr>
+    </tbody>
+  </table></div>
+  <h4>Peças que a banca usa</h4>
+  <ul class="tight">
+    <li><strong>PDRAE (1995):</strong> a administração gerencial "está apoiada na anterior, da qual conserva, embora flexibilizando, alguns dos seus princípios fundamentais". Não há ruptura total. O plano divide o Estado em quatro setores: núcleo estratégico; atividades exclusivas (agências); serviços não exclusivos (publicização para organizações sociais); produção para o mercado (privatização).</li>
+    <li><strong>Hood (1991):</strong> sete doutrinas do NPM: gestão profissional, padrões explícitos de desempenho, controle de resultados, desagregação de unidades, competição, práticas do setor privado, disciplina no uso de recursos.</li>
+    <li><strong>Osborne e Gaebler (1992):</strong> governo empreendedor, "dirigir em vez de remar", governo catalisador, orientado por missões, por resultados, para o cliente, descentralizado e orientado para o mercado.</li>
+    <li><strong>Abrucio (1997):</strong> três fases do modelo gerencial: gerencialismo puro (economia e eficiência) → consumerism (qualidade e cliente) → public service orientation (cidadão, accountability, equidade, participação).</li>
+  </ul>
+  <div class="box trap">
+    <h4>Pegadinhas do tópico 8</h4>
+    <ul>
+      <li><strong>Evolução "linear" ou "superação completa".</strong> Os modelos coexistem; o patrimonialismo sobrevive em clientelismo e fisiologismo.</li>
+      <li><strong>Burocracia ligada à dominação carismática.</strong> É racional-legal.</li>
+      <li><strong>DASP como marco gerencial.</strong> O DASP é burocrático; o DL 200 é a primeira tentativa gerencial.</li>
+      <li><strong>Publicização = privatização.</strong> Publicização transfere serviços não exclusivos ao setor público não estatal.</li>
+      <li><strong>Ordem das fases de Abrucio</strong> trocada, ou consumerism descrito como foco em custo.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="8"></div>
+</section>
+
+<!-- ======================= 8.1 ======================= -->
+<section class="mod" id="s81">
+  <div class="modhead"><span class="num">8.1</span><h2>Nova Governança Pública</h2><span class="sub">Conceito, fundamentos e evolução</span></div>
+  <p>O termo vem de Stephen Osborne, no artigo <em>The New Public Governance?</em> (Public Management Review, 2006), ampliado no livro de mesmo nome (Routledge, 2010). Para ele, o NPM foi um estágio "relativamente breve e transitório" entre a administração pública tradicional e a NPG. A interrogação do título é proposital: a NPG é apresentada como ferramenta para compreender a gestão pública num Estado plural, não como modelo definitivo.</p>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Elemento (quadro de Osborne)</th><th>Public Administration</th><th>New Public Management</th><th>New Public Governance</th></tr></thead>
+    <tbody>
+      <tr><td>Raízes teóricas</td><td>Ciência política e políticas públicas</td><td>Escolha pública e estudos de gestão</td><td>Sociologia institucional e teoria de redes</td></tr>
+      <tr><td>Natureza do Estado</td><td>Unitário</td><td>Desagregado (regulador)</td><td>Plural e pluralista</td></tr>
+      <tr><td>Foco</td><td>Sistema político</td><td>A organização</td><td>A organização em seu ambiente</td></tr>
+      <tr><td>Ênfase</td><td>Formulação e implementação de políticas</td><td>Gestão de recursos e desempenho</td><td>Negociação de valores, significados e relações</td></tr>
+      <tr><td>Parceiros externos</td><td>Elementos do sistema de políticas</td><td>Contratados independentes num mercado competitivo</td><td>Fornecedores preferenciais, interdependentes, em relação contínua</td></tr>
+      <tr><td>Mecanismo de governança</td><td>Hierarquia</td><td>Mercado e contratos clássicos</td><td>Confiança e contratos relacionais</td></tr>
+      <tr><td>Base de valores</td><td>Ethos do setor público</td><td>Eficácia da competição e do mercado</td><td>Neocorporativista</td></tr>
+    </tbody>
+  </table></div>
+  <ul class="tight">
+    <li><strong>Estado plural:</strong> vários atores interdependentes participam da entrega dos serviços. <strong>Estado pluralista:</strong> vários processos informam a formulação das políticas.</li>
+    <li><strong>Crítica ao NPM:</strong> foco intraorganizacional num ambiente cada vez mais interorganizacional, e uso de técnicas de gestão industrial em serviços.</li>
+    <li><strong>No Brasil:</strong> Secchi (2009) chama o modelo de governança pública (GP), com relação horizontal e cidadãos como parceiros. Kissler e Heidemann (2006) descrevem a passagem do Estado produtor para o Estado garantidor, ativador e cooperativo.</li>
+    <li><strong>Vizinho que confunde:</strong> o novo serviço público de Denhardt e Denhardt ("servir em vez de dirigir", cidadãos e não clientes, interesse público como objetivo). Próximo da NPG, mas de outros autores.</li>
+  </ul>
+  <div class="box camara">
+    <h4>A sua dúvida sobre o PDF</h4>
+    <p>O artigo <em>The New Public Governance?</em>, de Osborne, é a referência certa para o 8.1: é dele que o edital tirou a expressão. Use-o para o quadro comparativo acima. Mas não estude só por ele: o Cebraspe cobra em português, e para os outros subitens as fontes que decidem o gabarito são o decreto, o TCU, o PDRAE e os autores brasileiros listados na seção <a href="#fontes">Fontes</a>.</p>
+  </div>
+  <div class="box trap">
+    <h4>Pegadinhas do 8.1</h4>
+    <ul>
+      <li><strong>Mecanismo de coordenação trocado:</strong> NPG por mercado ou contratos clássicos. NPG = confiança e contratos relacionais.</li>
+      <li><strong>Raízes da NPG na escolha pública.</strong> Essas são do NPM.</li>
+      <li><strong>NPG = novo serviço público</strong>, ou NSP atribuído a Osborne.</li>
+      <li><strong>Cidadão-cliente na governança pública.</strong> Na GP, o cidadão é parceiro.</li>
+      <li><strong>NPG como "fim da história".</strong> Osborne não afirma isso.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="8.1"></div>
+</section>
+
+<!-- ======================= 8.2 ======================= -->
+<section class="mod" id="s82">
+  <div class="modhead"><span class="num">8.2</span><h2>Redes, articulação e parcerias</h2><span class="sub">Ação pública em redes de cooperação, articulação interinstitucional, parcerias com o setor privado e o terceiro setor</span></div>
+  <p><strong>Redes de políticas públicas</strong> reúnem atores estatais e não estatais interdependentes, coordenados horizontalmente por negociação e confiança. Vantagens: mobilizar recursos e conhecimento dispersos. Custos: coordenação lenta e responsabilização difusa (o "problema das muitas mãos").</p>
+  <p><strong>Articulação interinstitucional</strong> é vertical (entre entes federativos: competências comuns do art. 23 da CF, consórcios e convênios de cooperação do art. 241) e horizontal (entre órgãos de um mesmo governo: intersetorialidade, transversalidade). O Decreto 9.203 a transforma em diretriz (art. 4º, IV).</p>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Instrumento</th><th>Com quem</th><th>Pontos de prova</th></tr></thead>
+    <tbody>
+      <tr><td>Consórcio público (Lei 11.107/2005)</td><td>Entes federativos</td><td>Associação pública (direito público, integra a indireta de todos) ou pessoa de direito privado; protocolo de intenções ratificado por lei; contrato de rateio; contrato de programa. A União só entra se o estado dos municípios também participar.</td></tr>
+      <tr><td>PPP (Lei 11.079/2004)</td><td>Setor privado</td><td>Patrocinada (tarifa + contraprestação) ou administrativa (Administração usuária). Vedada abaixo de R$ 10 milhões, com prazo inferior a 5 anos ou objeto único de mão de obra, equipamentos ou obra. Prazo de 5 a 35 anos. Repartição objetiva de riscos.</td></tr>
+      <tr><td>Organização social (Lei 9.637/1998)</td><td>Terceiro setor</td><td>Qualificação discricionária; contrato de gestão; ensino, pesquisa, tecnologia, meio ambiente, cultura e saúde. ADI 1.923: constitucional, com procedimento público, objetivo e impessoal.</td></tr>
+      <tr><td>OSCIP (Lei 9.790/1999)</td><td>Terceiro setor</td><td>Qualificação vinculada (Ministério da Justiça); termo de parceria.</td></tr>
+      <tr><td>OSC, MROSC (Lei 13.019/2014)</td><td>Terceiro setor</td><td>Termo de colaboração (proposta da Administração), termo de fomento (proposta da OSC), acordo de cooperação (sem recursos). Chamamento público como regra.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box trap">
+    <h4>Pegadinhas do 8.2</h4>
+    <ul>
+      <li><strong>Pares trocados:</strong> OS com termo de parceria, OSCIP com contrato de gestão, fomento como proposta da Administração.</li>
+      <li><strong>Vedações da PPP</strong> tratadas como alternativas ("desde que o prazo seja de 5 anos").</li>
+      <li><strong>Rede simplifica a accountability.</strong> Complica.</li>
+      <li><strong>União consorciada só com municípios.</strong> Precisa do estado.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="8.2"></div>
+</section>
+
+<!-- ======================= 8.3 ======================= -->
+<section class="mod" id="s83">
+  <div class="modhead"><span class="num">8.3</span><h2>Coprodução, participação e transparência ativa</h2><span class="sub">O cidadão como parceiro, não como cliente</span></div>
+  <h4>Coprodução do bem público</h4>
+  <ul class="tight">
+    <li><strong>Conceito (Ostrom, 1996):</strong> produção de um bem ou serviço com insumos de indivíduos que não pertencem à organização que o presta. O cidadão aporta tempo, conhecimento, esforço.</li>
+    <li><strong>Tipos (Brudney e England, 1983):</strong> individual, grupal e coletiva.</li>
+    <li><strong>Etapas (Bovaird, 2007):</strong> co-planejamento, co-design, co-entrega e co-avaliação. A coprodução não se limita à execução.</li>
+    <li><strong>No Brasil (Salm e Menegasso, 2009):</strong> os modelos de administração pública são complementares, e o bem público é coproduzido em rede pelo Estado e pela comunidade.</li>
+    <li><strong>Não é</strong> terceirização, concessão ou privatização: o Estado continua coprodutor.</li>
+  </ul>
+  <h4>Participação cidadã</h4>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Escada de Arnstein (1969)</th><th>Degraus</th></tr></thead>
+    <tbody>
+      <tr><td>Não participação</td><td>1 Manipulação · 2 Terapia</td></tr>
+      <tr><td>Concessão mínima de poder (tokenism)</td><td>3 Informação · 4 Consulta · 5 Pacificação</td></tr>
+      <tr><td>Poder cidadão</td><td>6 Parceria · 7 Delegação de poder · 8 Controle cidadão</td></tr>
+    </tbody>
+  </table></div>
+  <p>Instrumentos: conselhos de políticas públicas, conferências, audiências e consultas públicas, orçamento participativo, ouvidorias e conselhos de usuários (Lei 13.460/2017). A LRF (art. 48, § 1º, I) liga participação e transparência ao exigir incentivo à participação popular e audiências públicas na elaboração dos planos e orçamentos.</p>
+  <h4>Transparência ativa</h4>
+  <ul class="tight">
+    <li><strong>LAI (Lei 12.527/2011):</strong> publicidade como regra e sigilo como exceção (art. 3º, I); divulgação independentemente de solicitação (art. 3º, II).</li>
+    <li><strong>Art. 8º:</strong> divulgar em local de fácil acesso, no mínimo: competências e estrutura, repasses, despesas, licitações e contratos, programas, ações, obras, e perguntas frequentes. Sites são obrigatórios, salvo municípios de até 10 mil habitantes (que mantêm a divulgação em tempo real da execução orçamentária, LC 131/2009).</li>
+    <li><strong>Passiva:</strong> resposta a pedido de acesso, em até 20 dias, prorrogáveis por mais 10.</li>
+    <li><strong>Decreto 9.203:</strong> transparência é princípio (art. 3º, VI) e a comunicação aberta, voluntária e transparente é diretriz (art. 4º, XI).</li>
+  </ul>
+  <div class="box trap">
+    <h4>Pegadinhas do 8.3</h4>
+    <ul>
+      <li><strong>Coprodução = terceirização.</strong> Errado.</li>
+      <li><strong>Pacificação ou consulta como poder cidadão.</strong> São tokenism.</li>
+      <li><strong>Participação só na formulação.</strong> Vai até a avaliação.</li>
+      <li><strong>Todos os municípios obrigados a manter site.</strong> Até 10 mil habitantes estão dispensados.</li>
+      <li><strong>Transparência ativa definida como resposta a pedido.</strong> Isso é passiva.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="8.3"></div>
+</section>
+
+<!-- ======================= 8.4 ======================= -->
+<section class="mod" id="s84">
+  <div class="modhead"><span class="num">8.4</span><h2>Valor público e cadeia de valor público</h2><span class="sub">Moore, o decreto e os 6Es do desempenho</span></div>
+  <h4>Valor público</h4>
+  <ul class="tight">
+    <li><strong>Moore (1995), <em>Creating Public Value</em>:</strong> o gestor público deve criar valor para a sociedade, como o gestor privado cria valor para o acionista. Para isso alinha os três vértices do <strong>triângulo estratégico</strong>: (1) o valor público a produzir; (2) legitimidade e suporte, dados pelo ambiente autorizador; (3) capacidade operacional.</li>
+    <li><strong>Decreto 9.203, art. 2º, II:</strong> "produtos e resultados gerados, preservados ou entregues pelas atividades de uma organização que representem respostas efetivas e úteis às necessidades ou às demandas de interesse público e modifiquem aspectos do conjunto da sociedade ou de alguns grupos específicos reconhecidos como destinatários legítimos de bens e serviços públicos".</li>
+    <li><strong>Bozeman (2007)</strong> fala em valores públicos, no plural: consensos normativos sobre direitos e deveres. É outro conceito.</li>
+  </ul>
+  <h4>Cadeia de valor público</h4>
+  <div class="fluxo" role="list" aria-label="Cadeia de valor e os 6Es">
+    <div class="etapa" role="listitem"><span class="tag">Esforço</span><div><p><strong>Insumos → ações e processos.</strong></p>
+      <div class="ramos">
+        <div class="ramo"><b>Economicidade</b>Obter e usar recursos com o menor ônus.</div>
+        <div class="ramo"><b>Execução</b>Realizar processos, projetos e planos conforme previsto.</div>
+        <div class="ramo"><b>Excelência</b>Conformidade a padrões de qualidade.</div>
+      </div></div></div>
+    <div class="seta" aria-hidden="true">↓</div>
+    <div class="etapa" role="listitem"><span class="tag">Resultado</span><div><p><strong>Produtos → impactos.</strong></p>
+      <div class="ramos">
+        <div class="ramo"><b>Eficiência</b>Relação entre produtos e insumos (custo do que se entrega).</div>
+        <div class="ramo"><b>Eficácia</b>Quantidade e qualidade dos produtos entregues; alcance de metas.</div>
+        <div class="ramo"><b>Efetividade</b>Impacto na sociedade; mudança na situação-problema.</div>
+      </div></div></div>
+  </div>
+  <p>Modelo dos 6Es de Martins e Marini (<em>Um guia de governança para resultados</em>, 2010), também usado nos guias federais de indicadores. Nas organizações federais, "cadeia de valor" designa ainda o mapa de macroprocessos: <strong>finalísticos</strong> (entregam ao cidadão), <strong>de gestão</strong> e <strong>de suporte</strong>.</p>
+  <div class="box trap">
+    <h4>Pegadinhas do 8.4</h4>
+    <ul>
+      <li><strong>Eficiência × eficácia trocadas.</strong> A mais frequente.</li>
+      <li><strong>Efetividade como cumprimento de meta.</strong> Isso é eficácia.</li>
+      <li><strong>Vértices do triângulo</strong> trocados por "eficiência, eficácia, efetividade".</li>
+      <li><strong>Moore = Bozeman.</strong> Valor público × valores públicos.</li>
+      <li><strong>Macroprocesso de suporte</strong> descrito como o que entrega ao cidadão.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="8.4"></div>
+</section>
+
+<!-- ======================= 9.1 ======================= -->
+<section class="mod" id="s91">
+  <div class="modhead"><span class="num">9.1</span><h2>Governança pública, governabilidade e alinhamento estratégico</h2><span class="sub">Conceito e distinções</span></div>
+  <blockquote>"Governança pública: conjunto de mecanismos de liderança, estratégia e controle postos em prática para avaliar, direcionar e monitorar a gestão, com vistas à condução de políticas públicas e à prestação de serviços de interesse da sociedade."<cite>Decreto nº 9.203/2017, art. 2º, I</cite></blockquote>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Par</th><th>Lado A</th><th>Lado B</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Governança × gestão</strong> (TCU)</td><td>Governança: função direcionadora. Avaliar, direcionar, monitorar.</td><td>Gestão: função realizadora. Planejar, executar, controlar, agir.</td></tr>
+      <tr><td><strong>Governança × governabilidade</strong> (Bresser-Pereira, 1998)</td><td>Governança: capacidade financeira e administrativa, em sentido amplo, de implementar políticas.</td><td>Governabilidade: condições políticas de legitimidade e apoio; instituições capazes de intermediar interesses; contrato social básico.</td></tr>
+      <tr><td><strong>Principal × agente</strong> (teoria da agência)</td><td>Principal: a sociedade.</td><td>Agentes: governantes e gestores. A governança reduz assimetria de informação e conflito de interesses.</td></tr>
+    </tbody>
+  </table></div>
+  <ul class="tight">
+    <li><strong>PDRAE (1995):</strong> o Brasil não tinha problema de governabilidade, mas de governança; a reforma buscava aumentar a capacidade administrativa de governar com efetividade e eficiência.</li>
+    <li><strong>Banco Mundial (1992):</strong> governança é a maneira como o poder é exercido na administração dos recursos econômicos e sociais do país para o desenvolvimento.</li>
+    <li><strong>Perspectivas (TCU):</strong> sociedade e Estado; entes federativos, esferas de poder e políticas públicas; órgãos e entidades; atividades intraorganizacionais.</li>
+    <li><strong>Alinhamento estratégico:</strong> vertical (desdobrar a estratégia em objetivos, metas e projetos de cada unidade) e transorganizacional (entre organizações e partes interessadas, art. 5º, II, do decreto). É o que impede que cada órgão persiga objetivos próprios em conflito com a política pública.</li>
+  </ul>
+  <div class="box trap">
+    <h4>Pegadinhas do 9.1</h4>
+    <ul>
+      <li><strong>Governança × governabilidade invertidas.</strong> Governança = capacidade de implementar. Governabilidade = condições políticas.</li>
+      <li><strong>Funções da governança descritas como "planejar, executar e controlar".</strong> Essas são da gestão.</li>
+      <li><strong>Sociedade como agente.</strong> É o principal.</li>
+      <li><strong>Governança restrita ao nível organizacional.</strong> Alcança políticas e a relação Estado-sociedade.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="9.1"></div>
+</section>
+
+<!-- ======================= 9.2 ======================= -->
+<section class="mod" id="s92">
+  <div class="modhead"><span class="num">9.2</span><h2>Mecanismos de governança</h2><span class="sub">Liderança, estratégia e controle</span></div>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Mecanismo</th><th>Decreto 9.203, art. 5º</th><th>Práticas do TCU (3ª ed., 2020)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Liderança</strong></td><td>Conjunto de práticas de natureza humana ou comportamental exercida nos principais cargos, que assegura as condições mínimas da boa governança: integridade, competência, responsabilidade e motivação.</td><td>Estabelecer o modelo de governança; promover a integridade; promover a capacidade da liderança.</td></tr>
+      <tr><td><strong>Estratégia</strong></td><td>Definição de diretrizes, objetivos, planos e ações, além de critérios de priorização e alinhamento entre organizações e partes interessadas, para que serviços e produtos alcancem o resultado pretendido.</td><td>Gerir riscos; estabelecer a estratégia; promover a gestão estratégica; monitorar o alcance dos resultados organizacionais; monitorar o desempenho das funções de gestão.</td></tr>
+      <tr><td><strong>Controle</strong></td><td>Processos estruturados para mitigar riscos, com vistas ao alcance dos objetivos, e garantir execução ordenada, ética, econômica, eficiente e eficaz, com preservação da legalidade e da economicidade.</td><td>Promover a transparência; garantir a accountability; avaliar a satisfação das partes interessadas; avaliar a efetividade da auditoria interna.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Na 2ª edição do TCU (2014), os mecanismos tinham componentes: liderança (pessoas e competências; princípios e comportamentos; liderança organizacional; sistema de governança), estratégia (relacionamento com partes interessadas; estratégia organizacional; alinhamento transorganizacional) e controle (gestão de riscos e controle interno; auditoria interna; accountability e transparência). Note a mudança da gestão de riscos, do controle (2014) para a estratégia (2020).</p>
+  <p><strong>Instâncias (TCU):</strong> externas (Congresso Nacional, TCU); externas de apoio (auditoria independente, controle social organizado); internas (conselhos, alta administração); internas de apoio (auditoria interna, ouvidoria, comitês).</p>
+  <div class="box trap">
+    <h4>Pegadinhas do 9.2</h4>
+    <ul>
+      <li><strong>Definição de estratégia no nome de controle</strong> (e vice-versa).</li>
+      <li><strong>Transparência ou eficiência entre as condições da liderança.</strong> São integridade, competência, responsabilidade e motivação.</li>
+      <li><strong>Gerir riscos</strong>: estratégia na edição de 2020, controle na de 2014.</li>
+      <li><strong>Controles "no nível mais rigoroso".</strong> Devem ser proporcionais aos riscos, observado o custo-benefício (art. 17).</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="9.2"></div>
+</section>
+
+<!-- ======================= 9.3 ======================= -->
+<section class="mod" id="s93">
+  <div class="modhead"><span class="num">9.3</span><h2>Valor público, resultados, sustentabilidade e avaliação de impacto</h2><span class="sub">A finalidade da governança</span></div>
+  <ul class="tight">
+    <li><strong>Gerar valor</strong> não é produzir muito: é produzir o que muda a vida das pessoas (efetividade). O decreto exige "respostas efetivas e úteis" que "modifiquem aspectos do conjunto da sociedade".</li>
+    <li><strong>Entrega de resultados:</strong> diretrizes do art. 4º, I (resultados para a sociedade, com soluções tempestivas e inovadoras) e III (monitorar desempenho e avaliar concepção, implementação e resultados das políticas); art. 6º, parágrafo único (acompanhamento de resultados, melhoria de desempenho, decisão baseada em evidências).</li>
+    <li><strong>Sustentabilidade:</strong> dimensões econômica, social e ambiental e equidade entre gerações (Relatório Brundtland, 1987). O valor público precisa durar e caber no orçamento.</li>
+    <li><strong>Avaliação de políticas:</strong> ex ante (antes: diagnóstico, desenho, modelo lógico, custos) e ex post (depois: execução, resultados, impacto, custo-benefício), conforme os guias da Casa Civil e do IPEA (2018). Avaliação de impacto exige contrafactual: o que teria ocorrido sem a política.</li>
+    <li><strong>Constituição:</strong> o art. 37, § 16 (EC 109/2021) obriga a Administração a avaliar as políticas públicas e divulgar objeto e resultados.</li>
+  </ul>
+  <div class="tbl"><table>
+    <thead><tr><th>Termo</th><th>Exemplo (vacinação)</th></tr></thead>
+    <tbody>
+      <tr><td>Insumo</td><td>Vacinas, seringas, equipes, recursos</td></tr>
+      <tr><td>Produto (output)</td><td>Doses aplicadas</td></tr>
+      <tr><td>Resultado</td><td>Cobertura vacinal atingida</td></tr>
+      <tr><td>Impacto (outcome final)</td><td>Queda de internações e óbitos atribuível à campanha</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box trap">
+    <h4>Pegadinhas do 9.3</h4>
+    <ul>
+      <li><strong>Ex ante descrita como posterior</strong> à implementação.</li>
+      <li><strong>Produto tratado como impacto.</strong></li>
+      <li><strong>Sustentabilidade só ambiental.</strong></li>
+      <li><strong>Valor público = meta física cumprida.</strong></li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="9.3"></div>
+</section>
+
+<!-- ======================= 9.4 ======================= -->
+<section class="mod" id="s94">
+  <div class="modhead"><span class="num">9.4</span><h2>Decreto nº 9.203/2017</h2><span class="sub">Política de governança da administração pública federal direta, autárquica e fundacional</span></div>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Dispositivo</th><th>Conteúdo</th></tr></thead>
+    <tbody>
+      <tr><td class="n">Art. 1º</td><td>Âmbito: administração pública federal <strong>direta, autárquica e fundacional</strong>. Estatais ficam fora (regime da Lei 13.303/2016).</td></tr>
+      <tr><td class="n">Art. 2º</td><td><strong>I governança pública</strong> (liderança, estratégia e controle para avaliar, direcionar e monitorar a gestão); <strong>II valor público</strong> (gerados, preservados ou entregues); <strong>III alta administração</strong> (Ministros, cargos de natureza especial, DAS nível 6, presidentes e diretores de autarquias, inclusive especiais, e de fundações, ou equivalentes); <strong>IV gestão de riscos</strong> (processo permanente, estabelecido, direcionado e monitorado pela alta administração; identificar, avaliar e gerenciar eventos; <strong>segurança razoável</strong>).</td></tr>
+      <tr><td class="n">Art. 3º</td><td><strong>6 princípios:</strong> capacidade de resposta; integridade; confiabilidade; melhoria regulatória; prestação de contas e responsabilidade; transparência.</td></tr>
+      <tr><td class="n">Art. 4º</td><td><strong>11 diretrizes</strong> (todas com verbo): resultados para a sociedade com soluções tempestivas e inovadoras; simplificação, modernização e integração de serviços, sobretudo eletrônicos; monitorar desempenho e avaliar políticas; articular instituições e coordenar processos para gerar, preservar e entregar valor público; padrões elevados de conduta pela alta administração; controles internos baseados em risco, com prevenção antes de sanção; avaliar criação ou expansão de políticas e incentivos fiscais com custos e benefícios; decisão orientada por evidências, conformidade legal, qualidade regulatória, desburocratização e participação; editar e revisar normas com boas práticas regulatórias e consultas públicas; definir formalmente funções, competências e responsabilidades; comunicação aberta, voluntária e transparente.</td></tr>
+      <tr><td class="n">Art. 5º</td><td><strong>3 mecanismos:</strong> liderança, estratégia e controle (definições no módulo 9.2).</td></tr>
+      <tr><td class="n">Art. 6º</td><td>A <strong>alta administração</strong> implementa e mantém mecanismos, instâncias e práticas de governança. No mínimo: acompanhamento de resultados; melhoria do desempenho; decisão fundamentada em evidências.</td></tr>
+      <tr><td class="n">Arts. 7º-A a 13</td><td><strong>CIG</strong> (redação do Decreto 9.901/2019): assessora o Presidente da República na condução da política de governança. Membros: Ministro-Chefe da <strong>Casa Civil (coordena)</strong>, Ministro da Economia e Ministro da CGU. Reuniões ordinárias <strong>trimestrais</strong>; coordenador com <strong>voto de qualidade</strong>. Compete-lhe propor medidas e práticas, aprovar manuais e guias, aprovar recomendações a colegiados temáticos, incentivar e monitorar boas práticas e expedir resoluções. Pode criar grupos de trabalho. Secretaria-Executiva na Casa Civil.</td></tr>
+      <tr><td class="n">Art. 15-A</td><td><strong>Comitês internos de governança</strong> de cada órgão ou entidade: auxiliar a alta administração; incentivar o acompanhamento de resultados e a melhoria do desempenho; promover as práticas definidas pelo CIG.</td></tr>
+      <tr><td class="n">Art. 17</td><td><strong>Gestão de riscos e controles internos</strong> pela alta administração. Princípios: aplicação sistemática, estruturada, oportuna e documentada; integração ao planejamento estratégico e a todos os níveis; controles proporcionais aos riscos, observado o custo-benefício; uso dos resultados para melhoria contínua.</td></tr>
+      <tr><td class="n">Art. 18</td><td><strong>Auditoria interna governamental:</strong> adicionar valor e melhorar as operações; avaliação e consultoria independentes; abordagem baseada em risco; prevenção, detecção e investigação de fraudes.</td></tr>
+      <tr><td class="n">Art. 19</td><td><strong>Programa de integridade</strong>, em quatro eixos: comprometimento da alta administração; unidade responsável; gestão dos riscos de integridade; monitoramento contínuo.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box">
+    <h4>Pontos para conferir no texto consolidado antes da prova</h4>
+    <ul class="tight">
+      <li>A composição do CIG está escrita com os nomes de ministérios de 2019 ("Economia"). Reestruturações posteriores podem ter alterado esse artigo.</li>
+      <li>O Decreto 10.907/2021 mudou o órgão da Casa Civil que exerce a Secretaria-Executiva do CIG; a estrutura da Casa Civil foi reorganizada de novo em 2023.</li>
+      <li>O Decreto 11.529/2023 criou o Sitai e passou a disciplinar os programas de integridade; verifique se o art. 19 continua vigente.</li>
+      <li>Abra o texto atualizado no <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9203.htm">Planalto</a> ou na <a href="https://www2.camara.leg.br/legin/fed/decret/2017/decreto-9203-22-novembro-2017-785782-normaatualizada-pe.html">Câmara</a>.</li>
+    </ul>
+  </div>
+  <div class="box trap">
+    <h4>Pegadinhas do 9.4</h4>
+    <ul>
+      <li><strong>Estatais no âmbito do decreto.</strong> Fora.</li>
+      <li><strong>Diretriz chamada de princípio</strong> (ou o contrário). Princípios: 6 substantivos. Diretrizes: 11 frases com verbo.</li>
+      <li><strong>Princípios da CF ou do TCU</strong> (legalidade, eficiência, equidade, legitimidade) misturados aos do decreto.</li>
+      <li><strong>"Segurança absoluta"</strong> na gestão de riscos. É razoável.</li>
+      <li><strong>CIG coordenado pela CGU</strong>, ou CIG confundido com comitê interno.</li>
+      <li><strong>"Planejar, executar e controlar"</strong> na definição de governança.</li>
+      <li><strong>DAS nível 5</strong> na alta administração. É nível 6.</li>
+    </ul>
+  </div>
+  <div class="qbloco" data-t="9.4"></div>
+</section>
+
+<!-- ======================= PEGADINHAS ======================= -->
+<section class="mod" id="pegadinhas">
+  <div class="modhead"><span class="num">!</span><h2>As 20 armadilhas do examinador</h2><span class="sub">Se ler a frase da esquerda, pense na da direita</span></div>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Se o item disser…</th><th>Lembre</th><th>Gabarito típico</th></tr></thead>
+    <tbody>
+      <tr><td>"O gerencialismo rompeu integralmente com a burocracia"</td><td>Conserva princípios, flexibilizando (PDRAE)</td><td>Errado</td></tr>
+      <tr><td>"Burocracia: dominação carismática"</td><td>Racional-legal</td><td>Errado</td></tr>
+      <tr><td>"DASP inaugura a administração gerencial"</td><td>DASP = burocrática; DL 200 = primeira tentativa gerencial</td><td>Errado</td></tr>
+      <tr><td>"Dirigir em vez de remar" no novo serviço público</td><td>É de Osborne e Gaebler (NPM)</td><td>Errado</td></tr>
+      <tr><td>"NPG coordenada por mercado e contratos clássicos"</td><td>Confiança e contratos relacionais</td><td>Errado</td></tr>
+      <tr><td>"NPG: Estado plural e pluralista"</td><td>Osborne</td><td>Certo</td></tr>
+      <tr><td>"Coprodução equivale a terceirização"</td><td>O Estado continua coprodutor</td><td>Errado</td></tr>
+      <tr><td>"Consulta é poder cidadão (Arnstein)"</td><td>É tokenism</td><td>Errado</td></tr>
+      <tr><td>"Eficiência = alcance de metas"</td><td>Isso é eficácia</td><td>Errado</td></tr>
+      <tr><td>"Efetividade = impacto na sociedade"</td><td>Correto</td><td>Certo</td></tr>
+      <tr><td>"Governança = condições políticas de legitimidade"</td><td>Isso é governabilidade</td><td>Errado</td></tr>
+      <tr><td>"Governança: planejar, executar e controlar"</td><td>Avaliar, direcionar, monitorar</td><td>Errado</td></tr>
+      <tr><td>"Sociedade é o agente"</td><td>É o principal</td><td>Errado</td></tr>
+      <tr><td>"Estratégia: processos para mitigar riscos"</td><td>Isso é controle</td><td>Errado</td></tr>
+      <tr><td>"Liderança: integridade, competência, responsabilidade e motivação"</td><td>Art. 5º, I</td><td>Certo</td></tr>
+      <tr><td>"Decreto alcança empresas estatais"</td><td>Só direta, autárquica e fundacional</td><td>Errado</td></tr>
+      <tr><td>"Eficiência é princípio do Decreto 9.203"</td><td>Os 6 são outros</td><td>Errado</td></tr>
+      <tr><td>"Gestão de riscos com segurança absoluta"</td><td>Razoável</td><td>Errado</td></tr>
+      <tr><td>"CIG coordenado pela CGU"</td><td>Casa Civil</td><td>Errado</td></tr>
+      <tr><td>"Avaliação ex ante mede impacto"</td><td>Isso é ex post</td><td>Errado</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ======================= RELÂMPAGO ======================= -->
+<section class="mod" id="relampago">
+  <div class="modhead"><span class="num">⚡</span><h2>Prova relâmpago</h2><span class="sub">20 itens sorteados de todos os subitens</span></div>
+  <p class="so-tela">Use na véspera de cada revisão. Cada sorteio mistura itens de todos os subitens; as respostas contam no placar geral.</p>
+  <div class="painel so-tela"><button type="button" id="btn-sorteio">Sortear 20 itens</button></div>
+  <div class="qbloco" data-t="REL"></div>
+</section>
+
+<!-- ======================= FONTES ======================= -->
+<section class="mod" id="fontes">
+  <div class="modhead"><span class="num">§</span><h2>Fontes: o que estudar e em que ordem</h2><span class="sub">Ordenadas pelo peso na correção</span></div>
+  <div class="tbl wide"><table>
+    <thead><tr><th>Fonte</th><th>Subitens</th><th>Por que</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Decreto nº 9.203/2017</strong>, texto consolidado (<a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9203.htm">Planalto</a>)</td><td>9.1 a 9.4, 8.4</td><td>Citado no edital. Itens literais.</td></tr>
+      <tr><td><strong>Guia da Política de Governança Pública</strong> (Casa Civil, 2018)</td><td>9.1 a 9.4</td><td>Explica cada princípio e diretriz do decreto; de onde saem as definições de capacidade de resposta, confiabilidade etc.</td></tr>
+      <tr><td><strong>TCU, Referencial Básico de Governança Organizacional</strong>, 3ª ed., 2020 (<a href="https://portal.tcu.gov.br/data/files/FB/B6/FB/85/1CD4671023455957E18818A8/Referencial_basico_governanca_organizacional_3_edicao.pdf">PDF</a>)</td><td>9.1, 9.2</td><td>Mecanismos, práticas, instâncias, governança × gestão.</td></tr>
+      <tr><td><strong>Osborne, "The New Public Governance?"</strong>, Public Management Review 8(3), 2006; livro de 2010</td><td>8, 8.1</td><td>Origem do termo do edital e do quadro PA × NPM × NPG. É o seu PDF: boa referência para este subitem.</td></tr>
+      <tr><td><strong>PDRAE</strong> (1995) e <strong>Bresser-Pereira</strong> (Reforma do Estado para a cidadania, 1998)</td><td>8, 9.1</td><td>Patrimonialismo, burocracia e gerencialismo na versão oficial; governança × governabilidade.</td></tr>
+      <tr><td><strong>Secchi</strong>, "Modelos organizacionais e reformas da administração pública", RAP, 2009</td><td>8, 8.1</td><td>Comparação burocracia × gerencial × governança pública, muito usada em provas.</td></tr>
+      <tr><td><strong>Abrucio</strong>, "O impacto do modelo gerencial na administração pública", Cadernos ENAP, 1997</td><td>8</td><td>Gerencialismo puro, consumerism e PSO.</td></tr>
+      <tr><td><strong>Kissler e Heidemann</strong>, "Governança pública: novo modelo regulatório…", RAP, 2006</td><td>8.1, 8.2</td><td>Estado garantidor e ativador; cooperação Estado, mercado e sociedade.</td></tr>
+      <tr><td><strong>Moore</strong>, Creating Public Value, 1995</td><td>8.4, 9.3</td><td>Triângulo estratégico.</td></tr>
+      <tr><td><strong>Martins e Marini</strong>, Um guia de governança para resultados, 2010</td><td>8.4, 9.3</td><td>Cadeia de valor e 6Es.</td></tr>
+      <tr><td><strong>Ostrom</strong> (1996), <strong>Salm e Menegasso</strong> (<a href="https://periodicos.ufsc.br/index.php/adm/article/view/13078">RCA, 2009</a>), <strong>Arnstein</strong> (1969)</td><td>8.3</td><td>Coprodução e escada da participação.</td></tr>
+      <tr><td><strong>Leis</strong> 12.527/2011 (LAI), 11.079/2004, 9.637/1998, 9.790/1999, 13.019/2014, 11.107/2005</td><td>8.2, 8.3</td><td>Instrumentos de parceria e transparência.</td></tr>
+      <tr><td><strong>Avaliação de Políticas Públicas: guias ex ante e ex post</strong> (Casa Civil e IPEA, 2018)</td><td>9.3</td><td>Avaliação de impacto, modelo lógico, contrafactual.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="ref" style="white-space:normal">Os itens deste estudo são inéditos, escritos no padrão Cebraspe a partir dessas fontes. Não havia cadernos de questões para este tópico; por isso, cada comentário indica o dispositivo ou o autor que sustenta o gabarito.</p>
+</section>
+
+<!-- ======================= PLANO ======================= -->
+<section class="mod" id="plano">
+  <div class="modhead"><span class="num">⌚</span><h2>Plano até 17/01/2027</h2><span class="sub">Estudo inicial e revisões espaçadas</span></div>
+  <div class="agenda">
+    <div class="dia"><span class="data">Sessão 1 · 2h</span><p><strong>Decreto 9.203 (9.4) e mecanismos (9.2).</strong> Leia o decreto inteiro uma vez, depois este módulo. Faça os itens de 9.4 e 9.2.</p></div>
+    <div class="dia"><span class="data">Sessão 2 · 2h</span><p><strong>9.1 e 9.3.</strong> Governança × governabilidade × gestão; valor público e avaliação. Itens de 9.1 e 9.3.</p></div>
+    <div class="dia"><span class="data">Sessão 3 · 2h</span><p><strong>8 e 8.1.</strong> Modelos e o quadro de Osborne. Itens de 8 e 8.1.</p></div>
+    <div class="dia"><span class="data">Sessão 4 · 1h30</span><p><strong>8.2, 8.3 e 8.4.</strong> Instrumentos de parceria, coprodução, LAI, cadeia de valor. Itens dos três subitens.</p></div>
+    <div class="dia"><span class="data">D+1</span><p><strong>Revisão · 40 min.</strong> Filtro "Erradas" em cada subitem.</p></div>
+    <div class="dia"><span class="data">D+7</span><p><strong>Revisão · 30 min.</strong> Tabela das 20 armadilhas + uma prova relâmpago.</p></div>
+    <div class="dia"><span class="data">D+30</span><p><strong>Revisão · 1h.</strong> Releia o Decreto 9.203 no texto consolidado e faça duas provas relâmpago. <small>Confira os três pontos do quadro "conferir antes da prova".</small></p></div>
+    <div class="dia"><span class="data">11/01/2027</span><p><strong>Revisão final · 30 min.</strong> Checklist abaixo.</p></div>
+  </div>
+  <h3>Checklist da véspera</h3>
+  <ul class="check">
+    <li>Patrimonialismo (tradicional) → burocracia (racional-legal, DASP) → gerencial (DL 200, PDRAE 1995). Modelos coexistem.</li>
+    <li>Abrucio: gerencialismo puro → consumerism → PSO.</li>
+    <li>Dirigir em vez de remar = Osborne e Gaebler. Servir em vez de dirigir = Denhardt.</li>
+    <li>NPG (Osborne): Estado plural e pluralista; redes; confiança e contratos relacionais; NPM como estágio transitório.</li>
+    <li>OS: discricionária, contrato de gestão. OSCIP: vinculada, termo de parceria. Colaboração (Administração) × fomento (OSC).</li>
+    <li>Coprodução ≠ terceirização. Arnstein: 8 degraus, consulta é tokenism.</li>
+    <li>Moore: valor, legitimidade e suporte, capacidade operacional.</li>
+    <li>Eficiência (produto/insumo), eficácia (metas), efetividade (impacto).</li>
+    <li>Governança = capacidade de implementar; governabilidade = condições políticas.</li>
+    <li>Governança: avaliar, direcionar, monitorar. Gestão: planejar, executar, controlar.</li>
+    <li>Decreto: direta, autárquica, fundacional; 6 princípios; 11 diretrizes; 3 mecanismos; segurança razoável; CIG coordenado pela Casa Civil, reuniões trimestrais.</li>
+    <li>Liderança: integridade, competência, responsabilidade, motivação.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Fontes: Decreto nº 9.203/2017 (com as alterações dos Decretos 9.901/2019 e 10.907/2021); TCU, Referencial Básico de Governança Organizacional (2ª ed., 2014; 3ª ed., 2020); Osborne (2006, 2010); PDRAE (1995); Bresser-Pereira (1998); Secchi (2009); Abrucio (1997); Kissler e Heidemann (2006); Moore (1995); Martins e Marini (2010); Ostrom (1996); Arnstein (1969); legislação citada. Edital nº 1 da Câmara dos Deputados, Analista Legislativo (Cebraspe, 2/10/2026). Itens e comentários autorais.</p>
+</footer>
+</main>
+
+<script>
+const DADOS = [{"id":"m01","t":"8","n":"8.1","e":"No patrimonialismo, o aparelho do Estado funciona como extensão do poder do soberano, e os cargos públicos são tratados como prebendas, o que favorece o nepotismo e a corrupção.","gab":"Certo","c":"Definição do PDRAE (1995): no patrimonialismo, res publica e res principis se confundem; cargos são prebendas ou sinecuras. Corresponde à dominação tradicional de Weber.","a":null},{"id":"m02","t":"8","n":"8.2","e":"Na tipologia weberiana de dominação, a administração burocrática decorre da dominação carismática, fundada na crença nas qualidades excepcionais do líder.","gab":"Errado","c":"A burocracia é a forma típica da dominação racional-legal. A carismática se apoia no líder; a tradicional, no costume (patrimonialismo).","a":"O examinador troca os três tipos de dominação. Burocracia = racional-legal."},{"id":"m03","t":"8","n":"8.3","e":"A administração burocrática surgiu como reação ao patrimonialismo e tem como características a impessoalidade, o formalismo, a hierarquia funcional, a profissionalização e o controle rígido dos processos, realizado a priori.","gab":"Certo","c":"PDRAE: a burocracia nasce para combater a corrupção e o nepotismo patrimonialistas; parte da desconfiança prévia nos administradores, daí controles rígidos a priori dos processos.","a":null},{"id":"m04","t":"8","n":"8.4","e":"O excesso de formalismo, a resistência a mudanças e a despersonalização do relacionamento são apontados por Merton como disfunções da burocracia.","gab":"Certo","c":"Disfunções de Merton: internalização das regras, excesso de formalismo e papelório, resistência a mudanças, despersonalização, categorização no processo decisório, superconformidade, exibição de sinais de autoridade, dificuldade no atendimento ao cliente.","a":null},{"id":"m05","t":"8","n":"8.5","e":"Segundo o Plano Diretor da Reforma do Aparelho do Estado, de 1995, a administração gerencial rompe integralmente com a administração burocrática, abandonando princípios como a admissão por mérito e as carreiras estruturadas.","gab":"Errado","c":"O PDRAE diz o contrário: a administração gerencial \"está apoiada na anterior, da qual conserva, embora flexibilizando, alguns dos seus princípios fundamentais\", como admissão por mérito, carreiras, avaliação de desempenho e treinamento.","a":"\"Rompe integralmente\", \"substitui por completo\": os modelos se sucedem por acumulação, não por ruptura total."},{"id":"m06","t":"8","n":"8.6","e":"Na administração gerencial, o controle desloca-se dos processos para os resultados, e a estratégia apoia-se na descentralização e na delegação de autoridade aos administradores.","gab":"Certo","c":"PDRAE: controle a posteriori dos resultados, definição precisa de objetivos, autonomia do administrador, competição administrada, descentralização.","a":null},{"id":"m07","t":"8","n":"8.7","e":"Para Hood (1991), a nova gestão pública combina, entre outras doutrinas, gestão profissional, padrões explícitos de desempenho, ênfase no controle de resultados, desagregação de unidades e competição no setor público.","gab":"Certo","c":"As sete doutrinas do NPM de Christopher Hood: gestão profissional \"hands-on\", padrões e medidas explícitas de desempenho, controle de outputs, desagregação, competição, estilos de gestão do setor privado, disciplina e parcimônia no uso de recursos.","a":null},{"id":"m08","t":"8","n":"8.8","e":"A expressão \"dirigir em vez de remar\", associada ao governo empreendedor de Osborne e Gaebler, sintetiza a proposta do novo serviço público de Denhardt e Denhardt.","gab":"Errado","c":"\"Steering rather than rowing\" é de Osborne e Gaebler (Reinventando o governo, 1992), na linha da nova gestão pública. O novo serviço público de Denhardt e Denhardt responde com \"servir em vez de dirigir\" (serve rather than steer).","a":"Pegadinha clássica: dirigir em vez de remar = governo empreendedor (NPM). Servir em vez de dirigir = novo serviço público."},{"id":"m09","t":"8","n":"8.9","e":"Na classificação de Abrucio, o consumerism corresponde à fase inicial do gerencialismo britânico, voltada essencialmente à redução de custos e ao aumento da eficiência.","gab":"Errado","c":"A fase inicial é o gerencialismo puro (managerialism), focado em economia e eficiência. O consumerism traz a qualidade e o foco no cliente-consumidor. A public service orientation (PSO) introduz cidadania, accountability, equidade e participação.","a":"Ordem das fases de Abrucio: gerencialismo puro → consumerism → PSO."},{"id":"m10","t":"8","n":"8.10","e":"O Decreto-Lei nº 200/1967 é considerado por Bresser-Pereira uma primeira tentativa de reforma gerencial no Brasil, ao promover a descentralização para a administração indireta.","gab":"Certo","c":"Bresser-Pereira e o PDRAE veem no DL 200/1967 um \"primeiro momento da administração gerencial\": transferência de atividades para autarquias, fundações, empresas públicas e sociedades de economia mista.","a":"O DASP (1936-1938, Vargas) marca a reforma burocrática. O DL 200 marca a primeira tentativa gerencial."},{"id":"m11","t":"8","n":"8.11","e":"A evolução dos modelos de gestão pública no Brasil foi linear, de modo que práticas patrimonialistas deixaram de existir com a implantação da burocracia e as práticas burocráticas desapareceram com a reforma gerencial.","gab":"Errado","c":"Os modelos coexistem. O próprio PDRAE reconhece a persistência de práticas patrimonialistas (clientelismo, fisiologismo), e a burocracia segue como base da gestão.","a":null},{"id":"m12","t":"8","n":"8.12","e":"Na reforma gerencial de 1995, as atividades exclusivas de Estado, como regulamentação, fiscalização e fomento, seriam executadas por agências autônomas, e os serviços não exclusivos, como escolas e hospitais, poderiam ser transferidos para organizações sociais por meio da publicização.","gab":"Certo","c":"Quatro setores do PDRAE: núcleo estratégico; atividades exclusivas (agências executivas e reguladoras); serviços não exclusivos (publicização para organizações sociais); produção de bens e serviços para o mercado (privatização).","a":"Publicização ≠ privatização. Publicização é a transferência para o setor público não estatal (OS)."},{"id":"n01","t":"8.1","n":"8.1.1","e":"Para Osborne (2006), a nova gestão pública seria um estágio transitório na evolução da administração pública tradicional para aquilo que ele denomina nova governança pública.","gab":"Certo","c":"Tese central do artigo \"The New Public Governance?\" (Public Management Review, 2006): o NPM foi um estágio relativamente breve e transitório entre a Public Administration e a NPG.","a":null},{"id":"n02","t":"8.1","n":"8.1.2","e":"A nova governança pública pressupõe um Estado plural, em que múltiplos atores interdependentes contribuem para a prestação de serviços públicos, e pluralista, em que múltiplos processos informam a formulação de políticas.","gab":"Certo","c":"Osborne distingue \"plural state\" (vários atores na entrega) e \"pluralist state\" (vários processos na formulação). Daí o foco nas relações interorganizacionais.","a":null},{"id":"n03","t":"8.1","n":"8.1.3","e":"Na nova governança pública, o principal mecanismo de coordenação é o mercado, por meio de contratos clássicos e da competição entre fornecedores independentes.","gab":"Errado","c":"No quadro de Osborne: PA = hierarquia; NPM = mercado e contratos clássicos ou neoclássicos; NPG = confiança e contratos relacionais.","a":"Mecanismo de governança por modelo: hierarquia (PA), mercado (NPM), confiança e redes (NPG)."},{"id":"n04","t":"8.1","n":"8.1.4","e":"As raízes teóricas da nova governança pública, segundo Osborne, estão na teoria da escolha pública e nos estudos de gestão empresarial.","gab":"Errado","c":"Escolha pública e gestão empresarial são as raízes do NPM. A NPG apoia-se na sociologia institucional e na teoria de redes.","a":null},{"id":"n05","t":"8.1","n":"8.1.5","e":"Enquanto a nova gestão pública tem foco intraorganizacional, a nova governança pública desloca a atenção para as relações interorganizacionais e para a governança de processos, com ênfase nos resultados efetivos dos serviços.","gab":"Certo","c":"É a crítica de Osborne ao NPM: foco intraorganizacional num mundo cada vez mais plural. A NPG enfatiza relações interorganizacionais, processos e outcomes.","a":null},{"id":"n06","t":"8.1","n":"8.1.6","e":"Osborne apresenta a nova governança pública como o modelo definitivo, que torna obsoletos os conceitos da administração pública tradicional e da nova gestão pública.","gab":"Errado","c":"O título leva interrogação (\"The New Public Governance?\"). Osborne propõe a NPG como ferramenta conceitual, não como \"one best way\", e admite a convivência de elementos dos três regimes.","a":"Desconfie de \"definitivo\", \"torna obsoleto\", \"supera integralmente\"."},{"id":"n07","t":"8.1","n":"8.1.7","e":"Kissler e Heidemann descrevem a governança pública como novo modelo regulatório das relações entre Estado, mercado e sociedade, marcado pela passagem de um Estado produtor do bem público para um Estado que garante e ativa a sua produção em cooperação com outros atores.","gab":"Certo","c":"Kissler e Heidemann (RAP, 2006): Estado de serviço produtor → Estado garantidor, ativador e cooperativo. Obra muito usada no Brasil para explicar a governança pública.","a":null},{"id":"n08","t":"8.1","n":"8.1.8","e":"Na governança pública, segundo Secchi (2009), o cidadão é tratado como cliente, e a relação entre Estado e sociedade é mediada essencialmente pela lógica de mercado.","gab":"Errado","c":"Para Secchi, cidadão-cliente é a visão da administração pública gerencial e do governo empreendedor. Na governança pública, cidadãos e outros atores são parceiros (relação horizontal, em rede).","a":null},{"id":"n09","t":"8.1","n":"8.1.9","e":"A nova governança pública e o novo serviço público são expressões sinônimas, ambas formuladas por Stephen Osborne para designar o modelo pós-gerencial.","gab":"Errado","c":"O novo serviço público é de Janet e Robert Denhardt (2000/2003). A NPG é de Osborne (2006/2010). São propostas pós-gerenciais próximas, mas distintas.","a":null},{"id":"n10","t":"8.1","n":"8.1.10","e":"A base de valores da nova governança pública, no quadro de Osborne, é neocorporativista, ao passo que a da nova gestão pública é a crença na eficácia da competição e do mercado.","gab":"Certo","c":"Value base no quadro de Osborne: PA = ethos do setor público; NPM = eficácia da competição e do mercado; NPG = neocorporativista.","a":null},{"id":"r01","t":"8.2","n":"8.2.1","e":"Redes de políticas públicas caracterizam-se pela interdependência entre atores e pela coordenação predominantemente horizontal, baseada em negociação e confiança, e não em hierarquia.","gab":"Certo","c":"Elementos clássicos das redes: interdependência de recursos, horizontalidade, negociação, confiança e objetivos compartilhados.","a":null},{"id":"r02","t":"8.2","n":"8.2.2","e":"A atuação em redes de cooperação simplifica a responsabilização, uma vez que cada resultado pode ser atribuído a um único ator da rede.","gab":"Errado","c":"Ocorre o oposto: a responsabilização fica difusa (o \"problema das muitas mãos\"). Accountability é um dos principais desafios da governança em rede.","a":null},{"id":"r03","t":"8.2","n":"8.2.3","e":"Os consórcios públicos podem ter personalidade jurídica de direito público, como associação pública, que integra a administração indireta de todos os entes consorciados.","gab":"Certo","c":"Lei 11.107/2005: associação pública (direito público, integra a indireta de todos os consorciados) ou pessoa jurídica de direito privado.","a":null},{"id":"r04","t":"8.2","n":"8.2.4","e":"A União pode consorciar-se diretamente com municípios, ainda que o estado em cujo território estejam situados não participe do consórcio.","gab":"Errado","c":"Lei 11.107/2005, art. 1º, § 2º: a União somente participará de consórcios públicos em que também façam parte todos os estados em cujos territórios estejam situados os municípios consorciados.","a":null},{"id":"r05","t":"8.2","n":"8.2.5","e":"Na concessão administrativa, modalidade de parceria público-privada, a administração pública é a usuária direta ou indireta dos serviços, e não há cobrança de tarifa dos usuários.","gab":"Certo","c":"Lei 11.079/2004. Concessão patrocinada: tarifa dos usuários + contraprestação pecuniária do parceiro público. Concessão administrativa: a Administração é usuária direta ou indireta.","a":null},{"id":"r06","t":"8.2","n":"8.2.6","e":"É permitida a celebração de parceria público-privada cujo objeto único seja o fornecimento de mão de obra, desde que o prazo do contrato seja de, no mínimo, cinco anos.","gab":"Errado","c":"Lei 11.079/2004, art. 2º, § 4º: é vedada PPP com valor inferior a R$ 10 milhões, com prazo inferior a 5 anos ou que tenha como objeto único o fornecimento de mão de obra, o fornecimento e instalação de equipamentos ou a execução de obra pública. O prazo vai de 5 a 35 anos.","a":"As vedações são independentes: cumprir o prazo não salva o objeto proibido."},{"id":"r07","t":"8.2","n":"8.2.7","e":"A qualificação de entidade como organização social é ato discricionário do Poder Executivo, e o vínculo com o poder público se formaliza por contrato de gestão.","gab":"Certo","c":"Lei 9.637/1998. A OSCIP, ao contrário, tem qualificação vinculada (Ministério da Justiça) e firma termo de parceria (Lei 9.790/1999).","a":"OS: discricionária + contrato de gestão. OSCIP: vinculada + termo de parceria. A banca troca os pares."},{"id":"r08","t":"8.2","n":"8.2.8","e":"No marco regulatório das organizações da sociedade civil, o termo de fomento é o instrumento adequado quando a proposta de parceria parte da administração pública.","gab":"Errado","c":"Lei 13.019/2014: termo de colaboração (proposta da Administração), termo de fomento (proposta da OSC), ambos com transferência de recursos; acordo de cooperação, sem transferência de recursos.","a":"Colaboração = ideia da Administração. Fomento = ideia da OSC."},{"id":"r09","t":"8.2","n":"8.2.9","e":"Segundo o STF, na ADI 1.923, a contratação de organizações sociais pelo poder público é constitucional, mas deve observar procedimento público, objetivo e impessoal, em respeito aos princípios do art. 37 da Constituição.","gab":"Certo","c":"ADI 1.923 (2015): o modelo das OS é constitucional; qualificação, celebração do contrato de gestão, contratações e seleção de pessoal devem ser conduzidas de forma pública, objetiva e impessoal.","a":null},{"id":"r10","t":"8.2","n":"8.2.10","e":"O Decreto nº 9.203/2017 inclui entre as diretrizes da governança pública articular instituições e coordenar processos para melhorar a integração entre os diferentes níveis e esferas do setor público, com vistas a gerar, preservar e entregar valor público.","gab":"Certo","c":"Art. 4º, IV. É o ponto em que o decreto encontra o subitem 8.2 (articulação interinstitucional).","a":null},{"id":"c01","t":"8.3","n":"8.3.1","e":"Coprodução de serviços públicos é o arranjo em que cidadãos ou organizações da sociedade contribuem com recursos próprios, como tempo e conhecimento, para a produção do serviço, ao lado dos agentes públicos.","gab":"Certo","c":"Conceito de Elinor Ostrom (1996): insumos para produzir um bem ou serviço são fornecidos por indivíduos que não pertencem à mesma organização. Exemplos: vigilância comunitária, mutirões, conselhos que planejam e avaliam.","a":null},{"id":"c02","t":"8.3","n":"8.3.2","e":"A coprodução do bem público equivale à terceirização, pois em ambas o Estado transfere a execução do serviço a um particular mediante remuneração.","gab":"Errado","c":"Na coprodução o Estado não sai de cena: cidadão e poder público produzem juntos. Terceirização e concessão transferem a execução mediante contrato.","a":null},{"id":"c03","t":"8.3","n":"8.3.3","e":"Na escada da participação de Arnstein, a consulta e a informação situam-se nos degraus de concessão mínima de poder (tokenism), abaixo dos degraus de parceria, delegação de poder e controle cidadão.","gab":"Certo","c":"Arnstein (1969), oito degraus: manipulação e terapia (não participação); informação, consulta e pacificação (concessão mínima); parceria, delegação de poder e controle cidadão (poder cidadão).","a":null},{"id":"c04","t":"8.3","n":"8.3.4","e":"Na escada de Arnstein, a pacificação (placation) é o degrau mais alto de poder cidadão, pois os cidadãos passam a ocupar assentos em conselhos e comitês.","gab":"Errado","c":"Pacificação é o topo do tokenism: cidadãos têm assento, mas quem decide continua sendo o poder público. O degrau mais alto é o controle cidadão.","a":null},{"id":"c05","t":"8.3","n":"8.3.5","e":"Transparência ativa é a divulgação de informações de interesse público por iniciativa da própria administração, independentemente de requerimento.","gab":"Certo","c":"LAI (Lei 12.527/2011), art. 3º, II, e art. 8º. Transparência passiva é a resposta a pedidos de acesso (prazo de 20 dias, prorrogável por mais 10).","a":null},{"id":"c06","t":"8.3","n":"8.3.6","e":"Segundo a Lei de Acesso à Informação, todos os municípios estão obrigados a divulgar na internet as informações de transparência ativa previstas no art. 8º.","gab":"Errado","c":"Art. 8º, § 4º: municípios com população de até 10 mil habitantes ficam dispensados da divulgação obrigatória na internet, mantida a obrigação de divulgar em tempo real a execução orçamentária e financeira (LC 131/2009).","a":null},{"id":"c07","t":"8.3","n":"8.3.7","e":"A Lei de Acesso à Informação adota a observância da publicidade como preceito geral e do sigilo como exceção.","gab":"Certo","c":"Art. 3º, I, da LAI.","a":null},{"id":"c08","t":"8.3","n":"8.3.8","e":"A Lei de Responsabilidade Fiscal assegura a transparência mediante, entre outros meios, o incentivo à participação popular e a realização de audiências públicas durante os processos de elaboração e discussão dos planos, da LDO e dos orçamentos.","gab":"Certo","c":"LRF, art. 48, § 1º, I (redação da LC 131/2009).","a":null},{"id":"c09","t":"8.3","n":"8.3.9","e":"A participação cidadã na gestão pública restringe-se à fase de formulação das políticas, não alcançando a implementação nem a avaliação.","gab":"Errado","c":"Participação e coprodução podem ocorrer em todo o ciclo: planejamento (co-planejamento), desenho, execução (co-entrega) e avaliação (co-avaliação), na classificação de Bovaird.","a":null},{"id":"c10","t":"8.3","n":"8.3.10","e":"Entre as diretrizes da governança pública previstas no Decreto nº 9.203/2017 está promover a comunicação aberta, voluntária e transparente das atividades e dos resultados da organização, de maneira a fortalecer o acesso público à informação.","gab":"Certo","c":"Art. 4º, XI. É a transparência ativa dentro da política de governança.","a":null},{"id":"v01","t":"8.4","n":"8.4.1","e":"No triângulo estratégico de Mark Moore, a criação de valor público depende do alinhamento entre a definição do valor a ser produzido, o ambiente autorizador, que confere legitimidade e apoio, e a capacidade operacional.","gab":"Certo","c":"Moore, Creating Public Value (1995): valor público, legitimidade e suporte, capacidade operacional. O gestor público age como estrategista, não como mero executor.","a":null},{"id":"v02","t":"8.4","n":"8.4.2","e":"Para Moore, o gestor público deve limitar-se a executar fielmente os mandatos legislativos, sem buscar ativamente oportunidades de criar valor para a sociedade.","gab":"Errado","c":"Moore vê o gestor como explorador que procura, com imaginação, aumentar o valor público produzido, dentro do ambiente autorizador.","a":null},{"id":"v03","t":"8.4","n":"8.4.3","e":"Na cadeia de valor da gestão pública, a eficácia relaciona os produtos entregues aos insumos utilizados, ao passo que a eficiência mede o alcance das metas de entrega de produtos.","gab":"Errado","c":"Inverteu. Eficiência = relação entre produtos e insumos (custo). Eficácia = quantidade e qualidade dos produtos entregues ao usuário (alcance de metas). Efetividade = impactos gerados na sociedade.","a":"Troca entre eficiência e eficácia é a pegadinha mais frequente da cadeia de valor."},{"id":"v04","t":"8.4","n":"8.4.4","e":"No modelo dos 6Es do desempenho, economicidade, execução e excelência referem-se à dimensão de esforço, enquanto eficiência, eficácia e efetividade referem-se à dimensão de resultado.","gab":"Certo","c":"Martins e Marini, Um guia de governança para resultados (2010). Esforço: economicidade, excelência, execução. Resultado: eficiência, eficácia, efetividade.","a":null},{"id":"v05","t":"8.4","n":"8.4.5","e":"A efetividade, na cadeia de valor público, refere-se aos impactos gerados pelos produtos e serviços sobre a sociedade, isto é, à transformação produzida na realidade que motivou a intervenção.","gab":"Certo","c":"Efetividade = impacto, outcome, mudança na situação-problema.","a":null},{"id":"v06","t":"8.4","n":"8.4.6","e":"O conceito de valor público de Moore e o de valores públicos de Bozeman são idênticos: ambos designam os resultados produzidos pelo gestor público em sua organização.","gab":"Errado","c":"Moore (public value): valor criado pela ação gerencial, no singular. Bozeman (public values): consensos normativos sobre direitos, benefícios e obrigações de cidadãos e do Estado, no plural.","a":null},{"id":"v07","t":"8.4","n":"8.4.7","e":"Segundo o Decreto nº 9.203/2017, valor público corresponde a produtos e resultados gerados, preservados ou entregues pelas atividades de uma organização que representem respostas efetivas e úteis às necessidades ou às demandas de interesse público.","gab":"Certo","c":"Art. 2º, II. Note os três verbos: gerados, preservados ou entregues.","a":null},{"id":"v08","t":"8.4","n":"8.4.8","e":"Na cadeia de valor de uma organização pública, os macroprocessos de suporte são os que entregam diretamente produtos e serviços ao cidadão.","gab":"Errado","c":"Quem entrega ao cidadão são os macroprocessos finalísticos. Os de gestão (ou gerenciais) orientam e controlam; os de suporte provêm recursos (pessoas, TI, logística).","a":null},{"id":"g01","t":"9.1","n":"9.1.1","e":"Segundo o Decreto nº 9.203/2017, governança pública é o conjunto de mecanismos de liderança, estratégia e controle postos em prática para planejar, executar e controlar a gestão.","gab":"Errado","c":"Art. 2º, I: para avaliar, direcionar e monitorar a gestão. Planejar, executar, controlar (e agir) são funções da gestão.","a":"Governança: avaliar, direcionar, monitorar. Gestão: planejar, executar, controlar, agir."},{"id":"g02","t":"9.1","n":"9.1.2","e":"Enquanto a governança é a função direcionadora, a gestão é a função realizadora, responsável por planejar, executar e controlar as ações.","gab":"Certo","c":"Distinção do TCU (Referencial Básico de Governança): a governança direciona, avalia e monitora; a gestão realiza.","a":null},{"id":"g03","t":"9.1","n":"9.1.3","e":"Para Bresser-Pereira, governabilidade refere-se à capacidade financeira e administrativa do Estado de implementar suas políticas, e governança, às condições políticas de legitimidade do governo.","gab":"Errado","c":"Inverteu. Governança = capacidade financeira e administrativa, em sentido amplo, de implementar políticas. Governabilidade = condições políticas: legitimidade, apoio, instituições capazes de intermediar interesses.","a":"A inversão governança/governabilidade é a pegadinha mais provável do subitem 9.1."},{"id":"g04","t":"9.1","n":"9.1.4","e":"A capacidade das instituições políticas de intermediar interesses dentro do Estado e na sociedade civil relaciona-se à governabilidade, e não à governança.","gab":"Certo","c":"Bresser-Pereira (1998) lista entre as condições de governabilidade a adequação das instituições políticas capazes de intermediar interesses. O Cebraspe usou exatamente essa distinção no TCDF 2024.","a":null},{"id":"g05","t":"9.1","n":"9.1.5","e":"O Plano Diretor da Reforma do Aparelho do Estado tinha como objetivo aumentar a governança do Estado, entendida como sua capacidade administrativa de governar com efetividade e eficiência.","gab":"Certo","c":"Literal do PDRAE (1995): o governo brasileiro não carecia de governabilidade, mas de governança.","a":null},{"id":"g06","t":"9.1","n":"9.1.6","e":"Na perspectiva da teoria da agência aplicada ao setor público, os gestores públicos são o principal, e a sociedade é o agente a quem se delega a gestão.","gab":"Errado","c":"Inverteu. A sociedade (cidadãos) é o principal; governantes e gestores são agentes. A governança existe para reduzir o conflito de agência e a assimetria de informação.","a":null},{"id":"g07","t":"9.1","n":"9.1.7","e":"O alinhamento estratégico abrange tanto o desdobramento da estratégia dentro da organização quanto a articulação de objetivos entre organizações e partes interessadas, o que o TCU denomina alinhamento transorganizacional.","gab":"Certo","c":"Decreto, art. 5º, II (alinhamento entre organizações e partes interessadas); TCU, componente \"alinhamento transorganizacional\" do mecanismo estratégia.","a":null},{"id":"g08","t":"9.1","n":"9.1.8","e":"O conceito de governança aplica-se exclusivamente ao nível organizacional, não alcançando as políticas públicas nem as relações entre Estado e sociedade.","gab":"Errado","c":"O TCU identifica perspectivas de sociedade e Estado, de entes federativos e políticas públicas, de órgãos e entidades e de atividades intraorganizacionais. Há referencial próprio para governança de políticas públicas.","a":null},{"id":"g09","t":"9.1","n":"9.1.9","e":"Para o Banco Mundial (1992), governança é a maneira pela qual o poder é exercido na administração dos recursos econômicos e sociais de um país, com vistas ao desenvolvimento.","gab":"Certo","c":"Definição clássica do documento Governance and Development (1992), ponto de partida dos debates dos anos 1990.","a":null},{"id":"k01","t":"9.2","n":"9.2.1","e":"De acordo com o Decreto nº 9.203/2017, a liderança compreende um conjunto de práticas de natureza humana ou comportamental, exercidas nos principais cargos das organizações, que asseguram condições mínimas para a boa governança: integridade, competência, responsabilidade e motivação.","gab":"Certo","c":"Art. 5º, I, com as alíneas a a d.","a":null},{"id":"k02","t":"9.2","n":"9.2.2","e":"O mecanismo de controle, segundo o Decreto nº 9.203/2017, compreende a definição de diretrizes, objetivos, planos e ações, além de critérios de priorização e alinhamento entre organizações e partes interessadas.","gab":"Errado","c":"Essa é a definição de estratégia (art. 5º, II). Controle (art. 5º, III) compreende processos estruturados para mitigar riscos e garantir execução ordenada, ética, econômica, eficiente e eficaz, com preservação da legalidade e da economicidade.","a":"A banca cola a definição de um mecanismo no nome de outro."},{"id":"k03","t":"9.2","n":"9.2.3","e":"Entre as condições mínimas para o exercício da boa governança associadas ao mecanismo de liderança, o Decreto nº 9.203/2017 menciona a transparência.","gab":"Errado","c":"As condições são integridade, competência, responsabilidade e motivação. Transparência é princípio (art. 3º, VI).","a":null},{"id":"k04","t":"9.2","n":"9.2.4","e":"Na terceira edição do Referencial Básico de Governança Organizacional do TCU (2020), a prática \"gerir riscos\" integra o mecanismo de estratégia.","gab":"Certo","c":"Na 3ª edição, estratégia reúne: gerir riscos, estabelecer a estratégia, promover a gestão estratégica, monitorar o alcance dos resultados organizacionais e monitorar o desempenho das funções de gestão.","a":"Na 2ª edição (2014), \"gestão de riscos e controle interno\" estava no mecanismo de controle. Se o item citar a edição, responda por ela."},{"id":"k05","t":"9.2","n":"9.2.5","e":"No Referencial Básico de Governança Organizacional do TCU, promover a transparência, garantir a accountability, avaliar a satisfação das partes interessadas e avaliar a efetividade da auditoria interna são práticas do mecanismo de controle.","gab":"Certo","c":"3ª edição (2020), mecanismo controle.","a":null},{"id":"k06","t":"9.2","n":"9.2.6","e":"Estabelecer o modelo de governança, promover a integridade e promover a capacidade da liderança são práticas do mecanismo de liderança no referencial do TCU.","gab":"Certo","c":"3ª edição (2020), mecanismo liderança.","a":null},{"id":"k07","t":"9.2","n":"9.2.7","e":"A auditoria interna governamental, segundo o Decreto nº 9.203/2017, deve adicionar valor e melhorar as operações das organizações, por meio da avaliação e da melhoria da eficácia dos processos de gerenciamento de riscos, dos controles e da governança.","gab":"Certo","c":"Art. 18. Inclui trabalhos de avaliação e consultoria independentes, abordagem baseada em risco e prevenção, detecção e investigação de fraudes.","a":null},{"id":"k08","t":"9.2","n":"9.2.8","e":"O sistema de gestão de riscos previsto no Decreto nº 9.203/2017 deve estabelecer controles internos no nível mais rigoroso possível, independentemente da relação custo-benefício.","gab":"Errado","c":"Art. 17, III: controles internos proporcionais aos riscos, considerando causas, fontes, consequências e impactos, observada a relação custo-benefício.","a":null},{"id":"k09","t":"9.2","n":"9.2.9","e":"Para o TCU, a auditoria interna e a ouvidoria são instâncias internas de apoio à governança, ao passo que o Congresso Nacional e o próprio TCU são instâncias externas de governança.","gab":"Certo","c":"Referencial do TCU (2014): instâncias externas (Congresso, TCU), externas de apoio (auditoria independente, controle social organizado), internas (conselhos, alta administração) e internas de apoio (auditoria interna, ouvidoria, comitês).","a":null},{"id":"a01","t":"9.3","n":"9.3.1","e":"A avaliação de impacto de uma política pública busca estimar o efeito causal da intervenção, comparando os resultados observados com o que teria ocorrido sem ela, o chamado contrafactual.","gab":"Certo","c":"Guia de avaliação ex post (Casa Civil/IPEA, 2018). Sem contrafactual não há como atribuir a mudança à política.","a":null},{"id":"a02","t":"9.3","n":"9.3.2","e":"A avaliação ex ante ocorre depois da implementação da política e tem por objetivo medir os impactos efetivamente produzidos.","gab":"Errado","c":"Ex ante ocorre antes: diagnóstico do problema, desenho, modelo lógico, custos e benefícios esperados. Medir impactos é avaliação ex post.","a":null},{"id":"a03","t":"9.3","n":"9.3.3","e":"Desde a Emenda Constitucional nº 109/2021, a Constituição determina que os órgãos e as entidades da administração pública, individual ou conjuntamente, realizem avaliação das políticas públicas, inclusive com divulgação do objeto avaliado e dos resultados alcançados, na forma da lei.","gab":"Certo","c":"Art. 37, § 16, da CF.","a":null},{"id":"a04","t":"9.3","n":"9.3.4","e":"Produtos (outputs) e impactos (outcomes) são conceitos equivalentes na avaliação de políticas públicas, pois ambos expressam o que a política entregou.","gab":"Errado","c":"Produto é o bem ou serviço entregue (vacinas aplicadas). Resultado e impacto são as mudanças provocadas (queda da mortalidade). Medir só produtos é confundir eficácia com efetividade.","a":null},{"id":"a05","t":"9.3","n":"9.3.5","e":"O Decreto nº 9.203/2017 prevê como diretriz avaliar as propostas de criação, expansão ou aperfeiçoamento de políticas públicas e de concessão de incentivos fiscais e aferir, sempre que possível, seus custos e benefícios.","gab":"Certo","c":"Art. 4º, VII.","a":null},{"id":"a06","t":"9.3","n":"9.3.6","e":"Sustentabilidade, no contexto da geração de valor público, limita-se à dimensão ambiental, sem relação com a viabilidade econômica e social das políticas ao longo do tempo.","gab":"Errado","c":"Sustentabilidade envolve as dimensões econômica, social e ambiental e a perspectiva intergeracional (Relatório Brundtland, 1987).","a":null},{"id":"a07","t":"9.3","n":"9.3.7","e":"Os mecanismos, as instâncias e as práticas de governança devem incluir, no mínimo, formas de acompanhamento de resultados, soluções para melhoria do desempenho das organizações e instrumentos de promoção do processo decisório fundamentado em evidências.","gab":"Certo","c":"Art. 6º, parágrafo único, do Decreto 9.203.","a":null},{"id":"a08","t":"9.3","n":"9.3.8","e":"Gerar valor público equivale a cumprir as metas físicas de produção da organização, independentemente de os produtos atenderem às necessidades da sociedade.","gab":"Errado","c":"O decreto exige respostas efetivas e úteis às necessidades ou demandas de interesse público que modifiquem aspectos da sociedade. Cumprir meta sem efeito é eficácia sem efetividade.","a":null},{"id":"d01","t":"9.4","n":"9.4.1","e":"O Decreto nº 9.203/2017 dispõe sobre a política de governança da administração pública federal direta, autárquica e fundacional, aplicando-se também às empresas públicas e às sociedades de economia mista.","gab":"Errado","c":"Art. 1º: só a administração direta, autárquica e fundacional. As estatais têm regime próprio de governança (Lei 13.303/2016).","a":"Âmbito do decreto: direta, autárquica e fundacional. Incluir estatais é a pegadinha do art. 1º."},{"id":"d02","t":"9.4","n":"9.4.2","e":"São princípios da governança pública, conforme o Decreto nº 9.203/2017, a capacidade de resposta, a integridade, a confiabilidade, a melhoria regulatória, a prestação de contas e responsabilidade e a transparência.","gab":"Certo","c":"Art. 3º: são seis princípios, nessa ordem.","a":null},{"id":"d03","t":"9.4","n":"9.4.3","e":"A eficiência e a legalidade figuram entre os princípios da governança pública expressamente listados no Decreto nº 9.203/2017.","gab":"Errado","c":"Legalidade e eficiência são princípios da Administração (CF, art. 37, caput), não do art. 3º do decreto. Os seis do decreto: capacidade de resposta, integridade, confiabilidade, melhoria regulatória, prestação de contas e responsabilidade, transparência.","a":"O examinador mistura princípios da CF, do TCU (equidade, legitimidade, probidade) e do decreto."},{"id":"d04","t":"9.4","n":"9.4.4","e":"Fazer incorporar padrões elevados de conduta pela alta administração para orientar o comportamento dos agentes públicos é princípio da governança pública previsto no Decreto nº 9.203/2017.","gab":"Errado","c":"É diretriz (art. 4º, V). O decreto tem 6 princípios (art. 3º) e 11 diretrizes (art. 4º). Diretrizes começam por verbos.","a":"Truque para separar: princípios são substantivos curtos; diretrizes são frases com verbo no infinitivo."},{"id":"d05","t":"9.4","n":"9.4.5","e":"Implementar controles internos fundamentados na gestão de risco, que privilegiará ações estratégicas de prevenção antes de processos sancionadores, é diretriz da governança pública.","gab":"Certo","c":"Art. 4º, VI.","a":null},{"id":"d06","t":"9.4","n":"9.4.6","e":"Para os fins do Decreto nº 9.203/2017, integram a alta administração os Ministros de Estado, os ocupantes de cargos de natureza especial, os ocupantes de cargo de nível 6 do Grupo-Direção e Assessoramento Superiores e os presidentes e diretores de autarquias e fundações públicas, ou autoridades de hierarquia equivalente.","gab":"Certo","c":"Art. 2º, III. Autarquias \"inclusive as especiais\".","a":"Trocar o nível 6 por nível 5 ou incluir diretores de estatais torna o item errado."},{"id":"d07","t":"9.4","n":"9.4.7","e":"Gestão de riscos, segundo o Decreto nº 9.203/2017, é processo de natureza permanente, estabelecido, direcionado e monitorado pela alta administração, destinado a fornecer segurança absoluta quanto à realização dos objetivos da organização.","gab":"Errado","c":"Art. 2º, IV: segurança razoável, não absoluta.","a":"\"Absoluta\" no lugar de \"razoável\" é troca típica."},{"id":"d08","t":"9.4","n":"9.4.8","e":"Cabe à alta administração dos órgãos e das entidades implementar e manter mecanismos, instâncias e práticas de governança, em consonância com os princípios e as diretrizes do Decreto nº 9.203/2017.","gab":"Certo","c":"Art. 6º.","a":null},{"id":"d09","t":"9.4","n":"9.4.9","e":"O Comitê Interministerial de Governança tem por finalidade assessorar o Presidente da República na condução da política de governança da administração pública federal e é coordenado pelo Ministro de Estado Chefe da Casa Civil.","gab":"Certo","c":"Arts. 7º-A e 8º-A (redação do Decreto 9.901/2019).","a":null},{"id":"d10","t":"9.4","n":"9.4.10","e":"O Comitê Interministerial de Governança é coordenado pelo Ministro de Estado da Controladoria-Geral da União, a quem compete o voto de qualidade em caso de empate.","gab":"Errado","c":"O coordenador é o Ministro-Chefe da Casa Civil (art. 8º-A, I), que tem voto de qualidade (art. 8º-B). A CGU é membro, não coordenadora.","a":null},{"id":"d11","t":"9.4","n":"9.4.11","e":"O Comitê Interministerial de Governança reúne-se, em caráter ordinário, trimestralmente.","gab":"Certo","c":"Art. 8º-B (Decreto 9.901/2019). Em caráter extraordinário, sempre que necessário.","a":null},{"id":"d12","t":"9.4","n":"9.4.12","e":"Compete ao Comitê Interministerial de Governança aprovar manuais e guias com medidas, mecanismos e práticas organizacionais que contribuam para a implementação dos princípios e das diretrizes de governança pública.","gab":"Certo","c":"Competência do CIG prevista no decreto. Na prática, o \"Guia da Política de Governança Pública\" (2018) foi aprovado nesse contexto.","a":null},{"id":"d13","t":"9.4","n":"9.4.13","e":"Os comitês internos de governança dos órgãos e entidades têm, entre suas competências, auxiliar a alta administração na implementação e na manutenção de processos, estruturas e mecanismos adequados à incorporação dos princípios e das diretrizes da governança.","gab":"Certo","c":"Art. 15-A, incluído pelo Decreto 9.901/2019.","a":"Não confunda o CIG (interministerial, assessora o Presidente) com os comitês internos de cada órgão."},{"id":"d14","t":"9.4","n":"9.4.14","e":"O sistema de gestão de riscos e controles internos previsto no Decreto nº 9.203/2017 deve ser integrado ao processo de planejamento estratégico e aos seus desdobramentos, às atividades, aos processos de trabalho e aos projetos em todos os níveis da organização.","gab":"Certo","c":"Art. 17, II.","a":null},{"id":"d15","t":"9.4","n":"9.4.15","e":"Os programas de integridade previstos no Decreto nº 9.203/2017 estruturam-se nos eixos de comprometimento e apoio da alta administração, existência de unidade responsável, análise, avaliação e gestão dos riscos associados à integridade, e monitoramento contínuo dos atributos do programa.","gab":"Certo","c":"Art. 19 (texto original do decreto).","a":"Em 2023 o Decreto 11.529 criou o Sitai e passou a tratar dos programas de integridade. Confira no texto consolidado se o art. 19 continua vigente antes da prova."},{"id":"d16","t":"9.4","n":"9.4.16","e":"Manter processo decisório orientado pelas evidências, pela conformidade legal, pela qualidade regulatória, pela desburocratização e pelo apoio à participação da sociedade é diretriz da governança pública.","gab":"Certo","c":"Art. 4º, VIII.","a":null},{"id":"d17","t":"9.4","n":"9.4.17","e":"Confiabilidade, como princípio de governança, refere-se à capacidade das instituições de minimizar as incertezas para os cidadãos nos campos econômico, social e político.","gab":"Certo","c":"Conceito do Guia da Política de Governança Pública (Casa Civil, 2018).","a":null},{"id":"d18","t":"9.4","n":"9.4.18","e":"Capacidade de resposta, princípio da governança pública, consiste na competência de a instituição atender de forma eficiente e eficaz às necessidades das partes interessadas, inclusive antevendo problemas e prevendo tendências.","gab":"Certo","c":"Guia da Política de Governança Pública (2018).","a":null}];
+const CHAVE = 'governanca-gestao-publica-v1';
+const ORDEM = ['8', '8.1', '8.2', '8.3', '8.4', '9.1', '9.2', '9.3', '9.4'];
+const ROTULOS = { '8': '8 Modelos', '8.1': '8.1 NPG', '8.2': '8.2 Redes', '8.3': '8.3 Coprodução', '8.4': '8.4 Valor', '9.1': '9.1 Conceito', '9.2': '9.2 Mecanismos', '9.3': '9.3 Resultados', '9.4': '9.4 Decreto' };
+let resp = {};
+try { resp = JSON.parse(localStorage.getItem(CHAVE) || '{}') || {}; } catch (e) { resp = {}; }
+function salvar() { try { localStorage.setItem(CHAVE, JSON.stringify(resp)); } catch (e) {} }
+const porId = {}; DADOS.forEach(q => porId[q.id] = q);
+const filtro = {};
+let sorteio = [];
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+function certa(q) { return q.gab === 'Certo' ? 'C' : 'E'; }
+function situacao(q) { const r = resp[q.id]; if (!r) return 'nova'; return r === certa(q) ? 'acertou' : 'errou'; }
+function listaDe(t) { return t === 'REL' ? sorteio.map(i => porId[i]) : DADOS.filter(q => q.t === t); }
+
+function htmlQuestao(q, revelar, bloco) {
+  const r = resp[q.id], mostra = revelar || !!r, ok = certa(q);
+  const opts = '<div class="opts ce">' + [['C', 'Certo'], ['E', 'Errado']].map(([l, t]) => {
+    let cls = 'opt';
+    if (mostra && ok === l) cls += ' certa';
+    if (r === l && r !== ok) cls += ' marcada-errada';
+    return '<button type="button" class="' + cls + '" data-q="' + q.id + '" data-op="' + l + '"' + (r ? ' disabled' : '') + ' aria-pressed="' + (r === l) + '">' + t + '</button>';
+  }).join('') + '</div>';
+  let corpo = '';
+  if (mostra) {
+    const s = situacao(q);
+    const ver = !r ? 'Gabarito: ' + q.gab : (s === 'acertou' ? 'Acertou · gabarito ' : 'Errou · gabarito ') + q.gab;
+    const vcls = !r ? 'neu' : (s === 'acertou' ? 'ok' : 'bad');
+    corpo = '<div class="resp"><div class="veredito ' + vcls + '">' + ver + '</div><p>' + esc(q.c) + '</p>' + (q.a ? '<div class="alerta"><b>Pegadinha:</b> ' + esc(q.a) + '</div>' : '') + '</div>';
+  }
+  const cls = 'q' + (r ? (situacao(q) === 'acertou' ? ' acertou' : ' errou') : '');
+  return '<article class="' + cls + '" data-id="' + q.id + '" id="q-' + bloco + '-' + q.id + '"><div class="meta"><span class="chip aut">Item ' + esc(q.n) + '</span><span>Subitem ' + esc(q.t) + ' do edital · inédito, padrão Cebraspe</span></div><div class="enun"><p>' + esc(q.e) + '</p></div>' + opts + corpo + '</article>';
+}
+
+function contagem(t) {
+  const lista = listaDe(t), f = lista.filter(q => resp[q.id]);
+  return lista.length + ' itens · ' + f.length + ' respondidos · ' + f.filter(q => situacao(q) === 'acertou').length + ' acertos';
+}
+
+function desenhaBloco(el) {
+  const t = el.dataset.t, chave = t.replace('.', '_');
+  const lista = listaDe(t);
+  if (t === 'REL' && !lista.length) { el.innerHTML = '<p class="vazio">Toque em "Sortear 20 itens" para montar uma prova.</p>'; return; }
+  const f = filtro[t] || 'todas';
+  const revelar = document.documentElement.classList.contains('modo-pdf') || el.dataset.revelar === '1';
+  const vis = lista.filter(q => f === 'todas' || (f === 'novas' && !resp[q.id]) || (f === 'erradas' && situacao(q) === 'errou'));
+  el.innerHTML = '<div class="qbar"><span class="conta">' + contagem(t) + '</span><div class="ctrl">' +
+    [['todas', 'Todos'], ['novas', 'Não respondidos'], ['erradas', 'Errados']].map(([k, v]) => '<button type="button" data-filtro="' + k + '" aria-pressed="' + (f === k) + '">' + v + '</button>').join('') +
+    '<button type="button" data-revelar aria-pressed="' + (el.dataset.revelar === '1') + '">Mostrar gabaritos</button></div></div>' +
+    '<div class="qlist">' + (vis.length ? vis.map(q => htmlQuestao(q, revelar, chave)).join('') : '<p class="vazio">Nenhum item neste filtro.</p>') + '</div>';
+}
+
+function desenhaPlacar() {
+  let totF = 0, totA = 0, totQ = 0;
+  document.getElementById('placar').innerHTML = ORDEM.map(t => {
+    const lista = DADOS.filter(q => q.t === t), f = lista.filter(q => resp[q.id]), a = f.filter(q => situacao(q) === 'acertou').length;
+    totF += f.length; totA += a; totQ += lista.length;
+    const pa = a / lista.length * 100, pe = (f.length - a) / lista.length * 100;
+    return '<div class="barra"><span class="rot">' + ROTULOS[t] + '</span><span class="trilho" role="img" aria-label="' + a + ' acertos e ' + (f.length - a) + ' erros em ' + lista.length + '"><i class="ok" style="width:' + pa + '%"></i><i class="bad" style="width:' + pe + '%"></i></span><span class="val">' + f.length + '/' + lista.length + '</span></div>';
+  }).join('');
+  const pct = totF ? Math.round(totA / totF * 100) : 0;
+  document.getElementById('placar-total').innerHTML = '<span><b>' + totF + '</b> de ' + totQ + ' respondidos</span><span><b>' + pct + '%</b> de acerto</span>';
+}
+
+function redesenha() { document.querySelectorAll('.qbloco').forEach(desenhaBloco); desenhaPlacar(); }
+
+document.addEventListener('click', ev => {
+  const op = ev.target.closest('.opt');
+  if (op && !op.disabled) {
+    const q = porId[op.dataset.q]; resp[q.id] = op.dataset.op; salvar();
+    document.querySelectorAll('.qbloco').forEach(bl => {
+      const art = bl.querySelector('article[data-id="' + q.id + '"]');
+      if (art) { art.outerHTML = htmlQuestao(q, bl.dataset.revelar === '1', bl.dataset.t.replace('.', '_')); const c = bl.querySelector('.conta'); if (c) c.textContent = contagem(bl.dataset.t); }
+    });
+    desenhaPlacar(); return;
+  }
+  const fb = ev.target.closest('[data-filtro]');
+  if (fb) { const bl = fb.closest('.qbloco'); filtro[bl.dataset.t] = fb.dataset.filtro; desenhaBloco(bl); return; }
+  const rv = ev.target.closest('[data-revelar]');
+  if (rv) { const bl = rv.closest('.qbloco'); bl.dataset.revelar = bl.dataset.revelar === '1' ? '0' : '1'; desenhaBloco(bl); return; }
+});
+
+document.getElementById('btn-sorteio').addEventListener('click', () => {
+  const ids = DADOS.map(q => q.id);
+  for (let i = ids.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [ids[i], ids[j]] = [ids[j], ids[i]]; }
+  sorteio = ids.slice(0, 20);
+  const bl = document.querySelector('.qbloco[data-t="REL"]'); bl.dataset.revelar = '0'; filtro.REL = 'todas'; desenhaBloco(bl);
+});
+
+const bReset = document.getElementById('btn-reset'), bOk = document.getElementById('btn-reset-ok'), aviso = document.getElementById('aviso-reset');
+bReset.addEventListener('click', () => { const abre = bOk.hidden; bOk.hidden = !abre; aviso.hidden = !abre; bReset.textContent = abre ? 'Cancelar' : 'Zerar respostas'; });
+bOk.addEventListener('click', () => { resp = {}; salvar(); bOk.hidden = true; aviso.hidden = true; bReset.textContent = 'Zerar respostas'; redesenha(); });
+
+(function () {
+  const prova = new Date(2027, 0, 17), hoje = new Date(); hoje.setHours(0, 0, 0, 0);
+  const d = Math.round((prova - hoje) / 864e5), el = document.getElementById('contagem');
+  if (d > 1) el.innerHTML = 'Faltam <b>' + d + ' dias</b>';
+  else if (d === 1) el.innerHTML = '<b>A prova é amanhã</b>';
+  else if (d === 0) el.innerHTML = '<b>A prova é hoje</b>';
+  else el.innerHTML = 'Prova realizada';
+})();
+
+if (location.hash === '#pdf') document.documentElement.classList.add('modo-pdf');
+redesenha();
+</script>
+
+</body>
+</html>
