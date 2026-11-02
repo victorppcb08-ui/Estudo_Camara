@@ -24,6 +24,12 @@ Materiais de estudo para a prova da Câmara dos Deputados (Cebraspe).
 |---|---|---|
 | Governança e gestão pública (itens 8 e 9 do edital) | [Estudo estratégico (PDF)](Gestao_Publica/Governanca_e_Gestao_Publica/Governanca_e_Gestao_Publica.pdf) · [pasta](Gestao_Publica/Governanca_e_Gestao_Publica) | Modelos de gestão, Nova Governança Pública (Osborne), redes e parcerias, coprodução, valor público, governança × governabilidade, mecanismos, Decreto 9.203/2017 e 94 itens certo/errado comentados |
 
+## Direito Constitucional e Regimentos
+
+| Assunto | Material | O que traz |
+|---|---|---|
+| Poder Legislativo, parlamentares, RICD e Regimento Comum (itens 5 a 8 do edital) | [Estudo estratégico (PDF)](Regimentos_CD_e_CN/Regimentos_CD_CN.pdf) · [página interativa](Regimentos_CD_e_CN/Regimentos_CD_CN.html) · [pasta](Regimentos_CD_e_CN) | Diagnóstico do examinador, plano até a prova, teoria só nas faixas do edital (CF 44 a 58; RICD 1–24, 65–94, 226–251, 262–273; RCCN 1–3 e 53–103), 126 itens no banco, 2 simulados, prova prevista e calibração com as provas de 2025 e 2026 |
+
 ## Arquivos de origem
 
 - [NBR 5626:2020, sistemas prediais de água fria e água quente](nbr-5626-2020-emenda-sistemas-prediais-de-agua-fria-e-quente_compress.pdf)

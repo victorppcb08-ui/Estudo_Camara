@@ -1,0 +1,1166 @@
+<title>Regimentos CD e CN — Prova 2027</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:wght@500;700&display=swap">
+<style>
+/* Layout: coluna de leitura única (~72ch), abas fixas no topo; artigos citados como etiquetas monoespaçadas, como num avulso da Ordem do Dia. */
+:root{
+  --bg:#f4f6f2; --surface:#ffffff; --ink:#17201b; --muted:#56635b; --line:#d6ddd6;
+  --accent:#1c6a4b; --accent-ink:#ffffff; --accent-soft:#e1eee6;
+  --cn:#2a5687; --cn-soft:#e3ecf6;
+  --alert:#8f4f00; --alert-soft:#fbefdc;
+  --ok:#1f7440; --ok-soft:#e2f2e7; --bad:#ad2a1f; --bad-soft:#fbe6e3;
+  --f-display:"Spectral", Georgia, "Times New Roman", serif;
+  --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --s1:.25rem; --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.5rem; --s6:2rem; --s7:3rem;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0f1411; --surface:#171f1a; --ink:#e4ebe6; --muted:#9ba89f; --line:#2b362f;
+  --accent:#62c196; --accent-ink:#0c1a12; --accent-soft:#1b3326;
+  --cn:#8db6e6; --cn-soft:#1a2738;
+  --alert:#e9ab52; --alert-soft:#33271a;
+  --ok:#73d295; --ok-soft:#173222; --bad:#f2928a; --bad-soft:#3a1d1a;
+  color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0f1411; --surface:#171f1a; --ink:#e4ebe6; --muted:#9ba89f; --line:#2b362f;
+  --accent:#62c196; --accent-ink:#0c1a12; --accent-soft:#1b3326;
+  --cn:#8db6e6; --cn-soft:#1a2738;
+  --alert:#e9ab52; --alert-soft:#33271a;
+  --ok:#73d295; --ok-soft:#173222; --bad:#f2928a; --bad-soft:#3a1d1a;
+  color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--ink); font-family:var(--f-body); font-size:16px; line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); padding-block:0 var(--s7)}
+body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top, 0px); z-index:10; background:var(--bg)}
+.wrap{max-width:46rem; margin:0 auto}
+h1,h2,h3{font-family:var(--f-display); text-wrap:balance; line-height:1.2; margin:0}
+h1{font-size:2rem; font-weight:700}
+h2{font-size:1.5rem; font-weight:700; margin-top:var(--s6)}
+h3{font-size:1.15rem; font-weight:700; margin-top:var(--s5)}
+p{margin:var(--s3) 0}
+a{color:var(--accent)}
+small,.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-mono); font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
+.ref{font-family:var(--f-mono); font-size:.78rem; background:var(--accent-soft); color:var(--ink); padding:.05rem .35rem; border-radius:4px; white-space:nowrap}
+.ref.cn{background:var(--cn-soft)}
+code{font-family:var(--f-mono); font-size:.85em}
+ul,ol{padding-left:1.25rem; margin:var(--s3) 0}
+li{margin:.2rem 0}
+li>ul{margin:.2rem 0}
+
+/* cabeçalho */
+header.top{padding-block:var(--s6) var(--s4)}
+.hero-grid{display:grid; grid-template-columns:1fr auto; gap:var(--s4); align-items:end}
+.count{text-align:right}
+.count b{display:block; font-family:var(--f-display); font-size:2.6rem; line-height:1; color:var(--accent); font-variant-numeric:tabular-nums}
+@media (max-width:520px){ .hero-grid{grid-template-columns:1fr} .count{text-align:left} }
+
+/* abas */
+nav.tabs{position:sticky; top:env(safe-area-inset-top, 0px); z-index:5; background:var(--bg); border-bottom:1px solid var(--line); margin:0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.tabs-in{max-width:46rem; margin:0 auto; display:flex; gap:var(--s1); overflow-x:auto; padding-block:var(--s2); scrollbar-width:thin}
+.tabs-in a{flex:0 0 auto; text-decoration:none; color:var(--muted); font-size:.88rem; font-weight:500; padding:.4rem .7rem; border-radius:999px}
+.tabs-in a[aria-current="page"]{background:var(--accent); color:var(--accent-ink)}
+.tabs-in a:focus-visible, button:focus-visible, label:focus-within{outline:2px solid var(--accent); outline-offset:2px}
+
+section.view{padding-top:var(--s4)}
+.lead{font-size:1.05rem}
+
+/* blocos */
+.alert{background:var(--alert-soft); border-left:3px solid var(--alert); padding:var(--s3) var(--s4); margin:var(--s4) 0; border-radius:0 var(--r) var(--r) 0}
+.alert>b:first-child{color:var(--alert); font-family:var(--f-mono); font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; display:block; margin-bottom:.15rem}
+.link{background:var(--cn-soft); border-left:3px solid var(--cn); padding:var(--s3) var(--s4); margin:var(--s4) 0; border-radius:0 var(--r) var(--r) 0}
+.link>b:first-child{color:var(--cn); font-family:var(--f-mono); font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; display:block; margin-bottom:.15rem}
+.note{border:1px dashed var(--line); padding:var(--s3) var(--s4); border-radius:var(--r); margin:var(--s4) 0; background:var(--surface)}
+.tbl{overflow-x:auto; margin:var(--s4) 0; border:1px solid var(--line); border-radius:var(--r); background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:.9rem}
+th,td{padding:.5rem .6rem; border-bottom:1px solid var(--line); text-align:left; vertical-align:top}
+th{font-family:var(--f-mono); font-size:.72rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); font-weight:600; background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--f-mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+.pill{display:inline-block; font-family:var(--f-mono); font-size:.7rem; font-weight:600; padding:.1rem .45rem; border-radius:999px; white-space:nowrap}
+.p-mx{background:var(--bad-soft); color:var(--bad)} .p-al{background:var(--alert-soft); color:var(--alert)} .p-md{background:var(--cn-soft); color:var(--cn)} .p-bx{background:var(--line); color:var(--muted)}
+.toc{display:flex; flex-wrap:wrap; gap:var(--s2); margin:var(--s4) 0}
+.toc a{font-size:.85rem; text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:.25rem .6rem; color:var(--ink); background:var(--surface)}
+.week{display:grid; grid-template-columns:7.5rem 1fr; gap:var(--s3); padding:var(--s3) 0; border-bottom:1px solid var(--line)}
+.week:last-child{border-bottom:0}
+.week .d{font-family:var(--f-mono); font-size:.8rem; color:var(--muted); font-variant-numeric:tabular-nums}
+.week>div{min-width:0}
+@media (max-width:520px){ .week{grid-template-columns:1fr; gap:.1rem} }
+
+/* questões */
+.filters{display:flex; flex-wrap:wrap; gap:var(--s2); margin:var(--s4) 0}
+.chip{font:inherit; font-size:.85rem; border:1px solid var(--line); background:var(--surface); color:var(--ink); border-radius:999px; padding:.3rem .7rem; cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.score{display:flex; flex-wrap:wrap; gap:var(--s4); font-family:var(--f-mono); font-size:.85rem; margin:var(--s3) 0; font-variant-numeric:tabular-nums}
+.score b{font-size:1rem}
+.q{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:var(--s4); margin:var(--s3) 0}
+.q .meta{display:flex; flex-wrap:wrap; gap:var(--s2); align-items:center; margin-bottom:var(--s2)}
+.q .n{font-family:var(--f-mono); font-weight:600; font-size:.8rem}
+.q .stem{margin:0}
+.q .ctx{color:var(--muted); font-size:.9rem; margin:0 0 var(--s2)}
+.btns{display:flex; flex-wrap:wrap; gap:var(--s2); margin-top:var(--s3)}
+.btn{font:inherit; font-weight:600; font-size:.9rem; border:1px solid var(--line); background:var(--bg); color:var(--ink); padding:.4rem 1rem; border-radius:var(--r); cursor:pointer; min-width:3.2rem}
+.btn:hover{border-color:var(--accent)}
+.btn.sel{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.btn.primary{background:var(--accent); color:var(--accent-ink); border-color:var(--accent)}
+.btn.ghost{background:transparent; font-weight:500}
+.ans{margin-top:var(--s3); padding:var(--s3); border-radius:var(--r); font-size:.93rem}
+.ans.ok{background:var(--ok-soft)} .ans.bad{background:var(--bad-soft)} .ans.neutral{background:var(--accent-soft)}
+.ans .v{font-family:var(--f-mono); font-weight:600}
+.ans.ok .v{color:var(--ok)} .ans.bad .v{color:var(--bad)}
+.ans .why{margin:.3rem 0 0}
+.result{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:var(--s4); margin:var(--s4) 0}
+.result .big{font-family:var(--f-display); font-size:2rem; font-weight:700; font-variant-numeric:tabular-nums}
+.bar{height:8px; background:var(--line); border-radius:999px; overflow:hidden; margin-top:var(--s2)}
+.bar i{display:block; height:100%; background:var(--accent)}
+.simtabs{display:flex; gap:var(--s2); flex-wrap:wrap; margin:var(--s4) 0}
+.gab-print{display:none}
+.calib td:first-child{font-family:var(--f-mono); white-space:nowrap}
+footer{margin-top:var(--s7); padding-top:var(--s4); border-top:1px solid var(--line); font-size:.85rem; color:var(--muted)}
+@media (prefers-reduced-motion: no-preference){ .ans{animation:fade .18s ease-out} @keyframes fade{from{opacity:.4}to{opacity:1}} }
+
+/* modo impressão (gera o PDF) */
+html.print-all nav.tabs, html.print-all .btns, html.print-all .filters, html.print-all .score, html.print-all .simtabs, html.print-all .result, html.print-all .noprint{display:none!important}
+html.print-all section.view{display:block!important; break-before:page}
+html.print-all section.view[data-sub]{display:block!important}
+html.print-all .gab-print{display:block}
+html.print-all .q{break-inside:avoid}
+html.print-all body{font-size:13px}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Câmara dos Deputados · Analista Legislativo · Engenharia Civil · Cebraspe</div>
+      <h1>Regimentos CD e CN para a prova de 17/01/2027</h1>
+      <p class="muted" style="margin-bottom:0">Itens 6, 7 e 8 de “Noções de Direito Constitucional e de Regimento Interno” (P1), costurados com os arts. 44 a 58 da CF. Texto do RICD atualizado até a RCD nº 16/2025; CF até a EC nº 137.</p>
+    </div>
+    <div class="count"><b id="dias">—</b><span class="eyebrow">dias para a prova</span></div>
+  </div>
+</header>
+</div>
+
+<nav class="tabs" aria-label="Seções">
+  <div class="tabs-in">
+    <a href="#inicio">Diagnóstico</a>
+    <a href="#plano">Plano</a>
+    <a href="#teoria">Teoria</a>
+    <a href="#numeros">Números</a>
+    <a href="#banco">Banco</a>
+    <a href="#simulados">Simulados</a>
+    <a href="#prevista">Prova prevista</a>
+    <a href="#calibracao">Calibração</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ===================== DIAGNÓSTICO ===================== -->
+<section class="view" id="v-inicio" data-view="inicio">
+  <h2 style="margin-top:var(--s4)">O que o examinador vai fazer com você</h2>
+  <p class="lead">A P1 tem 90 itens Certo/Errado e um erro anula um acerto (edital, 8.11.2). Neste bloco devem cair cerca de 10 itens. A meta é fazer pelo menos 8 líquidos e deixar em branco o que você não souber.</p>
+
+  <h3>Como estimei os 10 itens</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Fatia do edital</th><th>Itens esperados</th><th>Base da estimativa</th></tr></thead>
+    <tbody>
+      <tr><td>5. CF: Congresso e suas Casas (competências, reuniões, comissões)</td><td class="num">2 a 3</td><td>Policial Legislativo 2026: itens 58 a 60 eram CF do Legislativo, num bloco de Conhecimentos Gerais.</td></tr>
+      <tr><td>6. Regime jurídico dos parlamentares (CF 53 a 56)</td><td class="num">1 a 2</td><td>Item que o examinador costuma ligar ao RICD 226 a 251 (mesmo assunto em duas normas).</td></tr>
+      <tr><td>7.1 RICD: preliminares e órgãos (1 a 24)</td><td class="num">2 a 3</td><td>2025: os 11 itens de RICD do seu escopo saíram todos daqui (arts. 12, 15, 17 e 24).</td></tr>
+      <tr><td>7.2 RICD: sessões (65 a 94)</td><td class="num">1 a 2</td><td>2026: item 61 (tipos de sessão) é literal do art. 65.</td></tr>
+      <tr><td>7.3 RICD: deputados (226 a 251)</td><td class="num">1</td><td>Licenças, suplência, renúncia e perda são o “eco” regimental da CF.</td></tr>
+      <tr><td>7.4 RICD: administração (262 a 273)</td><td class="num">0 a 1</td><td>Segurança, polícia e despesas da Casa (arts. 265 a 273). Em 2026, a banca já cobrou a Corregedoria na segurança (item 62, pelo art. 21-F). Para Engenharia, o cenário de obra ou licitação é natural.</td></tr>
+      <tr><td>8. Regimento Comum (arts. 1º a 3º e 53 a 103)</td><td class="num">0 a 1</td><td>Texto curto e literal: sessões conjuntas, sessões solenes, promulgação de EC e projeto orçamentário. Nenhuma das provas enviadas cobrou estes artigos.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="alert"><b>O que o edital cobra, e só isso</b>CF: item 5 (Congresso e suas Casas: composição, atribuições, competências, reuniões e comissões, arts. 44 a 52, 57 e 58) e item 6 (regime dos parlamentares, arts. 53 a 56). RICD: arts. 1º a 24 (com os 13-A a 21-U), 65 a 94, 226 a 251 e 262 a 273. Regimento Comum: arts. 1º a 3º e 53 a 103. Ficam fora o processo legislativo (CF 59 a 69), as comissões do RICD além dos arts. 22 a 24, a tramitação (RICD 95 a 225), a participação popular (RICD 252 a 261), o Código de Ética e o resto do Regimento Comum (comissões mistas, CPMI, votação em sessão conjunta). Todo o material, inclusive as questões, foi recortado a essas faixas.</div>
+
+  <h3>As oito armadilhas que a banca usou em 2025 e 2026</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Armadilha</th><th>Exemplo real</th><th>Como se defender</th></tr></thead>
+    <tbody>
+      <tr><td><b>Troca do titular da competência</b></td><td>2025-95: “atribuição exclusiva da Mesa convidar deputado a se retirar” (é do Presidente). 2025-96: “Presidente promulga EC” (é a Mesa, com a Mesa do Senado).</td><td>Para cada competência, saiba quem: Mesa, Presidente, 1º Secretário, Colégio de Líderes, Corregedoria, Diretor-Geral.</td></tr>
+      <tr><td><b>Meia verdade</b></td><td>2025-93: líderes em bloco “perdem atribuições, mas não prerrogativas” (perdem as duas).</td><td>Desconfie de “mas não”, “apenas”, “somente”.</td></tr>
+      <tr><td><b>Consequência inventada</b></td><td>2025-92: bloco abaixo do mínimo “permanece até o fim da legislatura” (extingue-se).</td><td>Grave o efeito exato de cada evento.</td></tr>
+      <tr><td><b>Requisito inventado</b></td><td>2025-91: bloco que quiser continuar na legislatura seguinte “deve apresentar novo documento de criação” (o Regimento não diz isso; item anulado).</td><td>Pergunte se aquele requisito faz sentido com a natureza do instituto.</td></tr>
+      <tr><td><b>Negar atribuição que existe</b></td><td>2025-101: comissão “não dispõe” de propor sustação de ato normativo (dispõe: RICD 24, XII).</td><td>Itens negativos sobre listas: confira a lista.</td></tr>
+      <tr><td><b>Literalidade pura (gabarito Certo)</b></td><td>2025-97, 98, 99 e 100; 2026-61 e 62.</td><td>A banca também cobra o texto como ele está. Não procure pegadinha onde não há.</td></tr>
+      <tr><td><b>“Exclusiva” x “com sanção” x “privativa”</b></td><td>2026-58: “CN, com sanção, muda temporariamente sua sede” (é exclusiva, art. 49, VI).</td><td>Art. 48 tem sanção; arts. 49, 51 e 52, não.</td></tr>
+      <tr><td><b>Jurisprudência do STF</b></td><td>2025-106 (CPI não convoca governador) e 2025-110 (presidente de CPI não recorre de HC).</td><td>Para CPI e imunidades, saiba os 6 ou 7 julgados-chave da aba Teoria.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note"><b>Duas anulações que ensinam.</b> Em 2025, a banca anulou o 91 (blocos) e o 94 (competência da Mesa sobre as vagas nas comissões, hoje no art. 15, X). O 91 misturava texto literal com uma dedução que o Regimento não faz. O 94 era quase literal. As justificativas oficiais saem no site do Cebraspe e valem a leitura. Conclusão prática: a banca trabalha com o texto vigente e anula quando a redação do item se afasta dele. O RICD muda quase todo ano. Estude pelo texto atualizado (RCD nº 16/2025 criou a Secretaria de Defesa das Prerrogativas Parlamentares). Novidades costumam virar item.</div>
+
+  <h3>Mapa de probabilidade</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Tema</th><th>Chance</th><th>O que precisa estar na ponta da língua</th></tr></thead>
+    <tbody>
+      <tr><td>Imunidades (material, prisão, sustação, foro)</td><td><span class="pill p-mx">muito alta</span></td><td>diploma x posse; 24 h; maioria absoluta; partido político; 45 dias; crime após a diplomação</td></tr>
+      <tr><td>Perda do mandato: quem decide e quem declara</td><td><span class="pill p-mx">muito alta</span></td><td>I, II e VI: Casa, maioria absoluta. III, IV e V: Mesa declara. Renúncia com efeitos suspensos.</td></tr>
+      <tr><td>Mesa x Presidente x Colégio de Líderes (RICD 14 a 20)</td><td><span class="pill p-mx">muito alta</span></td><td>censura escrita (Mesa) x verbal (Presidente); licenças; agenda mensal; voto do Presidente</td></tr>
+      <tr><td>Líderes, blocos, Maioria e Minoria (RICD 9 a 13)</td><td><span class="pill p-mx">muito alta</span></td><td>3/100 = 16; extingue-se; perdem atribuições e prerrogativas; cláusula de desempenho; 20 vice-líderes do Governo</td></tr>
+      <tr><td>Incompatibilidades (CF 54)</td><td><span class="pill p-al">alta</span></td><td>diploma: contratar, aceitar cargo. Posse: ser dono, ocupar cargo ad nutum, patrocinar causa, dois mandatos.</td></tr>
+      <tr><td>Competências CN x CD x SF (CF 48 a 52)</td><td><span class="pill p-al">alta</span></td><td>art. 51 inteiro; art. 49 com os incisos III, V, VI, X e XVIII</td></tr>
+      <tr><td>Comissões e CPI (CF 58; RICD 22 a 24)</td><td><span class="pill p-al">alta</span></td><td>1/10 para recurso; exceções ao poder conclusivo; CPI 1/3; reserva de jurisdição</td></tr>
+      <tr><td>Sessões: tipos, abertura, suspensão, secreta (RICD 65 a 94)</td><td><span class="pill p-al">alta</span></td><td>terça a quinta; 1/10 desprezada a fração; uma suspensão de 1 h; secreta 1/3 automática e 1/5 com deliberação</td></tr>
+      <tr><td>Órgãos novos (Corregedoria, Ouvidoria, Secretarias, Bancada Negra)</td><td><span class="pill p-al">alta</span></td><td>quem designa; composição; Corregedoria cuida da segurança interna e externa</td></tr>
+      <tr><td>Deputados: licenças e suplência (RICD 228 a 243)</td><td><span class="pill p-md">média</span></td><td>Mesa concede só a licença de missão; 120 dias; 48 h para convocar suplente; 15 dias para reassumir</td></tr>
+      <tr><td>Administração e polícia (RICD 262 a 273)</td><td><span class="pill p-md">média</span></td><td>Diretor-Geral ordena despesa; contas ao TCU até 30/6; policiamento privativo da Mesa; porte de arma</td></tr>
+      <tr><td>Regimento Comum</td><td><span class="pill p-md">média</span></td><td>sessões solenes (quem compõe a Mesa, qualquer número, sem oradores na inauguração e na posse); 5 + 5 e 3 + 3; art. 85; 48 h do art. 89; Câmara vota primeiro na Comissão Mista (90, §4º)</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Regra de chute com nota líquida</h3>
+  <p>Cada erro tira um ponto. Marque quando conseguir apontar o dispositivo ou eliminar a pegadinha. Deixe em branco quando estiver entre duas leituras e não lembrar o texto. Em itens de literalidade do RICD, a intuição costuma errar: se não lembra o número (48 h? 72 h?), não marque.</p>
+</section>
+
+<!-- ===================== PLANO ===================== -->
+<section class="view" id="v-plano" data-view="plano" hidden>
+  <h2 style="margin-top:var(--s4)">Plano de 11 semanas (02/11/2026 a 16/01/2027)</h2>
+  <p>Cerca de 2 horas por semana, porque há outras matérias. Cada semana tem: leitura da teoria desta página, leitura da lei seca dos artigos marcados com alerta e as questões do assunto no Banco. Revise o que errou 1, 7 e 30 dias depois.</p>
+  <div class="note">
+    <div class="week"><div class="d">02/11 a 08/11</div><div><b>CF 44 a 58 e regime dos parlamentares (53 a 56).</b> Teoria A e B. Banco: “CF Legislativo” e “Parlamentares”.</div></div>
+    <div class="week"><div class="d">09/11 a 15/11</div><div><b>RICD 1 a 13-B:</b> sede, sessões legislativas, posse, eleição da Mesa, líderes, blocos, Maioria e Minoria, Bancada Negra.</div></div>
+    <div class="week"><div class="d">16/11 a 22/11</div><div><b>RICD 14 a 21-U:</b> Mesa, Presidente, Secretários, Colégio de Líderes e todos os órgãos. Monte sua tabela “quem faz o quê”.</div></div>
+    <div class="week"><div class="d">23/11 a 29/11</div><div><b>RICD 22 a 24 e 65 a 94:</b> comissões (só os três artigos do edital) e sessões.</div></div>
+    <div class="week"><div class="d">30/11 a 06/12</div><div><b>RICD 226 a 251 e 262 a 273:</b> deputados, administração e polícia. Faça a ponte com a CF de novo.</div></div>
+    <div class="week"><div class="d">07/12 a 13/12</div><div><b>Regimento Comum</b>: arts. 1º a 3º, 53 a 71, 85 e 89 a 103 (cerca de 40 minutos de leitura) e as questões do item 8. Depois, <b>Simulado A</b>.</div></div>
+    <div class="week"><div class="d">14/12 a 20/12</div><div>Refaça os erros do Simulado A. Estude a aba <b>Números</b>. Depois, <b>Simulado B</b>.</div></div>
+    <div class="week"><div class="d">21/12 a 27/12</div><div>Semana leve: 3 sessões de 15 minutos com a tabela de números e os alertas.</div></div>
+    <div class="week"><div class="d">28/12 a 03/01</div><div><b>Prova prevista</b> (12 itens) com relógio de 15 minutos. Releia a lei seca dos artigos onde errou.</div></div>
+    <div class="week"><div class="d">04/01 a 10/01</div><div>Banco inteiro no modo “só os que errei” (filtro). Confira no site da Câmara se o RICD teve alteração depois da RCD 16/2025.</div></div>
+    <div class="week"><div class="d">11/01 a 16/01</div><div>D-7 a D-1: 15 minutos por dia com Números e a aba Calibração. Nada de conteúdo novo.</div></div>
+  </div>
+  <p><b>Meta de desempenho:</b> 75% líquido nos simulados até 20/12; 85% na prova prevista até 03/01.</p>
+</section>
+
+<!-- ===================== TEORIA ===================== -->
+<section class="view" id="v-teoria" data-view="teoria" hidden>
+  <h2 style="margin-top:var(--s4)">Teoria, item a item do edital</h2>
+  <div class="toc">
+    <a href="#t-cf">5. Congresso e suas Casas</a>
+    <a href="#t-parl">6. Parlamentares</a>
+    <a href="#t-org">7.1 RICD 1º a 24</a>
+    <a href="#t-ses">7.2 RICD 65 a 94</a>
+    <a href="#t-dep">7.3 RICD 226 a 251</a>
+    <a href="#t-adm">7.4 RICD 262 a 273</a>
+    <a href="#t-cn1">8.1 RCCN 1º a 3º</a>
+    <a href="#t-cn2">8.2 RCCN 53 a 71</a>
+    <a href="#t-cn3">8.3 RCCN 72 a 103</a>
+  </div>
+
+  <!-- CF CONGRESSO -->
+  <h2 id="t-cf">5. O Congresso Nacional e suas Casas (CF 44 a 52, 57 e 58)</h2>
+  <h3>Estrutura</h3>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Câmara dos Deputados</th><th>Senado Federal</th></tr></thead>
+    <tbody>
+      <tr><td>Representa</td><td>o povo <span class="ref">CF 45</span></td><td>os estados e o DF <span class="ref">CF 46</span></td></tr>
+      <tr><td>Sistema</td><td>proporcional</td><td>majoritário</td></tr>
+      <tr><td>Tamanho</td><td>LC fixa; mínimo 8 e máximo 70 por UF; território elege 4</td><td>3 por UF, com 2 suplentes cada</td></tr>
+      <tr><td>Mandato</td><td>4 anos (uma legislatura)</td><td>8 anos; renovação de 4 em 4 anos, por 1/3 e 2/3</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li><b>Legislatura</b> = 4 anos <span class="ref">CF 44, p.u.</span>. Vale para as duas Casas. Senador cumpre duas legislaturas.</li>
+    <li><b>Sessão legislativa ordinária</b>: 2/2 a 17/7 e 1/8 a 22/12 <span class="ref">CF 57</span> <span class="ref">RICD 2</span>. Não se interrompe sem a aprovação da LDO.</li>
+    <li><b>Quórum geral</b>: maioria dos votos, presente a maioria absoluta, nas Casas e nas comissões <span class="ref">CF 47</span>.</li>
+  </ul>
+
+  <h3>Quem decide o quê</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Dispositivo</th><th>Natureza</th><th>Itens que mais caem</th></tr></thead>
+    <tbody>
+      <tr><td><span class="ref">CF 48</span></td><td>CN <b>com sanção</b> do PR (lei)</td><td>tributos, orçamento, efetivos das Forças Armadas, criação de cargos e ministérios</td></tr>
+      <tr><td><span class="ref">CF 49</span></td><td>CN, <b>exclusiva</b>, sem sanção (decreto legislativo)</td><td>III: ausência do PR e do VPR por mais de 15 dias. V: sustar ato normativo exorbitante. VI: mudar temporariamente a sede. IX: julgar as contas do PR. X: fiscalizar o Executivo, incluída a indireta. XIV: atividades nucleares. XVI: lavra em terra indígena. XVIII: calamidade pública nacional (EC 109).</td></tr>
+      <tr><td><span class="ref">CF 51</span></td><td>CD, <b>privativa</b> (resolução)</td><td>I: autorizar, por 2/3, processo contra PR, VPR e Ministros. II: tomada de contas do PR se não apresentadas em 60 dias da abertura da sessão. III: regimento interno. IV: organização, polícia e cargos; remuneração só por <b>lei</b>, de iniciativa da Câmara. V: eleger membros do Conselho da República.</td></tr>
+      <tr><td><span class="ref">CF 52</span></td><td>SF, privativa</td><td>processar e julgar PR, VPR e Ministros nos crimes de responsabilidade; aprovar chefes de missão diplomática permanente</td></tr>
+    </tbody>
+  </table></div>
+  <div class="alert"><b>Alerta</b>Autorizar o processo é da Câmara (2/3). Processar e julgar é do Senado. Itens que juntam as duas coisas na Câmara são errados.</div>
+  <div class="link"><b>CF ↔ RICD</b>A CF 51, IV, diz que a remuneração depende de <b>lei</b> de iniciativa da Câmara. O RICD 15, XVII, ainda fala em “projeto de resolução” que trate de cargos e “fixação da respectiva remuneração”, com a redação anterior à EC 19/1998. Num item “de acordo com a CF”, vale a lei.</div>
+
+  <h3>Convocação e pedidos de informação <span class="ref">CF 50</span></h3>
+  <ul>
+    <li>A Câmara, o Senado ou qualquer comissão podem convocar Ministro, titulares de órgãos subordinados à Presidência e, desde a EC 132/2023, o <b>Presidente do Comitê Gestor do IBS</b>. Ausência sem justificativa adequada é crime de responsabilidade.</li>
+    <li>As <b>Mesas</b> encaminham pedidos escritos de informação. Recusa, não atendimento em 30 dias ou informação falsa: crime de responsabilidade. No RICD, a Mesa aprecia e encaminha <span class="ref">RICD 15, XIII</span>; comissões e deputados pedem “através da Mesa” <span class="ref">RICD 24, V</span> <span class="ref">RICD 226, II</span>.</li>
+  </ul>
+
+  <h3>Reuniões <span class="ref">CF 57</span></h3>
+  <ul>
+    <li><b>Sessão conjunta</b> (§3º): inaugurar a sessão legislativa; elaborar o regimento comum e regular serviços comuns; receber o compromisso do PR e do VPR; conhecer do veto e deliberar sobre ele.</li>
+    <li><b>Sessões preparatórias</b> (§4º): a CF fala no 1º ano da legislatura, mandato de 2 anos e vedada a recondução para o mesmo cargo na eleição imediatamente seguinte. O RICD prevê preparatórias na 1ª e na 3ª sessões legislativas <span class="ref">RICD 2, §2º</span>.</li>
+    <li><b>Mesa do CN</b> (§5º): presidida pelo Presidente do Senado; os demais cargos alternam entre ocupantes de cargos equivalentes nas duas Casas.</li>
+    <li><b>Convocação extraordinária</b> (§6º): pelo Presidente do Senado em estado de defesa, intervenção federal, pedido de estado de sítio e posse do PR e do VPR. Pelo PR, pelos Presidentes da Câmara e do Senado ou pela maioria dos membros de ambas as Casas em urgência ou interesse público relevante, sempre com aprovação da maioria absoluta de cada Casa. Só se delibera sobre a matéria da convocação (§7º), e as MPs em vigor entram na pauta automaticamente (§8º). Sem parcela indenizatória.</li>
+  </ul>
+
+  <h3>Comissões <span class="ref">CF 58</span> ↔ <span class="ref">RICD 22 a 24</span></h3>
+  <ul>
+    <li>Proporcionalidade “tanto quanto possível” de partidos e blocos na Mesa e nas comissões (§1º). O RICD acrescenta: sempre um membro da Minoria <span class="ref">RICD 23</span> <span class="ref">RICD 8, §3º</span>.</li>
+    <li><b>Poder conclusivo</b> (§2º, I): a comissão vota o projeto dispensado o Plenário, salvo recurso de <b>1/10</b> dos membros da Casa (52 deputados) <span class="ref">RICD 24, II</span>.</li>
+    <li>Comissões apreciam <b>programas de obras</b> e planos de desenvolvimento (§2º, VI; RICD 24, VIII). Para quem é de Engenharia, este é o gancho mais provável.</li>
+    <li><b>Comissão representativa</b> durante o recesso (§4º): eleita na última sessão ordinária do período, com atribuições no regimento comum e proporcionalidade partidária.</li>
+  </ul>
+  <h3>CPI <span class="ref">CF 58, §3º</span>: o que o STF já disse</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Pode</th><th>Não pode</th></tr></thead>
+    <tbody><tr>
+      <td><ul>
+        <li>quebrar sigilo bancário, fiscal e de dados telefônicos, com fundamentação</li>
+        <li>convocar testemunhas e investigados (o investigado pode ficar em silêncio)</li>
+        <li>escolher linhas de investigação e destinatários</li>
+        <li>apurar fato já investigado pelo MP ou pela polícia</li>
+        <li>mandar as conclusões ao MP e a outros órgãos</li>
+      </ul></td>
+      <td><ul>
+        <li>interceptação telefônica (reserva de jurisdição)</li>
+        <li>busca e apreensão domiciliar</li>
+        <li>prender, salvo em flagrante</li>
+        <li>decretar indisponibilidade de bens</li>
+        <li>convocar governador (ADPF 848; item 2025-106)</li>
+        <li>promover ela mesma a responsabilidade dos infratores (isso é do MP)</li>
+      </ul></td>
+    </tr></tbody>
+  </table></div>
+  <ul>
+    <li>Criação: requerimento de <b>1/3</b> + fato determinado + prazo certo. É direito da minoria: não depende do Plenário. Vale por simetria nas Assembleias.</li>
+    <li>CPI conjunta (“em conjunto”): 1/3 da Câmara (171) e 1/3 do Senado (27) <span class="ref">CF 58, §3º</span>.</li>
+    <li>CPI municipal não quebra sigilo bancário (item do caderno com gabarito Errado). Presidente de CPI não tem legitimidade para recorrer de decisão que concede HC (2025-110, Certo).</li>
+  </ul>
+
+  <!-- PARLAMENTARES -->
+  <h2 id="t-parl">6. Regime jurídico-constitucional dos parlamentares (CF 53 a 56)</h2>
+  <p>A CF (arts. 53 a 56) e o RICD (arts. 231 e 240 a 251) dizem quase a mesma coisa. A banca troca palavras entre as duas normas.</p>
+  <h3>Imunidades e prerrogativas <span class="ref">CF 53</span> <span class="ref">RICD 231</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Garantia</th><th>Regra</th><th>Detalhe de prova</th></tr></thead>
+    <tbody>
+      <tr><td>Material</td><td>invioláveis, <b>civil e penalmente</b>, por opiniões, palavras e votos</td><td>No recinto, o nexo com o mandato se presume; fora, precisa existir. Não protege ameaça à ordem democrática nem discurso de ódio (STF, AP 1.044/2022). Suplente fora do exercício não tem.</td></tr>
+      <tr><td>Foro</td><td>STF desde a <b>expedição do diploma</b> (§1º)</td><td>AP 937 (2018): só crimes no cargo e em razão dele. STF, 2025 (HC 232.627 e Inq 4.787): o foro <b>subsiste após a saída do cargo</b> para esses crimes.</td></tr>
+      <tr><td>Prisão</td><td>desde o diploma, só em flagrante de crime <b>inafiançável</b>; autos à Casa em <b>24 h</b>; a Casa resolve pela <b>maioria de seus membros</b> (§2º)</td><td>Medidas cautelares que impeçam o exercício do mandato também vão à Casa em 24 h (ADI 5.526). RICD 250 e 251: a CCJC dá parecer prévio em 72 h e o preso fica sob sua custódia.</td></tr>
+      <tr><td>Sustação do processo</td><td>crime <b>após a diplomação</b>; STF dá ciência; <b>partido político</b> representado na Casa provoca; maioria dos membros; até a decisão final (§3º)</td><td>Prazo improrrogável de <b>45 dias</b> a partir do recebimento pela Mesa (§4º); suspende a prescrição enquanto durar o mandato (§5º).</td></tr>
+      <tr><td>Testemunho</td><td>não são obrigados a testemunhar sobre informações recebidas ou prestadas em razão do mandato (§6º)</td><td>Fora disso, podem ser testemunhas.</td></tr>
+      <tr><td>Forças Armadas</td><td>incorporação depende de <b>prévia licença</b> da Casa, mesmo em guerra (§7º)</td><td></td></tr>
+      <tr><td>Estado de sítio</td><td>imunidades subsistem; só suspensas por <b>2/3</b>, para atos <b>fora do recinto</b> incompatíveis com a medida (§8º)</td><td>RICD 233: em escrutínio secreto, depois de o CN autorizar o sítio; a CCJC elabora o projeto de resolução.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="alert"><b>Alerta</b>O RICD 251 ainda fala em “voto secreto” e em “licença para instauração do processo”. Isso é anterior à EC 35/2001, que acabou com a licença prévia e criou a sustação. Num item “segundo a CF”, não existe licença prévia nem voto secreto para resolver sobre a prisão. Num item “segundo o RICD”, a banca pode cobrar a literalidade do 251.</div>
+
+  <h3>Incompatibilidades <span class="ref">CF 54</span> <span class="ref">RICD 231, §8º</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Desde a expedição do diploma</th><th>Desde a posse</th></tr></thead>
+    <tbody><tr>
+      <td>a) firmar ou manter contrato com PJ de direito público, autarquia, empresa pública, SEM ou concessionária, salvo cláusulas uniformes<br>b) aceitar ou exercer cargo, função ou emprego remunerado nessas entidades, inclusive ad nutum</td>
+      <td>a) ser proprietário, controlador ou diretor de empresa favorecida por contrato com PJ de direito público, ou exercer função remunerada nela<br>b) ocupar cargo ou função ad nutum nessas entidades<br>c) patrocinar causa de interesse delas<br>d) ser titular de mais de um cargo ou mandato público eletivo</td>
+    </tr></tbody>
+  </table></div>
+  <p class="muted">Para memorizar: com o diploma, o eleito ainda não pode <b>contratar nem aceitar</b>. Com a posse, também não pode <b>ser dono, ocupar, patrocinar nem acumular mandato</b>. Item 2026 (Assistente): “desde o diploma, proibidos de ser titulares de mais de um cargo público” é errado, porque é desde a posse e se refere a cargo ou mandato <b>eletivo</b>.</p>
+
+  <h3>Perda do mandato <span class="ref">CF 55</span> <span class="ref">RICD 240</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Hipótese</th><th>Quem</th><th>Como</th></tr></thead>
+    <tbody>
+      <tr><td>I. Incompatibilidades do art. 54<br>II. Quebra de decoro<br>VI. Condenação criminal transitada em julgado</td><td><b>Plenário decide</b></td><td>maioria absoluta (257), votação <b>ostensiva</b> (EC 76/2013), por provocação da <b>Mesa ou de partido</b> representado no CN, com ampla defesa. No RICD, I e VI passam pela CCJC (defesa em 5 sessões, defensor dativo, parecer em 5 sessões); II passa pelo Conselho de Ética.</td></tr>
+      <tr><td>III. Faltar a 1/3 das sessões <b>ordinárias</b> da sessão legislativa<br>IV. Perder ou ter suspensos os direitos políticos<br>V. Decisão da Justiça Eleitoral</td><td><b>Mesa declara</b></td><td>de ofício ou por provocação de qualquer deputado ou de partido, com ampla defesa <span class="ref">RICD 15, XIV</span>. Em IV e V, a Câmara só examina os aspectos formais da decisão judicial <span class="ref">RICD 21-F, p.u.</span>.</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li>Decoro: além do regimento, é incompatível o abuso das prerrogativas ou a percepção de vantagens indevidas (§1º).</li>
+    <li>Renúncia de quem responde a processo que possa levar à perda: efeitos suspensos até a decisão final (§4º).</li>
+    <li>Condenação criminal: o STF já oscilou. A 1ª Turma (AP 694) entende que condenação em regime fechado por mais de 120 dias leva à perda declarada pela Mesa (pelas faltas). Em prova de básicas, a banca tende a cobrar o texto: a Casa decide.</li>
+  </ul>
+
+  <h3>Quando não perde <span class="ref">CF 56</span> ↔ suplência <span class="ref">RICD 241 a 243</span></h3>
+  <ul>
+    <li>Investido como Ministro, Governador de Território, Secretário de Estado, do DF, de Território ou de <b>Prefeitura de capital</b>, ou chefe de missão diplomática <b>temporária</b>. Pode optar pela remuneração do mandato (§3º). As imunidades subsistem nesses cargos <span class="ref">RICD 231, §7º</span>.</li>
+    <li>Licenciado por doença, ou para interesse particular sem remuneração até 120 dias por sessão legislativa.</li>
+    <li>Suplente é convocado em vaga, investidura nesses cargos ou licença superior a 120 dias. O RICD restringe: a Mesa convoca em <b>48 h</b>, e na licença de saúde o prazo <b>original</b> tem de passar de 120 dias, sem somar períodos <span class="ref">RICD 241, III</span>.</li>
+    <li>Vaga sem suplente: eleição se faltarem <b>mais de 15 meses</b> para o fim do mandato. O Presidente comunica a Justiça Eleitoral <span class="ref">RICD 242</span>.</li>
+    <li>Suplente em substituição não pode ser eleito para a Mesa, presidir ou vice-presidir comissão, nem integrar Procuradoria, Ouvidoria, Corregedoria, Procuradoria da Mulher ou Coordenadoria <span class="ref">RICD 243</span>.</li>
+  </ul>
+
+  <!-- RICD 1–24 -->
+  <h2 id="t-org">7.1 RICD, arts. 1º a 24: disposições preliminares e órgãos</h2>
+  <h3>Sede, sessões legislativas e posse <span class="ref">RICD 1 a 4</span></h3>
+  <ul>
+    <li>Sede no Palácio do Congresso. Por motivo relevante ou força maior, a <b>Mesa</b> delibera, <b>ad referendum da maioria absoluta</b> dos deputados, reunir a Câmara em outro edifício ou ponto do território <span class="ref">1, p.u.</span>. Não confunda com a CF 49, VI (o CN muda a sede, sem sanção).</li>
+    <li>A sessão legislativa não é interrompida em 17 de julho enquanto o CN não aprovar a LDO. Na convocação extraordinária, a Câmara só delibera sobre a matéria da convocação <span class="ref">2, §§3º e 4º</span>.</li>
+    <li>O diploma é entregue à Mesa até <b>31 de janeiro</b>, pessoalmente ou pelo partido. O nome parlamentar tem dois elementos <span class="ref">3</span>.</li>
+    <li>Posse em 1º de fevereiro do 1º ano. Dirige o último Presidente, se reeleito; senão, o mais idoso entre os de maior número de legislaturas. Compromisso: “Prometo manter, defender e cumprir a Constituição…”. Não se muda o ritual, não se faz declaração e <b>não há posse por procurador</b> <span class="ref">4, §4º</span>.</li>
+    <li>Prazo da posse: <b>30 dias, prorrogáveis por igual período</b> <span class="ref">4, §6º</span>. Em casos excepcionais, o compromisso pode ser por videoconferência (§6º-A), assegurado na licença-gestante com parto há menos de 120 dias (§6º-B). Quem não presta o compromisso nos estritos termos não se considera investido (§8º), e quem não o presta no prazo é tido como renunciante <span class="ref">239, §1º, I</span>.</li>
+  </ul>
+  <h3>Eleição da Mesa <span class="ref">RICD 5 a 8</span></h3>
+  <ul>
+    <li>1º ano: 2ª sessão preparatória, 1º de fevereiro. 3º ano: data e hora designadas pelo Presidente, antes da inauguração da sessão legislativa. Mandato de 2 anos, <b>vedada a recondução para o mesmo cargo na eleição imediatamente subsequente</b>. Eleição em legislaturas diferentes, mesmo sucessivas, não é recondução <span class="ref">5, §1º</span>.</li>
+    <li>Escrutínio secreto, sistema eletrônico, presente a maioria absoluta. 1º escrutínio: maioria absoluta. 2º escrutínio: maioria simples, entre os <b>2</b> mais votados. Empate: o mais idoso entre os de maior número de legislaturas <span class="ref">7</span>.</li>
+    <li>Vaga até 30 de novembro do 2º ano: eleição em 5 sessões. Depois: a Mesa designa um titular para responder pelo cargo <span class="ref">8, §2º</span>.</li>
+    <li>Vagas por partido conforme o resultado da eleição proclamado pela Justiça Eleitoral; trocas posteriores de partido não contam. Mudou de legenda, perde <b>automaticamente</b> o cargo na Mesa <span class="ref">8, §§4º e 5º</span>.</li>
+  </ul>
+  <h3>Líderes, blocos, Maioria e Minoria <span class="ref">RICD 9 a 13-B</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Tema</th><th>Regra</th></tr></thead>
+    <tbody>
+      <tr><td>Quem tem Líder</td><td>partido que cumpre a <b>cláusula de desempenho</b> da CF 17, §3º (3% dos votos válidos em 1/3 das UFs, com 2% em cada, ou 15 deputados em 1/3 das UFs) <span class="ref">9</span></td></tr>
+      <tr><td>Partido sem Liderança</td><td>indica um integrante para expressar a posição na votação ou falar uma vez por semana, 5 minutos, nas Comunicações de Lideranças <span class="ref">9, §4º</span></td></tr>
+      <tr><td>Vice-líderes</td><td>1 para cada 4 deputados ou fração; cálculo pelo resultado proclamado pelo TSE <span class="ref">9, §§1º e 6º</span></td></tr>
+      <tr><td>Escolha do Líder</td><td>documento assinado pela maioria absoluta da bancada; o Líder fica até nova indicação <span class="ref">9, §§2º e 3º</span></td></tr>
+      <tr><td>Incompatibilidade</td><td>Líder e Vice-líder não integram a Mesa <span class="ref">9, §5º</span>; membro efetivo da Mesa não integra Liderança nem comissão permanente, especial ou CPI <span class="ref">14, §5º</span></td></tr>
+      <tr><td>Prerrogativas do Líder</td><td>I. falar nas Comunicações de Lideranças. II. inscrever oradores nas Comunicações Parlamentares. III. participar de qualquer comissão, <b>sem voto</b>, podendo encaminhar e pedir verificação. IV. orientar a bancada por até <b>1 minuto</b>. V. registrar candidatos à Mesa. VI. indicar e substituir membros das comissões <span class="ref">10</span></td></tr>
+      <tr><td>Liderança do Governo</td><td>indicada pelo PR: Líder + <b>20</b> vice-líderes; prerrogativas I, III e IV <span class="ref">11</span></td></tr>
+      <tr><td>Liderança da Minoria</td><td>Líder + <b>9</b> vice-líderes; prerrogativas I, III e IV <span class="ref">11-A</span></td></tr>
+      <tr><td>Bloco parlamentar</td><td>2 ou mais partidos, liderança comum, tratamento de partido. Mínimo de <b>3/100</b> (16 deputados). As lideranças dos partidos coligados <b>perdem atribuições e prerrogativas</b>. Se uma saída deixa o bloco abaixo do mínimo, <b>extingue-se</b>. Existe só na legislatura; criação registrada na Mesa. Quem sai ou integrava bloco dissolvido não forma nem integra outro <b>na mesma sessão legislativa</b>. Ninguém fica em dois blocos ao mesmo tempo <span class="ref">12</span></td></tr>
+      <tr><td>Prazo do bloco</td><td>para contar na Mesa e nas comissões, comunicar até 1º de fevereiro do 1º ano (comissões e 1º biênio) e do 3º ano (2º biênio) <span class="ref">12, §10</span></td></tr>
+      <tr><td>Maioria e Minoria</td><td>Maioria: partido ou bloco com a maioria absoluta. Minoria: a representação imediatamente inferior com posição diversa da Maioria em relação ao Governo. Sem maioria absoluta, a maior bancada assume as funções da Maioria <span class="ref">13</span></td></tr>
+      <tr><td>Bancada Negra</td><td>Coordenação-Geral + 3 vice-coordenadorias; eleição em <b>20 de novembro</b> de cada sessão legislativa, escrutínio secreto (aclamação se houver chapa única); autodeclaração do registro de candidatura. Participa das reuniões de líderes com voz e voto; 5 minutos semanais nas Comunicações de Liderança <span class="ref">13-A</span> <span class="ref">13-B</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Mesa <span class="ref">RICD 14 e 15</span></h3>
+  <ul>
+    <li>Comissão Diretora: dirige os trabalhos legislativos e os serviços administrativos. Presidência (Presidente e 2 Vice-Presidentes) + Secretaria (4 Secretários) + 4 Suplentes.</li>
+    <li>Reúne-se <b>a cada quinzena</b>; extraordinariamente, por convocação do Presidente ou de <b>4 membros efetivos</b>. Perde o lugar quem falta a <b>5 reuniões ordinárias consecutivas</b> sem justificativa. Em até 30 sessões, ato fixa a competência de cada membro <span class="ref">14</span>.</li>
+  </ul>
+  <div class="tbl"><table>
+    <thead><tr><th>Grupo</th><th>Competências da Mesa <span class="ref">15</span></th></tr></thead>
+    <tbody>
+      <tr><td>Institucional</td><td>dirigir os serviços (ressalvada a Comissão Representativa); compor a Mesa do CN, excluído seu Presidente; <b>promulgar EC com a Mesa do Senado</b>; propor ação de inconstitucionalidade; parecer sobre o Regimento; defender judicialmente deputado ameaçado no exercício do mandato</td></tr>
+      <tr><td>Legislativo</td><td>fixar, no início da 1ª e da 3ª sessões, ouvido o Colégio de Líderes, o número de deputados por partido ou bloco em cada comissão permanente; projeto do Regulamento Interno das Comissões; apreciar e encaminhar pedidos de informação a Ministros</td></tr>
+      <tr><td>Disciplinar</td><td><b>declarar a perda do mandato</b> (CF 55, III a V); <b>censura escrita</b>; propor a <b>suspensão cautelar</b> do mandato (até 6 meses) em representação de sua autoria</td></tr>
+      <tr><td>Pessoal</td><td>propor, privativamente, resolução sobre organização, polícia e cargos; prover cargos, conceder licença, aposentadoria, disponibilidade; requisitar servidores; decidir em grau de recurso sobre pessoal</td></tr>
+      <tr><td>Orçamento e contratos</td><td>aprovar a proposta orçamentária e o orçamento analítico; pedir créditos adicionais; fixar limites para autorizar despesa; autorizar convênios e contratos de serviços; <b>autorizar licitações, homologar resultados e aprovar o calendário de compras</b>; fiscalizar entidades subvencionadas; mandar a prestação de contas ao TCU; requisitar reforço policial; apresentar resenha anual</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li><b>Suspensão cautelar</b>: prazo decadencial de 5 dias úteis para a Mesa propor; o Conselho de Ética decide em 3 dias úteis, em votação ostensiva; recurso ao Plenário, que decide por maioria absoluta <span class="ref">15, §§2º a 6º</span>.</li>
+    <li>Em matéria inadiável, o Presidente decide <b>ad referendum</b> da Mesa, <b>exceto</b> a suspensão cautelar <span class="ref">15, §1º</span>.</li>
+  </ul>
+
+  <h3>Presidente, Vice-Presidentes e Secretários <span class="ref">RICD 16 a 19-A</span></h3>
+  <ul>
+    <li>Representa a Câmara; cargo <b>privativo de brasileiro nato</b> <span class="ref">16</span>.</li>
+    <li>Nas sessões, o Presidente preside, mantém a ordem, convida o deputado que perturba a ordem a sair, suspende e levanta a sessão, decide questões de ordem, nomeia comissão especial (ouvido o Colégio de Líderes), organiza a <b>agenda mensal</b> (ouvido o Colégio de Líderes), designa a <b>Ordem do Dia</b> conforme a agenda e aplica <b>censura verbal</b> <span class="ref">17, I</span>.</li>
+    <li>Vota só em escrutínio secreto ou para desempatar votação ostensiva; sua presença conta para o quórum. Só oferece proposição como membro da Mesa. Para discutir, deixa a cadeira e só volta ao fim da discussão daquela matéria <span class="ref">17, §§1º e 2º</span>.</li>
+    <li>Também cabe ao Presidente: dar posse; conceder licença (exceto a de missão diplomática ou cultural, que é da Mesa); declarar a vacância por falecimento ou renúncia; dirigir “com suprema autoridade” a polícia da Câmara; substituir o PR (CF 80); integrar o Conselho da República e o de Defesa Nacional; convocar extraordinariamente o CN com o Presidente do Senado; promulgar as resoluções da Câmara; mandar as conclusões de CPI aos órgãos do art. 37 <span class="ref">17, VI</span>.</li>
+    <li>Ausente da Capital por mais de <b>48 horas</b>, passa a presidência ao 1º Vice. No início da sessão, substituem-no os Vice-Presidentes, os Secretários, os Suplentes e, por fim, o deputado mais idoso entre os de maior número de legislaturas <span class="ref">18</span>.</li>
+    <li>1º Secretário: superintende os serviços administrativos; recebe a correspondência oficial (exceto a das comissões); decide em 1ª instância recursos contra atos do <b>Diretor-Geral</b>; dá posse ao Diretor-Geral e ao Secretário-Geral da Mesa. Secretários só falam na sessão para chamada, contagem de votos ou leitura <span class="ref">19</span>.</li>
+  </ul>
+  <h3>Colégio de Líderes <span class="ref">RICD 20</span></h3>
+  <p>Líderes da Maioria, da Minoria, dos partidos, dos blocos e do Governo. Líderes de partidos que estão em bloco e o Líder do Governo têm <b>voz, mas não voto</b>. Decide por consenso; não havendo, por maioria absoluta, com voto ponderado pelo tamanho de cada bancada.</p>
+
+  <h3>Os demais órgãos <span class="ref">RICD 20-A a 21-U</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Órgão</th><th>Composição e escolha</th><th>Ponto de prova</th></tr></thead>
+    <tbody>
+      <tr><td>Secretaria da Mulher</td><td>Procuradoria da Mulher + Coordenadoria dos Direitos da Mulher, sem subordinação; Comitê contra Assédio (3 deputadas + 2 servidoras); Observatório da Mulher na Política <span class="ref">20-A</span></td><td>órgão político e institucional</td></tr>
+      <tr><td>Procuradoria da Mulher; Coordenadoria</td><td>1 titular + 3 adjuntas de partidos distintos, <b>eleitas pelas deputadas</b> na 1ª quinzena da 1ª e da 3ª sessões; 2 anos, vedada a recondução <span class="ref">20-B</span> <span class="ref">20-C</span></td><td>a Coordenadoria tem voz e voto nas reuniões de líderes e 5 minutos nas Comunicações <span class="ref">20-E</span></td></tr>
+      <tr><td>Secretaria da Primeira Infância, Infância, Adolescência e Juventude</td><td>Secretário <b>escolhido pela Mesa</b> + 3 adjuntos <span class="ref">20-G</span></td><td>voz e voto com os líderes; 5 minutos semanais <span class="ref">20-H</span></td></tr>
+      <tr><td>Procuradoria Parlamentar</td><td><b>11 membros designados pelo Presidente</b>, a cada 2 anos, com proporcionalidade <span class="ref">21</span></td><td>defende a honra e a imagem da Câmara e de seus membros; age pelo MP, pela AGU ou por advogados</td></tr>
+      <tr><td>Ouvidoria Parlamentar</td><td>Ouvidor-Geral + 2 substitutos, designados pelo Presidente, 2 anos, vedada a recondução no período seguinte <span class="ref">21-B</span></td><td>recebe reclamações (inclusive do 0800); manda denúncias ao TCU, PF, MP; demora injustificada em responder gera responsabilização <span class="ref">21-A</span> <span class="ref">21-C</span></td></tr>
+      <tr><td>Conselho de Ética e Decoro</td><td>21 titulares + 21 suplentes, 2 anos; elege Presidente e 2 Vices <span class="ref">21-E</span></td><td>quem muda de partido <b>não perde</b> a vaga no Conselho (exceção aos arts. 23, 40 e 232)</td></tr>
+      <tr><td>Corregedoria Parlamentar</td><td>Corregedor + 3 substitutos, designados pelo Presidente, 2 anos, vedada a recondução no período seguinte na mesma legislatura <span class="ref">21-G</span></td><td>decoro, ordem e disciplina; <b>segurança interna e externa</b> por determinação da Mesa (item 2026-62); sindicância ou inquérito sobre ilícitos que envolvam deputados <span class="ref">21-F</span></td></tr>
+      <tr><td>Secretarias de Relações Internacionais, Comunicação Social, Participação e Mídias Digitais, Transparência, Empreendedorismo Legislativo, Inovação Legislativa, Defesa das Prerrogativas Parlamentares</td><td>Secretário <b>escolhido pelo Presidente</b> entre deputados em exercício, substituível a qualquer tempo <span class="ref">21-H a 21-U</span></td><td>Transparência supervisiona a LAI. Defesa das Prerrogativas (RCD 16/2025, a mais nova) atua <b>sem prejuízo</b> da Mesa, da Procuradoria Parlamentar e da Procuradoria da Mulher</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Comissões <span class="ref">RICD 22 a 24</span></h3>
+  <ul>
+    <li><b>Permanentes</b>: técnico-legislativas, coparticipantes do processo legislativo, acompanham planos e fazem fiscalização orçamentária. <b>Temporárias</b>: extinguem-se no fim da legislatura, ao atingir o fim ou ao vencer o prazo <span class="ref">22</span>.</li>
+    <li>Proporcionalidade com um membro da Minoria. Quem se desvincula da bancada perde a vaga <b>automaticamente, ainda que exerça cargo de natureza eletiva</b> <span class="ref">23</span>.</li>
+    <li><b>Exceções ao poder conclusivo</b> <span class="ref">24, II</span>: lei complementar; código; iniciativa popular; projeto de comissão; matéria indelegável (CF 68, §1º); projeto do Senado ou emendado por ele que já passou pelo Plenário de uma das Casas; pareceres divergentes; urgência.</li>
+    <li>Demais atribuições: audiências públicas; convocar Ministro; pedir informações <b>através da Mesa</b>; receber petições; pedir depoimento de autoridade ou cidadão; apreciar <b>programas de obras</b> e planos; fiscalizar a execução contábil, financeira, orçamentária, operacional e patrimonial da União; determinar, com o TCU, <b>diligências, perícias, inspeções e auditorias</b>; fiscalizar atos do Executivo, incluída a indireta; <b>propor a sustação</b> de atos normativos exorbitantes, com o decreto legislativo. Os pedidos de informação e a sustação não excluem a iniciativa de qualquer deputado <span class="ref">24, §2º</span>.</li>
+  </ul>
+
+  <!-- SESSÕES -->
+  <h2 id="t-ses">7.2 RICD, arts. 65 a 94: sessões</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Tipo <span class="ref">65</span></th><th>Quando</th><th>Detalhe</th></tr></thead>
+    <tbody>
+      <tr><td>Preparatória</td><td>antes da 1ª e da 3ª sessões legislativas</td><td>posse e eleição da Mesa</td></tr>
+      <tr><td>Deliberativa ordinária</td><td>uma por dia, <b>terça a quinta</b>, às 14 h</td><td>Pequeno Expediente, Grande Expediente, Ordem do Dia, Comunicações Parlamentares <span class="ref">66</span></td></tr>
+      <tr><td>Deliberativa extraordinária</td><td>dias ou horários diferentes</td><td>só Ordem do Dia; convocada pelo Presidente de ofício, pelo Colégio de Líderes ou pelo Plenário a requerimento de <b>qualquer deputado</b>; aviso por telefone se faltar menos de 24 h <span class="ref">67</span></td></tr>
+      <tr><td>Não deliberativa de debates</td><td>segunda (14 h) e sexta (9 h)</td><td>5 horas, <b>sem Ordem do Dia</b>; líderes podem delegar o tempo das Comunicações</td></tr>
+      <tr><td>Não deliberativa solene</td><td>comemorações e homenagens</td><td>até 4 h; a juízo do Presidente ou pelo Plenário (requerimento de 1/10); <b>independe de número</b>; só falam oradores designados; até 2 por mês por deliberação do Plenário <span class="ref">68</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Fase da ordinária</th><th>Tempo</th></tr></thead>
+    <tbody>
+      <tr><td>Pequeno Expediente</td><td class="num">60 min improrrogáveis; 5 min por orador, <b>sem apartes</b>; inscrição pessoal das 8 h às 13 h 30, com preferência a quem não falou nas 5 sessões anteriores <span class="ref">66, I</span> <span class="ref">81</span></td></tr>
+      <tr><td>Grande Expediente</td><td class="num">50 min improrrogáveis (às 10 h ou 15 h); 25 min por orador, apartes incluídos; lista por sorteio eletrônico; até 3 vezes por semestre <span class="ref">66, II</span> <span class="ref">87</span></td></tr>
+      <tr><td>Ordem do Dia</td><td class="num">às 11 h ou 16 h; verificação eletrônica de presença <span class="ref">82</span></td></tr>
+      <tr><td>Comunicações Parlamentares</td><td class="num">se a Ordem do Dia acabar antes das 19 h; até 10 min por orador indicado pelos líderes <span class="ref">90</span></td></tr>
+      <tr><td>Comunicações de Lideranças</td><td class="num">a qualquer tempo; 3 a 10 min conforme a bancada; Governo, Minoria, Oposição e Maioria têm 8 min; <b>sem apartes</b>; líderes podem ceder tempo entre si <span class="ref">66, §1º</span> <span class="ref">89</span></td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li>O Presidente pode fazer a Ordem do Dia absorver o Grande Expediente, ou não designar Ordem do Dia (a sessão vira de debates). Pode convocar <b>períodos de sessões extraordinárias</b> (de ofício, pelo Colégio de Líderes ou pelo Plenário com requerimento de 1/10); nesses períodos não há sessões ordinárias nem funcionam as comissões permanentes <span class="ref">66, §§2º a 5º</span>.</li>
+    <li>Sessões são públicas; excepcionalmente secretas, por deliberação do Plenário <span class="ref">69</span>.</li>
+    <li><b>Suspensão</b>: <b>uma única vez</b>, por até <b>1 hora</b>; depois, a sessão está encerrada <span class="ref">70</span>.</li>
+    <li><b>Levantamento</b> antes da hora: tumulto grave; falecimento de congressista da legislatura ou de Chefe de Poder, ou luto oficial; presença de menos de 1/10 dos deputados <span class="ref">71</span>.</li>
+    <li>Ordem: o Presidente fala sentado e os demais de pé; ninguém fala de costas para a Mesa; tratamento de “Senhor” ou “Deputado” e de “Excelência”; nada de referência descortês a autoridades, instituições ou Chefe de Estado estrangeiro; ninguém fuma no Plenário <span class="ref">73</span>.</li>
+    <li>No Plenário: deputados, senadores, ex-parlamentares, servidores em serviço e jornalistas credenciados; parlamentar estrangeiro, se houver reciprocidade. Galerias abertas ao público, sem comunicação com o recinto. Transmissão e gravação dependem de <b>autorização do Presidente</b>, conforme normas da Mesa <span class="ref">77</span> <span class="ref">78</span>.</li>
+    <li><b>Abertura</b>: Bíblia sobre a mesa; presença de <b>1/10 do total, desprezada a fração</b> (51); fórmula “Sob a proteção de Deus e em nome do povo brasileiro iniciamos nossos trabalhos”. Sem quórum, o Presidente espera meia hora, descontada do expediente; persistindo, não há sessão e os ausentes recebem falta <span class="ref">79</span>.</li>
+    <li>A ata é lida pelo <b>2º Secretário</b> e considerada aprovada <b>sem votação</b>; retificação por escrito, com recurso ao Plenário <span class="ref">80</span>.</li>
+    <li>Havendo matéria e quórum, vota-se de imediato, interrompendo o orador. Ausência às votações equivale a ausência à sessão, salvo <b>obstrução legítima</b> aprovada pela bancada e comunicada à Mesa <span class="ref">82, §§2º e 6º</span>.</li>
+    <li>Pauta, com a <b>maioria absoluta presente</b>: redações finais → requerimentos de urgência → requerimentos de comissão → requerimentos de deputado de votação imediata → demais matérias. Muda a ordem: posse de deputado, preferência, adiamento, retirada, inversão <span class="ref">83</span>.</li>
+    <li>Não há Ordem do Dia na primeira sessão plenária de cada sessão legislativa <span class="ref">85, p.u.</span>. A Ordem do Dia é publicada até a semana anterior <span class="ref">86</span>.</li>
+    <li><b>Comissão Geral</b> <span class="ref">91</span>: matéria relevante (proposta conjunta dos líderes ou 1/3 dos deputados, até 2 convidados por partido); projeto de iniciativa popular (orador presente); comparecimento de Ministro.</li>
+  </ul>
+  <h3>Sessão secreta <span class="ref">RICD 92 a 94</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Convocação</th><th>Quem pede</th></tr></thead>
+    <tbody>
+      <tr><td><b>Automática</b></td><td>requerimento escrito de comissão (matéria de sua competência), do Colégio de Líderes ou de <b>1/3</b> dos deputados (171)</td></tr>
+      <tr><td><b>Por deliberação do Plenário</b></td><td>requerimento de Líder ou de <b>1/5</b> dos deputados (103)</td></tr>
+      <tr><td><b>Obrigatória</b></td><td>efetivos das Forças Armadas; declaração de guerra ou acordo de paz; passagem ou permanência de forças estrangeiras</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li>Saem todos os estranhos, <b>inclusive servidores</b>. Primeiro se decide se o assunto será tratado em sigilo ou em público (não se aplica às obrigatórias), em debate de até 1 hora, com 5 minutos por orador <span class="ref">93, §1º</span>.</li>
+    <li>Antes de encerrar, a Câmara decide o que vai para a ata pública ou fixa o prazo do sigilo. A ata é aprovada antes de levantar a sessão e guardada em invólucro lacrado no Arquivo. Deputado ou Ministro pode entregar o discurso por escrito em até uma sessão <span class="ref">93, §§2º a 4º</span>.</li>
+    <li>Só deputados e senadores assistem. Ministros convocados e testemunhas ficam <b>apenas o tempo necessário</b> <span class="ref">94</span>.</li>
+  </ul>
+
+  <!-- DEPUTADOS -->
+  <h2 id="t-dep">7.3 RICD, arts. 226 a 251: deputados</h2>
+  <ul>
+    <li>Direitos: propor, discutir, votar e ser votado; pedir informação a Ministro <b>através da Mesa</b>; usar a palavra; integrar comissões e missões; defender interesses públicos perante qualquer órgão <span class="ref">226</span>.</li>
+    <li>Presença registrada diariamente, sob responsabilidade da Mesa e das presidências das comissões <span class="ref">227</span>. Gestantes, a partir da 30ª semana ou com atestado, participam e votam a distância; direito estendido até 180 dias após o início da licença <span class="ref">227-A</span>.</li>
+    <li>Para sair do país, basta <b>prévia ciência</b> à Câmara, pela Presidência, com natureza e duração <span class="ref">228</span>. Autorização do CN é exigida do PR e do VPR, não do deputado.</li>
+    <li><b>Declaração de bens e fontes de renda</b> na posse e antes do fim do mandato; não apresentar é infração ao Código de Ética <span class="ref">229</span>.</li>
+    <li>Afastado para cargo do CF 56, I: comunica por escrito com ato de nomeação e termo de posse; ao voltar, apresenta a exoneração. Tem <b>15 dias</b> para reassumir após exonerado, sob pena de falta de decoro. Até a comunicação, o suplente segue votando <span class="ref">230</span>.</li>
+    <li>Quem se desvincula da bancada perde, para efeitos regimentais, cargos e funções que ocupava em razão dela <span class="ref">232</span>.</li>
+    <li>Ex-deputados têm livre acesso ao Plenário e usam biblioteca, arquivo e assistência médica e farmacêutica; reprografia e processamento de dados exigem autorização do Presidente <span class="ref">234</span>.</li>
+  </ul>
+  <h3>Licenças <span class="ref">RICD 235 a 237</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Licença</th><th>Quem concede</th><th>Regra</th></tr></thead>
+    <tbody>
+      <tr><td>Missão temporária diplomática ou cultural</td><td><b>Mesa</b></td><td></td></tr>
+      <tr><td>Tratamento de saúde</td><td>Presidente</td><td>laudo de 3 médicos do corpo médico da Câmara <span class="ref">236</span></td></tr>
+      <tr><td>Interesse particular</td><td>Presidente</td><td><b>sem remuneração</b>, até 120 dias por sessão legislativa</td></tr>
+      <tr><td>Investidura em cargo do CF 56, I</td><td>Presidente</td><td></td></tr>
+      <tr><td>Gestante e paternidade</td><td>Presidente</td><td>nos termos do CF 7º, XVIII e XIX</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li>Saúde e interesse particular não são concedidas no <b>recesso</b>, salvo prorrogação da sessão legislativa ou convocação extraordinária. Requerimento fundamentado, lido na primeira sessão. Quem se licencia com assunção de suplente não reassume antes do fim da licença superior a 120 dias <span class="ref">235</span>.</li>
+    <li>Incapacidade civil absoluta: suspensão do exercício <b>sem perda da remuneração</b>. Se o deputado se recusa ao exame, o Plenário, em sessão secreta e por maioria absoluta, aplica a suspensão. Junta de 3 médicos de fora da Câmara e do Senado <span class="ref">237</span>.</li>
+  </ul>
+  <h3>Vaga, renúncia e perda <span class="ref">RICD 238 a 244</span></h3>
+  <ul>
+    <li>Vaga: falecimento, renúncia ou perda <span class="ref">238</span>.</li>
+    <li><b>Renúncia</b>: por escrito à Mesa, <b>independe de aprovação</b>; fica efetiva e irretratável quando lida no expediente ou publicada no Diário da Câmara, <b>o que ocorrer primeiro</b>. Renúncia tácita: deputado que não presta compromisso no prazo e suplente que não se apresenta. O Presidente declara a vacância em sessão <span class="ref">239</span>.</li>
+    <li>Perda: ver a tabela da CF 55 acima. Representação dos incisos I e VI vai à <b>CCJC</b> <span class="ref">240, §3º</span>.</li>
+    <li>Decoro: penas e processo no Código de Ética, que integra o Regimento <span class="ref">244</span>.</li>
+  </ul>
+  <h3>Prisão em flagrante <span class="ref">RICD 250 e 251</span></h3>
+  <ul>
+    <li>Autos à Câmara em <b>24 horas</b>, sob pena de responsabilidade da autoridade, apurada <b>de ofício pela Mesa</b>.</li>
+    <li>O Presidente manda à CCJC, que ordena a apresentação do preso (fica sob sua custódia), dá parecer prévio em <b>72 horas</b> e propõe o projeto de resolução, votado até a sessão seguinte. A decisão vai ao STF em duas sessões. No recesso, atua a Comissão Representativa, se o Regimento Comum assim dispuser; senão, a Mesa, ad referendum do Plenário.</li>
+  </ul>
+
+  <!-- ADMINISTRAÇÃO -->
+  <h2 id="t-adm">7.4 RICD, arts. 262 a 273: administração e economia interna</h2>
+  <p>Leia este trecho com olhos de engenheiro: é onde a prova pode pôr uma obra, um contrato de manutenção ou uma licitação no enunciado.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Situação</th><th>Quem ou o quê</th><th>Base</th></tr></thead>
+    <tbody>
+      <tr><td>Regulamentos dos serviços administrativos</td><td>aprovados pelo <b>Plenário</b>, dirigidos pela <b>Mesa</b></td><td><span class="ref">262</span></td></tr>
+      <tr><td>Princípios desses regulamentos</td><td>CF 37; descentralização e processamento eletrônico; concurso público (ressalvados cargos em comissão); carreira e mérito; assessoramento institucional unificado; assessoria de orçamento e fiscalização para a CMO e as comissões</td><td><span class="ref">262, p.u.</span></td></tr>
+      <tr><td>Proposição que muda os serviços administrativos</td><td>não vai ao Plenário sem <b>parecer da Mesa</b></td><td><span class="ref">263</span></td></tr>
+      <tr><td>Reclamação sobre os serviços</td><td>à Mesa, providência em <b>72 h</b>; depois, pode ir ao Plenário</td><td><span class="ref">264</span></td></tr>
+      <tr><td>Autorizar a licitação de uma reforma; homologar; calendário de compras</td><td><b>Mesa</b></td><td><span class="ref">15, XXV</span></td></tr>
+      <tr><td>Ordenar a despesa</td><td><b>Diretor-Geral</b>, nos limites do orçamento analítico aprovado pela Mesa</td><td><span class="ref">265, §1º</span></td></tr>
+      <tr><td>Conta bancária da Câmara</td><td>Banco do Brasil ou Caixa</td><td><span class="ref">265, §2º</span></td></tr>
+      <tr><td>Balancetes</td><td>mensais, à Mesa</td><td><span class="ref">265, §3º</span></td></tr>
+      <tr><td>Prestação de contas</td><td>o <b>Presidente</b> encaminha ao TCU <b>até 30 de junho</b> (exercício anterior)</td><td><span class="ref">265, §4º</span> <span class="ref">15, XXVII</span></td></tr>
+      <tr><td>Regime de licitações e contratos</td><td>normas gerais de Direito Financeiro e de licitações dos três Poderes (hoje, Lei 14.133/2021) e legislação interna</td><td><span class="ref">265, §5º</span></td></tr>
+      <tr><td>Controle interno</td><td>órgãos próprios da estrutura administrativa</td><td><span class="ref">265</span></td></tr>
+      <tr><td>Patrimônio</td><td>bens móveis e imóveis <b>da União</b> adquiridos ou postos à disposição; imóvel funcional só durante o mandato, com contrato-padrão aprovado pela Mesa</td><td><span class="ref">266</span></td></tr>
+      <tr><td>Ordem e disciplina nos edifícios</td><td>Mesa</td><td><span class="ref">267</span></td></tr>
+      <tr><td>Excesso disciplinar de deputado</td><td>o Presidente conhece e requisita à <b>Corregedoria</b> sindicância ou inquérito</td><td><span class="ref">268</span></td></tr>
+      <tr><td>Delito nos edifícios</td><td>inquérito presidido pelo <b>diretor de serviços de segurança</b>; se o indiciado for deputado, pelo <b>Corregedor</b>. Segue o CPP; escrivão é servidor estável; o inquérito vai ao juiz</td><td><span class="ref">269</span></td></tr>
+      <tr><td>Flagrante de crime inafiançável nos edifícios</td><td>preso entregue ao juiz; se for parlamentar, ao <b>Presidente da Câmara</b></td><td><span class="ref">269, §5º</span></td></tr>
+      <tr><td>Policiamento (inclusive blocos residenciais funcionais)</td><td><b>privativo da Mesa</b>, sob suprema direção do Presidente, sem intervenção de outro Poder; segurança própria ou <b>contratada</b>; se preciso, polícias civil e militar do DF requisitadas ao Governo local, à exclusiva disposição da Mesa</td><td><span class="ref">270</span></td></tr>
+      <tr><td>Porte de arma</td><td>proibido, salvo à segurança; infração disciplinar e contravenção; o Corregedor manda revistar e desarmar</td><td><span class="ref">271</span></td></tr>
+      <tr><td>Acesso do público</td><td>trajado adequadamente e com crachá; quem se comporta mal sai, a juízo do Presidente da Câmara ou de comissão</td><td><span class="ref">272</span></td></tr>
+      <tr><td>Comércio</td><td>proibido, <b>salvo autorização expressa da Mesa</b></td><td><span class="ref">273</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- RCCN -->
+  <h2 id="t-cn">8. Regimento Comum do Congresso Nacional</h2>
+  <p>O edital cobra só três blocos: o <b>Título I</b> (arts. 1º a 3º), o <b>Título IV, Capítulo II</b> (sessões solenes, arts. 53 a 71) e o <b>Título IV, Capítulo III</b> (matérias legislativas, arts. 72 a 103). No Capítulo III, só os arts. 85, 89, 90, 93, 99, 100, 102 e 103 estão em vigor; os outros foram revogados pela CF/88 ou por resoluções do CN. É pouco texto e quase todo literal: é ponto para gabaritar.</p>
+
+  <h3 id="t-cn1">8.1 Título I: direção, objeto e convocação das sessões conjuntas <span class="ref cn">RCCN 1º a 3º</span></h3>
+  <p>A Câmara e o Senado reúnem-se em sessão conjunta <b>sob a direção da Mesa do Senado</b> (“da Mesa deste”) para:</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Inciso do art. 1º</th><th>Finalidade</th><th>Solene?</th><th>Ligação com a CF</th></tr></thead>
+    <tbody>
+      <tr><td class="num">I</td><td>inaugurar a sessão legislativa</td><td><b>sim</b></td><td>CF 57, §3º, I</td></tr>
+      <tr><td class="num">II</td><td>dar posse ao Presidente e ao Vice-Presidente da República eleitos</td><td><b>sim</b></td><td>CF 57, §3º, III (“receber o compromisso”)</td></tr>
+      <tr><td class="num">III</td><td>promulgar emendas à Constituição</td><td><b>sim</b></td><td>CF 60, §3º (as Mesas promulgam)</td></tr>
+      <tr><td class="num">V</td><td>discutir e votar o Orçamento</td><td>não</td><td>CF 166</td></tr>
+      <tr><td class="num">VI</td><td>conhecer de matéria vetada e sobre ela deliberar</td><td>não</td><td>CF 57, §3º, IV</td></tr>
+      <tr><td class="num">IX</td><td>delegar ao Presidente da República poderes para legislar</td><td>não</td><td>CF 68, §2º (resolução do CN)</td></tr>
+      <tr><td class="num">XI</td><td>elaborar ou reformar o Regimento Comum</td><td>não</td><td>CF 57, §3º, II</td></tr>
+      <tr><td class="num">XII</td><td>atender aos demais casos da Constituição e do Regimento</td><td>não</td><td></td></tr>
+      <tr><td class="num">§1º</td><td>homenagear Chefes de Estado estrangeiros e comemorar datas nacionais, <b>por proposta das Mesas</b> da Câmara e do Senado</td><td><b>sim</b></td><td></td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted">Os incisos IV, VII, VIII e X foram revogados pela CF/88.</p>
+  <ul>
+    <li><b>Caráter solene</b> <span class="ref cn">1º, §2º</span>: só os incisos I, II e III e as homenagens do §1º. Veto, orçamento, delegação e regimento comum são sessões conjuntas <b>não solenes</b>.</li>
+    <li><b>Convocação</b> <span class="ref cn">2º</span>: as sessões <b>sem data legalmente fixada</b> são convocadas pelo <b>Presidente do Senado</b> ou seu substituto, com <b>prévia audiência da Mesa da Câmara</b>.</li>
+    <li><b>Local</b> <span class="ref cn">3º</span>: <b>Plenário da Câmara dos Deputados</b>, salvo escolha prévia de outro local devidamente anunciado.</li>
+  </ul>
+  <div class="link"><b>CF ↔ RCCN ↔ RICD</b>A CF diz que a Mesa do CN é presidida pelo Presidente do Senado (CF 57, §5º); o Regimento Comum, que a sessão conjunta é dirigida “pela Mesa deste” (do Senado). Promulgar EC: a CF fala nas Mesas das duas Casas (CF 60, §3º), o RICD repete (15, III), e o Regimento Comum diz que isso ocorre em sessão conjunta solene (85). Local: a Câmara se reúne fora da sede por deliberação da Mesa ad referendum da maioria absoluta (RICD 1º); a sessão conjunta, fora do Plenário da Câmara, só com escolha prévia e anunciada (RCCN 3º).</div>
+
+  <h3 id="t-cn2">8.2 Título IV, Capítulo II: sessões solenes <span class="ref cn">RCCN 53 a 71</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Normas gerais</th><th>Regra</th></tr></thead>
+    <tbody>
+      <tr><td>Mesa</td><td>integram a Mesa o <b>Presidente da Câmara</b> e, <b>mediante convite</b>, o <b>Presidente do STF</b>; lugares reservados a altas autoridades civis, militares, eclesiásticas e diplomáticas <span class="ref cn">53</span></td></tr>
+      <tr><td>Quórum</td><td><b>qualquer número</b> <span class="ref cn">53, p.u.</span></td></tr>
+      <tr><td>Abertura</td><td>composta a Mesa, o Presidente abre e declara o fim da convocação; <b>não há expediente</b> <span class="ref cn">54</span></td></tr>
+      <tr><td>Oradores</td><td>só <b>um senador e um deputado</b>, de preferência de partidos diferentes, designados pelas respectivas Casas <span class="ref cn">55</span></td></tr>
+      <tr><td>Sem oradores</td><td>na <b>inauguração da sessão legislativa</b> e na <b>posse do PR e do VPR</b> <span class="ref cn">55, p.u.</span></td></tr>
+      <tr><td>Questões de ordem</td><td><b>não são admitidas</b> <span class="ref cn">56</span></td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Inauguração da sessão legislativa</b> <span class="ref cn">57 a 59</span>: o Presidente proclama inaugurados os trabalhos e anuncia o <b>enviado do Presidente da República</b>, portador da Mensagem, que é conduzido à Mesa pelos Diretores das Secretarias do Senado e da Câmara, <b>sem atravessar o plenário</b>. Entregue a Mensagem, o enviado se retira, acompanhado até a porta; se quiser assistir, vai para lugar reservado. O <b>1º Secretário</b> lê a Mensagem e distribuem-se exemplares. Terminada a leitura, <b>encerra-se a sessão</b>.</p>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>Posse do PR e do VPR <span class="ref cn">60 a 67</span></th><th>Chefe de Estado estrangeiro <span class="ref cn">68 a 71</span></th></tr></thead>
+    <tbody>
+      <tr><td>Comissão de recepção</td><td><b>5 senadores + 5 deputados</b></td><td><b>3 senadores + 3 deputados</b></td></tr>
+      <tr><td>Percurso</td><td>entrada principal → Salão de Honra; a sessão é suspensa</td><td>igual</td></tr>
+      <tr><td>Lugar no plenário</td><td>PR à <b>direita</b> e VPR à <b>esquerda</b> do Presidente da Mesa</td><td>visitante na Mesa, à <b>direita</b> do Presidente</td></tr>
+      <tr><td>Quem fica de pé</td><td>todos os espectadores, <b>inclusive os membros da Mesa</b></td><td>espectadores e membros da Mesa, <b>exceto o Presidente</b></td></tr>
+      <tr><td>Ato central</td><td>compromisso do art. 78 da CF; o Presidente da Mesa proclama empossado o PR e, depois, o VPR; o <b>1º Secretário</b> lê o <b>termo de posse</b>, assinado pelos empossados e pelos membros da Mesa</td><td>palavra aos oradores</td></tr>
+      <tr><td>Palavra do homenageado</td><td>o PR <b>poderá</b> receber a palavra para se dirigir ao CN e à Nação</td><td>o visitante, se quiser, fala <b>depois dos oradores</b></td></tr>
+      <tr><td>Saída</td><td>a comissão leva o PR e o VPR a local designado; encerra-se</td><td>a comissão leva o visitante; encerra-se</td></tr>
+    </tbody>
+  </table></div>
+  <div class="link"><b>RICD ↔ RCCN</b>A sessão solene da <b>Câmara</b> também independe de número e só tem oradores previamente designados pelo Presidente (RICD 68, II). Na sessão solene do <b>Congresso</b>, os oradores são um senador e um deputado designados pelas Casas, e na inauguração e na posse não há oradores.</div>
+
+  <h3 id="t-cn3">8.3 Título IV, Capítulo III: matérias legislativas <span class="ref cn">RCCN 72 a 103</span></h3>
+  <ul>
+    <li><b>Seção I, Proposta de Emenda à Constituição</b>: arts. 72 a 84 revogados. Fica o <b>art. 85</b>: aprovada a proposta em <b>segundo turno</b>, as <b>Mesas da Câmara e do Senado</b>, em <b>sessão conjunta solene</b>, promulgam a emenda com o respectivo <b>número de ordem</b>.</li>
+    <li><b>Seção II, Projeto de lei de iniciativa do PR</b>: arts. 86 a 88, todos revogados.</li>
+  </ul>
+  <h3>Seção III, projeto de lei orçamentária</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Artigo</th><th>Regra</th></tr></thead>
+    <tbody>
+      <tr><td class="num">89</td><td>A Mensagem do PR com o projeto de lei orçamentária é <b>recebida e lida em sessão conjunta</b> especialmente convocada, em até <b>48 horas</b> da entrega ao <b>Presidente do Senado</b>.</td></tr>
+      <tr><td class="num">90</td><td>O projeto é apreciado por uma <b>Comissão Mista</b>, com a colaboração das <b>Comissões Permanentes</b> da Câmara e do Senado (hoje a CMO, CF 166, §1º).</td></tr>
+      <tr><td class="num">90, §2º</td><td>O <b>suplente só participa</b> na ausência ou impedimento do titular.</td></tr>
+      <tr><td class="num">90, §3º</td><td>Comissões Permanentes interessadas pedem o texto ao <b>Presidente da Comissão Mista</b>; esta fixa prazos e normas; o parecer abrange <b>só a parte da competência específica</b> da comissão; parecer circunstanciado sobre o anexo, com <b>estudo comparativo</b> com a prestação de contas do exercício anterior e, se possível, com a execução da lei em vigor; o Presidente da Comissão Mista manda o parecer ao Relator como <b>subsídio</b>; o parecer do Relator faz <b>referência expressa</b> à opinião da comissão permanente; comissões das duas Casas com competência coincidente podem, por maioria de seus membros, fazer <b>reuniões conjuntas</b> sob direção alternada e dar <b>parecer único</b>; pareceres com emendas seguem o prazo da Resolução nº 1/2001-CN.</td></tr>
+      <tr><td class="num">90, §4º</td><td>Deliberações começam pelos <b>representantes da Câmara</b>; o voto contrário da <b>maioria dos representantes de uma das Casas</b> importa a <b>rejeição</b>.</td></tr>
+      <tr><td class="num">90, §5º</td><td>O §4º <b>não se aplica</b> à eleição do Presidente e do Vice-Presidente da Comissão.</td></tr>
+      <tr><td class="num">93</td><td>Avulsos eletrônicos do projeto nos <b>5 dias</b> seguintes à leitura.</td></tr>
+      <tr><td class="num">99</td><td>Emendas pendentes de decisão do Plenário são votadas <b>em grupos</b>, conforme o parecer seja favorável ou contrário, <b>ressalvados os destaques</b>.</td></tr>
+      <tr><td class="num">100</td><td>Sem parecer da Comissão no prazo, o <b>Presidente do Senado</b>, publicadas as emendas, convoca sessão conjunta e designa <b>Relator</b>, que dá <b>parecer oral</b>.</td></tr>
+      <tr><td class="num">102</td><td>Aplicam-se, no que couber, as normas do Regimento Comum para os demais projetos de lei.</td></tr>
+      <tr><td class="num">103</td><td>A mesma seção se aplica, no que couber, aos projetos de <b>orçamento plurianual de investimentos</b>.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="alert"><b>Alerta</b>A banca de Noções cobra a letra do Regimento Comum, mesmo que hoje a CMO siga a Resolução nº 1/2006-CN. As trocas mais prováveis: 48 h por 72 h no art. 89; “Câmara primeiro” por “Senado primeiro” no §4º do art. 90; “em grupos” por “uma a uma” no art. 99; “Presidente do Senado” por “Presidente da Câmara” nos arts. 89 e 100.</div>
+</section>
+
+<!-- ===================== NÚMEROS ===================== -->
+<section class="view" id="v-numeros" data-view="numeros" hidden>
+  <h2 style="margin-top:var(--s4)">Os números que a banca troca</h2>
+  <p>Base: 513 deputados e 81 senadores. “Pelo menos 1/10” arredonda para cima; “desprezada a fração” corta para baixo.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Fração</th><th>Deputados</th><th>Onde aparece</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1/10, desprezada a fração</td><td class="num">51</td><td>abertura da sessão <span class="ref">RICD 79, §2º</span></td></tr>
+      <tr><td class="num">1/10</td><td class="num">52</td><td>recurso contra o poder conclusivo (CF 58, §2º, I); sessão solene; período de sessões extraordinárias; levantamento se houver menos que isso</td></tr>
+      <tr><td class="num">3/100</td><td class="num">16</td><td>mínimo para formar bloco <span class="ref">RICD 12, §3º</span></td></tr>
+      <tr><td class="num">1/5</td><td class="num">103</td><td>sessão secreta por deliberação do Plenário <span class="ref">RICD 92, II</span></td></tr>
+      <tr><td class="num">1/3</td><td class="num">171 (e 27 senadores)</td><td>CPI (em conjunto: 1/3 de cada Casa); Comissão Geral; sessão secreta automática; faltas que geram perda (1/3 das sessões ordinárias)</td></tr>
+      <tr><td class="num">maioria absoluta</td><td class="num">257 (e 41)</td><td>eleição da Mesa no 1º escrutínio; presença para pautar; resolver sobre a prisão; sustar a ação penal; perda do mandato; Maioria; recurso da suspensão cautelar; sessão secreta para suspender o incapaz</td></tr>
+      <tr><td class="num">2/3</td><td class="num">342 (e 54)</td><td>autorizar processo contra o PR; suspender imunidades no estado de sítio</td></tr>
+    </tbody>
+  </table></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Prazo</th><th>Regra</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1 min</td><td>orientação de bancada pelo Líder</td></tr>
+      <tr><td class="num">5 min</td><td>orador do Pequeno Expediente; partido sem Liderança e bancadas temáticas, por semana</td></tr>
+      <tr><td class="num">8 min</td><td>Comunicações de Lideranças do Governo, da Minoria, da Oposição e da Maioria</td></tr>
+      <tr><td class="num">25 min</td><td>orador do Grande Expediente</td></tr>
+      <tr><td class="num">1 h</td><td>única suspensão da sessão; debate preliminar da sessão secreta</td></tr>
+      <tr><td class="num">4 h · 5 h</td><td>sessão solene (máximo) · sessão de debates</td></tr>
+      <tr><td class="num">24 h</td><td>autos do flagrante à Casa</td></tr>
+      <tr><td class="num">48 h</td><td>ausência do Presidente que passa a presidência ao 1º Vice; convocação do suplente pela Mesa</td></tr>
+      <tr><td class="num">72 h</td><td>parecer prévio da CCJC sobre a prisão; providência sobre reclamação de serviços</td></tr>
+      <tr><td class="num">5 dias úteis · 3 dias úteis</td><td>Mesa propõe a suspensão cautelar · Conselho de Ética decide</td></tr>
+      <tr><td class="num">5 sessões</td><td>eleição para vaga na Mesa; defesa e parecer na CCJC (perda)</td></tr>
+      <tr><td class="num">5 reuniões</td><td>faltas consecutivas que tiram o lugar na Mesa</td></tr>
+      <tr><td class="num">15 dias</td><td>para reassumir após a exoneração de Ministro ou Secretário</td></tr>
+      <tr><td class="num">30 + 30 dias</td><td>prazo da posse; resposta a pedido de informação (CF 50, §2º)</td></tr>
+      <tr><td class="num">45 dias</td><td>Casa aprecia a sustação da ação penal</td></tr>
+      <tr><td class="num">120 dias</td><td>licença para interesse particular por sessão; licença de saúde que gera suplente</td></tr>
+      <tr><td class="num">15 meses</td><td>vaga sem suplente: há eleição se faltar mais que isso</td></tr>
+      <tr><td class="num">2 anos</td><td>Mesa, Procuradoria, Ouvidoria, Corregedoria, Conselho de Ética, Procuradoria da Mulher</td></tr>
+      <tr><td class="num">48 h · 5 dias</td><td>leitura da Mensagem do orçamento em sessão conjunta · avulsos do projeto orçamentário <span class="ref cn">RCCN 89 e 93</span></td></tr>
+      <tr><td class="num">31/1 · 1/2</td><td>entrega do diploma · posse e eleição da Mesa</td></tr>
+      <tr><td class="num">30/6</td><td>prestação de contas da Câmara ao TCU</td></tr>
+      <tr><td class="num">20/11</td><td>eleição da Bancada Negra</td></tr>
+      <tr><td class="num">30/11 do 2º ano</td><td>limite para vaga na Mesa ser preenchida por eleição</td></tr>
+    </tbody>
+  </table></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Composição</th><th>Número</th></tr></thead>
+    <tbody>
+      <tr><td>Mesa</td><td class="num">Presidente + 2 Vices + 4 Secretários + 4 Suplentes</td></tr>
+      <tr><td>Liderança do Governo · da Minoria</td><td class="num">Líder + 20 vices · Líder + 9 vices</td></tr>
+      <tr><td>Vice-líderes de partido</td><td class="num">1 a cada 4 deputados ou fração</td></tr>
+      <tr><td>Procuradoria Parlamentar</td><td class="num">11 membros</td></tr>
+      <tr><td>Ouvidoria · Corregedoria</td><td class="num">1 + 2 · 1 + 3</td></tr>
+      <tr><td>Conselho de Ética</td><td class="num">21 + 21 suplentes</td></tr>
+      <tr><td>Procuradoria da Mulher · Coordenadoria · Bancada Negra</td><td class="num">1 + 3 em cada</td></tr>
+      <tr><td>CN: comissão da posse do PR · da recepção a Chefe de Estado</td><td class="num">5 sen. + 5 dep. · 3 sen. + 3 dep.</td></tr>
+      <tr><td>CN: oradores em sessão solene</td><td class="num">1 senador + 1 deputado (nenhum na inauguração e na posse)</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ===================== BANCO ===================== -->
+<section class="view" id="v-banco" data-view="banco" hidden>
+  <h2 style="margin-top:var(--s4)">Banco de itens por assunto</h2>
+  <p>Itens inéditos no padrão Cebraspe. Responda e veja a justificativa com o dispositivo. Seu progresso fica salvo neste navegador.</p>
+  <div class="filters" id="bfilters" role="group" aria-label="Filtrar por assunto"></div>
+  <div class="score" id="bscore"></div>
+  <div id="bank"></div>
+</section>
+
+<!-- ===================== SIMULADOS ===================== -->
+<section class="view" id="v-simulados" data-view="simulados" hidden>
+  <h2 style="margin-top:var(--s4)">Simulados de 20 itens</h2>
+  <p>Marque tudo e depois corrija. A nota é calculada como no edital: acerto vale +1, erro vale −1 e item em branco vale 0. Faça cada simulado em até 25 minutos.</p>
+  <div class="simtabs" role="group" aria-label="Escolher simulado">
+    <button class="chip" id="simA-btn" aria-pressed="true" type="button">Simulado A</button>
+    <button class="chip" id="simB-btn" aria-pressed="false" type="button">Simulado B</button>
+  </div>
+  <div id="simA" data-sub="A"></div>
+  <div id="simB" data-sub="B" hidden></div>
+</section>
+
+<!-- ===================== PROVA PREVISTA ===================== -->
+<section class="view" id="v-prevista" data-view="prevista" hidden>
+  <h2 style="margin-top:var(--s4)">Prova prevista: os 12 itens que eu colocaria</h2>
+  <p>Escrevi como se fosse o examinador desta prova: comando de “Noções”, texto vigente, um tema de cada fatia do edital e dois itens com cenário de Engenharia. Depois de corrigir, cada item mostra por que eu o cobraria. Tempo sugerido: 15 minutos.</p>
+  <div id="prev"></div>
+</section>
+
+<!-- ===================== CALIBRAÇÃO ===================== -->
+<section class="view" id="v-calibracao" data-view="calibracao" hidden>
+  <h2 style="margin-top:var(--s4)">Calibração com as provas reais</h2>
+  <p>Só entram aqui os itens das provas que você mandou cujo assunto está no seu edital. Gabaritos oficiais definitivos. 2025: Analista Legislativo, Processo Legislativo e Gestão. 2026: Policial Legislativo Federal. Os demais itens dessas provas tratam de matéria fora do edital (Código de Ética, processo legislativo, partes do Regimento Comum que não caem, Resolução nº 18/2003) e foram deixados de fora.</p>
+  <div class="tbl calib"><table>
+    <thead><tr><th>Item</th><th>Gab.</th><th>Assunto e armadilha</th><th>Edital</th></tr></thead>
+    <tbody>
+      <tr><td>2025-91</td><td>X</td><td>Bloco termina com a legislatura e “deve apresentar novo documento de criação”. A primeira parte é literal; a segunda é requisito que o Regimento não traz. Anulado.</td><td>7.1 <span class="ref">RICD 12, §5º</span></td></tr>
+      <tr><td>2025-92</td><td>E</td><td>Bloco abaixo do mínimo “permanece até o fim da legislatura”. Consequência inventada: extingue-se.</td><td>7.1 <span class="ref">RICD 12, §4º</span></td></tr>
+      <tr><td>2025-93</td><td>E</td><td>Lideranças em bloco “perdem atribuições, mas não prerrogativas”. Perdem as duas.</td><td>7.1 <span class="ref">RICD 12, §2º</span></td></tr>
+      <tr><td>2025-94</td><td>X</td><td>Mesa fixa o número de deputados por partido nas comissões (1ª e 3ª sessões, ouvido o Colégio). Texto quase literal, mesmo assim anulado.</td><td>7.1 <span class="ref">RICD 15, X</span></td></tr>
+      <tr><td>2025-95</td><td>E</td><td>“Exclusiva da Mesa” convidar deputado a sair do Plenário. É do Presidente.</td><td>7.1 <span class="ref">RICD 17, I, i</span></td></tr>
+      <tr><td>2025-96</td><td>E</td><td>Presidente da Câmara promulga EC com o Presidente do Senado. São as Mesas.</td><td>7.1 <span class="ref">RICD 15, III</span> e 8.3 <span class="ref cn">RCCN 85</span></td></tr>
+      <tr><td>2025-97</td><td>C</td><td>Presidente designa a Ordem do Dia segundo a agenda mensal. Literal.</td><td>7.1 <span class="ref">RICD 17, I, t</span></td></tr>
+      <tr><td>2025-98</td><td>C</td><td>Presidente organiza, ouvido o Colégio, a agenda do mês seguinte. Literal.</td><td>7.1 <span class="ref">RICD 17, I, s</span></td></tr>
+      <tr><td>2025-99</td><td>C</td><td>Comissão permanente fiscaliza atos de autarquias (administração indireta).</td><td>7.1 <span class="ref">RICD 24, XI</span></td></tr>
+      <tr><td>2025-100</td><td>C</td><td>Comissão convoca Ministro e manda pedidos de informação através da Mesa.</td><td>7.1 <span class="ref">RICD 24, IV e V</span></td></tr>
+      <tr><td>2025-101</td><td>E</td><td>Comissão “não dispõe” de propor sustação de ato normativo. Dispõe.</td><td>7.1 <span class="ref">RICD 24, XII</span></td></tr>
+      <tr><td>2025-106</td><td>E</td><td>CPI da Câmara “convoca” governador. O STF veda (autonomia federativa).</td><td>5 <span class="ref">CF 58, §3º; STF, ADPF 848</span></td></tr>
+      <tr><td>2025-110</td><td>C</td><td>Presidente de CPI não tem legitimidade para recorrer de HC concedido ao investigado.</td><td>5 <span class="ref">CF 58, §3º; STF</span></td></tr>
+      <tr><td>2025-112</td><td>C</td><td>A regra de reeleição da Mesa não é de reprodução obrigatória pelos estados, vedada mais de uma recondução seguida para o mesmo cargo.</td><td>5 <span class="ref">CF 57, §4º; STF</span></td></tr>
+      <tr><td>2026-58</td><td>E</td><td>CN, “com sanção”, muda a sede. É competência exclusiva, sem sanção.</td><td>5 <span class="ref">CF 49, VI</span></td></tr>
+      <tr><td>2026-59</td><td>X</td><td>Câmara autoriza processo contra Ministros. O texto da CF diz isso, mas o STF exige a autorização só quando o crime do Ministro é conexo com o do PR. Provável motivo da anulação.</td><td>5 <span class="ref">CF 51, I</span></td></tr>
+      <tr><td>2026-60</td><td>C</td><td>Desde o diploma, prisão só em flagrante de crime inafiançável.</td><td>6 <span class="ref">CF 53, §2º</span></td></tr>
+      <tr><td>2026-61</td><td>C</td><td>Sessões não deliberativas são solenes ou de debates.</td><td>7.2 <span class="ref">RICD 65, III</span></td></tr>
+      <tr><td>2026-62</td><td>C</td><td>A Corregedoria cumpre as determinações da Mesa sobre segurança externa.</td><td>7.1 <span class="ref">RICD 21-F, II</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><b>Leitura do padrão.</b> Dos 11 itens de 2025 que caem no seu RICD, 4 eram Certo, 5 Errado e 2 anulados, e todos saíram de só quatro artigos (12, 15, 17 e 24). Nenhum Errado dependia de número: todos trocavam quem faz, o que acontece ou se algo existe. Em 2026, os itens de RICD foram Certo e literais, e os de CF trocaram a natureza da competência (“com sanção”). Em prova de básicas, espere a mesma mistura: metade literal, metade com uma palavra trocada.</div>
+</section>
+
+<footer>
+  Fontes: Regimento Interno da Câmara (Resolução nº 17/1989, atualizada até a RCD nº 16/2025, recorte do edital), Regimento Comum do Congresso Nacional (arts. 1º a 3º e 53 a 103), Constituição Federal (até a EC nº 137), Edital nº 1 – Analista Legislativo, de 2/10/2026, provas e gabaritos definitivos do Cebraspe (2025 e 2026) e caderno de questões sobre o Poder Legislativo. Este guia não substitui a leitura do texto oficial.
+</footer>
+</main>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- dias até a prova ---------- */
+try{
+  var prova = new Date(2027,0,17); var hoje = new Date(); hoje.setHours(0,0,0,0);
+  var d = Math.round((prova - hoje)/86400000);
+  document.getElementById("dias").textContent = d >= 0 ? d : "0";
+}catch(e){}
+
+/* ---------- armazenamento ---------- */
+var KEY = "regimentos-cdcn-v1";
+var store = {};
+try{ store = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; }catch(e){ store = {}; }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(store)); }catch(e){} }
+
+/* ---------- itens ---------- */
+var TOP = {
+  cf:"5 · CF: Congresso e suas Casas", parl:"6 · Parlamentares", org:"7.1 · RICD 1º a 24", ses:"7.2 · RICD 65 a 94",
+  dep:"7.3 · RICD 226 a 251", adm:"7.4 · RICD 262 a 273", cn:"8 · Regimento Comum"
+};
+// t = assunto · s = enunciado · a = gabarito · j = justificativa · r = dispositivo · sim = A/B quando reservado ao simulado
+var Q = [
+/* CF: Congresso */
+{t:"cf",s:"A Câmara dos Deputados compõe-se de representantes do povo, eleitos pelo sistema majoritário em cada estado, em cada território e no Distrito Federal.",a:"E",j:"O sistema da Câmara é o proporcional. O majoritário é o do Senado.",r:"CF 45 e 46"},
+{t:"cf",s:"Lei complementar fixa o número total de deputados e a representação por estado e pelo DF, de modo que nenhuma dessas unidades tenha menos de oito ou mais de setenta deputados; cada território elege quatro deputados.",a:"C",j:"Literal dos §§1º e 2º.",r:"CF 45, §§1º e 2º"},
+{t:"cf",s:"Compete privativamente à Câmara dos Deputados proceder à tomada de contas do presidente da República quando não apresentadas ao Congresso Nacional dentro de sessenta dias após a abertura da sessão legislativa.",a:"C",j:"Literal.",r:"CF 51, II"},
+{t:"cf",s:"A Câmara dos Deputados fixa, por resolução, a remuneração dos cargos de seus serviços, observados os parâmetros da LDO.",a:"E",j:"Desde a EC 19/1998, a Câmara dispõe sobre cargos por resolução, mas a remuneração depende de lei, de sua iniciativa.",r:"CF 51, IV"},
+{t:"cf",s:"Eleger membros do Conselho da República é competência do Congresso Nacional, exercida em sessão conjunta.",a:"E",j:"É competência privativa de cada Casa: a Câmara elege os seus e o Senado, os seus.",r:"CF 51, V; CF 52, XIV"},
+{t:"cf",s:"Qualquer comissão da Câmara pode convocar o presidente do Comitê Gestor do Imposto sobre Bens e Serviços para prestar, pessoalmente, informações sobre assunto previamente determinado, importando crime de responsabilidade a ausência sem justificação adequada.",a:"C",j:"Inclusão feita pela EC 132/2023 (reforma tributária). Novidade com cara de item.",r:"CF 50, caput"},
+{t:"cf",s:"A recusa de ministro de Estado em atender, no prazo de trinta dias, pedido escrito de informação encaminhado pela Mesa da Câmara importa crime de responsabilidade, mas a prestação de informações falsas, por si só, não configura esse crime.",a:"E",j:"A prestação de informações falsas também é crime de responsabilidade.",r:"CF 50, §2º",sim:"B"},
+{t:"cf",s:"Compete ao Congresso Nacional, com a sanção do presidente da República, autorizar o presidente e o vice-presidente da República a se ausentarem do país quando a ausência exceder quinze dias.",a:"E",j:"É competência exclusiva do CN, sem sanção.",r:"CF 49, III"},
+{t:"cf",s:"Na constituição das Mesas e de cada comissão, é assegurada, tanto quanto possível, a representação proporcional dos partidos ou dos blocos parlamentares que participam da respectiva Casa.",a:"C",j:"Literal. O RICD acrescenta a vaga da Minoria.",r:"CF 58, §1º; RICD 23"},
+{t:"cf",s:"Projeto de lei aprovado conclusivamente por comissão da Câmara somente será submetido ao Plenário se houver recurso de um quinto dos membros da Casa.",a:"E",j:"O recurso é de um décimo dos membros (52 deputados).",r:"CF 58, §2º, I; RICD 24, II",sim:"A"},
+{t:"cf",s:"Comissão parlamentar de inquérito da Câmara pode determinar a interceptação telefônica de investigado, desde que o faça por decisão fundamentada da maioria de seus membros.",a:"E",j:"Interceptação está sob reserva de jurisdição. A CPI pode quebrar o sigilo de dados telefônicos (registros), não interceptar conversas.",r:"CF 5º, XII; CF 58, §3º; STF"},
+{t:"cf",s:"Comissão parlamentar de inquérito pode, por ato fundamentado, determinar a quebra dos sigilos bancário, fiscal e de dados telefônicos de pessoa investigada.",a:"C",j:"Entendimento pacífico do STF (MS 23.452 e outros).",r:"CF 58, §3º; STF",sim:"B"},
+{t:"cf",s:"A criação de comissão parlamentar de inquérito na Câmara dos Deputados depende da aprovação, pelo Plenário, do requerimento subscrito por um terço de seus membros.",a:"E",j:"Preenchidos os requisitos (1/3, fato determinado, prazo certo), a criação é direito da minoria e não se submete ao Plenário.",r:"CF 58, §3º; STF, MS 26.441"},
+{t:"cf",s:"Durante o recesso, haverá uma comissão representativa do Congresso Nacional, eleita por suas Casas na última sessão ordinária do período legislativo, com atribuições definidas no regimento comum.",a:"C",j:"Literal.",r:"CF 58, §4º",sim:"A"},
+{t:"cf",s:"Na sessão legislativa extraordinária, o Congresso Nacional somente delibera sobre a matéria da convocação, de modo que as medidas provisórias em vigor só serão apreciadas se constarem expressamente do ato convocatório.",a:"E",j:"As MPs em vigor na data da convocação entram automaticamente na pauta.",r:"CF 57, §§7º e 8º"},
+{t:"cf",s:"A convocação extraordinária do Congresso Nacional pelo presidente da Câmara dos Deputados, em caso de urgência ou de interesse público relevante, depende da aprovação da maioria absoluta de cada uma das Casas.",a:"C",j:"Literal do inciso II do §6º.",r:"CF 57, §6º, II",sim:"B"},
+{t:"cf",s:"Compete às comissões, em razão da matéria de sua competência, apreciar programas de obras e planos nacionais, regionais e setoriais de desenvolvimento e sobre eles emitir parecer.",a:"C",j:"Literal da CF, repetido no RICD em articulação com a CMO.",r:"CF 58, §2º, VI; RICD 24, VIII"},
+{t:"cf",s:"Compete privativamente à Câmara dos Deputados autorizar, por dois terços de seus membros, a instauração de processo contra o presidente da República, bem como processá-lo e julgá-lo nos crimes de responsabilidade.",a:"E",j:"A Câmara autoriza. Processar e julgar é do Senado.",r:"CF 51, I; CF 52, I",sim:"A"},
+
+{t:"cf",s:"A Mesa do Congresso Nacional é presidida, alternadamente, pelo presidente da Câmara e pelo presidente do Senado, a cada sessão legislativa.",a:"E",j:"É sempre presidida pelo Presidente do Senado. Os demais cargos é que alternam.",r:"CF 57, §5º",sim:"A"},
+
+/* Parlamentares */
+{t:"parl",s:"A imunidade material assegura ao deputado federal a inviolabilidade penal por suas opiniões, palavras e votos, mas não afasta sua responsabilidade civil por danos morais decorrentes dessas manifestações.",a:"E",j:"A inviolabilidade é civil e penal, desde a EC 35/2001.",r:"CF 53, caput"},
+{t:"parl",s:"Desde a posse, os deputados e senadores são submetidos a julgamento perante o Supremo Tribunal Federal.",a:"E",j:"O marco é a expedição do diploma.",r:"CF 53, §1º",sim:"B"},
+{t:"parl",s:"Preso em flagrante de crime inafiançável, o deputado terá os autos remetidos à Câmara dentro de vinte e quatro horas, para que, pelo voto da maioria de seus membros, a Casa resolva sobre a prisão.",a:"C",j:"Literal.",r:"CF 53, §2º; RICD 250",sim:"A"},
+{t:"parl",s:"Recebida denúncia contra deputado por crime praticado antes da diplomação, a Câmara poderá, por iniciativa de partido político nela representado e pelo voto da maioria de seus membros, sustar o andamento da ação.",a:"E",j:"A sustação só cabe para crime ocorrido após a diplomação.",r:"CF 53, §3º",sim:"A"},
+{t:"parl",s:"O pedido de sustação de ação penal contra deputado será apreciado no prazo improrrogável de quarenta e cinco dias do seu recebimento pela Mesa Diretora, e a sustação suspende a prescrição enquanto durar o mandato.",a:"C",j:"Literal dos §§4º e 5º.",r:"CF 53, §§4º e 5º"},
+{t:"parl",s:"As imunidades dos deputados subsistem durante o estado de sítio e só podem ser suspensas pelo voto de três quintos dos membros da Câmara.",a:"E",j:"O quórum é de dois terços, e só para atos praticados fora do recinto do Congresso incompatíveis com a medida.",r:"CF 53, §8º; RICD 233"},
+{t:"parl",s:"Desde a expedição do diploma, o deputado não pode ser proprietário, controlador ou diretor de empresa que goze de favor decorrente de contrato com pessoa jurídica de direito público.",a:"E",j:"Essa vedação vale desde a posse.",r:"CF 54, II, a",sim:"B"},
+{t:"parl",s:"Desde a expedição do diploma, é vedado ao deputado firmar contrato com empresa concessionária de serviço público, salvo quando o contrato obedecer a cláusulas uniformes.",a:"C",j:"Literal.",r:"CF 54, I, a"},
+{t:"parl",s:"Perderá o mandato o deputado que deixar de comparecer, em cada sessão legislativa, à terça parte das sessões ordinárias e extraordinárias da Casa, salvo licença ou missão por esta autorizada.",a:"E",j:"Contam só as sessões ordinárias.",r:"CF 55, III; RICD 240, III"},
+{t:"parl",s:"No caso de procedimento declarado incompatível com o decoro parlamentar, a perda do mandato será decidida pela Câmara dos Deputados, por maioria absoluta, mediante provocação da Mesa ou de partido político representado no Congresso Nacional, assegurada ampla defesa.",a:"C",j:"Literal. A votação é ostensiva desde a EC 76/2013.",r:"CF 55, §2º; RICD 240, §1º"},
+{t:"parl",s:"A perda do mandato de deputado que tiver suspensos os direitos políticos será decidida pelo Plenário da Câmara, em votação ostensiva, por maioria absoluta de seus membros.",a:"E",j:"Nos incisos III a V, a perda é declarada pela Mesa, de ofício ou por provocação.",r:"CF 55, §3º; RICD 15, XIV",sim:"A"},
+{t:"parl",s:"A renúncia de parlamentar submetido a processo que vise ou possa levar à perda do mandato terá seus efeitos suspensos até as deliberações finais da Casa.",a:"C",j:"Literal.",r:"CF 55, §4º"},
+{t:"parl",s:"Não perderá o mandato o deputado investido no cargo de secretário municipal de saúde de município que não seja capital de estado.",a:"E",j:"A exceção cobre Secretário de Prefeitura de capital.",r:"CF 56, I"},
+{t:"parl",s:"O deputado investido no cargo de ministro de Estado não perde o mandato e pode optar pela remuneração deste.",a:"C",j:"Literal.",r:"CF 56, I e §3º"},
+{t:"parl",s:"Ocorrendo vaga e não havendo suplente, far-se-á eleição para preenchê-la se faltarem mais de quinze meses para o término do mandato.",a:"C",j:"Literal. O RICD manda o Presidente comunicar a Justiça Eleitoral.",r:"CF 56, §2º; RICD 242"},
+{t:"parl",s:"Os deputados são obrigados a testemunhar sobre informações recebidas em razão do exercício do mandato quando intimados por autoridade judicial.",a:"E",j:"Não são obrigados a testemunhar sobre essas informações, nem sobre quem as forneceu.",r:"CF 53, §6º"},
+{t:"parl",s:"A incorporação de deputado às Forças Armadas, embora militar e ainda que em tempo de guerra, depende de prévia licença da Câmara.",a:"C",j:"Literal.",r:"CF 53, §7º; RICD 231, §6º"},
+{t:"parl",s:"Segundo o STF, medidas cautelares diversas da prisão que impossibilitem, direta ou indiretamente, o exercício regular do mandato parlamentar devem ser submetidas, em vinte e quatro horas, à deliberação da Casa respectiva.",a:"C",j:"Tese fixada na ADI 5.526 (2017), por extensão do §2º do art. 53.",r:"CF 53, §2º; STF, ADI 5.526"},
+{t:"parl",s:"Conforme o entendimento atual do STF, a prerrogativa de foro para o julgamento de crimes praticados no cargo e em razão das funções subsiste mesmo após o afastamento do parlamentar.",a:"C",j:"Virada de 2025 (HC 232.627 e Inq 4.787), que ajustou a AP 937.",r:"CF 53, §1º; STF"},
+{t:"parl",s:"As imunidades parlamentares estendem-se ao suplente, ainda que ele não esteja no exercício do mandato.",a:"E",j:"Suplente sem exercício não tem imunidades nem foro.",r:"STF, Inq 1.684"},
+
+/* RICD 1–24 */
+{t:"org",s:"Havendo motivo relevante ou de força maior, a Câmara poderá, por deliberação da Mesa, ad referendum da maioria absoluta dos deputados, reunir-se em outro edifício ou em ponto diverso do território nacional.",a:"C",j:"Literal.",r:"RICD 1º, p.u."},
+{t:"org",s:"Todas as sessões legislativas ordinárias de uma legislatura são precedidas de sessões preparatórias.",a:"E",j:"Só a primeira e a terceira.",r:"RICD 2, §2º; RICD 65, I",sim:"B"},
+{t:"org",s:"Comprovado motivo de força maior, o deputado diplomado poderá ser empossado por procurador com poderes específicos.",a:"E",j:"É vedada a posse por procurador. Em casos excepcionais, o compromisso pode ser colhido por videoconferência.",r:"RICD 4, §§4º e 6º-A"},
+{t:"org",s:"Salvo motivo de força maior ou enfermidade comprovados, a posse do deputado dar-se-á no prazo de trinta dias, prorrogável por igual período a requerimento do interessado.",a:"C",j:"Literal.",r:"RICD 4, §6º"},
+{t:"org",s:"O deputado eleito presidente da Câmara no primeiro biênio de uma legislatura não poderá ser eleito para o mesmo cargo no biênio seguinte, mas poderá sê-lo no primeiro biênio da legislatura subsequente.",a:"C",j:"A vedação é à recondução na eleição imediatamente subsequente dentro da legislatura. Legislaturas diferentes, mesmo sucessivas, não contam.",r:"RICD 5, §1º; CF 57, §4º",sim:"A"},
+{t:"org",s:"Na eleição dos membros da Mesa, não alcançada a maioria absoluta no primeiro escrutínio, realiza-se o segundo escrutínio entre os três candidatos mais votados para cada cargo.",a:"E",j:"Concorrem os dois mais votados.",r:"RICD 7, III"},
+{t:"org",s:"Em caso de empate na eleição para a Mesa, realiza-se novo escrutínio, restrito aos candidatos empatados.",a:"E",j:"Elege-se o mais idoso dentre os de maior número de legislaturas.",r:"RICD 7, IV"},
+{t:"org",s:"Ocorrida vaga na Mesa depois de 30 de novembro do segundo ano do mandato, a Mesa designará um dos membros titulares para responder pelo cargo.",a:"C",j:"Antes dessa data, há eleição em cinco sessões.",r:"RICD 8, §2º",sim:"B"},
+{t:"org",s:"O membro da Mesa que mudar de legenda partidária perderá o cargo se assim decidir o Plenário, assegurada a ampla defesa.",a:"E",j:"A perda é automática.",r:"RICD 8, §5º",sim:"B"},
+{t:"org",s:"O partido que não atender aos requisitos do art. 17, §3º, da CF não terá Liderança, mas poderá indicar um de seus integrantes para expressar a posição do partido no momento da votação de proposições.",a:"C",j:"Também pode falar uma vez por semana, por cinco minutos, nas Comunicações de Lideranças.",r:"RICD 9, §4º"},
+{t:"org",s:"Cada Líder pode indicar vice-líderes na proporção de um para cada cinco deputados que constituam sua representação.",a:"E",j:"Um para cada quatro deputados, ou fração.",r:"RICD 9, §1º"},
+{t:"org",s:"É prerrogativa do Líder participar, pessoalmente ou por intermédio de seus vice-líderes, dos trabalhos de qualquer comissão de que não seja membro, com direito a voto.",a:"E",j:"Participa sem direito a voto, podendo encaminhar a votação e requerer verificação.",r:"RICD 10, III",sim:"A"},
+{t:"org",s:"A Liderança do Governo, composta de Líder e vinte vice-líderes, tem a prerrogativa de indicar à Mesa os deputados que comporão as comissões.",a:"E",j:"A Liderança do Governo tem só as prerrogativas dos incisos I, III e IV do art. 10. Indicar membros de comissão (VI) é do Líder de partido ou bloco.",r:"RICD 11; RICD 10"},
+{t:"org",s:"Partidos que, somados, tenham quinze deputados podem constituir bloco parlamentar, porque o mínimo exigido é de três centésimos dos membros da Câmara.",a:"E",j:"3/100 de 513 = 15,39. Sem regra de desprezar a fração, o mínimo é 16.",r:"RICD 12, §3º",sim:"B"},
+{t:"org",s:"A agremiação que se desvincular de bloco parlamentar não poderá constituir ou integrar outro bloco na mesma sessão legislativa.",a:"C",j:"Literal. Vale também para quem integrava bloco dissolvido.",r:"RICD 12, §8º"},
+{t:"org",s:"Considera-se Minoria a representação imediatamente inferior à Maioria que, em relação ao Governo, expresse posição diversa da Maioria.",a:"C",j:"Literal.",r:"RICD 13"},
+{t:"org",s:"Se nenhum partido ou bloco atingir a maioria absoluta dos membros da Casa, a Câmara não terá Maioria para fins regimentais.",a:"E",j:"Assume as funções da Maioria o partido ou bloco com o maior número de representantes.",r:"RICD 13, p.u."},
+{t:"org",s:"A Mesa reúne-se ordinariamente uma vez por semana e, extraordinariamente, quando convocada pelo Presidente ou por três de seus membros efetivos.",a:"E",j:"Uma vez por quinzena; extraordinariamente, pelo Presidente ou por quatro membros efetivos.",r:"RICD 14, §3º"},
+{t:"org",s:"Perderá o lugar na Mesa o membro que deixar de comparecer a cinco reuniões ordinárias consecutivas, sem causa justificada.",a:"C",j:"Literal.",r:"RICD 14, §4º"},
+{t:"org",s:"Membro efetivo da Mesa pode integrar comissão parlamentar de inquérito, mas não pode fazer parte de Liderança.",a:"E",j:"A vedação abrange Liderança e comissões permanentes, especiais e de inquérito.",r:"RICD 14, §5º"},
+{t:"org",s:"Compete à Mesa declarar a perda do mandato do deputado que perder ou tiver suspensos os direitos políticos.",a:"C",j:"Hipótese do art. 55, IV, da CF.",r:"RICD 15, XIV; CF 55, §3º"},
+{t:"org",s:"A aplicação de censura escrita a deputado compete ao Presidente da Câmara, e a de censura verbal, à Mesa.",a:"E",j:"Inverteu: censura escrita é da Mesa e censura verbal é do Presidente.",r:"RICD 15, XV; RICD 17, I, x"},
+{t:"org",s:"Compete à Mesa autorizar licitações, homologar seus resultados e aprovar o calendário de compras da Câmara.",a:"C",j:"Literal.",r:"RICD 15, XXV",sim:"A"},
+{t:"org",s:"Em caso de matéria inadiável, o Presidente pode decidir, ad referendum da Mesa, sobre qualquer assunto da competência desta, inclusive a proposta de suspensão cautelar do exercício de mandato.",a:"E",j:"A suspensão cautelar é a exceção expressa.",r:"RICD 15, §1º e XXX"},
+{t:"org",s:"O cargo de Presidente da Câmara dos Deputados é privativo de brasileiro nato.",a:"C",j:"Literal, em linha com a CF.",r:"RICD 16, p.u.; CF 12, §3º, II"},
+{t:"org",s:"O Presidente da Câmara somente vota, em Plenário, no caso de escrutínio secreto ou para desempatar votação ostensiva, contando-se sua presença, em qualquer caso, para efeito de quórum.",a:"C",j:"Literal.",r:"RICD 17, I, v, e §1º",sim:"B"},
+{t:"org",s:"Sempre que tiver de se ausentar da Capital Federal por mais de vinte e quatro horas, o Presidente passará o exercício da presidência ao Primeiro Vice-Presidente.",a:"E",j:"O prazo é de quarenta e oito horas.",r:"RICD 18, §1º"},
+{t:"org",s:"Cabe ao Primeiro-Secretário decidir, em primeira instância, recursos contra atos do Diretor-Geral da Câmara e dar posse ao Diretor-Geral e ao Secretário-Geral da Mesa.",a:"C",j:"Literal.",r:"RICD 19, III e V"},
+{t:"org",s:"No Colégio de Líderes, o Líder do Governo tem direito a voz e a voto.",a:"E",j:"Voz, sem voto. O mesmo vale para líderes de partidos que integram bloco.",r:"RICD 20, §1º"},
+{t:"org",s:"Quando não for possível o consenso, prevalecerá no Colégio de Líderes o critério da maioria absoluta, ponderados os votos dos Líderes em função da expressão numérica de cada bancada.",a:"C",j:"Literal.",r:"RICD 20, §2º"},
+{t:"org",s:"A Procuradoria Parlamentar, constituída por onze membros designados pelo Presidente da Câmara, promove a defesa da Câmara, de seus órgãos e membros quando atingidos em sua honra ou imagem em razão do exercício do mandato.",a:"C",j:"Literal.",r:"RICD 21"},
+{t:"org",s:"Compete à Ouvidoria Parlamentar dar cumprimento às determinações da Mesa referentes à segurança interna e externa da Câmara.",a:"E",j:"Essa competência é da Corregedoria Parlamentar.",r:"RICD 21-F, II"},
+{t:"org",s:"Nas hipóteses de perda de mandato por perda ou suspensão dos direitos políticos e por decisão da Justiça Eleitoral, a análise da Câmara restringe-se aos aspectos formais da decisão judicial.",a:"C",j:"Literal.",r:"RICD 21-F, p.u."},
+{t:"org",s:"O deputado que mudar de partido perde automaticamente a vaga que ocupava no Conselho de Ética e Decoro Parlamentar em razão de sua bancada.",a:"E",j:"O RICD afasta expressamente essa regra para os membros do Conselho de Ética.",r:"RICD 21-E, §2º",sim:"A"},
+{t:"org",s:"A Procuradora da Mulher e as três Procuradoras Adjuntas são designadas pelo Presidente da Câmara, a cada dois anos.",a:"E",j:"São eleitas pelas deputadas, na primeira quinzena da 1ª e da 3ª sessões legislativas.",r:"RICD 20-B"},
+{t:"org",s:"O Secretário de Defesa das Prerrogativas Parlamentares é escolhido pelo Presidente da Câmara entre os deputados no exercício do mandato e pode ser substituído a qualquer tempo.",a:"C",j:"Regra comum às secretarias dos arts. 21-H a 21-U, incluída pela RCD 16/2025.",r:"RICD 21-U"},
+{t:"org",s:"As comissões temporárias extinguem-se ao término da legislatura, ou antes dele, quando alcançado o fim a que se destinam ou expirado seu prazo de duração.",a:"C",j:"Literal.",r:"RICD 22, II"},
+{t:"org",s:"Projeto de lei complementar pode ser apreciado conclusivamente por comissão permanente, dispensada a competência do Plenário, se não houver recurso.",a:"E",j:"Projeto de lei complementar é exceção ao poder conclusivo.",r:"RICD 24, II, a",sim:"B"},
+{t:"org",s:"O deputado que se desvincular de sua bancada perde automaticamente o direito à vaga que ocupava em comissão em razão dela, salvo se exercer nela cargo de natureza eletiva.",a:"E",j:"Perde ainda que exerça cargo de natureza eletiva.",r:"RICD 23, p.u."},
+{t:"org",s:"A atribuição das comissões de propor a sustação de atos normativos do Poder Executivo que exorbitem do poder regulamentar exclui a iniciativa individual de deputado sobre a matéria.",a:"E",j:"Não exclui a iniciativa concorrente de deputado. Vale também para os pedidos de informação.",r:"RICD 24, §2º"},
+{t:"org",s:"A Bancada Negra participa, com os Líderes, das reuniões convocadas pelo Presidente da Câmara, com direito a voz e voto.",a:"C",j:"Literal.",r:"RICD 13-B, I"},
+
+/* Sessões */
+{t:"ses",s:"As sessões deliberativas ordinárias da Câmara realizam-se apenas uma vez por dia, de segunda a sexta-feira.",a:"E",j:"De terça a quinta-feira, às 14 h.",r:"RICD 65, II, a"},
+{t:"ses",s:"As sessões não deliberativas de debates realizam-se apenas uma vez às segundas e às sextas-feiras, com duração de cinco horas e sem Ordem do Dia.",a:"C",j:"Literal.",r:"RICD 65, III, a"},
+{t:"ses",s:"A sessão solene só pode ser aberta com a presença de, no mínimo, um décimo dos deputados.",a:"E",j:"A sessão solene independe de número.",r:"RICD 68, II",sim:"B"},
+{t:"ses",s:"O Presidente pode suspender a sessão tantas vezes quantas forem necessárias, desde que nenhuma suspensão ultrapasse uma hora.",a:"E",j:"Uma única vez, por até uma hora; depois, a sessão é encerrada.",r:"RICD 70"},
+{t:"ses",s:"A sessão da Câmara pode ser levantada antes do prazo previsto em caso de falecimento de congressista da legislatura ou quando for decretado luto oficial.",a:"C",j:"Também em tumulto grave ou com menos de 1/10 dos deputados presentes.",r:"RICD 71"},
+{t:"ses",s:"Presente na Casa pelo menos a décima parte do número total de deputados, desprezada a fração, o Presidente declara aberta a sessão; não havendo esse quórum, aguarda meia hora, e o retardamento é deduzido do tempo destinado ao expediente.",a:"C",j:"Literal.",r:"RICD 79, §§2º e 3º",sim:"A"},
+{t:"ses",s:"Aberta a sessão, o Primeiro-Secretário lê a ata da sessão anterior, que é submetida à votação do Plenário.",a:"E",j:"Lê o Segundo-Secretário, e a ata é considerada aprovada independentemente de votação.",r:"RICD 80"},
+{t:"ses",s:"No Pequeno Expediente, cada deputado inscrito para breves comunicações pode falar por cinco minutos, permitidos apartes.",a:"E",j:"Não são permitidos apartes.",r:"RICD 81"},
+{t:"ses",s:"No Grande Expediente, cada orador dispõe de vinte e cinco minutos, incluídos os apartes, e a lista de oradores é organizada por sorteio eletrônico.",a:"C",j:"Literal.",r:"RICD 87"},
+{t:"ses",s:"A ausência às votações equipara-se, para todos os efeitos, à ausência às sessões, ressalvada a obstrução parlamentar legítima, aprovada pelas bancadas ou suas lideranças e comunicada à Mesa.",a:"C",j:"Literal.",r:"RICD 82, §6º",sim:"B"},
+{t:"ses",s:"Iniciada a apreciação da pauta, as matérias constantes da Ordem do Dia têm precedência sobre os requerimentos de urgência.",a:"E",j:"Ordem: redações finais, requerimentos de urgência, requerimentos de comissão, requerimentos de deputados de votação imediata, e só então as matérias da Ordem do Dia.",r:"RICD 83"},
+{t:"ses",s:"Não será designada Ordem do Dia para a primeira sessão plenária de cada sessão legislativa.",a:"C",j:"Literal.",r:"RICD 85, p.u."},
+{t:"ses",s:"A sessão extraordinária, destinada exclusivamente à discussão e votação das matérias constantes da Ordem do Dia, pode ser convocada por deliberação do Plenário, a requerimento de qualquer deputado.",a:"C",j:"Também pelo Presidente, de ofício, ou pelo Colégio de Líderes.",r:"RICD 67"},
+{t:"ses",s:"Durante os períodos de sessões extraordinárias convocados pelo Presidente, as comissões permanentes continuam a funcionar normalmente.",a:"E",j:"Nesses períodos, não há sessões ordinárias e não funcionam as comissões permanentes.",r:"RICD 66, §5º"},
+{t:"ses",s:"Nas Comunicações de Lideranças, as Lideranças do Governo, da Minoria, da Oposição e da Maioria dispõem de oito minutos cada, permitidos apartes.",a:"E",j:"Não são permitidos apartes em qualquer caso.",r:"RICD 89"},
+{t:"ses",s:"A sessão plenária será transformada em Comissão Geral para debate de matéria relevante, por proposta conjunta dos Líderes ou a requerimento de um terço dos membros da Câmara.",a:"C",j:"Literal. Também para projeto de iniciativa popular e comparecimento de Ministro.",r:"RICD 91, I"},
+{t:"ses",s:"A sessão secreta será convocada automaticamente quando houver requerimento escrito de um quinto dos membros da Câmara.",a:"E",j:"Automática: comissão, Colégio de Líderes ou 1/3. Com Líder ou 1/5, depende de deliberação do Plenário.",r:"RICD 92",sim:"A"},
+{t:"ses",s:"Será secreta a sessão em que a Câmara deva deliberar sobre passagem de forças estrangeiras pelo território nacional ou sua permanência nele.",a:"C",j:"Também efetivos das Forças Armadas e guerra ou paz.",r:"RICD 92, p.u., III",sim:"A"},
+{t:"ses",s:"Ministros de Estado convocados podem assistir à integralidade da sessão secreta do Plenário.",a:"E",j:"Participam apenas durante o tempo necessário. Assistir à sessão é só para deputados e senadores.",r:"RICD 94"},
+{t:"ses",s:"Reunida em sessão secreta, a Câmara deliberará preliminarmente se o assunto deve ser tratado sigilosa ou publicamente, debate que não pode exceder a primeira hora, salvo nas hipóteses de sessão obrigatoriamente secreta, em que essa deliberação não ocorre.",a:"C",j:"Literal, com cada deputado limitado a cinco minutos.",r:"RICD 93, §1º"},
+{t:"ses",s:"No recinto do Plenário, durante as sessões, só são admitidos deputados e senadores, ex-parlamentares, funcionários da Câmara em serviço local e jornalistas credenciados.",a:"C",j:"Literal. Parlamentar estrangeiro entra se houver reciprocidade.",r:"RICD 77"},
+{t:"ses",s:"A transmissão por rádio ou televisão e a gravação das sessões da Câmara dependem de prévia deliberação da Mesa.",a:"E",j:"Dependem de prévia autorização do Presidente; a Mesa fixa as normas.",r:"RICD 78",sim:"B"},
+{t:"ses",s:"A Câmara pode realizar até duas sessões solenes por mês, por deliberação do Plenário.",a:"C",j:"Literal.",r:"RICD 68, III"},
+
+/* Deputados */
+{t:"dep",s:"O deputado apresentará à Mesa, para efeito de posse e antes do término do mandato, declaração de bens e de suas fontes de renda, importando infração ao Código de Ética a inobservância desse preceito.",a:"C",j:"Literal.",r:"RICD 229",sim:"B"},
+{t:"dep",s:"Para afastar-se do território nacional por mais de quinze dias, o deputado depende de autorização prévia do Plenário.",a:"E",j:"Basta dar prévia ciência à Câmara, pela Presidência. A autorização do CN é exigida do PR e do VPR.",r:"RICD 228; CF 49, III"},
+{t:"dep",s:"O deputado exonerado do cargo de ministro de Estado dispõe de trinta dias para reassumir o mandato.",a:"E",j:"O prazo é de quinze dias, e a omissão tipifica falta de decoro.",r:"RICD 230, §3º",sim:"A"},
+{t:"dep",s:"A licença para desempenhar missão temporária de caráter diplomático ou cultural é concedida pela Mesa; as demais licenças, pelo Presidente.",a:"C",j:"Literal.",r:"RICD 235, §4º; RICD 17, VI, e",sim:"A"},
+{t:"dep",s:"Salvo prorrogação da sessão legislativa ordinária ou convocação extraordinária, não se concederá licença para tratamento de saúde nem para tratar de interesse particular durante o recesso constitucional.",a:"C",j:"Literal.",r:"RICD 235, §2º"},
+{t:"dep",s:"A licença para tratar de interesse particular é remunerada, desde que o afastamento não ultrapasse cento e vinte dias por sessão legislativa.",a:"E",j:"É sem remuneração.",r:"RICD 235, III; CF 56, II"},
+{t:"dep",s:"Para obter licença para tratamento de saúde, o deputado deve apresentar laudo de inspeção de saúde firmado por três integrantes do corpo médico da Câmara.",a:"C",j:"Literal.",r:"RICD 236, p.u."},
+{t:"dep",s:"Em caso de incapacidade civil absoluta, o deputado será suspenso do exercício do mandato, com perda da remuneração enquanto durarem seus efeitos.",a:"E",j:"A suspensão é sem perda da remuneração.",r:"RICD 237",sim:"B"},
+{t:"dep",s:"A renúncia ao mandato depende de aprovação do Plenário e torna-se irretratável com a proclamação do resultado.",a:"E",j:"Independe de aprovação. Torna-se efetiva e irretratável quando lida no expediente ou publicada no Diário da Câmara.",r:"RICD 239"},
+{t:"dep",s:"A declaração de renúncia somente se torna efetiva e irretratável depois de lida no expediente ou disponibilizada no Diário da Câmara dos Deputados, o que ocorrer primeiro.",a:"C",j:"Literal.",r:"RICD 239",sim:"B"},
+{t:"dep",s:"Considera-se ter renunciado o suplente que, convocado, não se apresentar para entrar em exercício no prazo regimental.",a:"C",j:"Literal. Vale também para o deputado que não presta compromisso no prazo.",r:"RICD 239, §1º"},
+{t:"dep",s:"Nos casos de perda de mandato por infração às incompatibilidades do art. 54 da CF ou por condenação criminal transitada em julgado, a representação é encaminhada ao Conselho de Ética e Decoro Parlamentar.",a:"E",j:"Vai à Comissão de Constituição e Justiça e de Cidadania.",r:"RICD 240, §3º"},
+{t:"dep",s:"Na representação para perda de mandato processada na CCJC, o deputado tem cinco sessões para apresentar defesa escrita; não apresentada, o presidente da comissão nomeia defensor dativo.",a:"C",j:"Literal.",r:"RICD 240, §3º, I e II"},
+{t:"dep",s:"A Mesa convocará o suplente, no prazo de quarenta e oito horas, em caso de licença do titular para tratamento de saúde com prazo original superior a cento e vinte dias, admitida a soma de períodos sucessivos para esse efeito.",a:"E",j:"É vedada a soma de períodos.",r:"RICD 241, III"},
+{t:"dep",s:"Suplente convocado em caráter de substituição pode ser eleito presidente de comissão, mas não pode ser eleito para a Mesa.",a:"E",j:"Não pode nenhum dos dois, nem integrar Procuradoria, Ouvidoria ou Corregedoria.",r:"RICD 243"},
+{t:"dep",s:"Durante o estado de sítio, as imunidades dos deputados podem ser suspensas por dois terços dos membros da Câmara, em votação ostensiva, inclusive quanto a atos praticados no recinto do Congresso Nacional.",a:"E",j:"O RICD manda o escrutínio secreto, e a suspensão se restringe a atos fora do recinto.",r:"RICD 233; CF 53, §8º"},
+{t:"dep",s:"No caso de prisão em flagrante de deputado, a CCJC oferecerá parecer prévio sobre a manutenção da prisão no prazo de setenta e duas horas, permanecendo o preso sob sua custódia até o pronunciamento da Casa.",a:"C",j:"Literal.",r:"RICD 251, I"},
+{t:"dep",s:"Os ex-deputados federais têm livre acesso ao Plenário e podem utilizar a biblioteca, o arquivo e a assistência médica da Casa independentemente de autorização do Presidente.",a:"C",j:"Só reprografia e processamento de dados dependem de autorização prévia.",r:"RICD 234"},
+{t:"dep",s:"O deputado que se desvincular de sua bancada perde, para efeitos regimentais, o direito a cargos ou funções que ocupar em razão dela.",a:"C",j:"Literal. A exceção é o Conselho de Ética (21-E, §2º).",r:"RICD 232"},
+{t:"dep",s:"As deputadas gestantes, a partir da trigésima semana de gestação, podem participar das sessões por videoconferência, registrar presença e votar remotamente.",a:"C",j:"Literal. O direito vai até 180 dias após o início da licença.",r:"RICD 227-A"},
+
+/* Administração */
+{t:"adm",s:"Os serviços administrativos da Câmara regem-se por regulamentos especiais aprovados pela Mesa e são dirigidos pelo Diretor-Geral.",a:"E",j:"Os regulamentos são aprovados pelo Plenário e os serviços são dirigidos pela Mesa.",r:"RICD 262"},
+{t:"adm",s:"Nenhuma proposição que modifique os serviços administrativos da Câmara poderá ser submetida à deliberação do Plenário sem parecer da Mesa.",a:"C",j:"Literal.",r:"RICD 263",sim:"B"},
+{t:"adm",s:"As reclamações sobre irregularidades nos serviços administrativos devem ser encaminhadas à Mesa, para providência em setenta e duas horas; decorrido esse prazo, podem ser levadas ao Plenário.",a:"C",j:"Literal.",r:"RICD 264"},
+{t:"adm",s:"As despesas da Câmara, dentro dos limites das disponibilidades orçamentárias, são ordenadas pelo Primeiro-Secretário.",a:"E",j:"O ordenador de despesa é o Diretor-Geral.",r:"RICD 265, §1º",sim:"A"},
+{t:"adm",s:"Até 30 de junho de cada ano, o Presidente da Câmara encaminhará ao Tribunal de Contas da União a prestação de contas relativa ao exercício anterior.",a:"C",j:"Literal.",r:"RICD 265, §4º"},
+{t:"adm",s:"Em razão da autonomia do Poder Legislativo, a gestão patrimonial e orçamentária da Câmara não se submete às normas gerais de licitações e contratos aplicáveis aos demais Poderes.",a:"E",j:"Obedece às normas gerais de Direito Financeiro e de licitações e contratos em vigor para os três Poderes.",r:"RICD 265, §5º"},
+{t:"adm",s:"A ocupação de imóveis residenciais da Câmara por deputados fica restrita ao período de exercício do mandato e é objeto de contrato-padrão aprovado pela Mesa.",a:"C",j:"Literal.",r:"RICD 266, p.u."},
+{t:"adm",s:"O policiamento dos edifícios da Câmara compete privativamente à Mesa, sob a suprema direção do Presidente, e pode contar, se necessário, com efetivos das polícias civil e militar do DF, requisitados ao Governo local e postos à exclusiva disposição da Mesa.",a:"C",j:"Literal.",r:"RICD 270",sim:"A"},
+{t:"adm",s:"O policiamento dos blocos residenciais funcionais destinados a deputados não se inclui na competência da Mesa, cabendo à Polícia Militar do Distrito Federal.",a:"E",j:"O art. 270 inclui expressamente os blocos residenciais funcionais.",r:"RICD 270"},
+{t:"adm",s:"Delito cometido por servidor nos edifícios da Câmara dá ensejo a inquérito presidido pelo Corregedor Parlamentar.",a:"E",j:"Preside o diretor de serviços de segurança. O Corregedor preside quando o indiciado ou preso for membro da Casa.",r:"RICD 269"},
+{t:"adm",s:"O porte de arma por quem não integra a segurança nos edifícios da Câmara constitui infração disciplinar, além de contravenção, e cabe ao Corregedor supervisionar a proibição, com poderes para mandar revistar e desarmar.",a:"C",j:"Literal.",r:"RICD 271"},
+{t:"adm",s:"É proibido o exercício de comércio nas dependências da Câmara, sem exceção.",a:"E",j:"Admite-se com autorização expressa da Mesa.",r:"RICD 273"},
+{t:"adm",s:"Se deputado cometer, no âmbito da Casa, excesso que deva ter repressão disciplinar, a Mesa instaurará diretamente o processo no Conselho de Ética.",a:"E",j:"O Presidente conhece do fato e requisita à Corregedoria a abertura de sindicância ou inquérito.",r:"RICD 268"},
+{t:"adm",s:"Em flagrante de crime inafiançável cometido por parlamentar nos edifícios da Câmara, o preso será entregue, com o auto respectivo, ao Presidente da Câmara.",a:"C",j:"Literal, com remissão aos arts. 250 e 251.",r:"RICD 269, §5º"},
+{t:"adm",s:"A movimentação financeira dos recursos orçamentários da Câmara pode ser feita em qualquer instituição financeira autorizada pelo Banco Central, a critério da Mesa.",a:"E",j:"Só no Banco do Brasil ou na Caixa Econômica Federal.",r:"RICD 265, §2º"},
+{t:"adm",s:"Os regulamentos dos serviços administrativos devem prever que as atividades sejam executadas por pessoal recrutado mediante concurso público de provas ou de provas e títulos, ressalvados os cargos em comissão.",a:"C",j:"Princípio do inciso II.",r:"RICD 262, p.u., II"},
+
+/* Regimento Comum (8.1: arts. 1º a 3º; 8.2: arts. 53 a 71; 8.3: arts. 72 a 103) */
+{t:"cn",s:"Segundo o Regimento Comum, a Câmara dos Deputados e o Senado Federal, sob a direção da Mesa do Senado, reúnem-se em sessão conjunta para, entre outras finalidades, inaugurar a sessão legislativa, dar posse ao presidente e ao vice-presidente da República eleitos e promulgar emendas à Constituição.",a:"C",j:"Incisos I, II e III do art. 1º.",r:"RCCN 1º"},
+{t:"cn",s:"Têm caráter solene as sessões conjuntas destinadas a inaugurar a sessão legislativa, a dar posse ao presidente da República e a conhecer de matéria vetada e sobre ela deliberar.",a:"E",j:"São solenes as dos incisos I, II e III (inaugurar, posse e promulgação de EC) e as homenagens do §1º. A sessão do veto não é solene.",r:"RCCN 1º, §2º",sim:"A"},
+{t:"cn",s:"Por proposta das Mesas da Câmara e do Senado, podem ser realizadas sessões conjuntas destinadas a homenagear chefes de Estado estrangeiros e comemorativas de datas nacionais, as quais têm caráter solene.",a:"C",j:"Literal dos §§1º e 2º.",r:"RCCN 1º, §§1º e 2º"},
+{t:"cn",s:"As sessões conjuntas que não tiverem data legalmente fixada serão convocadas pelo presidente do Senado ou seu substituto, com prévia audiência da Mesa da Câmara dos Deputados.",a:"C",j:"Literal.",r:"RCCN 2º"},
+{t:"cn",s:"As sessões conjuntas do Congresso Nacional realizam-se no Plenário do Senado Federal, salvo escolha prévia de outro local devidamente anunciado.",a:"E",j:"Realizam-se no Plenário da Câmara dos Deputados.",r:"RCCN 3º"},
+{t:"cn",s:"As sessões solenes do Congresso Nacional somente serão abertas com a presença da maioria absoluta dos membros de cada Casa.",a:"E",j:"As sessões solenes realizam-se com qualquer número.",r:"RCCN 53, p.u."},
+{t:"cn",s:"Nas sessões solenes do Congresso Nacional, integram a Mesa o presidente da Câmara dos Deputados e, mediante convite, o presidente do Supremo Tribunal Federal.",a:"C",j:"Literal.",r:"RCCN 53"},
+{t:"cn",s:"Nas sessões solenes do Congresso Nacional, não há expediente e não são admitidas questões de ordem.",a:"C",j:"Arts. 54, parágrafo único, e 56.",r:"RCCN 54 e 56"},
+{t:"cn",s:"Na sessão solene de inauguração da sessão legislativa, usarão da palavra um senador e um deputado, de preferência de partidos diferentes, previamente designados pelas respectivas Casas.",a:"E",j:"Essa é a regra geral das sessões solenes, mas na inauguração da sessão legislativa e na posse do PR e do VPR não há oradores.",r:"RCCN 55, p.u."},
+{t:"cn",s:"Na inauguração da sessão legislativa, o enviado do presidente da República entrega a Mensagem à Mesa, e esta é lida pelo Primeiro-Secretário, encerrando-se a sessão ao fim da leitura.",a:"C",j:"Arts. 57 a 59.",r:"RCCN 57 a 59"},
+{t:"cn",s:"O enviado do presidente da República portador da Mensagem é conduzido até a Mesa, atravessando o plenário, por comissão de três senadores e três deputados.",a:"E",j:"É conduzido pelos Diretores das Secretarias do Senado e da Câmara, sem atravessar o plenário. A comissão de 3 + 3 é a da recepção a Chefe de Estado.",r:"RCCN 57; RCCN 68"},
+{t:"cn",s:"Na sessão de posse do presidente e do vice-presidente da República, o presidente da Mesa designa cinco senadores e cinco deputados para a comissão que recebe os empossandos à entrada principal e os conduz ao Salão de Honra.",a:"C",j:"Literal.",r:"RCCN 60",sim:"B"},
+{t:"cn",s:"Introduzidos no plenário para a posse, o presidente e o vice-presidente da República eleitos ocupam, respectivamente, os lugares à esquerda e à direita do presidente da Mesa.",a:"E",j:"Inverteu: o PR fica à direita e o VPR, à esquerda.",r:"RCCN 61"},
+{t:"cn",s:"Durante a sessão de posse do presidente da República, os espectadores permanecem de pé, com exceção dos membros da Mesa.",a:"E",j:"Na posse, todos ficam de pé, inclusive os membros da Mesa. A exceção do Presidente da Mesa é da recepção a Chefe de Estado (art. 69, §1º).",r:"RCCN 61, p.u.; RCCN 69, §1º"},
+{t:"cn",s:"Após a prestação dos compromissos, o Primeiro-Secretário lê o termo de posse, que é assinado pelos empossados e pelos membros da Mesa.",a:"C",j:"Literal.",r:"RCCN 65"},
+{t:"cn",s:"Na sessão solene de recepção a chefe de Estado estrangeiro, o visitante que quiser usar da palavra deverá fazê-lo antes dos oradores da sessão.",a:"E",j:"Fala depois dos oradores.",r:"RCCN 70"},
+{t:"cn",s:"Aprovada a proposta de emenda à Constituição em segundo turno, as Mesas da Câmara dos Deputados e do Senado Federal, em sessão conjunta solene, promulgarão a emenda com o respectivo número de ordem.",a:"C",j:"Literal. Liga-se à CF 60, §3º, e ao RICD 15, III.",r:"RCCN 85",sim:"A"},
+{t:"cn",s:"A Mensagem do presidente da República que encaminha o projeto de lei orçamentária será recebida e lida em sessão conjunta especialmente convocada, a realizar-se dentro de setenta e duas horas de sua entrega ao presidente do Senado.",a:"E",j:"O prazo é de quarenta e oito horas.",r:"RCCN 89"},
+{t:"cn",s:"Nas deliberações da Comissão Mista que aprecia o projeto de lei orçamentária, votam primeiro os representantes do Senado Federal, e o voto contrário da maioria dos representantes de uma das Casas importa a rejeição da matéria.",a:"E",j:"As deliberações iniciam-se pelos representantes da Câmara dos Deputados.",r:"RCCN 90, §4º",sim:"B"},
+{t:"cn",s:"A regra segundo a qual o voto contrário da maioria dos representantes de uma das Casas importa a rejeição da matéria não se aplica à eleição do presidente e do vice-presidente da Comissão Mista de orçamento.",a:"C",j:"Literal do §5º.",r:"RCCN 90, §5º"},
+{t:"cn",s:"O suplente participa dos trabalhos da Comissão Mista do projeto de lei orçamentária ainda que o titular esteja presente, mas sem direito a voto.",a:"E",j:"O suplente só participa na ausência ou impedimento do titular.",r:"RCCN 90, §2º"},
+{t:"cn",s:"O parecer de comissão permanente sobre o projeto de lei orçamentária deve abranger exclusivamente as partes que versarem sobre a matéria de sua competência específica.",a:"C",j:"Literal do inciso II do §3º.",r:"RCCN 90, §3º, II"},
+{t:"cn",s:"Comissões permanentes da Câmara e do Senado que tiverem competência coincidente podem, por deliberação da maioria de seus membros, realizar reuniões conjuntas sob a direção alternada dos respectivos presidentes e concluir por parecer único sobre a matéria orçamentária.",a:"C",j:"Literal do inciso VI do §3º.",r:"RCCN 90, §3º, VI"},
+{t:"cn",s:"O projeto de lei orçamentária será distribuído em avulsos eletrônicos nos cinco dias seguintes à sua leitura.",a:"C",j:"Literal.",r:"RCCN 93"},
+{t:"cn",s:"As emendas ao projeto de lei orçamentária pendentes de decisão do Plenário serão discutidas e votadas uma a uma, vedada a votação em grupos.",a:"E",j:"São discutidas e votadas em grupos, conforme tenham parecer favorável ou contrário, ressalvados os destaques.",r:"RCCN 99"},
+{t:"cn",s:"Se a Comissão Mista não apresentar parecer sobre o projeto de lei orçamentária no prazo fixado, o presidente do Senado, feita a publicação das emendas, convocará sessão conjunta e designará relator, que proferirá parecer oral.",a:"C",j:"Literal.",r:"RCCN 100"},
+{t:"cn",s:"As normas do Regimento Comum sobre o projeto de lei orçamentária aplicam-se, no que couber, à tramitação dos projetos de orçamento plurianual de investimentos.",a:"C",j:"Literal.",r:"RCCN 103"}
+];
+
+/* Prova prevista */
+var P = [
+{s:"Situação hipotética: um deputado federal foi preso em flagrante por crime inafiançável. Nesse caso, os autos devem ser remetidos à Câmara em vinte e quatro horas e, segundo o RICD, a CCJC deverá oferecer parecer prévio sobre a manutenção da prisão em setenta e duas horas.",a:"C",j:"24 h vêm da CF e do RICD 250; 72 h, do RICD 251, I, b.",r:"CF 53, §2º; RICD 250 e 251",w:"Junta CF e RICD num só item, com dois prazos. É o formato preferido para o item 6 do edital.",p:"muito alta"},
+{s:"O deputado federal que tiver seus direitos políticos suspensos perderá o mandato por decisão do Plenário da Câmara, tomada por maioria absoluta, mediante provocação da Mesa ou de partido político.",a:"E",j:"Inciso IV: a perda é declarada pela Mesa.",r:"CF 55, §3º; RICD 15, XIV",w:"Troca “declarar” (Mesa) por “decidir” (Plenário). A distinção mais cobrada do art. 55.",p:"muito alta"},
+{s:"Desde a expedição do diploma, o deputado não poderá patrocinar causa em que seja interessada empresa pública federal.",a:"E",j:"Patrocinar causa é vedação desde a posse.",r:"CF 54, II, c",w:"Mantém a vedação correta e troca o marco temporal.",p:"alta"},
+{s:"Compete ao Presidente da Câmara conceder licença a deputado para tratamento de saúde, cabendo à Mesa decidir sobre a licença para missão temporária de caráter cultural.",a:"C",j:"Regra e exceção do §4º do art. 235, repetidas no art. 17, VI, e.",r:"RICD 235, §4º",w:"Item de “quem faz o quê”, que deu 2 itens Errado em 2025. Desta vez, Certo.",p:"alta"},
+{s:"Extingue-se o bloco parlamentar se o desligamento de uma bancada implicar a redução do número de seus membros a menos de três centésimos da composição da Câmara.",a:"C",j:"Literal do §4º.",r:"RICD 12, §§3º e 4º",w:"Blocos deram 3 itens em 2025. A banca costuma voltar ao tema e inverter o gabarito.",p:"muito alta"},
+{s:"A sessão da Câmara pode ser aberta com a presença de um décimo do número total de deputados, desprezada a fração, mas a apreciação da pauta da Ordem do Dia depende da presença da maioria absoluta.",a:"C",j:"Abertura: art. 79, §2º (51 deputados). Pauta: art. 83 (257).",r:"RICD 79, §2º; RICD 83",w:"Dois quóruns no mesmo item. Quem confunde abertura com deliberação erra.",p:"alta"},
+{s:"A sessão secreta da Câmara será convocada automaticamente se requerida por um quinto dos deputados.",a:"E",j:"Com 1/5, depende de deliberação do Plenário. Automática é a de 1/3, do Colégio de Líderes ou de comissão.",r:"RICD 92",w:"A banca gosta de sessão secreta (2025-103, no CN). Trocar 1/3 por 1/5 é o jeito mais simples de errar o candidato.",p:"média"},
+{s:"A Secretaria de Defesa das Prerrogativas Parlamentares, criada em 2025, passou a exercer com exclusividade a defesa judicial dos deputados ameaçados no exercício do mandato, em substituição à Mesa e à Procuradoria Parlamentar.",a:"E",j:"Atua sem prejuízo das competências da Mesa, da Procuradoria Parlamentar e da Procuradoria da Mulher.",r:"RICD 21-T, p.u.; RICD 15, IX",w:"Novidade da RCD 16/2025. Órgão novo costuma vir com “exclusividade” inventada.",p:"alta"},
+{s:"Situação hipotética: a Câmara contratou empresa para a manutenção predial de seus anexos. Nesse caso, as despesas do contrato são ordenadas pelo Diretor-Geral, nos limites do orçamento analítico aprovado pela Mesa, e a prestação de contas do exercício é encaminhada pelo Presidente ao TCU até 30 de junho do ano seguinte.",a:"C",j:"Junta os §§1º e 4º do art. 265.",r:"RICD 265, §§1º e 4º",w:"Cenário de Engenharia em item de Noções. O art. 265 é o mais “administrativo” do edital.",p:"média"},
+{s:"Na Comissão Mista que aprecia o projeto de lei orçamentária, as deliberações iniciam-se pelos representantes da Câmara dos Deputados, e o voto contrário da maioria dos representantes de uma das Casas importa a rejeição da matéria, regra que não se aplica à eleição do presidente e do vice-presidente da comissão.",a:"C",j:"Junta o §4º e o §5º do art. 90.",r:"RCCN 90, §§4º e 5º",w:"É a única regra de votação no trecho do Regimento Comum que cai. A banca pode trocar Câmara por Senado ou apagar a exceção do §5º.",p:"média"},
+{s:"Compete privativamente à Câmara dos Deputados autorizar, por dois terços de seus membros, a instauração de processo contra o presidente e o vice-presidente da República, bem como processá-los e julgá-los nos crimes de responsabilidade.",a:"E",j:"Processar e julgar é do Senado.",r:"CF 51, I; CF 52, I",w:"Clássico de competência privativa. Depois da anulação do 2026-59 (Ministros), a banca tende a voltar ao art. 51, I, sem a parte polêmica.",p:"alta"},
+{s:"Comissão permanente da Câmara pode determinar, com o auxílio do TCU, a realização de auditoria de natureza operacional em obra executada por autarquia federal.",a:"C",j:"Diligências, perícias, inspeções e auditorias contábeis, financeiras, orçamentárias, operacionais e patrimoniais, com o TCU, inclusive na administração indireta.",r:"RICD 24, X",w:"O item 2025-99 cobrou o art. 24 com autarquia. Para Engenharia, a banca põe “obra” no enunciado.",p:"alta"}
+];
+
+/* ---------- utilidades ---------- */
+function el(tag, attrs, html){ var e=document.createElement(tag); if(attrs){ for(var k in attrs){ if(k==="class") e.className=attrs[k]; else e.setAttribute(k, attrs[k]); } } if(html!=null) e.innerHTML=html; return e; }
+function refHtml(r){ var cn = /RCCN/.test(r) ? " cn" : ""; return '<span class="ref'+cn+'">'+r+'</span>'; }
+function verdict(a){ return a==="C" ? "Certo" : "Errado"; }
+
+/* ---------- banco ---------- */
+var bank = Q.map(function(q,i){ q.id = "q"+i; return q; }).filter(function(q){ return !q.sim; });
+var filt = "all";
+var bs = store.bank || {}; store.bank = bs;
+
+function renderFilters(){
+  var f = document.getElementById("bfilters"); f.innerHTML="";
+  var opts = [["all","Todos"]].concat(Object.keys(TOP).map(function(k){ return [k, TOP[k]]; })).concat([["wrong","Só os que errei"]]);
+  opts.forEach(function(o){
+    var b = el("button",{class:"chip",type:"button","aria-pressed":String(filt===o[0])}, o[1]);
+    b.addEventListener("click", function(){ filt=o[0]; renderFilters(); renderBank(); });
+    f.appendChild(b);
+  });
+}
+function bankScore(){
+  var ok=0, bad=0; bank.forEach(function(q){ var r=bs[q.id]; if(r){ if(r===q.a) ok++; else bad++; } });
+  var tot = bank.length;
+  document.getElementById("bscore").innerHTML = '<span>Respondidos <b>'+(ok+bad)+'</b>/'+tot+'</span><span>Acertos <b>'+ok+'</b></span><span>Erros <b>'+bad+'</b></span><span>Líquido <b>'+(ok-bad)+'</b></span>'
+    + ' <button class="btn ghost" type="button" id="breset">Zerar banco</button>';
+  document.getElementById("breset").addEventListener("click", function(){ bs={}; store.bank=bs; save(); renderBank(); });
+}
+function answerBlock(q, given){
+  var cls = given==null ? "neutral" : (given===q.a ? "ok" : "bad");
+  var head = given==null ? "Gabarito: "+verdict(q.a) : (given===q.a ? "Você acertou. Gabarito: "+verdict(q.a) : "Você errou. Gabarito: "+verdict(q.a));
+  return '<div class="ans '+cls+'"><span class="v">'+head+'</span><p class="why">'+q.j+' '+refHtml(q.r)+'</p></div>';
+}
+function renderBank(){
+  var box = document.getElementById("bank"); box.innerHTML="";
+  var n=0;
+  bank.forEach(function(q){
+    if(filt==="wrong"){ if(!bs[q.id] || bs[q.id]===q.a) return; }
+    else if(filt!=="all" && q.t!==filt) return;
+    n++;
+    var card = el("article",{class:"q"});
+    card.innerHTML = '<div class="meta"><span class="n">'+n+'</span><span class="pill p-bx">'+TOP[q.t]+'</span></div><p class="stem">'+q.s+'</p>';
+    var btns = el("div",{class:"btns"});
+    ["C","E"].forEach(function(v){
+      var b = el("button",{class:"btn"+(bs[q.id]===v?" sel":""),type:"button","aria-label":"Marcar "+verdict(v)}, v);
+      b.addEventListener("click", function(){ bs[q.id]=v; save(); renderBank(); });
+      btns.appendChild(b);
+    });
+    card.appendChild(btns);
+    var slot = el("div",{class:"slot"});
+    if(bs[q.id]) slot.innerHTML = answerBlock(q, bs[q.id]);
+    else slot.innerHTML = '<div class="gab-print">'+answerBlock(q,null)+'</div>';
+    card.appendChild(slot);
+    box.appendChild(card);
+  });
+  if(n===0) box.innerHTML = '<p class="muted">Nenhum item neste filtro. Se escolheu “Só os que errei”, ainda não há erros registrados.</p>';
+  bankScore();
+}
+
+/* ---------- simulados e prova prevista ---------- */
+function renderExam(containerId, items, keyName, showWhy){
+  var box = document.getElementById(containerId); box.innerHTML="";
+  var st = store[keyName] || {ans:{}, done:false}; store[keyName]=st;
+  items.forEach(function(q,i){
+    var card = el("article",{class:"q"});
+    var meta = '<div class="meta"><span class="n">'+(i+1)+'</span>'+(q.t?'<span class="pill p-bx">'+TOP[q.t]+'</span>':'')+(q.p?'<span class="pill '+(q.p==="muito alta"?"p-mx":q.p==="alta"?"p-al":"p-md")+'">chance '+q.p+'</span>':'')+'</div>';
+    card.innerHTML = meta + '<p class="stem">'+q.s+'</p>';
+    var btns = el("div",{class:"btns"});
+    [["C","C"],["E","E"],["B","Em branco"]].forEach(function(v){
+      var cur = st.ans[i] || "B";
+      var b = el("button",{class:"btn"+(cur===v[0]?" sel":"")+(v[0]==="B"?" ghost":""),type:"button"}, v[1]);
+      if(st.done) b.disabled = true;
+      b.addEventListener("click", function(){ st.ans[i]=v[0]; save(); renderExam(containerId, items, keyName, showWhy); });
+      btns.appendChild(b);
+    });
+    card.appendChild(btns);
+    if(st.done){
+      var g = st.ans[i]; var given = (g==="C"||g==="E") ? g : null;
+      var html = answerBlock(q, given);
+      if(given==null) html = html.replace("Gabarito:", "Em branco. Gabarito:");
+      if(showWhy && q.w) html += '<p class="muted" style="margin:.4rem 0 0"><b>Por que eu cobraria:</b> '+q.w+'</p>';
+      card.appendChild(el("div",null,html));
+    }
+    box.appendChild(card);
+  });
+  var res = el("div",{class:"result"});
+  if(st.done){
+    var ok=0,bad=0,blank=0; items.forEach(function(q,i){ var g=st.ans[i]; if(g==="C"||g==="E"){ if(g===q.a) ok++; else bad++; } else blank++; });
+    var net = ok-bad, pct = Math.max(0, Math.round(100*net/items.length));
+    res.innerHTML = '<div class="eyebrow">Resultado</div><div class="big">'+net+' de '+items.length+' líquidos</div><div class="score"><span>Acertos <b>'+ok+'</b></span><span>Erros <b>'+bad+'</b></span><span>Em branco <b>'+blank+'</b></span><span>Aproveitamento líquido <b>'+pct+'%</b></span></div><div class="bar"><i style="width:'+pct+'%"></i></div>'
+      + '<p class="muted" style="margin-bottom:0">'+(pct>=80?"Nível de aprovação. Revise só os erros.":pct>=60?"Bom, mas os erros custam caro. Leia de novo os artigos dos itens errados.":"Volte à aba Teoria nos assuntos dos itens errados antes de refazer.")+'</p>';
+    var again = el("button",{class:"btn",type:"button"},"Refazer");
+    again.addEventListener("click", function(){ store[keyName]={ans:{},done:false}; save(); renderExam(containerId, items, keyName, showWhy); });
+    res.appendChild(el("div",{class:"btns"})).appendChild(again);
+  } else {
+    var marked = Object.keys(st.ans).filter(function(k){ return st.ans[k]==="C"||st.ans[k]==="E"; }).length;
+    res.innerHTML = '<p style="margin-top:0">Marcados: <b>'+marked+'</b> de '+items.length+'. Os itens sem marcação contam como em branco.</p>';
+    var go = el("button",{class:"btn primary",type:"button"},"Corrigir");
+    go.addEventListener("click", function(){ st.done=true; save(); renderExam(containerId, items, keyName, showWhy); var r=box.querySelector(".result"); if(r) r.scrollIntoView({block:"nearest"}); });
+    res.appendChild(el("div",{class:"btns"})).appendChild(go);
+  }
+  box.appendChild(res);
+  // gabarito para o PDF
+  var gp = el("div",{class:"gab-print"});
+  gp.innerHTML = '<h3>Gabarito comentado</h3>' + items.map(function(q,i){ return '<p><b>'+(i+1)+'. '+verdict(q.a)+'.</b> '+q.j+' '+refHtml(q.r)+(showWhy&&q.w?' <i>Por que eu cobraria: '+q.w+'</i>':'')+'</p>'; }).join("");
+  box.appendChild(gp);
+}
+
+var simA = Q.filter(function(q){ return q.sim==="A"; });
+var simB = Q.filter(function(q){ return q.sim==="B"; });
+function showSim(which){
+  document.getElementById("simA").hidden = which!=="A";
+  document.getElementById("simB").hidden = which!=="B";
+  document.getElementById("simA-btn").setAttribute("aria-pressed", String(which==="A"));
+  document.getElementById("simB-btn").setAttribute("aria-pressed", String(which==="B"));
+}
+document.getElementById("simA-btn").addEventListener("click", function(){ showSim("A"); });
+document.getElementById("simB-btn").addEventListener("click", function(){ showSim("B"); });
+
+/* ---------- rotas ---------- */
+var VIEWS = ["inicio","plano","teoria","numeros","banco","simulados","prevista","calibracao"];
+var ANCHOR = {"t-cf":1,"t-parl":1,"t-org":1,"t-ses":1,"t-dep":1,"t-adm":1,"t-cn":1,"t-cn1":1,"t-cn2":1,"t-cn3":1};
+function route(){
+  var h = (location.hash||"").replace("#","");
+  var view = VIEWS.indexOf(h)>=0 ? h : (ANCHOR[h] ? "teoria" : "inicio");
+  document.querySelectorAll("section.view").forEach(function(s){ s.hidden = s.getAttribute("data-view")!==view; });
+  document.querySelectorAll(".tabs-in a").forEach(function(a){
+    if(a.getAttribute("href")==="#"+view){
+      a.setAttribute("aria-current","page");
+      var bar=a.parentNode; bar.scrollLeft = Math.max(0, a.offsetLeft - (bar.clientWidth - a.offsetWidth)/2);
+    } else a.removeAttribute("aria-current");
+  });
+  if(ANCHOR[h]){ var t=document.getElementById(h); if(t) t.scrollIntoView(); }
+  else if(VIEWS.indexOf(h)>=0){ window.scrollTo(0,0); }
+}
+window.addEventListener("hashchange", route);
+
+renderFilters(); renderBank();
+renderExam("simA", simA, "simA", false);
+renderExam("simB", simB, "simB", false);
+renderExam("prev", P, "prev", true);
+route();
+})();
+</script>
