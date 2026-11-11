@@ -16,6 +16,7 @@ Materiais de estudo para a prova da Câmara dos Deputados (Cebraspe).
 
 | Assunto | Material | O que traz |
 |---|---|---|
+| Licitações e contratos (Conhecimentos Básicos, item 10) + orçamento (item 3) e fiscalização de obras (item 6) | [Estudo integrado (PDF)](Fiscaliza%C3%A7%C3%A3o_e_Planejamento/Estudo_Licitacoes_Orcamento_Fiscalizacao/Licitacoes_Orcamento_Fiscalizacao.pdf) · [pasta](Fiscaliza%C3%A7%C3%A3o_e_Planejamento/Estudo_Licitacoes_Orcamento_Fiscalizacao) | Lei 14.133, Decretos 7.983 e 11.246, ponte com o RICD e a CF, 511 questões dos cadernos comentadas, itens da Câmara 2026, simulado P1 de 25 itens, 41 itens inéditos, 3 discursivas-modelo e plano até a prova |
 | Responsabilidade civil do Estado (item 6 do edital) | [Estudo estratégico (PDF)](Direito_Administrativo/Responsabilidade_Civil_do_Estado/Responsabilidade_Civil_do_Estado.pdf) · [pasta](Direito_Administrativo/Responsabilidade_Civil_do_Estado) | Mapa do edital × Cap. 15 de Maria Sylvia, pegadinhas da banca, 158 questões dos Cadernos 06 e 07 comentadas, itens da Câmara 2012 e simulado de 24 itens |
 
 ## Gestão Pública
@@ -26,6 +27,7 @@ Materiais de estudo para a prova da Câmara dos Deputados (Cebraspe).
 
 ## Arquivos de origem
 
+- [Fiscalização e Planejamento: cadernos de Licitação e Contratos, Dec. 7.983 e 11.246, Cadernos 03 e 04 de Engenharia Civil e o edital](Fiscaliza%C3%A7%C3%A3o_e_Planejamento)
 - [NBR 5626:2020, sistemas prediais de água fria e água quente](nbr-5626-2020-emenda-sistemas-prediais-de-agua-fria-e-quente_compress.pdf)
 - [Caderno 07, Engenharia Civil, Edificações, Instalações (TEC Concursos)](Caderno_07_Eng%C2%AA_Civil_Edifica%C3%A7%C3%B5es_Instala%C3%A7%C3%B5es.pdf)
 - [Direito Administrativo, Maria Sylvia Zanella Di Pietro](Direito_Administrativo_Maria_Sylvia_Zane.pdf)
