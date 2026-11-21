@@ -1,0 +1,449 @@
+<!-- Teoria do Bloco 2. Fragmento inserido pelo build.py. -->
+
+<section class="topic" id="banca">
+<header class="topic-head"><span class="tag">Antes de tudo</span><h2>Como o examinador do Cebraspe pensa</h2></header>
+
+<p class="lead">No item certo/errado, o Cebraspe quase nunca inventa conteúdo. Ele pega um parágrafo de fonte conhecida (Yazigi, <i>A técnica de edificar</i>; Creder, <i>Instalações elétricas</i>; Azeredo; o texto da NBR) e troca <b>um único elemento</b>. Seu trabalho é achar a peça trocada. As 16 provas do seu banco e o Caderno 07 mostram os mesmos padrões repetidos.</p>
+
+<h3>Os dez padrões de alteração, com exemplos reais</h3>
+<ol class="patterns">
+<li><b>Troca de número.</b> Frase verdadeira, número de outra linha da tabela. <i>Tomada a cada 5 m na cozinha</i> (é 3,5 m; TCE-RN 2025). <i>Circuito comum até 10 A</i> (é 16 A; STM 2018). <i>Corredor de uso comum até 10 m com 1,50 m</i> (é 1,20 m; STM 2018).</li>
+<li><b>Inversão de razão ou de papéis.</b> <i>Fator de demanda = potência instalada ÷ utilizada</i> (Câmara 2012). <i>Armado = armadura ativa; protendido = passiva</i> (Câmara 2012).</li>
+<li><b>Troca de nome técnico.</b> <i>DPS, conhecido como DR</i> (TRT-10 2025). <i>Plenum de retorno drena condensado</i>. <i>Poço de elevação é caixa subterrânea</i>. Descrever o esquema TN e chamá-lo de TT.</li>
+<li><b>Condição inventada.</b> <i>Sprinkler em reservatório elevado, desde que exclusivo</i> (STJ 2024, E). <i>Espelho que não pode ficar na parede da botoeira</i> (TJ-RR 2011, E). <i>Aterramento de telefone só acima de 8 pavimentos</i> (ANTAQ 2009, E). Sempre que aparecer "desde que", "exceto", "salvo", teste se a ressalva existe.</li>
+<li><b>Justificativa falsa.</b> A primeira oração é verdadeira, o "pois" é falso. <i>Tomadas com terra, pois todo aparelho precisa de terra</i> (E). <i>Limpar dutos principalmente para economizar energia</i> (E: é qualidade do ar).</li>
+<li><b>Rigidez numérica.</b> A norma diz "mínimo", o item diz "igual a". <i>Abertura de ventilação igual a 400 cm²</i> (Câmara 2012, E).</li>
+<li><b>Transferência de competência.</b> <i>A concessionária define a queda de tensão</i> (é a NBR 5410). <i>O projetista fixa a iluminância mínima</i> (é a norma). <i>A operadora executa toda a fiação interna</i> (é o proprietário).</li>
+<li><b>Generalização por absoluto.</b> "Somente", "exclusivamente", "sempre", "independentemente", "dispensa". Costuma derrubar, mas <b>não sempre</b>: <i>eletrodutos do SDAI atendem exclusivamente esse sistema</i> (C) e <i>detectores para todos os tipos de ambientes com fumaça inicial</i> (C). O absoluto é um alerta, não uma resposta.</li>
+<li><b>Senso comum perigoso.</b> <i>O fio terra funciona como fusível</i>. <i>O disjuntor substitui o interruptor</i>. <i>O interruptor deve cortar fase e neutro</i>. Parece prudente e está tecnicamente errado.</li>
+<li><b>Mistura de dois itens verdadeiros.</b> Junta duas coisas certas com um conector falso. <i>Raiz e Franki vibram muito</i> (só a Franki). <i>Tubulação de gás não pode passar em dutos nem atravessar estrutura</i> (a segunda parte é falsa).</li>
+</ol>
+
+<h3>Como ler cada item em 20 segundos</h3>
+<ol class="steps">
+<li>Leia o <b>comando</b>. "De acordo com a NBR..." pede a norma; "considerando a situação hipotética" amarra os dados do texto. O comando decide entre norma e doutrina.</li>
+<li>Ache o <b>núcleo verificável</b>: número, nome técnico, sujeito da ação, conector ("pois", "desde que", "exceto").</li>
+<li>Pergunte: <i>qual palavra, se trocada, tornaria isto verdadeiro?</i> Se você achar a palavra, o item é E.</li>
+<li>Se a frase parece cópia de livro sem nenhuma peça suspeita, ela tende a ser C. O examinador não precisa disfarçar um item certo.</li>
+</ol>
+
+<h3>Quando deixar em branco</h3>
+<p>Cada erro anula um acerto. A esperança matemática de marcar é <code>2p − 1</code>, positiva só com probabilidade de acerto <b>p &gt; 50%</b>. Na prática, para quem disputa uma vaga só, a regra é: <b>marque quando conseguir apontar a razão</b> (a palavra trocada ou o trecho de norma). Dúvida real entre duas leituras, sem razão técnica: branco. Nos simulados desta página o placar segue a regra da prova (+1, −1, 0), para você treinar essa decisão.</p>
+
+<div class="warn"><b>Norma vigente × gabarito antigo.</b> Muitos itens do Caderno 07 são de 2007 a 2011 e se apoiam em normas canceladas (NBR NM 207, NBR 6401, NBR 5413, NBR 13531/13532). A prova de 2027 deve seguir a norma vigente na data do edital. Quando a doutrina antiga e a norma atual divergem, ganha a norma, salvo se o comando citar a fonte. Cada tópico abaixo marca essas divergências.</div>
+
+<h3>Quanto o Bloco 2 pesa</h3>
+<p>Nas provas do seu banco, os temas do Bloco 2 renderam de 1 a 5 itens por prova (Câmara 2012: 5 de 80), com um pico no STM 2018 (cerca de 12, entre incêndio, acessibilidade, Procel e CAD). Para 90 itens em 2027, conte com <b>5 a 12 itens</b>. Por ser "noções", a banca cobra definições, componentes, números clássicos e funções. Dimensionamento pesado é raro.</p>
+</section>
+
+<section class="topic" id="ele">
+<header class="topic-head"><span class="tag">2.1</span><h2>Instalações elétricas (com SPDA)</h2></header>
+<p class="lead">É o tópico mais cobrado do bloco: 61 questões no Caderno 07 e presença em quase todas as provas recentes (CODEVASF, TCE-RN, TRT-10, TCE-SC, STM, Câmara 2012). O foco é a NBR 5410: seções mínimas, DR e DPS, aterramento, circuitos e previsão de cargas.</p>
+
+<h3>Normas de referência</h3>
+<div class="tbl"><table>
+<thead><tr><th>Norma</th><th>Assunto</th><th>Situação</th></tr></thead>
+<tbody>
+<tr><td>NBR 5410:2004</td><td>Instalações elétricas de baixa tensão</td><td>Vigente. Revisão em curso, com segunda consulta pública prevista; até a publicação, vale a de 2004.</td></tr>
+<tr><td>NBR 14039</td><td>Instalações de média tensão (1 kV a 36,2 kV)</td><td>Vigente</td></tr>
+<tr><td>NBR 5419:2026, partes 1 a 4</td><td>Proteção contra descargas atmosféricas (SPDA)</td><td>Nova edição publicada em mar/2026 (com errata), base IEC 62305:2024. Substitui a de 2015; projetos protocolados até 180 dias depois podem seguir a de 2015. O edital da Engenharia Elétrica já cita "NBR 5419:2026".</td></tr>
+<tr><td>NBR ISO/CIE 8995-1:2013</td><td>Iluminação de ambientes de trabalho</td><td>Substituiu a NBR 5413</td></tr>
+<tr><td>NBR 14136</td><td>Plugues e tomadas (padrão brasileiro, com contato de terra)</td><td>Vigente</td></tr>
+<tr><td>NR-10; REN ANEEL 1.000/2021</td><td>Segurança em eletricidade; regras de fornecimento (fator de potência de referência 0,92)</td><td>Vigentes. No DF a distribuidora é a Neoenergia Brasília (antiga CEB).</td></tr>
+</tbody></table></div>
+
+<h3>Conceitos que a banca cobra</h3>
+<ul class="key">
+<li><b>Entrada de energia:</b> ramal de ligação (da concessionária até o ponto de entrega) → ponto de entrega → ramal de entrada (do consumidor) → medição → caixa seccionadora (proteção geral e desligamento de emergência) → quadro geral → circuitos de distribuição → quadros → circuitos terminais.</li>
+<li><b>Projeto elétrico, conteúdo mínimo:</b> plantas, esquemas unifilares (e outros), detalhes, memorial descritivo, memória de cálculo (previsão de cargas, demanda, dimensionamento de condutores, eletrodutos e proteções), especificações e ART.</li>
+<li><b>Seis critérios para dimensionar condutor:</b> seção mínima; capacidade de condução de corrente (com fatores de temperatura e agrupamento); queda de tensão; sobrecarga; curto-circuito; proteção contra contatos indiretos. A temperatura ambiente de referência é a do meio, <i>sem</i> o calor do próprio condutor. Fatores de agrupamento supõem todos os condutores a 100% de carga.</li>
+<li><b>Proteções:</b> disjuntor termomagnético (térmico = sobrecarga; magnético = curto). Curvas B (3 a 5 In, cargas resistivas), C (5 a 10 In, uso geral e motores pequenos), D (10 a 20 In, partida pesada). <b>DR</b> detecta corrente de fuga (≤ 30 mA = alta sensibilidade, proteção de pessoas). <b>DPS</b> limita surtos de tensão, instalado na origem e nos quadros, em coordenação. DR ≠ DPS ≠ disjuntor.</li>
+<li><b>Aterramento (letras dos esquemas):</b> 1ª letra = situação da alimentação (T: ponto diretamente aterrado; I: isolado ou aterrado por impedância). 2ª letra = massas (T: aterradas direto, eletrodo próprio; N: ligadas ao ponto aterrado da fonte). Complemento: S = neutro e proteção separados; C = combinados (PEN). TN-S, TN-C, TN-C-S, TT e IT. No TN-C não se usa DR.</li>
+<li><b>Equipotencialização principal (BEP):</b> reúne condutor de aterramento, condutores de proteção, tubulações metálicas de água, gás e esgoto que entram no prédio, armaduras da estrutura, SPDA e blindagens de telecomunicações. Aterramento funcional e de proteção vão para o mesmo BEP (aterramento independente é desaconselhado). O BEP fica no interior; quem fica no solo é o eletrodo, de preferência as armaduras das fundações ou um anel.</li>
+<li><b>Interruptores:</b> simples (1 ponto), paralelo ou three-way (2 pontos), intermediário ou four-way (3 ou mais pontos, entre dois paralelos). O interruptor secciona só a FASE, que vira retorno; a lâmpada fica entre retorno e neutro.</li>
+<li><b>Cores:</b> neutro azul-claro; proteção (PE) verde-amarelo ou verde; PEN azul-claro com anilhas verde-amarelo; fases em outras cores.</li>
+<li><b>Eletrodutos:</b> só condutores elétricos (admite-se condutor nu de proteção); emendas de condutores só em caixas; até 3 curvas de 90° entre caixas; trechos retos de até 15 m, reduzidos de 3 m por curva. Barramento blindado (bus-way): grandes correntes e alta densidade de carga.</li>
+<li><b>Fator de demanda</b> = demanda máxima ÷ potência instalada (≤ 1). <b>Fator de potência</b> de referência: 0,92.</li>
+</ul>
+
+<h3>Números que caem</h3>
+<div class="tbl"><table>
+<thead><tr><th>Item</th><th>Valor (NBR 5410:2004)</th></tr></thead>
+<tbody>
+<tr><td>Seção mínima de cobre</td><td>Iluminação 1,5 mm² · Força (tomadas) 2,5 mm² · Sinalização e controle 0,5 mm²</td></tr>
+<tr><td>Condutor de proteção</td><td>S ≤ 16 mm² → igual à fase · 16 &lt; S ≤ 35 → 16 mm² · S &gt; 35 → S/2</td></tr>
+<tr><td>Tomadas (habitação)</td><td>Banheiro: ≥ 1 junto ao lavatório · Cozinha, copa, área de serviço, lavanderia: 1 a cada 3,5 m de perímetro · Salas e dormitórios: 1 a cada 5 m · Cômodo até 2,25 m²: 1 (pode ficar fora, até 0,80 m da porta)</td></tr>
+<tr><td>Potência das TUG</td><td>Banheiro, cozinha, área de serviço: 600 VA por ponto até 3 pontos, 100 VA nos demais · Outros cômodos: 100 VA</td></tr>
+<tr><td>Iluminação (habitação)</td><td>Área ≤ 6 m²: 100 VA · Acima: 100 VA nos primeiros 6 m² + 60 VA a cada 4 m² inteiros</td></tr>
+<tr><td>Circuito exclusivo</td><td>Equipamento com corrente nominal &gt; 10 A</td></tr>
+<tr><td>Circuito comum luz + tomada</td><td>Só em habitação, corrente de projeto ≤ 16 A, sem concentrar todos os pontos num só circuito, excluídas tomadas de cozinha e área de serviço</td></tr>
+<tr><td>DR ≤ 30 mA obrigatório</td><td>Locais com banheira ou chuveiro; tomadas externas; tomadas internas que alimentem equipamentos no exterior; cozinhas, copas, lavanderias, áreas de serviço, garagens e áreas internas molhadas</td></tr>
+<tr><td>Queda de tensão</td><td>7% (transformador ou gerador próprio) · 5% a partir do ponto de entrega em BT · ≤ 4% nos circuitos terminais</td></tr>
+<tr><td>Taxa de ocupação do eletroduto</td><td>53% (1 condutor) · 31% (2) · 40% (3 ou mais)</td></tr>
+<tr><td>Espaço reserva no quadro</td><td>Até 6 circuitos: 2 · 7 a 12: 3 · 13 a 30: 4 · acima de 30: 15%</td></tr>
+<tr><td>Grau de proteção de quadro</td><td>Superfícies externas: no mínimo IP2X</td></tr>
+</tbody></table></div>
+
+<h3>SPDA em uma página</h3>
+<ul class="key">
+<li>Três subsistemas: <b>captação</b>, <b>descidas</b> e <b>aterramento</b>. Métodos de captação: ângulo de proteção (Franklin), esfera rolante (eletrogeométrico) e malha (gaiola de Faraday).</li>
+<li>Níveis de proteção I (mais exigente) a IV. Raio da esfera rolante: I 20 m, II 30 m, III 45 m, IV 60 m. Malha: I 5×5, II 10×10, III 15×15, IV 20×20 m. Espaçamento das descidas: I e II 10 m, III 15 m, IV 20 m. Mínimo de <b>duas descidas</b>. Valores da NBR 5419-3:2015 (base IEC); confira na edição de 2026.</li>
+<li>Captores radioativos: proibidos pela CNEN (Resolução 4/1989). Latão é admitido em captores. Para-raios não protege circuito contra sobrecorrente.</li>
+<li>Parte 2 = gerenciamento de risco; parte 4 = sistemas internos (medidas de proteção contra surtos, DPS coordenados). A edição de 2026 revisou o mapa de densidade de descargas e a análise de risco (inclui danos a equipamentos críticos), o que pode elevar o nível exigido.</li>
+</ul>
+
+<h3>Onde a banca inverte</h3>
+<ul class="trap">
+<li>DPS chamado de DR, ou DR "protegendo contra curto".</li>
+<li>Descrição do TN atribuída ao TT.</li>
+<li>Lâmpada ligada entre retorno e neutro apresentada como errada (é a correta).</li>
+<li>Interruptor "deve cortar fase e neutro" para segurança.</li>
+<li>Eletroduto ocupado até 100% da seção.</li>
+<li>Terminal de aterramento principal "em contato com o solo".</li>
+<li>Queda de tensão ou iluminância "definida pela concessionária/pelo projetista".</li>
+<li>1,5 mm² para força; 5 m para cozinha; 10 A para circuito comum.</li>
+</ul>
+<!--EXTRAS:ele-->
+</section>
+
+<section class="topic" id="inc">
+<header class="topic-head"><span class="tag">2.5</span><h2>Prevenção e combate a incêndio</h2></header>
+<p class="lead">Quase ausente no Caderno 07, mas foi o bloco temático mais forte do STM 2018 (4 itens seguidos) e apareceu no STJ 2024 e no TRT-10 2025. Para o Analista da Câmara, interessa o projeto: classes de fogo e agentes, sistemas (extintores, hidrantes, sprinklers, detecção e alarme), saídas de emergência e as interfaces com elétrica, ar-condicionado e arquitetura.</p>
+
+<h3>Normas de referência</h3>
+<div class="tbl"><table>
+<thead><tr><th>Norma</th><th>Assunto</th><th>Situação</th></tr></thead>
+<tbody>
+<tr><td>NBR 9077:2025</td><td>Projeto de saídas de emergência</td><td>Nova edição (jul/2025), substitui a de 2001; reorganiza o cálculo de largura por perfil de risco. Conceitos (rotas, escadas, unidade de passagem) seguem; números finos, confira.</td></tr>
+<tr><td>NBR 10897:2020</td><td>Chuveiros automáticos (sprinklers)</td><td>Vigente</td></tr>
+<tr><td>NBR 13714:2000</td><td>Hidrantes e mangotinhos</td><td>Referência</td></tr>
+<tr><td>NBR 12693:2021</td><td>Extintores de incêndio (inclui classe K)</td><td>Vigente</td></tr>
+<tr><td>NBR 17240:2010</td><td>Detecção e alarme de incêndio (SDAI)</td><td>Confirmada em 2025</td></tr>
+<tr><td>NBR 10898:2023</td><td>Iluminação de emergência</td><td>Nova edição; valores de autonomia e iluminância podem ter mudado em relação à de 2013</td></tr>
+<tr><td>NBR 13434 (partes 1 a 3)</td><td>Sinalização de segurança contra incêndio e pânico</td><td>Referência</td></tr>
+<tr><td>NBR 14276:2020 · NBR 15219:2020</td><td>Brigada de incêndio · Plano de emergência</td><td>Vigentes</td></tr>
+<tr><td>NBR 14432 · NBR 11742 · NBR 14880</td><td>Resistência ao fogo de elementos (TRRF) · Porta corta-fogo · Escadas pressurizadas</td><td>Referência</td></tr>
+<tr><td>Lei 13.425/2017 · NR-23</td><td>Diretrizes gerais ("Lei Kiss") · Proteção contra incêndios no trabalho</td><td>Vigentes</td></tr>
+<tr><td>Decreto distrital 21.361/2000 + NTs do CBMDF</td><td>Regulamento de segurança contra incêndio e pânico do DF</td><td>O CBMDF analisa projetos e vistoria</td></tr>
+</tbody></table></div>
+
+<h3>Conceitos que a banca cobra</h3>
+<ul class="key">
+<li><b>Tetraedro do fogo:</b> combustível, comburente (O₂), calor e reação em cadeia. Métodos de extinção: resfriamento, abafamento, isolamento (retirada do combustível) e quebra da reação em cadeia.</li>
+<li><b>Classes e agentes:</b> A (sólidos, superfície e profundidade, deixa resíduo) → água, espuma, pó ABC. B (líquidos e gases inflamáveis, superfície) → espuma, CO₂, pó BC/ABC. C (equipamentos energizados) → CO₂, pó BC/ABC; <b>nunca água ou espuma</b>. D (metais pirofóricos) → pó especial. K (óleos e gorduras de cozinha) → agente específico (acetato de potássio).</li>
+<li><b>Proteção passiva:</b> compartimentação horizontal e vertical, TRRF dos elementos, portas corta-fogo (P-30 a P-120), saídas de emergência, controle de materiais de acabamento. <b>Ativa:</b> detecção e alarme, extintores, hidrantes e mangotinhos, sprinklers, controle de fumaça, iluminação de emergência. <b>Organizacional:</b> brigada, plano de emergência, treinamento.</li>
+<li><b>SDAI (NBR 17240):</b> central, detectores, acionadores manuais, avisadores sonoros e visuais. Detector de fumaça óptico (fumaça visível, combustão lenta) e iônico (partículas pequenas, chama rápida); de temperatura (fixa ou termovelocimétrico, para locais com fumaça normal, como cozinhas); de chama (UV/IR); linear (feixe) e por aspiração. Eletrodutos e circuitos <b>exclusivos</b>.</li>
+<li><b>Sprinklers (NBR 10897):</b> tubo molhado (só abrem os chuveiros atingidos); tubo seco (ar sob pressão, para locais sujeitos a congelamento); ação prévia (a detecção abre a válvula antes); dilúvio (bicos abertos, todos descarregam). Válvula de governo e alarme (VGA). Classes de risco: leve, ordinário (I e II) e extraordinário (I e II).</li>
+<li><b>Hidrantes e mangotinhos (NBR 13714):</b> reserva técnica de incêndio (RTI) garantida no reservatório; registro (hidrante) de recalque no passeio ou fachada para a viatura; bomba com partida automática, desligamento só manual e alimentação independente, tomada antes da chave geral.</li>
+<li><b>Saídas de emergência (NBR 9077):</b> acessos (rotas), escadas, rampas, descarga, área de refúgio, elevador de emergência. Escadas: não enclausurada (NE), enclausurada protegida (EP), à prova de fumaça com antecâmara (PF) e pressurizada (PFP). Dimensionamento: N = P/C (população ÷ capacidade da unidade de passagem); população conforme a ocupação. Portas abrem no sentido da fuga (rotas e salas com mais de 50 pessoas). Porta corta-fogo: fechamento automático; só pode ficar aberta por retentor eletromagnético ligado à detecção.</li>
+<li><b>Sinalização (NBR 13434):</b> orientação e salvamento verde; equipamentos de combate vermelha; alerta amarela; proibição vermelha.</li>
+<li><b>Interfaces:</b> dutos de ar que atravessam compartimentação recebem dampers corta-fogo; elevador comum não é rota de fuga; iluminação de emergência tem fonte própria.</li>
+</ul>
+
+<h3>Números que caem</h3>
+<div class="tbl"><table>
+<thead><tr><th>Item</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>Ampolas de sprinklers</td><td>Laranja 57 °C · Vermelha 68 °C · Amarela 79 °C · Verde 93 °C</td></tr>
+<tr><td>Acionador manual (NBR 17240)</td><td>Entre 0,90 m e 1,35 m do piso · percurso até o acionador ≤ 30 m</td></tr>
+<tr><td>Fonte da central de alarme</td><td>24 h em supervisão + 15 min em alarme</td></tr>
+<tr><td>Extintor</td><td>Parte superior a no máximo 1,60 m do piso</td></tr>
+<tr><td>Unidade de passagem</td><td>0,55 m; largura mínima usual de saída 1,10 m (2 UP). Confira na NBR 9077:2025.</td></tr>
+</tbody></table></div>
+
+<h3>Onde a banca inverte</h3>
+<ul class="trap">
+<li>Espuma ou água em equipamento energizado.</li>
+<li>"Todos os sprinklers abrem" atribuído ao tubo molhado (é o dilúvio).</li>
+<li>Reserva de incêndio "desde que em reservatório exclusivo".</li>
+<li>Porta corta-fogo presa por calço, "com sinalização".</li>
+<li>Alimentação da bomba depois da chave geral.</li>
+<li>Eletroduto do SDAI compartilhado com outros sistemas.</li>
+<li>Cores da sinalização trocadas (verde × vermelha).</li>
+</ul>
+<!--EXTRAS:inc-->
+</section>
+
+<section class="topic" id="arq">
+<header class="topic-head"><span class="tag">2.7</span><h2>Projetos arquitetônicos</h2></header>
+<p class="lead">A banca cobra etapas de projeto (NBR 16636), representação gráfica (NBR 6492), vocabulário de edificação, acessibilidade (NBR 9050, com números) e desempenho (NBR 15575). Na Câmara, o prédio é patrimônio tombado em Brasília, o que dá peso a reforma, acessibilidade e compatibilização.</p>
+
+<h3>Normas e leis de referência</h3>
+<div class="tbl"><table>
+<thead><tr><th>Norma</th><th>Assunto</th><th>Situação</th></tr></thead>
+<tbody>
+<tr><td>NBR 16636-1 e -2:2017; -3:2020 (e partes seguintes)</td><td>Elaboração de projetos arquitetônicos e urbanísticos (diretrizes, terminologia, etapas)</td><td>Substituiu as NBR 13531 e 13532 (1995)</td></tr>
+<tr><td>NBR 6492:2021</td><td>Documentação técnica (representação) de projetos de arquitetura</td><td>Vigente</td></tr>
+<tr><td>NBR 9050:2020</td><td>Acessibilidade a edificações, mobiliário e espaços</td><td>Vigente (versão corrigida em 2021)</td></tr>
+<tr><td>NBR 16537</td><td>Sinalização tátil no piso (alerta e direcional)</td><td>Edição recente (2024)</td></tr>
+<tr><td>NBR 15575:2013 (partes 1 a 6)</td><td>Desempenho de edificações habitacionais</td><td>Vigente, com emendas</td></tr>
+<tr><td>NBR 15220</td><td>Desempenho térmico; zoneamento bioclimático (Brasília: zona 4)</td><td>Referência</td></tr>
+<tr><td>Lei 10.098/2000 · Decreto 5.296/2004 · Lei 13.146/2015 (LBI)</td><td>Acessibilidade</td><td>Vigentes</td></tr>
+<tr><td>Decreto 10.306/2020</td><td>Implantação do BIM em obras federais (fases 2021, 2024, 2028)</td><td>Vigente</td></tr>
+<tr><td>Lei distrital 6.138/2018</td><td>Código de Obras e Edificações do DF</td><td>Vigente</td></tr>
+</tbody></table></div>
+
+<h3>Etapas do projeto (NBR 16636-2)</h3>
+<ol class="seq">
+<li><b>LV-ARQ</b> Levantamento de dados</li>
+<li><b>PN-ARQ</b> Programa de necessidades</li>
+<li><b>EV-ARQ</b> Estudo de viabilidade</li>
+<li><b>EP-ARQ</b> Estudo preliminar (concepção, partido)</li>
+<li><b>AP-ARQ</b> Anteprojeto (solução definida, base para os complementares)</li>
+<li><b>PL-ARQ</b> Projeto legal: é o que vai aos órgãos públicos para aprovação</li>
+<li><b>PB-ARQ</b> Projeto básico (opcional na norma)</li>
+<li><b>PE-ARQ</b> Projeto para execução</li>
+</ol>
+<p class="note">Não confunda o PB-ARQ da NBR com o "projeto básico" da Lei 14.133 (art. 6º, XXV), que é peça de licitação com orçamento detalhado. A compatibilização acontece desde o anteprojeto; o <i>as built</i> registra o que foi de fato executado.</p>
+
+<h3>Representação gráfica</h3>
+<ul class="key">
+<li><b>Planta baixa:</b> corte horizontal a cerca de 1,50 m do piso. Elementos cortados em traço grosso; vistos abaixo, em traço médio ou fino; projeções acima do plano (vigas, beirais, pavimento superior), em tracejado.</li>
+<li><b>Cortes:</b> planos verticais (longitudinal e transversal), passando por escadas e áreas molhadas. <b>Fachadas ou elevações:</b> vistas externas.</li>
+<li><b>Planta de situação:</b> lote em relação à quadra e às vias. <b>Planta de locação ou implantação:</b> edificação dentro do lote, com recuos, afastamentos e níveis. <b>Planta de cobertura:</b> águas, inclinações, calhas.</li>
+<li><b>Escalas usuais:</b> situação 1:500 a 1:2.000; implantação 1:200 a 1:500; plantas, cortes e fachadas 1:50 e 1:100; detalhes 1:20, 1:10, 1:5 e 1:1.</li>
+<li><b>Vocabulário:</b> pé-direito (piso ao teto) × altura de piso a piso; terreno de fundo (acesso por corredor) × encravado (sem acesso à via); mezanino, sobreloja, andar-tipo.</li>
+<li><b>Conforto:</b> em Brasília (hemisfério sul), a fachada norte recebe sol alto o ano todo e se protege com brise horizontal; leste e oeste recebem sol baixo e pedem brise vertical. Ventilação cruzada exige aberturas em fachadas opostas ou adjacentes.</li>
+<li><b>Patrimônio:</b> o conjunto urbanístico de Brasília e o Congresso Nacional são tombados (IPHAN); intervenções dependem de anuência do órgão de patrimônio.</li>
+</ul>
+
+<h3>Números de acessibilidade (NBR 9050)</h3>
+<div class="tbl"><table>
+<thead><tr><th>Item</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>Módulo de referência (cadeira de rodas)</td><td>0,80 × 1,20 m</td></tr>
+<tr><td>Manobra</td><td>90°: 1,20 × 1,20 m · 180°: 1,50 × 1,20 m · 360°: círculo de Ø 1,50 m</td></tr>
+<tr><td>Rampas: inclinação × desnível máximo por segmento</td><td>até 5% → 1,50 m · 5% a 6,25% → 1,00 m · 6,25% a 8,33% → 0,80 m</td></tr>
+<tr><td>Rampas: largura e inclinação transversal</td><td>Largura recomendável 1,50 m, mínima admissível 1,20 m · transversal até 2% (interna) e 3% (externa)</td></tr>
+<tr><td>Corrimãos</td><td>Nos dois lados, a 0,92 m e 0,70 m, com prolongamento de 0,30 m nas extremidades</td></tr>
+<tr><td>Escadas</td><td>Espelho 0,16 a 0,18 m · piso 0,28 a 0,32 m · 0,63 ≤ p + 2e ≤ 0,65 m · largura mínima 1,20 m</td></tr>
+<tr><td>Corredores</td><td>Uso comum: até 4 m de extensão 0,90 m; até 10 m 1,20 m; acima 1,50 m · Uso público: 1,50 m</td></tr>
+<tr><td>Portas</td><td>Vão livre ≥ 0,80 m × 2,10 m · maçaneta de alavanca entre 0,80 e 1,10 m</td></tr>
+<tr><td>Sanitários</td><td>5% de cada peça, com no mínimo 1 por sexo em cada pavimento onde houver sanitários</td></tr>
+<tr><td>Catracas e cancelas</td><td>Pelo menos 1 acessível em cada conjunto</td></tr>
+<tr><td>Vagas</td><td>2% para pessoa com deficiência (mínimo 1; LBI) e 5% para idosos</td></tr>
+</tbody></table></div>
+
+<h3>Desempenho (NBR 15575)</h3>
+<ul class="key">
+<li>Níveis mínimo (M), intermediário (I) e superior (S). VUP da estrutura: ≥ 50 anos (M), 63 (I), 75 (S).</li>
+<li>Pé-direito mínimo 2,50 m; 2,30 m em vestíbulos, halls, corredores, sanitários e despensas.</li>
+<li>Requisitos dos usuários: segurança (estrutural, fogo, uso), habitabilidade (estanqueidade, térmico, acústico, lumínico, saúde, funcionalidade, conforto tátil) e sustentabilidade (durabilidade, manutenibilidade, impacto ambiental).</li>
+<li>Não se aplica a obras com projeto protocolado antes da vigência, nem a reformas ou retrofit (aplica-se a habitações novas).</li>
+</ul>
+
+<h3>Onde a banca inverte</h3>
+<ul class="trap">
+<li>Aprovação nos órgãos públicos "no projeto executivo" (é no projeto legal).</li>
+<li>Situação × locação trocadas.</li>
+<li>1,50 m estendido a corredor de uso comum curto.</li>
+<li>Pisos de escada 0,25 a 0,28 m (são 0,28 a 0,32 m).</li>
+<li>VUP de 75 anos como mínima (é a superior).</li>
+<li>"Com BIM dispensa-se a coordenação de projetos."</li>
+</ul>
+<!--EXTRAS:arq-->
+</section>
+
+<section class="topic" id="ar">
+<header class="topic-head"><span class="tag">2.4</span><h2>Ar-condicionado</h2></header>
+<p class="lead">13 questões no Caderno 07, quase todas de 2007 a 2011, mais itens recentes sobre manutenção (TRT-10 2025). A banca cobra carga térmica, tipos de sistema e seus componentes, dutos, qualidade do ar interior e PMOC.</p>
+
+<h3>Normas e atos de referência</h3>
+<div class="tbl"><table>
+<thead><tr><th>Norma/ato</th><th>Assunto</th><th>Situação</th></tr></thead>
+<tbody>
+<tr><td>NBR 16401-1:2024</td><td>Instalações de ar-condicionado: projeto</td><td>Nova edição (nov/2024)</td></tr>
+<tr><td>NBR 16401-2</td><td>Parâmetros de conforto térmico</td><td>Edição de 2008 (confirmada)</td></tr>
+<tr><td>NBR 16401-3</td><td>Qualidade do ar interior</td><td>Situação confusa no catálogo (edição de 2024 e registro de cancelamento em 2025). Para a prova, use os conceitos e a RE ANVISA 9/2003.</td></tr>
+<tr><td>Lei 13.589/2018</td><td>PMOC obrigatório em edifícios de uso público e coletivo climatizados</td><td>Vigente</td></tr>
+<tr><td>Portaria MS 3.523/1998 · RE ANVISA 9/2003</td><td>Requisitos de limpeza e manutenção · padrões referenciais de qualidade do ar</td><td>Referência</td></tr>
+<tr><td>NBR 13971</td><td>Manutenção programada de sistemas de refrigeração, ar-condicionado e ventilação</td><td>Referência</td></tr>
+<tr><td>NBR 6401 (antiga)</td><td>Projeto de ar-condicionado</td><td>Cancelada, substituída pela NBR 16401. Itens antigos da banca se apoiam nela.</td></tr>
+</tbody></table></div>
+
+<h3>Conceitos que a banca cobra</h3>
+<ul class="key">
+<li><b>Carga térmica:</b> calor a retirar (ou fornecer) para manter o conforto. Parcelas sensível (temperatura) e latente (umidade). Fontes: insolação, condução pela envoltória, pessoas, iluminação, equipamentos, infiltração e ar exterior de renovação. Calcula-se para verão e inverno. Mais volume interno, mais consumo. 1 TR = 12.000 BTU/h ≈ 3,52 kW.</li>
+<li><b>Ciclo de refrigeração:</b> compressor → condensador (rejeita calor) → dispositivo de expansão → evaporador (absorve calor).</li>
+<li><b>Expansão direta</b> (o refrigerante troca calor com o ar): janela (pode aquecer, com ciclo reverso), split (condensadora externa com compressor e condensador; evaporadora interna), multi-split, VRF/VRV (vazão de refrigerante variável, várias evaporadoras numa condensadora), self-contained, rooftop.</li>
+<li><b>Expansão indireta</b> (água gelada): chiller (condensação a ar ou a água, com torre de resfriamento), bombas, fan-coils (maiores, com dutos, em casa de máquinas) e fancoletes (locais). Termoacumulação: produz gelo ou água gelada fora da ponta. Glicol baixa o ponto de congelamento.</li>
+<li><b>Distribuição de ar:</b> dutos de insuflamento, retorno e ar exterior; difusores, grelhas e venezianas; <b>plenum</b> (espaço, como o entreforro, usado como caminho do ar, em geral do retorno); dampers de regulagem e dampers corta-fogo nas travessias de compartimentação. Dutos de chapa galvanizada; isolados onde passam por áreas não condicionadas; fibra de vidro ou PVC para ar corrosivo. Condensado sai por bandeja e dreno.</li>
+<li><b>Filtragem:</b> grossos (G), médios (M), finos (F) e absolutos (HEPA), em estágios.</li>
+<li><b>Qualidade do ar e manutenção:</b> limpeza de dutos é questão de saúde. PMOC com responsável técnico habilitado. Torre de resfriamento exige tratamento da água (risco de <i>Legionella</i>).</li>
+<li><b>Refrigerantes:</b> R-22 (HCFC) em eliminação pelo Protocolo de Montreal; HFCs (R-410A) com alto potencial de aquecimento, em redução pela Emenda de Kigali; alternativas como R-32.</li>
+<li><b>Eficiência:</b> PBE Edifica (ENCE) e Selo Procel Edificações, avaliados por organismo de inspeção acreditado.</li>
+</ul>
+
+<h3>Números que caem (RE ANVISA 9/2003)</h3>
+<div class="tbl"><table>
+<tbody>
+<tr><td>CO₂</td><td>≤ 1.000 ppm</td></tr>
+<tr><td>Fungos</td><td>≤ 750 ufc/m³; relação interior/exterior ≤ 1,5</td></tr>
+<tr><td>Renovação de ar</td><td>27 m³/h por pessoa</td></tr>
+<tr><td>Conforto (verão)</td><td>Temperatura 23 a 26 °C; umidade relativa 40% a 65%; velocidade do ar ≤ 0,25 m/s</td></tr>
+</tbody></table></div>
+
+<h3>Onde a banca inverte</h3>
+<ul class="trap">
+<li>Plenum "drena condensado".</li>
+<li>Compressor fora e condensador dentro no split.</li>
+<li>Limpeza de dutos "principalmente por energia".</li>
+<li>Isolar duto dentro da área condicionada como exigência.</li>
+<li>Expansão direta × indireta trocadas.</li>
+</ul>
+<!--EXTRAS:ar-->
+</section>
+
+<section class="topic" id="vent">
+<header class="topic-head"><span class="tag">2.3</span><h2>Ventilação e exaustão</h2></header>
+<p class="lead">A banca cobra a diferença entre ventilação natural e mecânica, diluidora e localizada, exaustor eólico, exaustão de cozinhas e garagens, controle de fumaça e a ventilação de ambientes com gás (que caiu na Câmara 2012). Não confunda com a ventilação do esgoto, que é de instalações hidrossanitárias (Bloco 1).</p>
+
+<h3>Normas de referência</h3>
+<div class="tbl"><table>
+<thead><tr><th>Norma</th><th>Assunto</th></tr></thead>
+<tbody>
+<tr><td>NBR 14518:2019</td><td>Sistemas de ventilação para cozinhas industriais (coifas, filtros, dutos, exaustores)</td></tr>
+<tr><td>NBR 14880</td><td>Escadas de segurança: controle de fumaça por pressurização</td></tr>
+<tr><td>NBR 13103</td><td>Instalação de aparelhos a gás para uso residencial (ventilação permanente, chaminés)</td></tr>
+<tr><td>NBR 15526</td><td>Redes de distribuição interna de gases combustíveis (GN e GLP)</td></tr>
+<tr><td>NBR 16401 · Código de obras local</td><td>Ar exterior em ambientes condicionados · ventilação mínima de compartimentos, garagens e sanitários</td></tr>
+</tbody></table></div>
+
+<h3>Conceitos que a banca cobra</h3>
+<ul class="key">
+<li><b>Natural:</b> movida por vento (diferença de pressão entre fachadas, ventilação cruzada) e por diferença de temperatura (efeito chaminé: ar quente sobe e sai por aberturas altas, ar frio entra pelas baixas). <b>Mecânica ou forçada:</b> ventiladores e exaustores (insuflamento, exaustão ou combinada).</li>
+<li><b>Geral diluidora</b> (mistura ar limpo no ambiente; contaminante pouco tóxico, fontes dispersas) × <b>exaustão localizada</b> (capta na fonte com coifa ou captor; menor vazão, mais eficiente; obrigatória para fumos, gases tóxicos, gordura).</li>
+<li><b>Exaustor eólico:</b> gira com o vento e com a convecção térmica; precisa de entradas de ar; vazão variável, não constante.</li>
+<li><b>Cozinhas profissionais:</b> coifa, filtros (inerciais), duto de exaustão exclusivo e estanque (gordura é combustível), exaustor e reposição de ar.</li>
+<li><b>Garagens fechadas:</b> ventilação mecânica para diluir o monóxido de carbono, eventualmente acionada por sensores de CO.</li>
+<li><b>Controle de fumaça:</b> pressurização de escadas (pressão positiva na caixa), extração de fumaça em átrios e subsolos.</li>
+<li><b>Ambientes com gás:</b> ventilação permanente (inferior e superior) com áreas mínimas conforme o tipo e a potência dos aparelhos. O GLP é mais denso que o ar (acumula embaixo, ventilação inferior é crítica); o gás natural é mais leve (sobe). Aquecedores de combustão aberta exigem chaminé (primária, do aparelho ao defletor; secundária, do defletor ao terminal).</li>
+<li><b>Rede de gás:</b> tubulação aparente pintada de amarelo; ensaio de estanqueidade com ar comprimido ou gás inerte; não passa em dutos de ar, pluviais, esgoto, poços de elevador; atravessa estrutura com tubo-luva; afastada de condutores elétricos (ou com isolante); central de GLP com distâncias mínimas a aberturas, ralos e caixas.</li>
+</ul>
+
+<h3>Onde a banca inverte</h3>
+<ul class="trap">
+<li>Ventilação forçada definida pelo vento (é a natural).</li>
+<li>Diluidora "para captar na fonte".</li>
+<li>Exaustor eólico "constante" ou "sem entradas de ar".</li>
+<li>Duto de cozinha compartilhado "desde que dimensionado".</li>
+<li>Área de ventilação "igual a" (é mínima).</li>
+<li>Chaminé primária × secundária.</li>
+</ul>
+<!--EXTRAS:vent-->
+</section>
+
+<section class="topic" id="elev">
+<header class="topic-head"><span class="tag">2.2</span><h2>Elevadores</h2></header>
+<p class="lead">Cinco questões no Caderno 07 e itens sobre elevador de obra na Câmara 2012 e no MPGO 2024. A banca cobra tipos, componentes e exclusividade dos espaços, cálculo de tráfego (conceitual), acessibilidade e o elevador de cremalheira da NR-18.</p>
+
+<h3>Normas de referência</h3>
+<div class="tbl"><table>
+<thead><tr><th>Norma</th><th>Assunto</th><th>Situação</th></tr></thead>
+<tbody>
+<tr><td>NBR 16858-1:2021 (e partes)</td><td>Requisitos de segurança para construção e instalação de elevadores de passageiros e de passageiros e cargas</td><td>Substituiu a NBR NM 207, a NM 267 e a NBR 16042; exigível desde 2024; base EN 81-20. A parte 7 trata de elevadores existentes.</td></tr>
+<tr><td>NBR NM 207</td><td>Elevadores elétricos de passageiros</td><td>Cancelada. Itens antigos da banca a citam.</td></tr>
+<tr><td>NBR 5665</td><td>Cálculo do tráfego nos elevadores</td><td>Referência</td></tr>
+<tr><td>NBR 9050 · NBR ISO 9386-1</td><td>Acessibilidade · plataformas de elevação motorizadas</td><td>Vigentes</td></tr>
+<tr><td>NR-18</td><td>Elevadores de obra (cremalheira)</td><td>Vigente (revisada em 2020)</td></tr>
+</tbody></table></div>
+
+<h3>Conceitos que a banca cobra</h3>
+<ul class="key">
+<li><b>Componentes:</b> casa de máquinas (máquina de tração, quadro de comando, limitador de velocidade), caixa ou poço, cabina, contrapeso, guias, cabos de aço, freio de segurança (acionado pelo limitador de velocidade), para-choques no fundo do poço, portas de pavimento com trinco.</li>
+<li><b>Exclusividade:</b> casa de máquinas e caixa servem só ao elevador; não abrigam dutos, cabos, tubulações ou equipamentos de outros sistemas.</li>
+<li><b>Tipos:</b> elétrico de tração com casa de máquinas; sem casa de máquinas (máquina compacta na caixa); hidráulico (percursos curtos, poucos pavimentos, baixa velocidade, casa de máquinas embaixo); plataforma elevatória (acessibilidade, percurso pequeno); monta-cargas; elevador de emergência (bombeiros), com alimentação de emergência e antecâmara.</li>
+<li><b>Tráfego (NBR 5665):</b> parte da população do edifício e verifica a <b>capacidade de transporte</b> (porcentagem da população atendida em 5 minutos) e o <b>intervalo de tráfego</b>. Dependem de velocidade, capacidade e número de cabinas, número de paradas, aceleração e tempos de porta.</li>
+<li><b>Acessibilidade:</b> cabina com dimensões internas mínimas de 1,10 × 1,40 m; botoeira com relevo e Braille; sinal sonoro e visual de chegada e de sentido; espelho para manobra de cadeira de rodas; corrimão.</li>
+<li><b>Interfaces de projeto:</b> poço impermeabilizado (pressão negativa → sistema rígido), ganchos de içamento na laje da casa de máquinas, circuito elétrico exclusivo, ventilação e iluminação da casa de máquinas, integração com a detecção de incêndio (retorno ao pavimento de descarga).</li>
+<li><b>Elevador de obra (NR-18):</b> transporte de pessoas por elevador de cremalheira, seguindo o fabricante; livro de inspeção com vistoria diária pelo operador; operador e responsável pela carga podem subir isolados dela.</li>
+</ul>
+
+<h3>Onde a banca inverte</h3>
+<ul class="trap">
+<li>Casa de máquinas ou poço abrigando dutos e tubulações "desde que...".</li>
+<li>Hidráulico "para mais de 10 pavimentos".</li>
+<li>Variáveis de tráfego trocadas por detalhes da cabina.</li>
+<li>Proibições específicas inventadas (espelho fora da parede da botoeira).</li>
+<li>NM 207 citada como vigente.</li>
+</ul>
+<!--EXTRAS:elev-->
+</section>
+
+<section class="topic" id="tel">
+<header class="topic-head"><span class="tag">2.6</span><h2>Telefonia</h2></header>
+<p class="lead">Seis questões no Caderno 07, todas de definição: componentes da tubulação telefônica predial, quem executa o quê, aterramento, tronco e ramal. Itens modernos podem trazer cabeamento estruturado.</p>
+
+<h3>Referências</h3>
+<div class="tbl"><table>
+<thead><tr><th>Norma</th><th>Assunto</th><th>Situação</th></tr></thead>
+<tbody>
+<tr><td>Práticas Telebrás e NBR 13300/13301</td><td>Tubulação e redes telefônicas internas em edifícios</td><td>Base histórica das definições cobradas</td></tr>
+<tr><td>NBR 14565</td><td>Cabeamento estruturado para edifícios comerciais</td><td>Vigente (há registro de publicação em nov/2025; confira a edição)</td></tr>
+<tr><td>NBR 16415:2021</td><td>Caminhos e espaços para cabeamento estruturado</td><td>Vigente</td></tr>
+<tr><td>NBR 16264</td><td>Cabeamento estruturado residencial</td><td>Referência</td></tr>
+</tbody></table></div>
+
+<h3>Componentes da tubulação telefônica predial (do lado de fora para dentro)</h3>
+<ol class="seq">
+<li><b>Caixa de entrada</b> subterrânea, junto ao alinhamento predial, para o cabo da rede externa.</li>
+<li><b>Tubulação de entrada</b> até o distribuidor geral.</li>
+<li><b>DG</b> (distribuidor geral; caixa de distribuição geral, sala ou cubículo): ponto de terminação da rede externa; <b>aterrado sempre</b>.</li>
+<li><b>Tubulação primária</b> (prumada) ou <b>poço de elevação</b>: espaço vertical contínuo (shaft) para os cabos em prédios grandes.</li>
+<li><b>Caixas de distribuição</b> nos pavimentos e <b>caixas de passagem</b>.</li>
+<li><b>Tubulação secundária</b> até as <b>caixas de saída</b> (tomadas).</li>
+</ol>
+<ul class="key">
+<li><b>Cubículo:</b> caixa especial de grande porte que pode servir como DG, caixa de distribuição ou de passagem.</li>
+<li><b>Quem faz o quê:</b> o proprietário ou construtor projeta e executa tubulação e rede interna; a operadora leva o serviço até o ponto de terminação.</li>
+<li><b>Tronco:</b> liga o PABX à central pública. <b>Ramal:</b> extensão interna do PABX. Hoje: PABX-IP e VoIP sobre a rede de dados.</li>
+<li><b>Cabeamento estruturado (NBR 14565):</b> sala de entrada, sala de equipamentos, backbone (em geral fibra óptica), sala de telecomunicações, cabeamento horizontal (par trançado), ponto de telecomunicações e área de trabalho. Enlace permanente até 90 m; canal até 100 m com os cordões. Categorias 5e, 6 e 6A (6A atende 10 Gb/s em 100 m). Separação física de cabos de energia (interferência).</li>
+</ul>
+
+<h3>Onde a banca inverte</h3>
+<ul class="trap">
+<li>Poço de elevação descrito como caixa subterrânea de entrada.</li>
+<li>Operadora "executa toda a fiação interna".</li>
+<li>Aterramento "só a partir de X pavimentos".</li>
+<li>Tronco × ramal.</li>
+</ul>
+<!--EXTRAS:tel-->
+</section>
+
+<section class="topic" id="numeros">
+<header class="topic-head"><span class="tag">Revisão</span><h2>Tabela-relâmpago do Bloco 2</h2></header>
+<p class="lead">Para revisar em 10 minutos, no celular, durante as férias. Cada linha já caiu ou é candidata direta a troca de número.</p>
+<div class="tbl"><table>
+<tbody>
+<tr><th colspan="2">Elétrica</th></tr>
+<tr><td>Seções mínimas</td><td>1,5 (luz) · 2,5 (força) · 0,5 (controle) mm²</td></tr>
+<tr><td>Tomadas</td><td>3,5 m (cozinha, serviço) · 5 m (sala, dormitório)</td></tr>
+<tr><td>Circuito comum / exclusivo</td><td>≤ 16 A (só habitação) / &gt; 10 A exclusivo</td></tr>
+<tr><td>DR</td><td>≤ 30 mA; molhados, externos, cozinha, serviço, garagem</td></tr>
+<tr><td>Queda de tensão</td><td>7% · 5% · 4% terminais</td></tr>
+<tr><td>Eletroduto</td><td>53 / 31 / 40% · 3 curvas · 15 m</td></tr>
+<tr><td>Fator de demanda · FP</td><td>Dmáx ÷ Pinst · 0,92</td></tr>
+<tr><td>SPDA</td><td>Esfera 20/30/45/60 m · ≥ 2 descidas · radioativo proibido</td></tr>
+<tr><th colspan="2">Incêndio</th></tr>
+<tr><td>Classe C</td><td>CO₂, pó BC/ABC; nunca água ou espuma</td></tr>
+<tr><td>Ampolas</td><td>57 laranja · 68 vermelha · 79 amarela · 93 verde</td></tr>
+<tr><td>Acionador manual</td><td>0,90 a 1,35 m · ≤ 30 m de percurso</td></tr>
+<tr><td>Central de alarme</td><td>24 h + 15 min</td></tr>
+<tr><td>Sinalização</td><td>Verde = saída · Vermelha = equipamento · Amarela = alerta</td></tr>
+<tr><th colspan="2">Arquitetura e acessibilidade</th></tr>
+<tr><td>Etapas</td><td>LV · PN · EV · EP · AP · PL (aprovação) · PB · PE</td></tr>
+<tr><td>Cadeira de rodas</td><td>0,80 × 1,20 · giro Ø 1,50 m</td></tr>
+<tr><td>Rampas</td><td>5% → 1,50 m · 6,25% → 1,00 m · 8,33% → 0,80 m · transversal 2%/3%</td></tr>
+<tr><td>Corrimãos</td><td>0,92 e 0,70 m · +0,30 m</td></tr>
+<tr><td>Escadas</td><td>e 0,16 a 0,18 · p 0,28 a 0,32 · 0,63 ≤ p + 2e ≤ 0,65</td></tr>
+<tr><td>Corredores</td><td>0,90 (≤ 4 m) · 1,20 (≤ 10 m) · 1,50 (&gt; 10 m e uso público)</td></tr>
+<tr><td>Portas</td><td>0,80 × 2,10 m</td></tr>
+<tr><td>NBR 15575</td><td>Pé-direito 2,50 (2,30) · VUP estrutura 50/63/75</td></tr>
+<tr><th colspan="2">Ar, ventilação, elevadores, telefonia</th></tr>
+<tr><td>RE ANVISA 9/2003</td><td>CO₂ ≤ 1.000 ppm · 27 m³/h·pessoa · 23 a 26 °C · UR 40 a 65%</td></tr>
+<tr><td>TR</td><td>12.000 BTU/h ≈ 3,52 kW</td></tr>
+<tr><td>Gás</td><td>GLP pesado (embaixo) · GN leve (em cima) · tubo amarelo</td></tr>
+<tr><td>Elevador acessível</td><td>Cabina ≥ 1,10 × 1,40 m · sinal sonoro e visual</td></tr>
+<tr><td>Cabeamento</td><td>90 m + 10 m</td></tr>
+</tbody></table></div>
+</section>

@@ -18,3 +18,7 @@ Material de estudo para a prova da Câmara dos Deputados, arquivado aqui em 07/1
 - **PDF:** clique no arquivo aqui no GitHub.
 - **Página interativa:** o GitHub mostra o código, não a página. Baixe o `.html` e abra no navegador.
 - **Versão original** (abre só na sua conta do Claude): [Guia de Estudo por Provas](https://claude.ai/code/artifact/e2f3956d-5b07-42a3-b1af-87c803e68c84)
+
+## Correção de gabarito
+
+O item 51 do STJ 2024 (sprinklers com tubulação molhada alimentados por reservatório elevado "desde que de uso exclusivo do sistema") aparece no guia como **C**. O gabarito oficial definitivo é **E**. O comentário está no [material de projetos complementares](../Projetos_Complementares_e_Simulados), simulado B2-1, item 8.

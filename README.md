@@ -7,6 +7,7 @@ Materiais de estudo para a prova da Câmara dos Deputados (Cebraspe).
 | Assunto | Material | O que traz |
 |---|---|---|
 | Visão geral do edital | [Guia de estudo por provas (PDF)](Engenharia_Civil/Guia_Geral_por_Provas_Cebraspe/Guia_de_Estudo_por_Provas.pdf) · [pasta](Engenharia_Civil/Guia_Geral_por_Provas_Cebraspe) | 313 questões de 12 provas do Cebraspe por bloco do edital, plano e cronograma de 65 dias |
+| Projetos complementares e simulados (Bloco 2 e demais blocos) | [Material completo (PDF)](Engenharia_Civil/Projetos_Complementares_e_Simulados/Camara_2027_Engenharia.pdf) · [pasta](Engenharia_Civil/Projetos_Complementares_e_Simulados) | Os 7 tópicos do Bloco 2 com normas atualizadas e pegadinhas da banca, 16 simulados de 20 itens (320 itens comentados), modo prova, caderno de erros e cronograma até 17/01/2027 |
 | Estruturas | [Caderno de Estruturas (PDF)](Engenharia_Civil/Estruturas/Caderno_de_Estruturas.pdf) · [pasta](Engenharia_Civil/Estruturas) | 33 itens certo/errado comentados e simulado avançado |
 | Estruturas: NBR 6118:2023 | [Guia de prova da NBR 6118 (PDF)](Engenharia_Civil/Estruturas/NBR_6118-2023_Guia_de_Prova.pdf) · [pasta](Engenharia_Civil/Estruturas) | Resumo da norma alinhado ao edital, concreto protendido e 44 questões |
 | Orçamento: SINAPI | [Estudo estratégico do SINAPI (PDF)](Engenharia_Civil/Orcamento_SINAPI/SINAPI_Estudo_Estrategico.pdf) · [pasta](Engenharia_Civil/Orcamento_SINAPI) | Metodologia, encargos sociais e complementares, custo horário de equipamentos e 31 questões |

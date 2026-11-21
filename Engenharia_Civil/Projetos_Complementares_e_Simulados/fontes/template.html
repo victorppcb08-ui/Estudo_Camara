@@ -1,0 +1,470 @@
+<title>Câmara 2027 · Engenharia Civil</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: folha de prancha técnica. Carimbo no topo, abas como réguas de desenho, conteúdo em coluna de leitura. */
+:root{
+  --paper:#f3f4f0; --sheet:#ffffff; --ink:#1a2227; --graphite:#56636b; --rule:#d9ddd6; --rule-strong:#a3aca6;
+  --accent:#b23d17; --accent-soft:#f7e4db; --ok:#1d7448; --ok-soft:#e0f0e6; --bad:#b42318; --bad-soft:#f9e2df;
+  --blank:#6b7280; --hl:#fff1b8; --chip:#eef0eb;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#101619; --sheet:#172024; --ink:#e3e8e5; --graphite:#9ba8ae; --rule:#2a353a; --rule-strong:#4b585e;
+  --accent:#ee8a5e; --accent-soft:#3b241a; --ok:#5fc592; --ok-soft:#163126; --bad:#f2806f; --bad-soft:#3b1d19;
+  --blank:#9aa3ad; --hl:#3d3514; --chip:#1f292d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#101619; --sheet:#172024; --ink:#e3e8e5; --graphite:#9ba8ae; --rule:#2a353a; --rule-strong:#4b585e;
+  --accent:#ee8a5e; --accent-soft:#3b241a; --ok:#5fc592; --ok-soft:#163126; --bad:#f2806f; --bad-soft:#3b1d19;
+  --blank:#9aa3ad; --hl:#3d3514; --chip:#1f292d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--f-body);margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sheet)}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;letter-spacing:.01em;line-height:1.15;text-wrap:balance}
+h2{font-size:2rem;margin:.2em 0 .4em}
+h3{font-size:1.35rem;margin:1.6em 0 .5em;text-transform:uppercase;letter-spacing:.04em;color:var(--graphite)}
+code{font-family:var(--f-mono);font-size:.92em;background:var(--chip);padding:0 .25em;border-radius:3px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Carimbo */
+.stamp{background:var(--sheet);border-bottom:2px solid var(--ink)}
+.stamp .wrap{padding-block:18px 14px}
+.stamp-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr;border:1.5px solid var(--ink)}
+.stamp-grid>div{padding:8px 12px;border-right:1px solid var(--ink);min-width:0}
+.stamp-grid>div:last-child{border-right:0}
+.stamp .lbl{display:block;font:500 .68rem/1.2 var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--graphite)}
+.stamp .ttl{font:700 1.9rem/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.02em;margin:2px 0 0}
+.stamp .val{font:600 1.35rem/1.15 var(--f-display)}
+.stamp .count{color:var(--accent)}
+.stamp-sub{display:flex;gap:16px;flex-wrap:wrap;font:400 .78rem/1.4 var(--f-mono);color:var(--graphite);margin-top:8px}
+@media (max-width:640px){.stamp-grid{grid-template-columns:1fr 1fr}.stamp-grid>div:first-child{grid-column:1/-1;border-right:0;border-bottom:1px solid var(--ink)}.stamp .ttl{font-size:1.5rem}}
+
+/* Abas */
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--sheet);border-bottom:1px solid var(--rule)}
+nav.tabs .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.tabs .wrap::-webkit-scrollbar{display:none}
+nav.tabs a{flex:0 0 auto;padding:11px 14px 9px;text-decoration:none;color:var(--graphite);font:600 1.02rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.05em;border-bottom:3px solid transparent}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+main{padding-block:24px 80px}
+.view[hidden]{display:none!important}
+
+/* Início */
+.today{background:var(--sheet);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:16px 18px;margin-bottom:22px}
+.today .lbl{font:500 .72rem/1 var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--graphite)}
+.today p{margin:.4em 0 .7em;font-size:1.08rem}
+.linkrow{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--rule-strong);background:var(--sheet);padding:7px 12px;border-radius:4px;font:500 .9rem/1.2 var(--f-body);text-decoration:none;color:var(--ink)}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.panel{background:var(--sheet);border:1px solid var(--rule);padding:16px 18px;min-width:0}
+.panel h3{margin-top:0}
+.prog{display:grid;grid-template-columns:auto 1fr auto;gap:6px 10px;align-items:center;font-size:.92rem}
+.prog .sid{font:500 .85rem var(--f-mono)}
+.bar{height:8px;background:var(--chip);border-radius:4px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--ok)}
+.prog .sc{font:500 .85rem var(--f-mono);font-variant-numeric:tabular-nums;color:var(--graphite)}
+
+/* Teoria */
+.subnav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.subnav button{border:1px solid var(--rule-strong);background:var(--sheet);padding:5px 10px;border-radius:999px;font-size:.88rem}
+.topic{background:var(--sheet);border:1px solid var(--rule);padding:22px 22px 18px;margin-bottom:22px;scroll-margin-top:64px}
+.topic-head{border-bottom:1.5px solid var(--ink);margin-bottom:12px}
+.topic-head .tag{font:500 .75rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:1.06rem;max-width:68ch}
+.topic p,.topic li{max-width:72ch}
+.tbl{overflow-x:auto;margin:10px 0 6px}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{border:1px solid var(--rule);padding:7px 9px;text-align:left;vertical-align:top}
+thead th,tbody th{background:var(--chip);font:600 .95rem var(--f-display);text-transform:uppercase;letter-spacing:.04em}
+td:first-child{white-space:nowrap}
+@media (max-width:640px){td:first-child{white-space:normal}}
+ul.key li,ol.patterns li,ol.steps li{margin-bottom:.5em}
+ol.seq{counter-reset:s;list-style:none;padding:0;display:grid;gap:6px}
+ol.seq li{counter-increment:s;display:grid;grid-template-columns:2.2em 1fr;gap:8px;align-items:baseline}
+ol.seq li::before{content:counter(s);font:600 1.05rem var(--f-display);color:var(--accent);text-align:right}
+ul.trap{list-style:none;padding:0;display:grid;gap:6px}
+ul.trap li{padding:6px 10px;background:var(--accent-soft);border-left:3px solid var(--accent)}
+.warn{background:var(--hl);padding:12px 14px;margin:14px 0;border:1px solid var(--rule)}
+.note{color:var(--graphite);font-size:.95rem}
+.extras{margin-top:18px}
+.extras details{border:1px solid var(--rule);padding:6px 12px;margin-bottom:6px;background:var(--paper)}
+.extras summary{cursor:pointer;font-weight:500}
+.extras .g{font:600 .85rem var(--f-mono);padding:1px 6px;border-radius:3px;margin-left:6px}
+.g.C{background:var(--ok-soft);color:var(--ok)} .g.E{background:var(--bad-soft);color:var(--bad)} .g.X,.g.–{background:var(--chip);color:var(--graphite)}
+.drill{margin-top:14px}
+
+/* Simulados */
+.sim-group{margin-bottom:26px}
+.sim-group h3{margin-top:0}
+.sim-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.sim-card{background:var(--sheet);border:1px solid var(--rule);padding:12px 14px;text-align:left;display:flex;flex-direction:column;gap:6px;min-width:0}
+.sim-card:hover{border-color:var(--ink)}
+.sim-card .sid{font:500 .8rem var(--f-mono);color:var(--accent)}
+.sim-card .st{font:600 1.08rem/1.2 var(--f-display)}
+.sim-card .best{font:400 .82rem var(--f-mono);color:var(--graphite);font-variant-numeric:tabular-nums}
+.runner-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between;margin-bottom:12px}
+.runner-head h2{margin:0}
+.timer{font:500 1rem var(--f-mono);font-variant-numeric:tabular-nums;color:var(--graphite)}
+.item{background:var(--sheet);border:1px solid var(--rule);padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:2.4em 1fr;gap:4px 10px}
+.item .num{font:700 1.3rem/1.2 var(--f-display);color:var(--graphite);font-variant-numeric:tabular-nums}
+.item .ctx{font-size:.88rem;color:var(--graphite);border-left:2px solid var(--rule-strong);padding-left:8px;margin-bottom:6px}
+.item .txt{margin:0 0 8px}
+.choices{display:flex;gap:6px;flex-wrap:wrap}
+.choices button{min-width:3.2em;padding:6px 12px;border:1.5px solid var(--rule-strong);background:var(--sheet);border-radius:4px;font:600 .95rem var(--f-mono)}
+.choices button[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.choices button.blankb{font-family:var(--f-body);font-weight:500;font-size:.85rem}
+.item.done .choices button{cursor:default}
+.item.ok{border-left:4px solid var(--ok)} .item.bad{border-left:4px solid var(--bad)} .item.nb{border-left:4px solid var(--blank)}
+.verdict{grid-column:2;margin-top:8px;padding:10px 12px;font-size:.94rem;background:var(--paper);border:1px solid var(--rule)}
+.verdict .res{font:600 .95rem var(--f-display);text-transform:uppercase;letter-spacing:.05em}
+.res.ok{color:var(--ok)} .res.bad{color:var(--bad)} .res.nb{color:var(--blank)}
+.verdict .org{font:400 .8rem var(--f-mono);color:var(--graphite);display:block;margin-top:4px}
+.scorebar{position:sticky;bottom:0;background:var(--sheet);border-top:2px solid var(--ink);padding:10px 0;margin-top:14px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px))}
+.scorebar .in{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
+.score{font:600 1.2rem var(--f-display);font-variant-numeric:tabular-nums}
+.score b{font-size:1.6rem;color:var(--accent)}
+.form-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:10px 0}
+.form-row label{display:flex;gap:6px;align-items:center}
+select,input[type=number]{font:inherit;padding:5px 8px;border:1px solid var(--rule-strong);background:var(--sheet);color:var(--ink);border-radius:4px}
+.empty{color:var(--graphite);padding:18px;border:1px dashed var(--rule-strong);background:var(--sheet)}
+
+/* Cronograma */
+.phase{margin-bottom:22px}
+.phase h3{margin-top:0}
+.days{display:grid;gap:6px}
+.day{display:grid;grid-template-columns:5.6em 1fr;gap:10px;background:var(--sheet);border:1px solid var(--rule);padding:8px 12px;align-items:start}
+.day .d{font:600 1.05rem/1.2 var(--f-display);font-variant-numeric:tabular-nums}
+.day .d small{display:block;font:400 .75rem var(--f-mono);color:var(--graphite);text-transform:uppercase}
+.day.now{border:2px solid var(--accent);background:var(--accent-soft)}
+.day.past{opacity:.6}
+.day .lk{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.day .lk a{font:500 .78rem var(--f-mono);padding:2px 7px;border:1px solid var(--rule-strong);border-radius:3px;text-decoration:none;color:var(--ink)}
+.fase-ferias .day{background:var(--paper)}
+
+/* Impressão / PDF */
+.print-only{display:none}
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  nav.tabs,.no-print,.scorebar,.drill,.subnav{display:none!important}
+  .view{display:block!important}
+  .item,details,tr{break-inside:avoid-page}
+  .topic,.panel,.item{border-color:#bbb}
+  .print-only{display:block}
+  .item{padding:6px 10px;margin-bottom:5px;font-size:10.5pt}
+  .item .txt{margin:0 0 2px}
+  .topic{padding:12px 14px}
+  .stamp .wrap{padding-block:6px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<header class="stamp">
+  <div class="wrap">
+    <div class="stamp-grid">
+      <div><span class="lbl">Câmara dos Deputados · Analista Legislativo · Engenheiro (Eng. Civil)</span><p class="ttl">Projetos complementares e simulados</p></div>
+      <div><span class="lbl">Prova</span><span class="val">17/01/2027 · dom</span></div>
+      <div><span class="lbl">Faltam</span><span class="val count" id="countdown">–</span></div>
+    </div>
+    <div class="stamp-sub"><span>Banca: Cebraspe · certo/errado · um erro anula um acerto</span><span>P2: 90 itens</span><span>Revisão: __REV__</span></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Seções">
+  <div class="wrap">
+    <a href="#inicio" data-v="inicio">Início</a>
+    <a href="#teoria" data-v="teoria">Bloco 2: teoria</a>
+    <a href="#simulados" data-v="simulados">Simulados</a>
+    <a href="#prova" data-v="prova">Modo prova</a>
+    <a href="#erros" data-v="erros">Caderno de erros</a>
+    <a href="#plano" data-v="plano">Cronograma</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="view" id="v-inicio">
+    <div class="today" id="today"></div>
+    <div class="cols">
+      <div class="panel">
+        <h3>O que há aqui</h3>
+        <ul>
+          <li><b>Bloco 2 (projetos complementares e arquitetura):</b> os 7 tópicos do edital com normas, conceitos, números e pegadinhas, mais 42 itens reais comentados.</li>
+          <li><b>__NSIM__ simulados de 20 itens</b> (__NITENS__ itens): 5 do Bloco 2 e 11 dos Blocos 1, 3, 4, 5 e 6, com gabarito oficial e comentário.</li>
+          <li><b>Modo prova:</b> sorteia 20, 45 ou 90 itens dos blocos escolhidos, com cronômetro.</li>
+          <li><b>Caderno de erros:</b> guarda o que você errou ou deixou em branco, neste navegador.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Como usar</h3>
+        <ol>
+          <li>Leia "Como o examinador pensa" uma vez, com calma.</li>
+          <li>Estude o tópico e faça o simulado sem consultar.</li>
+          <li>Corrija com o placar da prova: +1, −1 e 0.</li>
+          <li>Leia o comentário de <i>todo</i> item, inclusive os que acertou.</li>
+          <li>Refaça o caderno de erros até zerar.</li>
+        </ol>
+      </div>
+      <div class="panel">
+        <h3>Seu desempenho</h3>
+        <div class="prog" id="progress"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="v-teoria">
+    <div class="subnav no-print" id="subnav"></div>
+    __TEORIA__
+  </section>
+
+  <section class="view" id="v-simulados">
+    <div id="sim-index"></div>
+    <div id="sim-runner" hidden></div>
+  </section>
+
+  <section class="view" id="v-prova">
+    <div id="prova-setup">
+      <h2>Modo prova</h2>
+      <p>Sorteia itens dos simulados para treinar ritmo e decisão de marcar ou deixar em branco. Na prova real são 90 itens de conhecimentos específicos e 5 horas para as duas objetivas, o que dá cerca de 1h40 a 2h15 para a P2.</p>
+      <div class="form-row">
+        <label for="pq">Itens</label>
+        <select id="pq"><option>20</option><option selected>45</option><option>90</option></select>
+        <span id="pblocks"></span>
+      </div>
+      <button class="btn primary" id="pgo">Sortear e começar</button>
+    </div>
+    <div id="prova-runner" hidden></div>
+  </section>
+
+  <section class="view" id="v-erros">
+    <h2>Caderno de erros</h2>
+    <p>Itens que você errou ou deixou em branco na última vez que respondeu. Acertou ao refazer, o item sai da lista. Fica salvo só neste navegador.</p>
+    <div id="erros-box"></div>
+  </section>
+
+  <section class="view" id="v-plano">
+    <h2>Cronograma até a prova</h2>
+    <p>De 21/11/2026 a 17/01/2027, com as férias de 09/12 a 27/12 em modo manutenção (30 a 40 minutos em dias alternados, com o PDF no celular). Ajuste as horas de P1 e discursiva em volta destes blocos.</p>
+    <div id="plano-box"></div>
+  </section>
+</main>
+
+<script>
+const DATA = __DATA__;
+</script>
+<script>
+(function(){
+"use strict";
+const PRINT = !!window.PRINT_MODE;
+const $ = (s, r=document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ITEMS = {}; DATA.items.forEach(it => ITEMS[it.id] = it);
+const SIMS = {}; DATA.sims.forEach(s => SIMS[s.id] = s);
+const KEY = "cd27-eng-v1";
+function load(){ try { return JSON.parse(localStorage.getItem(KEY)) || {att:{}, err:{}}; } catch(e){ return {att:{}, err:{}}; } }
+function save(st){ try { localStorage.setItem(KEY, JSON.stringify(st)); } catch(e){} }
+let ST = load(); ST.att = ST.att || {}; ST.err = ST.err || {};
+
+// Contagem regressiva
+(function(){
+  const prova = new Date(2027,0,17); const hoje = new Date(); hoje.setHours(0,0,0,0);
+  const d = Math.round((prova - hoje)/86400000);
+  $("#countdown").textContent = d > 1 ? d + " dias" : d === 1 ? "1 dia" : d === 0 ? "hoje" : "prova feita";
+  if (window.PRINT_MODE) $("#countdown").textContent += " (em " + hoje.toLocaleDateString("pt-BR") + ")";
+})();
+
+// Roteamento
+const VIEWS = ["inicio","teoria","simulados","prova","erros","plano"];
+function route(){
+  let v = (location.hash || "#inicio").slice(1);
+  if (!VIEWS.includes(v)) v = "inicio";
+  VIEWS.forEach(n => { $("#v-"+n).hidden = (n !== v); });
+  document.querySelectorAll("nav.tabs a").forEach(a => a.setAttribute("aria-current", a.dataset.v === v ? "page" : "false"));
+  if (v === "inicio") renderInicio();
+  if (v === "simulados" && !RUN.sim) renderSimIndex();
+  if (v === "erros") renderErros();
+  window.scrollTo(0,0);
+}
+
+// Início
+function bestOf(id){ const a = ST.att[id]; if (!a || !a.length) return null; return a.reduce((m,x)=> x.liq > m.liq ? x : m, a[0]); }
+function renderInicio(){
+  const hoje = new Date(); const iso = hoje.getFullYear()+"-"+String(hoje.getMonth()+1).padStart(2,"0")+"-"+String(hoje.getDate()).padStart(2,"0");
+  let e = DATA.plano.find(p => p.data === iso);
+  let label = "Hoje";
+  if (!e){ if (iso < DATA.plano[0].data){ e = DATA.plano[0]; label = "Primeiro dia"; } else { e = DATA.plano[DATA.plano.length-1]; label = "Dia da prova"; } }
+  $("#today").innerHTML = `<span class="lbl">${label} · ${e.dia} (${e.sem})</span><p>${esc(e.txt)}</p><div class="linkrow">${linkButtons(e.links)}</div>`;
+  const rows = DATA.sims.map(s => { const b = bestOf(s.id); const pct = b ? Math.max(0, b.liq)/s.itens.length*100 : 0;
+    return `<span class="sid">${s.id}</span><span class="bar"><i style="width:${pct}%"></i></span><span class="sc">${b ? (b.liq+" / "+s.itens.length) : "–"}</span>`; }).join("");
+  $("#progress").innerHTML = rows;
+}
+function linkButtons(links){
+  return (links||[]).map(l => {
+    if (SIMS[l]) return `<a class="btn" href="#simulados" data-open="${l}">Simulado ${l}</a>`;
+    if (l === "prova") return `<a class="btn" href="#prova">Modo prova</a>`;
+    if (l === "erros") return `<a class="btn" href="#erros">Caderno de erros</a>`;
+    const t = DATA.topicos.find(x => x.id === l); if (t) return `<a class="btn" href="#teoria" data-topic="${l}">${esc(t.curto)}</a>`;
+    return "";
+  }).join("");
+}
+document.addEventListener("click", ev => {
+  const a = ev.target.closest("[data-open],[data-topic],[data-drill]");
+  if (!a) return;
+  if (a.dataset.open){ setTimeout(() => openSim(a.dataset.open), 0); }
+  if (a.dataset.topic){ setTimeout(() => { const el = document.getElementById(a.dataset.topic); if (el) el.scrollIntoView({behavior:"smooth"}); }, 30); }
+  if (a.dataset.drill){ ev.preventDefault(); location.hash = "#simulados"; setTimeout(() => openDrill(a.dataset.drill), 0); }
+});
+
+// Subnav da teoria
+$("#subnav").innerHTML = DATA.topicos.map(t => `<button type="button" data-topic="${t.id}">${esc(t.curto)}</button>`).join("");
+
+// Runner genérico
+const RUN = {sim:null};
+function runner(box, cfg){
+  // cfg: {id, titulo, ids, kind: 'sim'|'prova'|'erros'|'drill', timer}
+  const ans = {}; let done = false; let t0 = Date.now(); let tick = null;
+  function draw(){
+    box.innerHTML = `
+      <div class="runner-head"><div><a href="#" class="btn back no-print">← Voltar</a></div>
+        <h2>${esc(cfg.titulo)}</h2><span class="timer" id="tm-${cfg.kind}"></span></div>
+      <p class="note">${cfg.ids.length} itens. Julgue cada um como certo (C) ou errado (E), ou deixe em branco. Correção: +1 acerto, −1 erro, 0 branco.</p>
+      <div class="items">${cfg.ids.map((id,i) => itemHTML(ITEMS[id], i+1)).join("")}</div>
+      <div class="scorebar"><div class="in"><span class="score" id="sc-${cfg.kind}">Respondidos: 0 de ${cfg.ids.length}</span>
+      <span class="linkrow"><button class="btn primary" id="fix-${cfg.kind}">Corrigir</button><button class="btn" id="redo-${cfg.kind}">Refazer</button></span></div></div>`;
+    box.querySelector(".back").addEventListener("click", e => { e.preventDefault(); stop(); cfg.onBack && cfg.onBack(); });
+    box.querySelectorAll(".item").forEach(el => {
+      el.querySelectorAll(".choices button").forEach(b => b.addEventListener("click", () => {
+        if (done) return; const id = el.dataset.id; ans[id] = b.dataset.v;
+        el.querySelectorAll(".choices button").forEach(x => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+        upd();
+      }));
+    });
+    $("#fix-"+cfg.kind).addEventListener("click", correct);
+    $("#redo-"+cfg.kind).addEventListener("click", () => { stop(); Object.keys(ans).forEach(k => delete ans[k]); done = false; t0 = Date.now(); draw(); start(); window.scrollTo(0, box.offsetTop - 60); });
+  }
+  function upd(){ const n = Object.values(ans).filter(v => v === "C" || v === "E").length; $("#sc-"+cfg.kind).textContent = `Respondidos: ${n} de ${cfg.ids.length}`; }
+  function start(){ const el = $("#tm-"+cfg.kind); if (!el) return; tick = setInterval(() => { const s = Math.floor((Date.now()-t0)/1000); el.textContent = String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0"); }, 1000); }
+  function stop(){ if (tick) clearInterval(tick); tick = null; }
+  function correct(){
+    if (done) return; done = true; stop();
+    let ac=0, er=0, br=0;
+    box.querySelectorAll(".item").forEach(el => {
+      const it = ITEMS[el.dataset.id]; const a = ans[it.id]; let cls, res;
+      if (it.gab === "X"){ cls = "nb"; res = "Item anulado"; }
+      else if (a !== "C" && a !== "E"){ br++; cls = "nb"; res = "Em branco"; ST.err[it.id] = 1; }
+      else if (a === it.gab){ ac++; cls = "ok"; res = "Acertou"; delete ST.err[it.id]; }
+      else { er++; cls = "bad"; res = "Errou"; ST.err[it.id] = 1; }
+      el.classList.add("done", cls);
+      el.insertAdjacentHTML("beforeend", verdictHTML(it, cls, res));
+    });
+    const liq = ac - er;
+    $("#sc-"+cfg.kind).innerHTML = `Nota líquida <b>${liq}</b> · ${ac} acertos · ${er} erros · ${br} brancos`;
+    if (cfg.kind === "sim"){ (ST.att[cfg.id] = ST.att[cfg.id] || []).push({t:Date.now(), ac, er, br, liq}); }
+    save(ST);
+  }
+  draw(); if (cfg.timer) start();
+  return {stop};
+}
+function itemHTML(it, n){
+  return `<div class="item" data-id="${it.id}"><span class="num">${n}</span><div>
+    ${it.ctx ? `<div class="ctx">${esc(it.ctx)}</div>` : ""}
+    <p class="txt">${esc(it.txt)}</p>
+    <div class="choices" role="group" aria-label="Resposta do item ${n}">
+      <button type="button" data-v="C" aria-pressed="false">C</button>
+      <button type="button" data-v="E" aria-pressed="false">E</button>
+      <button type="button" class="blankb" data-v="B" aria-pressed="false">Em branco</button>
+    </div></div></div>`;
+}
+function verdictHTML(it, cls, res){
+  return `<div class="verdict"><span class="res ${cls}">${res}</span> · Gabarito: <b>${it.gab === "X" ? "anulado" : it.gab}</b>
+    ${it.com ? `<div>${esc(it.com)}</div>` : ""}<span class="org">${esc(it.org)}${it.top ? " · " + esc(topName(it.top)) : ""}</span></div>`;
+}
+function topName(t){ const x = DATA.topicos.find(o => o.id === t); return x ? x.nome : t; }
+
+// Simulados
+let curRunner = null;
+function renderSimIndex(){
+  $("#sim-runner").hidden = true; $("#sim-index").hidden = false;
+  const groups = [[2,"Bloco 2 · Noções de projetos complementares e de arquitetura"],[1,"Bloco 1 · Projetos"],[3,"Bloco 3 · Orçamento de obras"],[4,"Bloco 4 · Acompanhamento e execução"],[5,"Bloco 5 · Manutenção predial"],[6,"Bloco 6 · Fiscalização de obras e serviços"]];
+  $("#sim-index").innerHTML = `<h2>Simulados</h2><p>Bloco 2: itens reais do Cebraspe e itens inéditos no estilo da banca, todos comentados. Demais blocos: só itens reais, com gabarito oficial definitivo das provas do seu repositório.</p>` +
+    groups.map(([b, nome]) => {
+      const ss = DATA.sims.filter(s => s.bloco === b);
+      return `<div class="sim-group"><h3>${esc(nome)}</h3><div class="sim-list">${ss.map(s => { const be = bestOf(s.id);
+        return `<button class="sim-card" type="button" data-open="${s.id}"><span class="sid">${s.id}</span><span class="st">${esc(s.titulo.replace(/^Bloco \d · /,""))}</span><span class="best">${be ? "melhor nota líquida: "+be.liq+" / "+s.itens.length : "ainda não feito"}</span></button>`; }).join("")}</div></div>`;
+    }).join("");
+}
+function openSim(id){
+  const s = SIMS[id]; if (!s) return;
+  if (location.hash !== "#simulados"){ location.hash = "#simulados"; }
+  RUN.sim = id; $("#sim-index").hidden = true; const box = $("#sim-runner"); box.hidden = false;
+  if (curRunner) curRunner.stop();
+  curRunner = runner(box, {id, titulo: s.titulo, ids: s.itens, kind: "sim", timer: true, onBack: () => { RUN.sim = null; renderSimIndex(); }});
+  window.scrollTo(0,0);
+}
+function openDrill(top){
+  const ids = DATA.items.filter(i => i.top === top && i.sim.startsWith("B2")).map(i => i.id);
+  RUN.sim = "drill"; $("#sim-index").hidden = true; const box = $("#sim-runner"); box.hidden = false;
+  if (curRunner) curRunner.stop();
+  curRunner = runner(box, {id:"drill-"+top, titulo: "Treino: " + topName(top), ids, kind: "sim", timer: false, onBack: () => { RUN.sim = null; renderSimIndex(); }});
+  window.scrollTo(0,0);
+}
+// Botões "treinar este tópico"
+document.querySelectorAll(".topic[id]").forEach(sec => {
+  const t = sec.id; if (!DATA.items.some(i => i.top === t)) return;
+  sec.insertAdjacentHTML("beforeend", `<div class="drill"><a class="btn primary" href="#simulados" data-drill="${t}">Treinar este tópico (todos os itens dos simulados)</a></div>`);
+});
+
+// Modo prova
+const BL = [1,2,3,4,5,6];
+$("#pblocks").innerHTML = BL.map(b => `<label><input type="checkbox" id="pb${b}" checked> Bloco ${b}</label>`).join(" ");
+$("#pgo").addEventListener("click", () => {
+  const q = +$("#pq").value; const bs = BL.filter(b => $("#pb"+b).checked);
+  let pool = DATA.items.filter(i => bs.includes(i.bloco) && i.gab !== "X");
+  for (let i = pool.length-1; i > 0; i--){ const j = Math.floor(Math.random()*(i+1)); [pool[i],pool[j]] = [pool[j],pool[i]]; }
+  pool = pool.slice(0, q);
+  if (!pool.length) return;
+  $("#prova-setup").hidden = true; const box = $("#prova-runner"); box.hidden = false;
+  runner(box, {id:"prova", titulo: `Modo prova · ${pool.length} itens`, ids: pool.map(i => i.id), kind: "prova", timer: true, onBack: () => { box.hidden = true; $("#prova-setup").hidden = false; }});
+});
+
+// Caderno de erros
+function renderErros(){
+  const ids = Object.keys(ST.err).filter(id => ITEMS[id]);
+  const box = $("#erros-box");
+  if (!ids.length){ box.innerHTML = `<div class="empty">Nenhum item no caderno. Faça um simulado e corrija: o que você errar ou deixar em branco aparece aqui.</div>`; return; }
+  box.innerHTML = "";
+  runner(box, {id:"erros", titulo: `${ids.length} itens para refazer`, ids, kind: "erros", timer: false, onBack: () => { location.hash = "#inicio"; }});
+}
+
+// Cronograma
+(function(){
+  const hoje = new Date(); const iso = hoje.getFullYear()+"-"+String(hoje.getMonth()+1).padStart(2,"0")+"-"+String(hoje.getDate()).padStart(2,"0");
+  const fases = [["base","Fase 1 · Bloco 2 a fundo (21/11 a 27/11)"],["blocos","Fase 2 · Demais blocos (28/11 a 08/12)"],["ferias","Fase 3 · Férias em modo manutenção (09/12 a 27/12)"],["reta","Fase 4 · Reta final (28/12 a 16/01)"],["prova","Prova"]];
+  $("#plano-box").innerHTML = fases.map(([f, nome]) => `<div class="phase fase-${f}"><h3>${esc(nome)}</h3><div class="days">${
+    DATA.plano.filter(p => p.fase === f).map(p => `<div class="day ${p.data === iso ? "now" : (p.data < iso ? "past" : "")}"><span class="d">${p.dia}<small>${p.sem}</small></span><div>${esc(p.txt)}${p.links.length ? `<div class="lk no-print">${linkButtons(p.links).replace(/class="btn"/g,"")}</div>` : ""}</div></div>`).join("")}</div></div>`).join("");
+})();
+
+// Modo impressão (gera o PDF)
+if (PRINT){
+  VIEWS.forEach(n => $("#v-"+n).hidden = false);
+  $("#v-inicio").hidden = true; $("#v-erros").hidden = true; $("#v-prova").hidden = true;
+  const order = DATA.sims.slice().sort((a,b) => (a.bloco===2?0:a.bloco) - (b.bloco===2?0:b.bloco));
+  $("#sim-index").innerHTML = `<h2>Simulados (gabarito comentado ao fim de cada um)</h2>` + order.map(s => `
+    <div class="panel" style="margin-bottom:18px;break-before:page"><h3 style="margin-top:0">${esc(s.id)} · ${esc(s.titulo)}</h3>
+    ${s.itens.map((id,i) => { const it = ITEMS[id]; return `<div class="item" style="grid-template-columns:2.4em 1fr"><span class="num">${i+1}</span><div>${it.ctx?`<div class="ctx">${esc(it.ctx)}</div>`:""}<p class="txt">${esc(it.txt)}</p><span class="note">( ) C &nbsp; ( ) E</span></div></div>`; }).join("")}
+    <h3>Gabarito comentado · ${esc(s.id)}</h3>
+    ${s.itens.map((id,i) => { const it = ITEMS[id]; return `<p style="margin:.3em 0"><b>${i+1}. ${it.gab}</b> · ${esc(it.com)} <span class="note">(${esc(it.org)})</span></p>`; }).join("")}
+    </div>`).join("");
+  document.querySelectorAll("details").forEach(d => d.open = true);
+} else {
+  window.addEventListener("hashchange", route);
+  route();
+}
+})();
+</script>
